@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meeting AI - Phase 1</title>
+<style>
+  body { font: 14px/1.5 system-ui, sans-serif; max-width: 860px; margin: 24px auto; padding: 0 16px; color: #111; }
+  h1 { font-size: 18px; }
+  h2 { font-size: 15px; margin: 0; }
+  details { border-top: 1px solid #ddd; padding: 8px 0; }
+  summary { cursor: pointer; }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  td, th { text-align: left; padding: 2px 8px 2px 0; vertical-align: top; }
+  .t { color: #666; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .err { background: #fee; border: 1px solid #c00; color: #800; padding: 8px; margin-top: 12px; }
+  .muted { color: #666; }
+  .flag { color: #b60; }
+  .ok { color: #070; } .bad { color: #a00; }
+  del { background: #fdd; text-decoration: line-through; } ins { background: #cfc; text-decoration: none; }
+  u.sug { text-decoration: underline dotted; background: #ffd; }
+  .chip { border: 1px solid #999; border-radius: 8px; padding: 0 6px; font-size: 12px; }
+  .chip.applied { border-color: #070; color: #070; } .chip.suggested { border-color: #b60; color: #b60; } .chip.rejected { border-color: #a00; color: #a00; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .seg { border-bottom: 1px solid #eee; padding: 6px 0; }
+  button.sm { font-size: 12px; padding: 0 6px; }
+</style>
+</head>
+<body>
+<h1>Meeting AI &mdash; Phase 1</h1>
+<input type="file" id="file" accept=".wav,.mp3,.m4a,.mp4,.flac,.ogg,.opus,.webm,.aac,audio/*">
+<select id="provider"></select>
+<button id="go">Process</button>
+<div id="status" class="muted"></div>
+<div id="error"></div>
+<div id="out"></div>
+<script>
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const ts = s => { s = Math.round(s); return Math.floor(s/60) + ":" + String(s%60).padStart(2,"0"); };
+
+fetch("/health").then(r => r.json()).then(h => {
+  $("provider").innerHTML = Object.entries(h.providers).map(([k, v]) =>
+    `<option value="${k}" ${k === h.default_provider ? "selected" : ""}>${k}${v.configured ? "" : " (no key)"}</option>`).join("");
+});
+
+$("go").onclick = async () => {
+  $("error").innerHTML = ""; $("out").innerHTML = "";
+  const f = $("file").files[0];
+  if (!f) { $("error").innerHTML = '<div class="err">Choose an audio file first.</div>'; return; }
+  const fd = new FormData(); fd.append("file", f); fd.append("provider", $("provider").value);
+  $("go").disabled = true; $("status").textContent = "Uploading...";
+  try {
+    const r = await fetch("/process-audio", { method: "POST", body: fd });
+    if (!r.ok) throw new Error((await r.json()).detail || "Upload failed");
+    const { job_id } = await r.json();
+    await poll(job_id);
+  } catch (e) {
+    $("error").innerHTML = `<div class="err">${esc(e.message)}</div>`; $("status").textContent = "";
+  } finally { $("go").disabled = false; }
+};
+
+async function poll(id) {
+  while (true) {
+    const j = await (await fetch("/jobs/" + id)).json();
+    $("status").textContent = j.stage + ": " + (j.message || "");
+    if (j.stage === "failed") { $("error").innerHTML = `<div class="err">${esc(j.error.message)}</div>`; return; }
+    if (j.stage === "done") { render(j.result, id); return; }
+    await new Promise(r => setTimeout(r, 1500));
+  }
+}
+
+const items = (list, cols) => list.length
+  ? "<table>" + list.map(x => "<tr>" + cols(x).map((c, i) => `<td class="${i === 0 ? "t" : ""}">${c}</td>`).join("") + "</tr>").join("") + "</table>"
+  : '<span class="muted">none found</span>';
+const sect = (title, n, body, open) => `<details ${open ? "open" : ""}><summary><h2 style="display:inline">${title} <span class="muted">(${n})</span></h2></summary>${body}</details>`;
+
+function render(r, id) {
+  const f = r.protected_facts, c = r.meeting_context;
+  const names = [...f.people.map(x => ["person", x]), ...f.organizations.map(x => ["org", x]), ...f.locations.map(x => ["place", x]),
+                 ...f.other_entities.map(x => ["other", x]), ...f.proper_noun_candidates.map(x => ["name? (heuristic)", x])];
+  let h = `<p class="muted">${esc(r.provider)} / ${esc(r.model)} &middot; ${ts(r.audio_metadata.duration_seconds)} audio &middot; ASR ${r.timings_seconds.asr}s &middot; total ${r.timings_seconds.total}s${r.cache_hit ? " &middot; cached" : ""}
+    &middot; <a href="/jobs/${id}/download">download JSON</a></p>`;
+  if (r.warnings.length) h += `<p class="flag">${r.warnings.map(esc).join("<br>")}</p>`;
+  h += sect("1. Transcript", r.raw_transcript.segments.length,
+    items(r.raw_transcript.segments, s => [ts(s.start), esc(s.speaker), esc(s.text)]), true);
+  h += sect("2. Numbers", f.numbers.length,
+    items(f.numbers, x => [ts(x.start), "<b>" + esc(x.value) + "</b>", esc(x.surface), `<span class="muted">${esc(x.extra.kind)}${x.extra.unit_candidate ? " + " + esc(x.extra.unit_candidate) : ""}</span>`]), true);
+  h += sect("3. Names", names.length,
+    items(names, ([k, x]) => [ts(x.start), "<b>" + esc(x.value) + "</b>", `<span class="muted">${esc(k)}</span>`]), true);
+  h += sect("Technical terms &amp; acronyms", f.acronyms.length + f.technical_terms.length,
+    items([...f.acronyms, ...f.technical_terms], x => [ts(x.mentions[0]?.start ?? 0), "<b>" + esc(x.term) + "</b>", `<span class="muted">${esc(x.kind)} &times;${x.count}</span>`,
+      x.asr_suspect ? `<span class="flag">ASR-suspect: ${esc(x.asr_suspect_reason)}</span>` : ""]));
+  h += sect("Dates, times, durations", f.dates.length + f.times.length + f.durations.length,
+    items([...f.dates, ...f.times, ...f.durations].sort((a, b) => a.start - b.start), x => [ts(x.start), "<b>" + esc(x.surface) + "</b>", `<span class="muted">${esc(x.type)} (not resolved)</span>`]));
+  h += sect("Negations", f.negations.length,
+    items(f.negations, x => [ts(x.start), "<b>" + esc(x.surface) + "</b>", esc(x.extra.scope)]));
+  for (const [k, label] of [["candidate_commitments", "Candidate commitments"], ["candidate_decisions", "Candidate decisions"], ["candidate_proposals", "Candidate proposals"],
+       ["candidate_tasks", "Candidate tasks"], ["candidate_rejections", "Candidate rejections"], ["candidate_questions", "Candidate questions"], ["uncertainty", "Uncertainty / hedges"]])
+    h += sect(label, f[k].length, items(f[k], x => [ts(x.start), esc(x.value), x.extra.said_by ? `<span class="muted">${esc(x.extra.said_by)}</span>` : ""]));
+  h += sect("Meeting context", c.topic_hints.length, items(c.topic_hints, t => [ts(t.start), esc(t.terms.join(", "))]));
+  h += '<div id="refine" style="margin-top:20px"><button id="rgo">Refine transcript (Phase 2)</button> <span id="rstatus" class="muted"></span><div id="rout"></div></div>';
+  $("out").innerHTML = h;
+  $("status").textContent = "Done";
+  $("rgo").onclick = () => startRefine(id, r);
+}
+
+// ---------------- Phase 2: refinement + change view ----------------
+let P1 = null, RID = null;
+const isApplied = e => e.status !== "rejected" && (e.user_decision === "accept" || (e.user_decision !== "reject" && e.status === "applied"));
+
+async function startRefine(id, r) {
+  P1 = r; RID = id; $("rgo").disabled = true; $("rout").innerHTML = "";
+  const resp = await fetch(`/jobs/${id}/refine`, { method: "POST" });
+  if (!resp.ok) { $("rout").innerHTML = `<div class="err">${esc((await resp.json()).detail)}</div>`; $("rgo").disabled = false; return; }
+  while (true) {
+    const j = await (await fetch("/jobs/" + id)).json(), s = j.refine || {};
+    $("rstatus").textContent = (s.stage || "") + ": " + (s.message || "");
+    if (s.stage === "failed") { $("rout").innerHTML = `<div class="err">${esc(s.error.message)}</div>`; break; }
+    if (s.stage === "done") { renderRefine(s.result); break; }
+    await new Promise(r => setTimeout(r, 1200));
+  }
+  $("rgo").disabled = false;
+}
+
+function markup(text, edits, side) {            // side: "raw" shows del/suggestions, "refined" shows ins
+  const es = edits.filter(e => e.char_start != null && e.status !== "rejected").sort((a, b) => a.char_start - b.char_start);
+  let out = "", pos = 0;
+  for (const e of es) {
+    if (e.char_start < pos) continue;
+    out += esc(text.slice(pos, e.char_start));
+    const orig = esc(text.slice(e.char_start, e.char_end));
+    if (isApplied(e)) out += side === "raw" ? `<del>${orig}</del>` : `<ins>${esc(e.replace)}</ins>`;
+    else out += side === "raw" ? `<u class="sug" title="suggested: ${esc(e.replace)}">${orig}</u>` : orig;
+    pos = e.char_end;
+  }
+  return out + esc(text.slice(pos));
+}
+
+async function decide(editId, decision) {
+  const r = await fetch(`/jobs/${RID}/edits/${editId}`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ decision }) });
+  if (!r.ok) { alert((await r.json()).detail); return; }
+  renderRefine(await r.json());
+}
+
+async function post(url, body) {
+  const r = await fetch(url, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+  if (!r.ok) { alert((await r.json()).detail); return; }
+  renderRefine(await r.json());
+}
+const decideName = (id, d) => post(`/jobs/${RID}/speaker-names/${id}`, { decision: d });
+const renameSpeaker = label => post(`/jobs/${RID}/speakers/${label}/name`, { name: document.getElementById("nm_" + label).value });
+const nameApplied = n => n.status !== "rejected" && (n.user_decision ? n.user_decision === "accept" : n.status === "applied");
+
+function speakerPanel(R) {
+  const segs = R.refined_transcript.segments, talk = {};
+  segs.filter(s => s.speaker_known).forEach(s => { const t = talk[s.speaker] ||= { secs: 0, name: null }; t.secs += s.end - s.start; if (s.speaker_name) t.name = s.speaker_name; });
+  const labels = Object.keys(talk).sort();
+  if (!labels.length) return '<span class="muted">No speaker labels for this recording. Choose the deepgram provider, or add a Deepgram key so it can label Groq\'s text.</span>';
+  let h = `<p class="muted">Voices (who speaks) come from ${esc(R.speaker_source)}. Names are only taken from what people say in the recording.</p><table>`;
+  for (const l of labels) {
+    const props = R.speaker_names.filter(n => n.speaker === l);
+    const man = R.manual_names[l] || "";
+    h += `<tr><td class="t">${esc(l)}</td><td><b>${esc(talk[l].name || "(unnamed)")}</b>${man ? ' <span class="muted">(typed by you)</span>' : ""}<br><span class="muted">${Math.round(talk[l].secs)}s of speech</span></td><td>`;
+    h += props.map(n => {
+      const st = nameApplied(n) ? "applied" : n.status === "rejected" ? "rejected" : "suggested";
+      const btn = n.status === "rejected" ? "" : (nameApplied(n) ? `<button class="sm" onclick="decideName('${n.name_id}','reject')">Reject</button>` : `<button class="sm" onclick="decideName('${n.name_id}','accept')">Accept</button>`)
+        + (n.user_decision ? ` <button class="sm" onclick="decideName('${n.name_id}','reset')">Reset</button>` : "");
+      return `<div><span class="chip ${st}">${st}</span> <b>${esc(n.name)}</b> <span class="muted">${esc(n.basis.replace(/_/g, " "))} at ${ts(n.start)}</span> ${btn}<br>
+        <span class="muted">&ldquo;${esc(n.quote)}&rdquo; ${esc(n.note)}${n.reject_reason ? ' <span class="bad">blocked: ' + esc(n.reject_reason) + "</span>" : ""}</span></div>`;
+    }).join("") || '<span class="muted">no name stated in the recording</span>';
+    h += `</td><td><input id="nm_${l}" size="14" placeholder="type a name" value="${esc(man)}"> <button class="sm" onclick="renameSpeaker('${l}')">Set</button></td></tr>`;
+  }
+  return h + "</table>";
+}
+
+function refinedTranscript(R) {
+  return items(R.refined_transcript.segments, s => {
+    const sg = R.segment_speakers[s.segment_id];
+    const who = s.speaker_name ? `${esc(s.speaker_name)} <span class="muted">(${esc(s.speaker)})</span>` : esc(s.speaker);
+    const mixed = sg && sg.mixed ? ` <span class="flag" title="two voices in this segment">&#9888; also ${esc(sg.runner_up)} (${Math.round(sg.runner_up_share * 100)}%)</span>` : "";
+    return [ts(s.start), who, esc(s.text) + mixed];
+  });
+}
+
+function renderRefine(R) {
+  const E = R.edits, st = R.stats, inv = R.invariants;
+  const badge = (ok, t) => `<span class="${ok ? "ok" : "bad"}">${ok ? "✓" : "✗"} ${t}</span>`;
+  let h = `<p class="muted">refiner ${esc(R.refine_model)} &middot; verifier ${esc(R.verify_model || "off")} &middot; second ASR ${esc(R.second_asr || "none")} &middot; ${R.timings_seconds.total}s</p>`;
+  h += `<p><span class="chip applied">${E.filter(isApplied).length} applied</span> <span class="chip suggested">${E.filter(e => e.status === "suggested" && !isApplied(e)).length} suggested</span>
+        <span class="chip rejected">${E.filter(e => e.status === "rejected").length} blocked</span> &middot; ${st.segments_changed} of ${st.segments_total} segments changed</p>`;
+  h += `<p>${badge(inv.segment_count_unchanged, "segment count")} ${badge(inv.ids_times_speakers_unchanged, "timestamps &amp; speakers")} ${badge(inv.numbers_unchanged, "numbers")}
+        ${badge(inv.dates_times_unchanged, "dates/times")} ${badge(inv.negations_unchanged, "negations")}</p>`;
+  if (R.warnings.length) h += `<p class="flag">${R.warnings.map(esc).join("<br>")}</p>`;
+  h += sect("Speakers", Object.keys(R.manual_names).length + R.speaker_names.length, speakerPanel(R), true);
+  const segs = P1.normalized_transcript.segments, refined = R.refined_transcript.segments;
+  const changed = segs.filter(s => E.some(e => e.segment_id === s.segment_id && e.status !== "rejected"));
+  h += sect("What changed (raw vs refined)", changed.length, changed.length ? changed.map(s => {
+    const es = E.filter(e => e.segment_id === s.segment_id), rs = refined.find(x => x.segment_id === s.segment_id) || s;
+    return `<div class="seg"><div class="t">${ts(s.start)} ${esc(rs.speaker_name || rs.speaker)}</div><div class="cols"><div>${markup(s.text, es, "raw")}</div><div>${markup(s.text, es, "refined")}</div></div></div>`;
+  }).join("") : '<span class="muted">no changes proposed</span>', true);
+  h += sect("All edits", E.length, items(E, e => {
+    const ev = [...e.support.map(x => esc(x.detail)), e.reject_reason ? `<span class="bad">blocked: ${esc(e.reject_reason)}</span>` : "",
+      e.verdict ? `verifier: ${e.verdict.same_meaning ? "same meaning" : "meaning may differ"}${e.verdict.new_information ? ", new info" : ""}` : (e.status === "applied" ? "unverified" : "")].filter(Boolean).join("<br>");
+    const state = isApplied(e) ? "applied" : e.status === "rejected" ? "rejected" : "suggested";
+    const btn = e.status === "rejected" ? "" : (isApplied(e) ? `<button class="sm" onclick="decide('${e.edit_id}','reject')">Reject</button>` : `<button class="sm" onclick="decide('${e.edit_id}','accept')">Accept</button>`)
+      + (e.user_decision ? ` <button class="sm" onclick="decide('${e.edit_id}','reset')">Reset</button>` : "");
+    return [ts(e.start), `<del>${esc(e.find)}</del> &rarr; <ins>${esc(e.replace)}</ins>`, `<span class="chip ${state}">${state}</span>${e.user_decision ? " (you)" : ""}`,
+            `<span class="muted">${esc(e.kind)}</span>`, `<span class="muted">${ev}${e.reason ? "<br>model: " + esc(e.reason) : ""}</span>`, btn];
+  }), true);
+  h += sect("Refined transcript with speakers", R.refined_transcript.segments.length, refinedTranscript(R), false);
+  h += `<p>Download: <a href="/jobs/${RID}/refined?format=txt">refined transcript</a> &middot; <a href="/jobs/${RID}/refined?format=speakers">speakers</a> &middot; <a href="/jobs/${RID}/refined?format=diff">diff</a> &middot;
+        <a href="/jobs/${RID}/refined?format=csv">edits.csv</a> &middot; <a href="/jobs/${RID}/refined?format=json">full JSON</a></p>`;
+  $("rout").innerHTML = h;
+  $("rstatus").textContent = "Done";
+}
+</script>
+</body>
+</html>
