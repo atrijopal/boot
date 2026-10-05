@@ -33,7 +33,13 @@ ensure_uv() {
   command -v uv >/dev/null 2>&1 || die "Could not install uv. Install it from https://docs.astral.sh/uv/ and re-run."
 }
 
-venv_python() { echo "$1/bin/python"; }
+venv_python() {
+  if [ -f "$1/Scripts/python.exe" ]; then
+    printf '%s\n' "$1/Scripts/python.exe"
+  else
+    printf '%s\n' "$1/bin/python"
+  fi
+}
 
 pick_venv() {
   # 1) explicit VENV_DIR  2) remembered fallback  3) ./.venv
