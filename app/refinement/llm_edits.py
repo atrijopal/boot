@@ -18,7 +18,7 @@ def propose_edits(
     t: Transcript, facts: ProtectedFacts, diffs_by_seg: dict[str, list[dict]]
 ) -> tuple[list[dict], list[str]]:
     """Returns (raw edit dicts, warnings). Raises PipelineError only if every batch failed."""
-    system = PROMPT_FILE.read_text()
+    system = PROMPT_FILE.read_text(encoding="utf-8")
     header = term_block(facts)
     segs = t.segments
     size, ctx = settings.refine_batch_segments, settings.refine_context_segments
@@ -63,3 +63,4 @@ def propose_edits(
     if batches and failures == batches:
         raise PipelineError("REFINE_UNAVAILABLE", "The refinement model could not be reached. " + (warnings[0] if warnings else ""))
     return raw, warnings
+

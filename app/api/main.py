@@ -17,10 +17,18 @@ from app.utils.errors import PipelineError
 from app.utils.logging import get_logger
 
 log = get_logger("api")
-app = FastAPI(title="Meeting AI - Phase 1")
+app = FastAPI(title="Meeting AI - Phases 1–3")
+from app.summarization.api import router as phase3_router
+app.include_router(phase3_router)
 pool = ThreadPoolExecutor(max_workers=2)
 jobs: dict[str, dict] = {}
 lock = threading.Lock()
+
+
+@app.exception_handler(PipelineError)
+async def pipeline_error(request, exc):
+    return JSONResponse(status_code=400 if exc.code == "BAD_JOB_ID" else 500,
+                        content={"detail": exc.message})
 
 
 def _set(job_id: str, **kw):
@@ -95,15 +103,13 @@ async def process_audio(file: UploadFile = File(...), provider: str = Form(""), 
 
 @app.get("/jobs/{job_id}")
 def get_job(job_id: str):
-    job = jobs.get(job_id)
-    if not job:
-        raise HTTPException(404, "Unknown job id.")
+    job = _ensure_job(job_id)
     return JSONResponse(job)
 
 
 @app.get("/jobs/{job_id}/download")
 def download(job_id: str):
-    f = Path(settings.outputs_dir) / job_id / "phase1_result.json"
+    f = job_dir(job_id) / "phase1_result.json"
     if not f.is_file():
         raise HTTPException(404, "Result not available (job unfinished or failed).")
     return FileResponse(f, media_type="application/json", filename=f"phase1_{job_id}.json")
@@ -111,23 +117,28 @@ def download(job_id: str):
 
 def _ensure_job(job_id: str) -> dict:
     """Jobs live in memory; after a server restart, rebuild a stub from disk so refinement still works."""
+    folder = job_dir(job_id)
     with lock:
         if job_id not in jobs:
-            f = Path(settings.outputs_dir) / job_id / "phase1_result.json"
+            f = folder / "phase1_result.json"
             if not f.is_file():
                 raise HTTPException(404, "Unknown job id (no Phase 1 result found).")
-            jobs[job_id] = {"job_id": job_id, "stage": "done", "message": "Finished", "result": json.loads(f.read_text())}
+            jobs[job_id] = {"job_id": job_id, "stage": "done", "message": "Finished", "result": json.loads(f.read_text(encoding="utf-8"))}
+            if (folder / "refinement.json").is_file():
+                jobs[job_id]["refine"] = {"stage": "done", "message": "Loaded saved refinement",
+                                          "result": load_refinement(job_id).model_dump()}
         return jobs[job_id]
 
 
 @app.post("/jobs/{job_id}/refine")
 def refine(job_id: str):
     job = _ensure_job(job_id)
-    if job.get("stage") != "done":
-        raise HTTPException(409, "Phase 1 is not finished for this job.")
-    if job.get("refine", {}).get("stage") not in (None, "done", "failed"):
-        raise HTTPException(409, "Refinement is already running.")
-    _set(job_id, refine={"stage": "queued", "message": "Queued"})
+    with lock:
+        if job.get("stage") != "done":
+            raise HTTPException(409, "Phase 1 is not finished for this job.")
+        if job.get("refine", {}).get("stage") not in (None, "done", "failed"):
+            raise HTTPException(409, "Refinement is already running.")
+        job["refine"] = {"stage": "queued", "message": "Queued"}
     pool.submit(_run_refine, job_id)
     return {"job_id": job_id}
 
@@ -194,3 +205,8 @@ def download_refined(job_id: str, format: str = "txt"):
 @app.get("/")
 def index():
     return FileResponse(ROOT / "web" / "index.html")
+
+
+@app.get("/phase3.js")
+def phase3_script():
+    return FileResponse(ROOT / "web" / "phase3.js", media_type="application/javascript")

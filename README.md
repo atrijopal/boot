@@ -1,218 +1,84 @@
-# Meeting AI (Phase 1 + Phase 2)
+# Meeting AI — Phases 1–3
 
-Upload an English meeting recording and get:
+Turn an English meeting recording into an evidence-backed transcript and meeting minutes.
 
-1. **Phase 1:** a timestamped transcript plus everything extracted from it before any LLM rewrites anything: numbers, dates and times, names, technical terms, negations, and candidate questions / proposals / commitments / decisions / tasks.
-2. **Phase 2:** a **refined transcript** where mis-heard technical terms, acronyms and names are fixed, with a side-by-side view of **exactly what changed and why**, plus **who is speaking** and (when people say it) **their names**.
+- **Phase 1:** transcription, timestamps, protected facts and candidate meeting events.
+- **Phase 2:** verified transcript corrections, speaker labels/names and an editable change log.
+- **Phase 3:** recurring topics, duration-weighted topic memberships, a JSON knowledge graph, topic summaries, decisions and action items with source evidence.
 
-All heavy models run on APIs. Nothing needs a GPU. Nothing is tied to one meeting topic: terms and names are discovered from each recording.
-Minutes, decisions and action items (the final stage of the problem statement) are **Phase 3 and not built yet**.
+Runs locally on CPU; transcription and language-model calls use APIs. Topic memberships are uncalibrated weights, not trained Bayesian probabilities. Review important decisions against their evidence.
 
----
+## Setup and run
 
-## Quick start
+Use **Git Bash** in VS Code on Windows (or a Linux/macOS terminal), from the repository folder:
 
 ```bash
-# 1. get your keys (next section), then:
-cp .env.example .env          # paste your keys into .env
-# 2. one command: installs everything on first run, then starts the app
+git switch akansha
+git pull --ff-only origin akansha
+bash run.sh --setup
+```
+
+Setup creates `.env` only if it does not already exist. Open it locally and set:
+
+```dotenv
+GROQ_API_KEY=your_new_groq_key
+DEEPGRAM_API_KEY=your_new_deepgram_key
+```
+
+Get keys from [Groq](https://console.groq.com) and [Deepgram](https://console.deepgram.com). Deepgram is optional with the default Groq transcription provider; it supplies speaker labels and a second ASR opinion. If selecting `ASR_PROVIDER=deepgram`, its key is required.
+
+**Never put real keys in source files or `.env.example`.** Previously committed credentials must be revoked and replaced; removing them from the current branch does not erase Git history. `.env`, `.env.local` and other local environment files are ignored.
+
+```bash
+bash run.sh --check
 bash run.sh
-# 3. open http://localhost:8000
 ```
 
-That is all. `bash run.sh` installs a private Python 3.12 environment and all dependencies the first time (a few minutes), then just starts the app on later runs.
-Works on Linux, macOS, and Windows through WSL or Git Bash. It needs `bash`, internet access, and either `curl` or `pip`.
+Open **http://localhost:8000**. Upload audio → process Phase 1 → refine Phase 2 → review edits/names → **Generate minutes — Phase 3**. Inspect the topic summaries and graph relations, then download the minutes/JSON. Stop with `Ctrl+C`.
 
-| Command | What it does |
-|---|---|
-| `bash run.sh` | install if needed, start the web app |
-| `bash run.sh --check` | check your API keys work (prints OK/INVALID, never shows the keys) |
-| `bash run.sh --test` | run the 118 tests (no keys needed; the APIs are mocked) |
-| `bash run.sh --cli samples/ami_ES2008a_120s-420s.flac` | process a file from the terminal |
-| `PORT=8001 bash run.sh` | use a different port |
+## Tests and CLI
 
----
-
-## Get your API keys
-
-You need **one required key (Groq)** and **one optional key (Deepgram)**. Both have free tiers. Paste them into `.env`.
-
-### Groq (required): transcription and the language models
-1. Go to <https://console.groq.com> and sign up (Google login works).
-2. Open **API Keys** in the left menu, click **Create API Key**, copy it. It starts with `gsk_` and is shown only once.
-3. In `.env`: `GROQ_API_KEY=gsk_...`
-
-Groq is used for speech-to-text (Whisper large-v3) and for all language-model steps (labelling, refinement, verification).
-Free-tier limits: roughly 2 hours of audio per hour, plus per-minute token limits. The app retries automatically when it is rate limited.
-
-### Deepgram (optional, strongly recommended): speaker labels
-1. Go to <https://console.deepgram.com> and sign up. Free credit is added automatically.
-2. Open your project, then **Settings → API Keys → Create a New API Key**, copy it.
-3. In `.env`: `DEEPGRAM_API_KEY=...`
-
-Without it everything works except **who is speaking**: all lines show `SPEAKER_UNKNOWN`, and Phase 2 loses its "second opinion" signal.
-
-Then run `bash run.sh --check`. Expected output:
-```
-Groq      OK       key works, all needed models available (...)
-Deepgram  OK       key works
-```
-Never commit `.env` (it is already in `.gitignore`) and never paste keys into chat or tickets. If a key leaks, delete it in the console and create a new one.
-
----
-
-## Using the web app
-
-1. Choose an audio file (`.wav .mp3 .m4a .flac .ogg .opus .webm .aac`, up to 500 MB / 4 hours) and click **Process**. A status line shows each stage.
-2. **Phase 1 results** appear in this order: the transcript, then the numbers, then names, then terms/acronyms, dates and times, negations and the candidate lists. Everything shows its timestamp.
-3. Click **Refine transcript (Phase 2)**. You get:
-   - **Speakers**: who speaks, with names only where the recording states them (quote shown). Accept, reject, or type a name yourself.
-   - **What changed**: raw and refined text side by side; red = removed, green = added.
-   - **All edits**: every fix with its evidence, the model's reason, the verifier's verdict, and Accept / Reject / Reset buttons. Blocked edits show why.
-   - **Refined transcript with speakers**, and downloads (transcript, diff, CSV, JSON).
-
-Try the audio in `samples/` first (see `samples/README.md`). Bad inputs in `samples/bad/` demonstrate the error messages.
-
----
-
-## How it works
-
-```
-audio
- │  Phase 1 (app/preprocessing, app/audio, app/asr)
- ├─ validate  → decode to 16 kHz mono → split at pauses (<10 min chunks)
- ├─ speech-to-text (API) → RAW transcript (timestamped segments, word timings)
- ├─ normalize (whitespace/duplicates only; wording untouched) → NORMALIZED transcript
- └─ extract protected facts + meeting context (every item points back to its segment)
- │
- │  Phase 2 (app/refinement)
- ├─ second opinion from the other ASR + speaker labels
- ├─ small LLM proposes exact edits → code checks every edit → larger LLM verifies
- ├─ REFINED transcript + change log + speaker names
- ▼
- (Phase 3, not built: minutes, key decisions, action items)
+```bash
+bash run.sh --test                         # entire offline regression suite
+bash run.sh --test tests/phase3            # Phase 3 only
+bash run.sh --cli samples/jfk.flac          # Phase 1; prints a job_id
+bash run.sh --phase2 YOUR_JOB_ID
+bash run.sh --phase3 YOUR_JOB_ID
 ```
 
-### Phase 1: what runs where
+Tests mock paid APIs and block outbound HTTP. Initial dependency installation needs internet. `--check` and normal processing use live APIs; model calls consume provider quota.
 
-| Step | Tool / model | Notes |
-|---|---|---|
-| Validation, decoding, chunking | PyAV, numpy, soundfile (local) | Empty, corrupt, silent, too-short or wrong-format files give a clear message. Your original file is never modified. |
-| Speech-to-text | **Groq `whisper-large-v3`** (default) or **Deepgram `nova-3`** (adds speakers) | Switch in the dropdown or `ASR_PROVIDER`. Results are cached, so re-running a file costs no API call. |
-| Normalization | pure Python | Whitespace, exact duplicates and Whisper's "no speech" hallucinations only. The raw transcript is kept untouched. |
-| Numbers, dates, times, durations | regex + a spoken-number parser | Exact original text kept (`81.73%`, `2x`, `$200`, `v2.1`, "twenty five percent"). Relative dates are never resolved. |
-| Names | spaCy `en_core_web_md` | Plus a low-confidence capitalisation check. |
-| Technical terms, acronyms | acronym patterns, `wordfreq` word rarity, TF-IDF noun phrases | Discovered per meeting, no domain word lists. Words in shaky ASR regions are flagged "ASR-suspect". |
-| Negations | spaCy dependency parse | Cue plus its scope ("don't" → "need 81.73 percent accuracy"). |
-| Questions, proposals, commitments, decisions, tasks, rejections, hedges | **LLM** (`LLM_MODEL`, default `openai/gpt-oss-120b`) | Only *candidates*. Every quote is checked to be verbatim; no owner or deadline is ever inferred. Prompt: `prompts/candidates_v1.md`. |
+For **PowerShell setup**, full manual tests, expected outputs, API examples, and troubleshooting, see [Run and test guide](docs/RUN_AND_TEST.md).
 
-### Phase 2: how hallucination is kept down
+## Configuration
 
-| Step | Tool / model | Notes |
-|---|---|---|
-| Second opinion | the *other* ASR provider | Spots where two recognisers disagree, e.g. "Jessie" vs "Jesse". |
-| **Who speaks** | Deepgram diarization (voices) copied onto the text by timestamp | Acoustic, not an LLM guess. Mixed or uncovered lines are flagged, never split. |
-| Proposing fixes | **`openai/gpt-oss-20b`** (small, cheap) | Returns only `{find, replace, kind}` edits, never rewritten text. Prompt: `prompts/refine_v1.md`. |
-| Checking fixes | code, no LLM | Must be verbatim and unique; no overlap with numbers / dates / times / negations; no new digits; no deletions; size limits; then the Phase 1 extractors are **re-run** and must find the same facts. |
-| Evidence rule | code | Auto-applied only if the new text appears elsewhere, the second ASR heard it, or it matches a Phase 1 term, **and** it sounds/looks like the original. Otherwise it is only *suggested*. |
-| Verification | **`openai/gpt-oss-120b`** (larger) | Must confirm same meaning and no new information. Prompt: `prompts/verify_v1.md`. |
-| **Who they are** | LLM proposal + code check | Names only from what people say ("my name is…"), with a quote that must be verbatim and spoken by that voice. Weaker evidence ("Rose, can you…") is only suggested. No evidence = stays `SPEAKER_01`. Prompt: `prompts/speakers_v1.md`. |
+All settings come from `.env` or environment variables. `.env.example` contains blank credentials and available overrides. This branch uses `PHASE3_*` settings for its Phase 3 implementation.
 
-Every edit ends as **applied**, **suggested** (you decide) or **blocked** (a rule failed, with the reason; it cannot be forced in).
-The whole transcript is re-checked at the end: segment count, ids, timestamps, speakers, numbers, dates/times and negations must be unchanged, or the stage refuses to finish.
-Details: `docs/phase1/CONTRACT.md`, `docs/phase2/CONTRACT.md`.
+| Setting | Purpose |
+| --- | --- |
+| `ASR_PROVIDER` | `groq` (default) or `deepgram` |
+| `CANDIDATE_DETECTOR` | `llm` (default) or `off` for Phase 1 candidate labelling |
+| `REFINE_USE_SECOND_ASR` | Request another ASR when its key is available |
+| `LLM_MODEL`, `REFINE_MODEL`, `VERIFY_MODEL` | Chat models for detection/refinement/verification |
+| `LLM_BASE_URL`, `LLM_API_KEY` | Optional alternate chat endpoint and its own key |
+| `PHASE3_MODEL`, `PHASE3_VERIFY_MODEL` | Empty means inherit `LLM_MODEL` / `VERIFY_MODEL` |
+| `PHASE3_EMBEDDING_BACKEND` | `spacy` (default) or a lexical `tfidf` baseline |
+| `PHASE3_SUMMARY_WORDS` | Topic narrative budget; full registers can exceed it |
+| `CACHE_ENABLED` | Reuse cached results (default `true`) |
 
-### Outputs
-Everything is written to `outputs/<job_id>/`:
-`raw_transcript.txt|json`, `normalized_transcript.json`, `protected_facts.json`, `meeting_context.json`, `phase1_result.json`, `asr_raw.json` (provider response, verbatim) and, after refining, `refined_transcript.txt|json`, `edits.csv|json`, `diff.txt`, `speakers.json`, `refinement.json`.
-`outputs/cache/` stores API results so repeat runs are free. `samples/example_outputs/` has one saved Phase 1 result.
+With the default Groq chat endpoint, an empty `LLM_API_KEY` reuses `GROQ_API_KEY`. Other chat endpoints require their own `LLM_API_KEY`; choose models that provider supports.
 
----
+## Outputs and structure
 
-## Configuration (`.env`)
+Per-job artifacts are under `outputs/<job_id>/`. Phase 3 writes versioned runs under `phase3/runs/<run_id>/`, including `minutes.md`, `minutes.json`, `knowledge_graph.json`, `topics.json`, `action_items.json` and `validation_report.json`. Changing the accepted transcript invalidates old minutes; generate them again.
 
-| Variable | Default | Meaning |
-|---|---|---|
-| `GROQ_API_KEY` | – | required |
-| `DEEPGRAM_API_KEY` | – | optional (speaker labels) |
-| `ASR_PROVIDER` | `groq` | `groq` or `deepgram` |
-| `ASR_MODEL` | provider default | override the speech model |
-| `CANDIDATE_DETECTOR` / `LLM_MODEL` | `llm` / `openai/gpt-oss-120b` | candidate labelling in Phase 1 (`off` to disable) |
-| `REFINE_MODEL` / `REFINE_REASONING_EFFORT` | `openai/gpt-oss-20b` / `medium` | the small refiner |
-| `VERIFY_MODEL` / `VERIFY_ENABLED` | `openai/gpt-oss-120b` / `true` | the checker |
-| `REFINE_USE_SECOND_ASR` | `true` | use the other ASR as evidence and for speaker labels |
-| `LLM_BASE_URL` | Groq | any OpenAI-compatible endpoint (e.g. OpenRouter; also change the key) |
-| `CACHE_ENABLED`, `CHUNK_SECONDS` | `true`, `600` | caching, audio chunk size |
+| Directory | Purpose |
+| --- | --- |
+| `app/audio`, `app/asr`, `app/preprocessing` | Phase 1 |
+| `app/refinement` | Phase 2 |
+| `app/summarization` | Phase 3 topic model, graph and minutes |
+| `web`, `prompts` | Browser interface and versioned model prompts |
+| `scripts`, `tests` | CLI, evaluation and regression tests |
+| `docs/phase1`, `docs/phase2`, `docs/phase3` | Contracts and technical plans |
 
-Models are swappable here without touching code. Prompts live in `prompts/` and can be edited directly (an edit automatically bypasses old cached answers).
-
----
-
-## Project structure
-
-```
-.
-├── run.sh                  one command: install + start (see Quick start)
-├── README.md               this file
-├── requirements.txt        all dependencies (incl. the spaCy model)
-├── .env.example            copy to .env and add your keys
-├── app/
-│   ├── api/                FastAPI server (upload, jobs, refine, decisions, downloads)
-│   ├── asr/                Groq + Deepgram providers, retry/rate-limit handling
-│   ├── audio/              validation, decoding, silence-aware chunking
-│   ├── preprocessing/      Phase 1: normalization, extractors, LLM candidate labelling, pipeline
-│   ├── refinement/         Phase 2: edit proposals, gatekeeper, verifier, speakers, second ASR
-│   ├── llm/                small OpenAI-compatible chat client
-│   ├── schemas/            typed data models (Pydantic)
-│   ├── config/             settings (.env)
-│   └── utils/              errors, logging, cache
-├── prompts/                every LLM prompt, versioned
-├── web/index.html          the minimal interface
-├── scripts/                check_keys, run_phase1 (CLI), fetch_sample, benchmark_asr, eval_refinement (+ eval_data/)
-├── tests/                  118 tests (APIs mocked, no keys needed)
-├── samples/                test audio (AMI meetings, CC BY 4.0), bad inputs, an example output
-├── docs/
-│   ├── brief/              the original problem statement and project notes
-│   ├── phase1/             PLAN.md, CONTRACT.md
-│   └── phase2/             PLAN.md, CONTRACT.md (includes measured results)
-└── outputs/                generated at run time (git-ignored)
-```
-
----
-
-## Tests and measurements
-
-- `bash run.sh --test`: 118 tests covering validation errors, extraction invariants, the edit gatekeeper, speaker logic, the API and failure paths. LLM and ASR calls are mocked, so they need no keys. The real Groq and Deepgram calls were checked separately (see below).
-- `python scripts/eval_refinement.py --refine-model openai/gpt-oss-20b --list` benchmarks the refiner on 12 hand-written passages with 13 injected mishearings (and 3 clean controls). Measured with the default settings: **11 of 13 fixed, 0 false edits, 0 changes to numbers/negations**. A larger refiner (`gpt-oss-120b`) fixed 13 of 13 but is slower and costs more tokens: set `REFINE_MODEL=openai/gpt-oss-120b` to use it. The fixture is small and written by the pipeline's author, so it is indicative, not a general accuracy figure. Full table in `docs/phase2/PLAN.md`.
-- Live checks done: both providers on real audio; a 4-person AMI meeting where all four speakers were named from their own introductions, with five of 64 lines unassigned or flagged mixed; the interface was rendered in a real browser (not click-tested).
-- `python scripts/benchmark_asr.py FILE --provider groq --provider deepgram` measures ASR latency.
-
----
-
-## Troubleshooting
-
-| Problem | Fix |
-|---|---|
-| "GROQ_API_KEY is not set" | Paste the key into `.env` (not `.env.example`), then `bash run.sh --check`. |
-| "…rate limited" / HTTP 429 | Free-tier limit. The app retries; wait a minute and try again, or use a shorter clip. |
-| Port already in use | `PORT=8001 bash run.sh` |
-| Install failed / broken environment | `rm -rf .venv .venv_dir` then `bash run.sh` again (needs internet). |
-| `Permission denied: run.sh` | Always start it with `bash run.sh`. |
-| All speakers show `SPEAKER_UNKNOWN` | Add a Deepgram key, or select the `deepgram` provider. |
-| A refinement you don't want | Click Reject on that edit. Rejected edits are saved in the outputs. |
-| Server restarted and the page is blank | Results are on disk in `outputs/`; re-upload the same file (the speech result is cached, so it is quick and makes no new ASR call). |
-
----
-
-## Known limits and weaknesses
-
-- English only. 4 hours / 500 MB maximum per recording.
-- Speaker voices come from Deepgram; a segment where two people talk can only be flagged, not split.
-- Name detection is imperfect: it can mislabel an acronym or a rare word as an organisation, and the capitalisation heuristic can list ordinary sentence-initial words ("It", "Maybe"). Both are marked low confidence.
-- Negations come only from the spaCy parser, so some forms ("no budget") can be missed.
-- Number, date and time detection uses fixed format patterns by design, because exact numbers must be preserved. Everything about *meaning* (proposals, decisions, tasks, names of speakers) is model-judged and verified, not keyword-matched.
-- Models can be wrong. Candidates are not confirmed decisions or tasks; suggested edits and names are only proposals until you accept them.
-- Job status lives in memory; results persist in `outputs/`.
-
-## Credits
-Sample meetings are excerpts from the [AMI Meeting Corpus](https://groups.inf.ed.ac.uk/ami/corpus/) (CC BY 4.0). `jfk.flac` is US public domain.
+Phase 3 is integrated at the repository root; no manual copying from `phase3_code/` is needed. Use the single-process server launched by `run.sh`; multi-worker deployments need shared job storage and locks. Offline tests do not establish live model accuracy or API availability.

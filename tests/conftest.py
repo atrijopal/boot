@@ -1,6 +1,7 @@
 import numpy as np
 import pytest
 import soundfile as sf
+import httpx
 
 from app.config.settings import settings
 
@@ -11,10 +12,22 @@ def tmp_outputs(tmp_path, monkeypatch):
     monkeypatch.setattr(settings, "cache_enabled", False)
     monkeypatch.setattr(settings, "groq_api_key", "test-key")
     monkeypatch.setattr(settings, "deepgram_api_key", "test-key")
+    monkeypatch.setattr(settings, "llm_api_key", "")
+    monkeypatch.setattr(settings, "llm_base_url", "https://api.groq.com/openai/v1")
     monkeypatch.setattr(settings, "candidate_detector", "off")  # no real LLM calls in tests
     monkeypatch.setattr(settings, "refine_use_second_asr", False)
     import app.refinement.speakers as _spk
     monkeypatch.setattr(_spk, "chat_json", lambda *a, **k: {"speakers": []})  # never call a real LLM from tests
+
+
+@pytest.fixture(autouse=True)
+def no_live_http(monkeypatch):
+    for name in ("HTTP_PROXY", "HTTPS_PROXY", "ALL_PROXY", "http_proxy", "https_proxy", "all_proxy"):
+        monkeypatch.delenv(name, raising=False)
+    def blocked(*args, **kwargs):
+        raise AssertionError("Live HTTP is disabled in tests; mock the provider response.")
+    monkeypatch.setattr(httpx.HTTPTransport, "handle_request", blocked)
+    monkeypatch.setattr(httpx.AsyncHTTPTransport, "handle_async_request", blocked)
 
 
 @pytest.fixture

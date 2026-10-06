@@ -6,6 +6,8 @@
 #   bash run.sh --check         verify your API keys
 #   bash run.sh --test          run the test suite (no keys needed)
 #   bash run.sh --cli FILE      process one audio file from the terminal (add --provider groq|deepgram)
+#   bash run.sh --phase2 ID     refine an existing Phase 1 job
+#   bash run.sh --phase3 ID     generate minutes for an existing Phase 2 job
 #
 # Works on Linux, macOS and Windows via WSL / Git Bash. Needs: bash, curl (or pip), internet.
 # Optional env vars: PORT (default 8000), VENV_DIR (where to put the Python environment).
@@ -54,9 +56,9 @@ make_venv() {
   say "Creating Python $PY_VERSION environment in $dir"
   if ! { uv venv --quiet --python "$PY_VERSION" "$dir" && "$(venv_python "$dir")" -c "import sys"; } 2>/dev/null; then
     # Some drives (e.g. NTFS/exFAT mounts) cannot hold a virtualenv: fall back to the home folder.
-    local alt="$HOME/.venvs/meeting-ai"
+    mkdir -p "$HOME/.venvs"
+    local alt; alt="$(mktemp -d "$HOME/.venvs/meeting-ai.XXXXXX")"
     warn "Could not create the environment in the project folder; using $alt instead."
-    rm -rf "$dir" "$alt"
     uv venv --quiet --python "$PY_VERSION" "$alt" || die "Could not create a Python $PY_VERSION environment."
     echo "$alt" > .venv_dir
     dir="$alt"
@@ -84,12 +86,18 @@ ensure_env_file() {
 }
 
 keys_status() {
-  local groq
-  groq="$(grep -E '^GROQ_API_KEY=' .env 2>/dev/null | head -1 | cut -d= -f2- | tr -d '[:space:]"' || true)"
-  if [ -z "$groq" ]; then
-    warn "GROQ_API_KEY is empty. Open .env and paste your key (see README.md, 'Get your API keys')."
-    warn "The app will start, but transcription will fail until the key is set."
-  fi
+  "$(venv_python "$VENV")" - <<'PYCODE'
+from app.config.settings import settings
+from app.llm.client import chat_api_key
+from app.utils.errors import PipelineError
+
+if not getattr(settings, settings.asr_provider + "_api_key", ""):
+    print(f"!! {settings.asr_provider.upper()}_API_KEY is empty. Set it in .env before transcription.")
+try:
+    chat_api_key()
+except PipelineError as error:
+    print(f"!! {error.message}")
+PYCODE
 }
 
 setup() {
@@ -102,7 +110,7 @@ setup() {
 cmd="${1:-start}"
 case "$cmd" in
   -h|--help|help)
-    sed -n '2,11p' "$0" | sed 's/^# \{0,1\}//'
+    sed -n '2,13p' "$0" | sed 's/^# \{0,1\}//'
     ;;
   --setup)
     setup; keys_status; say "Setup complete. Start the app with:  bash run.sh"
@@ -111,11 +119,20 @@ case "$cmd" in
     setup; "$(venv_python "$VENV")" scripts/check_keys.py
     ;;
   --test)
-    setup; exec "$(venv_python "$VENV")" -m pytest -q
+    shift; setup; exec "$(venv_python "$VENV")" -m pytest -q "$@"
     ;;
   --cli)
     shift; [ $# -ge 1 ] || die "Usage: bash run.sh --cli FILE [--provider groq|deepgram]"
     setup; exec "$(venv_python "$VENV")" scripts/run_phase1.py "$@"
+    ;;
+  --phase2|--phase3)
+    shift; [ $# -ge 1 ] || die "Usage: bash run.sh $cmd JOB_ID"
+    setup
+    if [ "$cmd" = "--phase2" ]; then
+      exec "$(venv_python "$VENV")" scripts/run_phase2.py "$@"
+    else
+      exec "$(venv_python "$VENV")" scripts/run_phase3.py "$@"
+    fi
     ;;
   start|--start)
     setup; keys_status

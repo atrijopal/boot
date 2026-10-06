@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Meeting AI - Phase 1</title>
+<title>Meeting AI - Phases 1–3</title>
 <style>
   body { font: 14px/1.5 system-ui, sans-serif; max-width: 860px; margin: 24px auto; padding: 0 16px; color: #111; }
   h1 { font-size: 18px; }
@@ -27,7 +27,7 @@
 </style>
 </head>
 <body>
-<h1>Meeting AI &mdash; Phase 1</h1>
+<h1>Meeting AI &mdash; Transcripts and minutes</h1>
 <input type="file" id="file" accept=".wav,.mp3,.m4a,.mp4,.flac,.ogg,.opus,.webm,.aac,audio/*">
 <select id="provider"></select>
 <button id="go">Process</button>
@@ -45,6 +45,7 @@ fetch("/health").then(r => r.json()).then(h => {
 });
 
 $("go").onclick = async () => {
+  if (typeof invalidatePhase3 === "function") invalidatePhase3();
   $("error").innerHTML = ""; $("out").innerHTML = "";
   const f = $("file").files[0];
   if (!f) { $("error").innerHTML = '<div class="err">Choose an audio file first.</div>'; return; }
@@ -110,6 +111,7 @@ let P1 = null, RID = null;
 const isApplied = e => e.status !== "rejected" && (e.user_decision === "accept" || (e.user_decision !== "reject" && e.status === "applied"));
 
 async function startRefine(id, r) {
+  if (typeof invalidatePhase3 === "function") invalidatePhase3();
   P1 = r; RID = id; $("rgo").disabled = true; $("rout").innerHTML = "";
   const resp = await fetch(`/jobs/${id}/refine`, { method: "POST" });
   if (!resp.ok) { $("rout").innerHTML = `<div class="err">${esc((await resp.json()).detail)}</div>`; $("rgo").disabled = false; return; }
@@ -213,7 +215,10 @@ function renderRefine(R) {
         <a href="/jobs/${RID}/refined?format=csv">edits.csv</a> &middot; <a href="/jobs/${RID}/refined?format=json">full JSON</a></p>`;
   $("rout").innerHTML = h;
   $("rstatus").textContent = "Done";
+  mountPhase3(RID);
 }
 </script>
+<script src="/phase3.js"></script>
 </body>
 </html>
+

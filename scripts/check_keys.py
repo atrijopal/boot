@@ -1,4 +1,4 @@
-"""Verify the API keys in .env without printing them: python scripts/check_keys.py (or: bash run.sh --check)"""
+"""Check configured API credentials without printing them: bash run.sh --check."""
 import sys
 from pathlib import Path
 
@@ -6,49 +6,81 @@ import httpx
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from app.config.settings import ROOT, settings  # noqa: E402
+from app.config.settings import settings
+from app.llm.client import chat_api_key
+from app.utils.errors import PipelineError
 
-NEEDED_MODELS = {"whisper-large-v3", settings.refine_model, settings.verify_model}
+
+def check_models(label: str, base_url: str, key: str, needed: set[str]) -> bool:
+    try:
+        response = httpx.get(base_url.rstrip("/") + "/models",
+                             headers={"Authorization": f"Bearer {key}"}, timeout=20)
+    except httpx.HTTPError as error:
+        print(f"{label}  UNREACHABLE ({type(error).__name__}); check your connection")
+        return False
+    if response.status_code != 200:
+        print(f"{label}  ERROR HTTP {response.status_code}; check the key and endpoint")
+        return False
+    try:
+        available = {row["id"] for row in response.json()["data"]}
+    except (ValueError, KeyError, TypeError):
+        print(f"{label}  ERROR unreadable model listing")
+        return False
+    missing = sorted(needed - available)
+    if missing:
+        print(f"{label}  MISSING MODELS: {', '.join(missing)}")
+        return False
+    print(f"{label}  OK; configured models available")
+    return True
 
 
 def check_groq() -> bool:
+    required = settings.asr_provider == "groq"
     if not settings.groq_api_key:
-        print("Groq      MISSING  set GROQ_API_KEY in .env  (https://console.groq.com -> API Keys)")
-        return False
+        print("Groq ASR  MISSING: set GROQ_API_KEY in .env" if required else "Groq ASR  optional, not configured")
+        return not required
+    needed = {settings.groq_default_model, settings.groq_fallback_model}
+    if required and settings.asr_model:
+        needed.add(settings.asr_model)
+    return check_models("Groq ASR", "https://api.groq.com/openai/v1", settings.groq_api_key, needed)
+
+
+def check_llm() -> bool:
     try:
-        r = httpx.get("https://api.groq.com/openai/v1/models", headers={"Authorization": f"Bearer {settings.groq_api_key}"}, timeout=20)
-    except httpx.HTTPError as e:
-        print(f"Groq      UNREACHABLE  ({type(e).__name__}); check your internet connection")
+        key = chat_api_key()
+    except PipelineError as error:
+        print(f"Chat LLM  MISSING: {error.message}")
         return False
-    if r.status_code in (401, 403):
-        print("Groq      INVALID  the key was rejected; create a new one at https://console.groq.com")
-        return False
-    if r.status_code != 200:
-        print(f"Groq      ERROR  HTTP {r.status_code}")
-        return False
-    have = {m["id"] for m in r.json().get("data", [])}
-    missing = sorted(NEEDED_MODELS - have)
-    print("Groq      OK       key works" + (f", but these models are not available to you: {', '.join(missing)}" if missing else f", all needed models available ({', '.join(sorted(NEEDED_MODELS))})"))
-    return not missing
+    needed = {settings.refine_model, settings.phase3_model or settings.llm_model,
+              settings.phase3_verify_model or settings.verify_model}
+    if settings.candidate_detector == "llm":
+        needed.add(settings.llm_model)
+    if settings.verify_enabled:
+        needed.add(settings.verify_model)
+    return check_models("Chat LLM", settings.llm_base_url, key, needed)
 
 
 def check_deepgram() -> bool:
     if not settings.deepgram_api_key:
-        print("Deepgram  not set  optional: needed for speaker labels (https://console.deepgram.com -> API Keys)")
-        return True
+        required = settings.asr_provider == "deepgram"
+        print("Deepgram  MISSING: set DEEPGRAM_API_KEY in .env" if required else "Deepgram  optional, not configured (no speaker labels)")
+        return not required
     try:
-        r = httpx.get("https://api.deepgram.com/v1/projects", headers={"Authorization": f"Token {settings.deepgram_api_key}"}, timeout=20)
-    except httpx.HTTPError as e:
-        print(f"Deepgram  UNREACHABLE  ({type(e).__name__})")
+        response = httpx.get("https://api.deepgram.com/v1/projects",
+                             headers={"Authorization": f"Token {settings.deepgram_api_key}"}, timeout=20)
+    except httpx.HTTPError as error:
+        print(f"Deepgram  UNREACHABLE ({type(error).__name__})")
         return False
-    ok = r.status_code == 200
-    print("Deepgram  OK       key works" if ok else f"Deepgram  INVALID  HTTP {r.status_code}; create a new key at https://console.deepgram.com")
+    ok = response.status_code == 200
+    print("Deepgram  OK" if ok else f"Deepgram  ERROR HTTP {response.status_code}; check the key and project permissions")
     return ok
 
 
+def main():
+    # Environment variables alone are supported; a physical .env is optional.
+    results = [check_groq(), check_llm(), check_deepgram()]
+    return 0 if all(results) else 1
+
+
 if __name__ == "__main__":
-    if not (ROOT / ".env").is_file():
-        print("No .env file found. Run:  cp .env.example .env   then paste your keys.")
-        sys.exit(1)
-    groq_ok, dg_ok = check_groq(), check_deepgram()
-    sys.exit(0 if groq_ok and dg_ok else 1)
+    raise SystemExit(main())

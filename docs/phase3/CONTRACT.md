@@ -1,0 +1,15 @@
+# Phase 3 contract
+
+1. **Authoritative input:** `refinement.json`, whose Phase 2 invariants must pass. Phase 3 never edits it. Speaker mappings and mixed-speaker metadata participate in its revision hash.
+2. **Source spans:** offsets are half-open character ranges into accepted segment text. Quotes must be unique exact substrings of a known unit. Source text, revision and offsets are written to every canonical evidence reference.
+3. **Timing:** aligned original word timestamps are trusted only after token and monotonic-time checks. Otherwise segment time is allocated proportionally once and labelled approximate. Zero/absent duration is unavailable. Overlapping speakers contribute speaker-time, not elapsed meeting time.
+4. **Topics:** memberships plus unresolved mass sum to one. Absolute similarity thresholds gate softmax; empty vectors do not force matches. Every persistent topic remains eligible after a gap. Time windows do not define topic identity.
+5. **Evidence and semantics:** schema validation and verbatim quotes do not establish entailment. Description, event kind and status all require literal-boolean affirmative semantic verdicts. Other events remain `needs_review` and are excluded from confirmed registers.
+6. **Owner/deadline fields:** require their own source evidence and semantic verdicts. Speaker-ID ownership requires an explicit first-person statement by an identified, unmixed speaker. Named third parties remain mentioned people; attendance and acceptance are not inferred. Missing fields remain null.
+7. **History:** revisions are separate verified relations pointing from newer to older decisions. Earlier nodes remain present. Incompatible statements do not become revisions merely through chronology. The graph exposes unresolved contradictions.
+8. **Summaries:** generated claims cite supported canonical records and are verified against original evidence. Invalid claims are removed; supported event descriptions can supply an explicitly status-labelled extractive fallback. Complete registers are canonical derived views, independent of narrative length.
+9. **Partial results:** failed extraction or relation processing marks the run partial. Covered target units and failed batch IDs are recorded. A malformed/missing verifier response is a failure, never permission to confirm events.
+10. **Revision safety:** run identity includes source hash, settings, model identifiers, schema version and prompt hashes. Publication rechecks the current snapshot under the shared Phase 2 write lock. Read/download routes reject stale revisions.
+11. **Operational scope:** one server process. Phase 3 worker serialization and per-job locks prevent duplicate same-process runs. Successful event-batch checkpoints resume on a later user request. Secrets are excluded from manifests and hashes.
+12. **Interpretation:** evidence establishes what was said. Neither model verification nor a graph establishes external truth. Topic weights are uncalibrated; fixture success does not imply real-meeting accuracy.
+

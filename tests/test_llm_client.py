@@ -43,3 +43,11 @@ def test_unreadable_answer_is_a_clear_error(monkeypatch):
     with pytest.raises(PipelineError) as e:
         client.chat_json("s", "u", model="openai/gpt-oss-20b")
     assert e.value.code == "LLM_BAD_RESPONSE"
+
+
+@pytest.mark.parametrize("value", [None, "null", "[]", "42"])
+def test_non_object_answer_is_a_clear_error(monkeypatch, value):
+    monkeypatch.setattr(client, "post_with_retry", lambda *a, **kw: R(value))
+    with pytest.raises(PipelineError) as err:
+        client.chat_json("s", "u")
+    assert err.value.code == "LLM_BAD_RESPONSE"

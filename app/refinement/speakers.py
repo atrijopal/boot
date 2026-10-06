@@ -82,7 +82,7 @@ def _word_in(text: str, phrase: str) -> bool:
 
 def propose_names(t: Transcript) -> tuple[list[dict], list[str]]:
     """LLM proposals over the (refined) transcript. Returns (raw proposals, warnings). Never raises for API trouble."""
-    system = PROMPT_FILE.read_text()
+    system = PROMPT_FILE.read_text(encoding="utf-8")
     lines = [f"[{s.segment_id}] {s.speaker}: {s.text}" for s in t.segments]
     size = 80
     raw: list[dict] = []
@@ -199,3 +199,4 @@ def effective_names(names: list[SpeakerName], manual: dict[str, str]) -> dict[st
 def apply_names(t: Transcript, mapping: dict[str, str]) -> Transcript:
     segs = [s.model_copy(update={"speaker_name": mapping.get(s.speaker) if s.speaker_known else None}) for s in t.segments]
     return t.model_copy(update={"segments": segs})
+

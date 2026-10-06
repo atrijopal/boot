@@ -52,7 +52,7 @@ def detect_candidates(t: Transcript) -> tuple[dict[str, list[FactItem]], list[st
             warnings.append("Candidate detection is off (CANDIDATE_DETECTOR=off).")
         return buckets, warnings
 
-    system = PROMPT_FILE.read_text()
+    system = PROMPT_FILE.read_text(encoding="utf-8")
     by_id = {s.segment_id: s for s in t.segments}
     dropped = 0
     try:
@@ -91,3 +91,4 @@ def detect_candidates(t: Transcript) -> tuple[dict[str, list[FactItem]], list[st
     for items in buckets.values():
         items.sort(key=lambda f: (f.start, f.char_start or 0))
     return buckets, warnings
+

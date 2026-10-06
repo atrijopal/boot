@@ -16,7 +16,7 @@ BATCH = 15
 
 def verify_edits(items: list[tuple[Edit, str, str]]) -> tuple[dict[str, Verdict], list[str]]:
     """items = [(edit, segment_text_before, segment_text_after)]. Missing verdicts mean the verifier was unavailable."""
-    system = PROMPT_FILE.read_text()
+    system = PROMPT_FILE.read_text(encoding="utf-8")
     verdicts: dict[str, Verdict] = {}
     warnings: list[str] = []
     for i in range(0, len(items), BATCH):
@@ -41,3 +41,4 @@ def verify_edits(items: list[tuple[Edit, str, str]]) -> tuple[dict[str, Verdict]
                     note=str(v.get("note", ""))[:200],
                 )
     return verdicts, warnings
+

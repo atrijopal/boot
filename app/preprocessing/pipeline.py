@@ -130,13 +130,14 @@ def run_phase1(
 
 def _save(out_dir: Path, r: ProcessingResult, raw_payload: dict) -> None:
     def dump(name: str, obj):
-        (out_dir / name).write_text(json.dumps(obj, indent=2, ensure_ascii=False))
+        (out_dir / name).write_text(json.dumps(obj, indent=2, ensure_ascii=False), encoding="utf-8")
 
     dump("audio_metadata.json", r.audio_metadata.model_dump())
     dump("asr_raw.json", raw_payload)
     dump("raw_transcript.json", r.raw_transcript.model_dump())
     (out_dir / "raw_transcript.txt").write_text(
-        "\n".join(f"[{s.start:7.2f}-{s.end:7.2f}] {s.speaker}: {s.text}" for s in r.raw_transcript.segments)
+        "\n".join(f"[{s.start:7.2f}-{s.end:7.2f}] {s.speaker}: {s.text}" for s in r.raw_transcript.segments),
+        encoding="utf-8",
     )
     dump("normalized_transcript.json", r.normalized_transcript.model_dump())
     dump("protected_facts.json", r.protected_facts.model_dump())

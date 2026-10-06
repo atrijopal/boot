@@ -40,7 +40,7 @@ if args.effort:
 if args.verify_model:
     settings.verify_model = args.verify_model
 norm = lambda s: re.sub(r"[^a-z0-9]", "", s.lower())
-data = json.loads(Path(args.data).read_text())
+data = json.loads(Path(args.data).read_text(encoding="utf-8"))
 
 
 def make_job(p) -> str:
@@ -55,7 +55,7 @@ def make_job(p) -> str:
     d = Path(settings.outputs_dir) / jid
     shutil.rmtree(d, ignore_errors=True)
     d.mkdir(parents=True)
-    (d / "phase1_result.json").write_text(res.model_dump_json())
+    (d / "phase1_result.json").write_text(res.model_dump_json(), encoding="utf-8")
     return jid
 
 
@@ -113,3 +113,4 @@ for model in args.refine_model or [settings.refine_model]:
                 print(f"  {p['id']:16} {e.status:9} {tag:5} {e.find!r} -> {e.replace!r}" + (f"  [{e.reject_reason}]" if e.reject_reason else ""))
     report.append({"refine_model": model, "effort": settings.refine_reasoning_effort, "verify_model": None if args.no_verify else settings.verify_model, **{k: (round(v, 1) if isinstance(v, float) else v) for k, v in m.items()}})
 print(json.dumps(report, indent=2))
+

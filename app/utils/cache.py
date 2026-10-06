@@ -21,7 +21,7 @@ def load(sha: str, provider: str, model: str) -> dict | None:
     p = _path(sha, provider, model)
     if p.is_file():
         try:
-            return json.loads(p.read_text())
+            return json.loads(p.read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError):
             return None
     return None
@@ -32,7 +32,7 @@ def store(sha: str, provider: str, model: str, payload: dict) -> None:
         return
     p = _path(sha, provider, model)
     p.parent.mkdir(parents=True, exist_ok=True)
-    p.write_text(json.dumps(payload))
+    p.write_text(json.dumps(payload), encoding="utf-8")
 
 
 def load_key(name: str) -> dict | None:
@@ -40,7 +40,7 @@ def load_key(name: str) -> dict | None:
         return None
     p = Path(settings.outputs_dir) / "cache" / f"{name}.json"
     try:
-        return json.loads(p.read_text()) if p.is_file() else None
+        return json.loads(p.read_text(encoding="utf-8")) if p.is_file() else None
     except (OSError, json.JSONDecodeError):
         return None
 
@@ -50,4 +50,5 @@ def store_key(name: str, payload: dict) -> None:
         return
     p = Path(settings.outputs_dir) / "cache" / f"{name}.json"
     p.parent.mkdir(parents=True, exist_ok=True)
-    p.write_text(json.dumps(payload))
+    p.write_text(json.dumps(payload), encoding="utf-8")
+

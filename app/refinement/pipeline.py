@@ -1,6 +1,7 @@
 """Phase 2 orchestration: Phase-1 output -> proposed edits -> gate -> verify -> refined transcript + change log."""
 import csv
 import json
+import re
 import time
 from collections import Counter
 from collections.abc import Callable
@@ -17,12 +18,15 @@ from app.schemas.refinement import Edit, RefinementResult, Verdict
 from app.schemas.result import ProcessingResult
 from app.utils.errors import PipelineError
 from app.utils.logging import get_logger, timed
+from app.utils.job_locks import locked_job
 
 log = get_logger("refine_pipeline")
 StatusFn = Callable[[str, str], None]
 
 
 def job_dir(job_id: str) -> Path:
+    if not re.fullmatch(r"[A-Za-z0-9_-]{1,80}", job_id):
+        raise PipelineError("BAD_JOB_ID", "Invalid job identifier.")
     return Path(settings.outputs_dir) / job_id
 
 
@@ -30,14 +34,15 @@ def load_phase1(job_id: str) -> ProcessingResult:
     f = job_dir(job_id) / "phase1_result.json"
     if not f.is_file():
         raise PipelineError("PHASE1_MISSING", "Run Phase 1 on this recording first (no saved result for this job).")
-    return ProcessingResult.model_validate_json(f.read_text())
+    return ProcessingResult.model_validate_json(f.read_text(encoding="utf-8"))
 
 
+@locked_job
 def load_refinement(job_id: str) -> RefinementResult:
     f = job_dir(job_id) / "refinement.json"
     if not f.is_file():
         raise PipelineError("REFINEMENT_MISSING", "This job has not been refined yet.")
-    return RefinementResult.model_validate_json(f.read_text())
+    return RefinementResult.model_validate_json(f.read_text(encoding="utf-8"))
 
 
 def run_refinement(job_id: str, status: StatusFn | None = None) -> RefinementResult:
@@ -195,6 +200,7 @@ def _recompute(res: RefinementResult, p1: ProcessingResult) -> None:
     res.stats = _stats_from(res, p1)
 
 
+@locked_job
 def set_decision(job_id: str, edit_id: str, decision: str) -> RefinementResult:
     res = load_refinement(job_id)
     p1 = load_phase1(job_id)
@@ -216,6 +222,7 @@ def set_decision(job_id: str, edit_id: str, decision: str) -> RefinementResult:
     return res
 
 
+@locked_job
 def set_name_decision(job_id: str, name_id: str, decision: str) -> RefinementResult:
     res = load_refinement(job_id)
     p1 = load_phase1(job_id)
@@ -232,6 +239,7 @@ def set_name_decision(job_id: str, name_id: str, decision: str) -> RefinementRes
     return res
 
 
+@locked_job
 def set_manual_name(job_id: str, speaker: str, name: str) -> RefinementResult:
     res = load_refinement(job_id)
     p1 = load_phase1(job_id)
@@ -258,19 +266,20 @@ def _stats_from(res: RefinementResult, p1: ProcessingResult) -> dict[str, int]:
     return s
 
 
+@locked_job
 def save_artifacts(job_id: str, res: RefinementResult, normalized) -> None:
     d = job_dir(job_id)
-    (d / "refinement.json").write_text(res.model_dump_json(indent=2))
-    (d / "refined_transcript.json").write_text(res.refined_transcript.model_dump_json(indent=2))
+    (d / "refinement.json").write_text(res.model_dump_json(indent=2), encoding="utf-8")
+    (d / "refined_transcript.json").write_text(res.refined_transcript.model_dump_json(indent=2), encoding="utf-8")
     (d / "refined_transcript.txt").write_text(
         "\n".join(f"[{s.start:7.2f}-{s.end:7.2f}] {s.speaker_name + ' (' + s.speaker + ')' if s.speaker_name else s.speaker}: {s.text}"
-                  for s in res.refined_transcript.segments))
+                  for s in res.refined_transcript.segments), encoding="utf-8")
     (d / "speakers.json").write_text(json.dumps({
         "source": res.speaker_source, "names": effective_names(res.speaker_names, res.manual_names),
         "proposals": [n.model_dump() for n in res.speaker_names], "manual": res.manual_names,
-        "segments": {k: v.model_dump() for k, v in res.segment_speakers.items()}}, indent=2, ensure_ascii=False))
-    (d / "edits.json").write_text(json.dumps([e.model_dump() for e in res.edits], indent=2, ensure_ascii=False))
-    with open(d / "edits.csv", "w", newline="") as f:
+        "segments": {k: v.model_dump() for k, v in res.segment_speakers.items()}}, indent=2, ensure_ascii=False), encoding="utf-8")
+    (d / "edits.json").write_text(json.dumps([e.model_dump() for e in res.edits], indent=2, ensure_ascii=False), encoding="utf-8")
+    with open(d / "edits.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["edit_id", "segment_id", "start", "kind", "find", "replace", "status", "applied_now", "user_decision", "reject_reason", "evidence", "reason"])
         for e in res.edits:
@@ -287,4 +296,4 @@ def save_artifacts(job_id: str, res: RefinementResult, normalized) -> None:
             if e.segment_id == s.segment_id and is_applied(e):
                 lines.append(f"    {e.edit_id} {e.kind}: '{e.find}' -> '{e.replace}'  ({'; '.join(x.detail for x in e.support) or 'no evidence'})")
         lines.append("")
-    (d / "diff.txt").write_text("\n".join(lines) if lines else "No changes.\n")
+    (d / "diff.txt").write_text("\n".join(lines) if lines else "No changes.\n", encoding="utf-8")
