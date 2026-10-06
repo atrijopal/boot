@@ -1,4 +1,4 @@
-"""Phase 1 API: upload audio, poll job status, fetch result. UI is served from web/."""
+"""HTTP API: upload audio, run the three phases (one by one, or chained in one run), poll status, download results. UI is served from web/."""
 import json
 import shutil
 import threading
@@ -27,16 +27,25 @@ jobs: dict[str, dict] = {}
 lock = threading.Lock()
 
 
+IDLE = (None, "done", "failed", "skipped")  # sub-job stages in which a new run of that phase may start
+
+
 def _set(job_id: str, **kw):
     with lock:
         jobs[job_id].update(kw)
 
 
-def _run_refine(job_id: str):
+def _skip(job_id: str, keys: tuple[str, ...], reason: str):
+    """Later phases of a chained run that will not start because an earlier phase failed."""
+    _set(job_id, **{k: {"stage": "skipped", "message": reason} for k in keys})
+
+
+def _run_refine(job_id: str) -> bool:
     _set(job_id, refine={"stage": "starting", "message": "Starting refinement"})
     try:
         res = run_refinement(job_id, status=lambda st, msg: _set(job_id, refine={"stage": st, "message": msg}))
         _set(job_id, refine={"stage": "done", "message": "Finished", "result": res.model_dump()})
+        return True
     except PipelineError as e:
         log.warning("refine %s failed: %s %s", job_id, e.code, e.message)
         _set(job_id, refine={"stage": "failed", "message": e.message, "error": {"code": e.code, "message": e.message}})
@@ -44,14 +53,14 @@ def _run_refine(job_id: str):
         log.exception("refine %s crashed", job_id)
         msg = f"Unexpected internal error. Reference: {job_id}. See outputs/logs/phase1.log."
         _set(job_id, refine={"stage": "failed", "message": msg, "error": {"code": "INTERNAL_ERROR", "message": msg}})
+    return False
 
 
-def _run(job_id: str, path: Path, provider: str | None, auto_refine: bool = False):
+def _run_phase1(job_id: str, path: Path, provider: str | None) -> bool:
     try:
         res = run_phase1(path, job_id=job_id, provider_name=provider, status=lambda st, msg: _set(job_id, stage=st, message=msg))
         _set(job_id, stage="done", message="Finished", result=res.model_dump())
-        if auto_refine:
-            _run_refine(job_id)
+        return True
     except PipelineError as e:
         log.warning("job %s failed: %s %s", job_id, e.code, e.message)
         _set(job_id, stage="failed", message=e.message, error={"code": e.code, "message": e.message})
@@ -59,6 +68,20 @@ def _run(job_id: str, path: Path, provider: str | None, auto_refine: bool = Fals
         log.exception("job %s crashed", job_id)
         msg = f"Unexpected internal error. Reference: {job_id}. See outputs/logs/phase1.log."
         _set(job_id, stage="failed", message=msg, error={"code": "INTERNAL_ERROR", "message": msg})
+    return False
+
+
+def _run(job_id: str, path: Path, provider: str | None, chain: tuple[str, ...] = ()):
+    """Phase 1, then the phases in `chain` ("refine", "minutes") in order, in this one worker.
+    Each phase starts only if the previous one finished; the ones that cannot start are marked "skipped" with the reason."""
+    if not _run_phase1(job_id, path, provider):
+        _skip(job_id, chain, "Not started: transcription (step 1) failed.")
+        return
+    if "refine" in chain and not _run_refine(job_id):
+        _skip(job_id, tuple(k for k in chain if k != "refine"), "Not started: refinement (step 2) failed.")
+        return
+    if "minutes" in chain:
+        _run_minutes_job(job_id)
 
 
 @app.get("/health")
@@ -74,7 +97,9 @@ def health():
 
 
 @app.post("/process-audio")
-async def process_audio(file: UploadFile = File(...), provider: str = Form(""), auto_refine: bool = Form(False)):
+async def process_audio(file: UploadFile = File(...), provider: str = Form(""), run_all: bool = Form(False), auto_refine: bool = Form(False)):
+    """run_all: transcribe, refine and write the minutes in one run (what the page does by default).
+    auto_refine (older flag): transcribe and refine only. Without either flag only Phase 1 runs and the rest is started per phase."""
     if provider and provider.lower() not in PROVIDERS:
         raise HTTPException(400, f"Unknown provider '{provider}'. Available: {', '.join(PROVIDERS)}.")
     job_id = uuid.uuid4().hex[:12]
@@ -92,8 +117,11 @@ async def process_audio(file: UploadFile = File(...), provider: str = Form(""), 
                 shutil.rmtree(job_dir, ignore_errors=True)
                 raise HTTPException(413, f"File is larger than the {settings.max_upload_mb} MB limit.")
             f.write(block)
-    jobs[job_id] = {"job_id": job_id, "stage": "queued", "message": "Queued", "filename": file.filename}
-    pool.submit(_run, job_id, dest, provider.lower() or None, auto_refine)
+    chain = ("refine", "minutes") if run_all else ("refine",) if auto_refine else ()
+    jobs[job_id] = {"job_id": job_id, "stage": "queued", "message": "Queued", "filename": file.filename, "run_all": run_all,
+                    # queued up front, so the page can show what will follow and the per-phase buttons cannot start a second copy
+                    **{k: {"stage": "queued", "message": "Waiting for the previous step"} for k in chain}}
+    pool.submit(_run, job_id, dest, provider.lower() or None, chain)
     return {"job_id": job_id}
 
 
@@ -156,8 +184,8 @@ def refine(job_id: str):
     job = _ensure_job(job_id)
     if job.get("stage") != "done":
         raise HTTPException(409, "Phase 1 is not finished for this job.")
-    if job.get("refine", {}).get("stage") not in (None, "done", "failed"):
-        raise HTTPException(409, "Refinement is already running.")
+    if job.get("refine", {}).get("stage") not in IDLE:
+        raise HTTPException(409, "Refinement is already running or queued for this job.")
     _set(job_id, refine={"stage": "queued", "message": "Queued"})
     pool.submit(_run_refine, job_id)
     return {"job_id": job_id}
@@ -254,8 +282,8 @@ def start_minutes(job_id: str):
     job = _ensure_job(job_id)
     if not (job_dir(job_id) / "refinement.json").is_file():
         raise HTTPException(409, "Run Phase 2 (Refine transcript) before generating minutes.")
-    if job.get("minutes", {}).get("stage") not in (None, "done", "failed"):
-        raise HTTPException(409, "Minutes are already being generated.")
+    if job.get("minutes", {}).get("stage") not in IDLE:
+        raise HTTPException(409, "Minutes are already being generated or queued for this job.")
     _set(job_id, minutes={"stage": "queued", "message": "Queued"})
     pool.submit(_run_minutes_job, job_id)
     return {"job_id": job_id}

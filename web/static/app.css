@@ -35,6 +35,7 @@ button:disabled { opacity: .55; cursor: default; }
 button.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
 button.sm { font-size: 12px; padding: 1px 8px; }
 select, input[type=text], input:not([type]) { font: inherit; padding: 4px 6px; border: 1px solid var(--line); border-radius: 6px; background: var(--card); color: var(--ink); }
+.check { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
 .open-job { display: flex; flex-direction: column; gap: 2px; color: var(--muted); font-size: 12px; }
 
 .err { background: var(--bad-bg); border: 1px solid var(--bad); color: var(--bad); padding: 8px 10px; border-radius: 6px; margin-top: 10px; }

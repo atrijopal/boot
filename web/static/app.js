@@ -52,31 +52,41 @@ const App = (() => {
 
   function showError(el, e) { $(el).innerHTML = `<div class="err">${esc(e.message || e)}</div>`; }
 
+  /** Polls one phase of a job until it is done (returns its state) or failed/skipped (throws).
+   *  Returns null if the user has opened another job meanwhile, so an old loop never draws over the new one. */
   async function pollJob(id, key, onTick) {
     while (true) {
+      if (S.id && S.id !== id) return null;
       const j = await api("/jobs/" + id);
       const s = key ? (j[key] || {}) : j;
       onTick && onTick(s, j);
-      if (s.stage === "failed") throw new Error((s.error && s.error.message) || s.message || "Failed");
+      if (s.stage === "failed" || s.stage === "skipped") throw new Error((s.error && s.error.message) || s.message || "Failed");
       if (s.stage === "done") return s;
       await sleep(1200);
     }
   }
+  const active = s => !!s && !["done", "failed", "skipped"].includes(s.stage);  // queued or running on the server
 
   async function processFile() {
     $("error").innerHTML = "";
     const f = $("file").files[0];
     if (!f) { showError("error", "Choose an audio file first."); return; }
+    const all = $("runall").checked;
     const fd = new FormData();
     fd.append("file", f);
     fd.append("provider", $("provider").value);
+    fd.append("run_all", all ? "true" : "false");  // the server chains steps 2 and 3, so the run continues even if this tab is closed
     $("go").disabled = true;
     $("status").textContent = "Uploading...";
     try {
       const r = await api("/process-audio", { method: "POST", body: fd });
-      await pollJob(r.job_id, "", s => { $("status").textContent = s.stage + ": " + (s.message || ""); });
-      $("status").textContent = "Transcript ready.";
-      await loadJob(r.job_id);
+      S.id = r.job_id;
+      history.replaceState(null, "", "?job=" + encodeURIComponent(r.job_id));  // a reload resumes following this run
+      const step = all ? "Step 1 of 3, transcript. " : "";
+      if (!(await pollJob(r.job_id, "", s => { $("status").textContent = step + s.stage + ": " + (s.message || ""); }))) return;
+      $("status").textContent = all ? "Transcript ready. Refining and writing the minutes now (steps 2 and 3)..." : "Transcript ready.";
+      await loadJob(r.job_id);  // with "run all", this follows steps 2 and 3 until they end
+      if (all && S.id === r.job_id) $("status").textContent = S.p3 ? "All three steps finished. Results and downloads are below." : "Finished with errors: see the step that failed below.";
       refreshJobs();
     } catch (e) { showError("error", e); $("status").textContent = ""; }
     finally { $("go").disabled = false; }
@@ -84,12 +94,26 @@ const App = (() => {
 
   async function loadJob(id) {
     try {
-      const j = await api("/jobs/" + id);
-      if (j.stage !== "done") { $("status").textContent = "That job is not finished: " + j.stage; return; }
-      Object.assign(S, { id, p1: j.result, p2: (j.refine && j.refine.result) || null, p3: (j.minutes && j.minutes.result) || null, stages: null });
+      S.id = id;
+      let j = await api("/jobs/" + id);
+      if (j.stage === "failed") { showError("error", (j.error && j.error.message) || j.message || "Transcription failed."); return; }
+      if (j.stage !== "done") {  // step 1 still running (for example after a reload): wait for it
+        if (!(await pollJob(id, "", s => { $("status").textContent = "Step 1, transcript. " + s.stage + ": " + (s.message || ""); }))) return;
+        j = await api("/jobs/" + id);
+        $("status").textContent = "Transcript ready.";
+      }
+      Object.assign(S, { p1: j.result, p2: (j.refine && j.refine.result) || null, p3: (j.minutes && j.minutes.result) || null, stages: null });
       history.replaceState(null, "", "?job=" + encodeURIComponent(id));
       showAll();
+      $("p2-go").disabled = false;  // a follower of a previously opened job may have left it disabled
       if (S.p3) loadStages();
+      // steps the server is still running or has queued (a chained run, or one started before a reload): follow them
+      if (active(j.refine)) await followRefine(id);
+      else if (j.refine && j.refine.stage === "skipped") $("p2-status").innerHTML = `<div class="note">${esc(j.refine.message)}</div>`;
+      j = await api("/jobs/" + id);
+      if (S.id !== id) return;
+      if (active(j.minutes)) await followMinutes(id);
+      else if (j.minutes && j.minutes.stage === "skipped") $("p3-progress").innerHTML = `<div class="note">${esc(j.minutes.message)} Fix that step, then use the button above.</div>`;
     } catch (e) { showError("error", e); }
   }
 
@@ -134,15 +158,29 @@ const App = (() => {
   async function startRefine() {
     $("p2-go").disabled = true;
     $("p2-status").textContent = "Starting...";
+    try { await api(`/jobs/${S.id}/refine`, { method: "POST" }); }
+    catch (e) { $("p2-status").innerHTML = `<div class="err">${esc(e.message)}</div>`; $("p2-go").disabled = false; return; }
+    await followRefine(S.id);
+  }
+
+  /** Shows a refinement that is queued or running on the server until it ends. Returns true if it finished. */
+  async function followRefine(id) {
+    $("p2-go").disabled = true;
+    $("p3-go").disabled = true;
+    let ok = false;
     try {
-      await api(`/jobs/${S.id}/refine`, { method: "POST" });
-      const s = await pollJob(S.id, "refine", s => { $("p2-status").textContent = (s.stage || "") + ": " + (s.message || ""); });
+      const s = await pollJob(id, "refine", s => { $("p2-status").textContent = (s.stage || "") + ": " + (s.message || ""); });
+      if (!s) return false;
+      $("p2-status").textContent = "";
       S.p2 = s.result;
       S.stages = null;
       renderPhase2();
       renderPhase3();
+      ok = true;
     } catch (e) { $("p2-status").innerHTML = `<div class="err">${esc(e.message)}</div>`; }
     $("p2-go").disabled = false;
+    $("p3-go").disabled = !S.p2;
+    return ok;
   }
 
   function markup(text, edits, side) {
@@ -254,15 +292,24 @@ const App = (() => {
 
   async function startMinutes() {
     $("p3-go").disabled = true;
+    try { await api(`/jobs/${S.id}/minutes`, { method: "POST" }); }
+    catch (e) { $("p3-progress").innerHTML = `<div class="err">${esc(e.message)}</div>`; $("p3-go").disabled = !S.p2; return; }
+    await followMinutes(S.id);
+  }
+
+  /** Shows a minutes run that is queued or running on the server until it ends. */
+  async function followMinutes(id) {
+    $("p3-go").disabled = true;
+    $("p2-go").disabled = true;  // re-refining mid-run would make these minutes out of date at once
     $("p3-body").innerHTML = "";
     minutesStarted = Date.now();
     clearInterval(minutesTimer);
     minutesTimer = setInterval(elapsedHint, 1000);
     renderProgress({});
     try {
-      await api(`/jobs/${S.id}/minutes`, { method: "POST" });
-      const s = await pollJob(S.id, "minutes", renderProgress);
+      const s = await pollJob(id, "minutes", renderProgress);
       clearInterval(minutesTimer);
+      if (!s) return;
       S.p3 = s.result;
       S.stages = null;
       $("p3-progress").innerHTML = "";
@@ -271,6 +318,7 @@ const App = (() => {
       refreshJobs();
     } catch (e) { clearInterval(minutesTimer); $("p3-progress").innerHTML = `<div class="err">${esc(e.message)}</div>`; }
     $("p3-go").disabled = !S.p2;
+    $("p2-go").disabled = false;
   }
 
   async function loadStages() {
