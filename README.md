@@ -30,7 +30,7 @@ Works on Linux, macOS, and Windows through WSL or Git Bash. Needs `bash`, intern
 | `bash run.sh --check` | check that your API keys work (prints OK / INVALID, never shows the keys) |
 | `bash run.sh --all FILE` | run the **whole pipeline** (Phases 1, 2, 3) on one audio file from the terminal |
 | `bash run.sh --cli FILE` | Phase 1 only, from the terminal |
-| `bash run.sh --test` | run the 196 tests (no keys needed; the APIs are mocked) |
+| `bash run.sh --test` | run the 203 tests (no keys needed; the APIs are mocked) |
 | `bash run.sh --setup` | install only |
 | `PORT=8001 bash run.sh` | use another port |
 
@@ -41,14 +41,20 @@ bash run.sh --all samples/jfk.flac --no-minutes                 # stop after Pha
 ```
 After a terminal run, open the same job in the page: `http://localhost:8000/?job=<job_id>` (or use "Open an earlier result" at the top right).
 
-**The web page** (three steps on one page):
-1. Choose an audio file (`.wav .mp3 .m4a .flac .ogg .opus .webm .aac`, up to 500 MB / 4 hours) and click **Process**. Phase 1 results appear: transcript, numbers, names, terms, dates, negations, candidate lists.
-2. Click **Refine transcript**. Speaker panel (Accept / Reject / type a name), raw-versus-refined view, an edit table with the evidence for every edit, downloads.
-3. Click **Generate minutes**. A live step list, then **A. every model step in order** and **B. the final report** (see "Phase 3" below).
+**The web page** (one run, three steps on one page):
+Choose an audio file (`.wav .mp3 .m4a .flac .ogg .opus .webm .aac`, up to 500 MB / 4 hours) and click **Process**. With **Run all three steps** ticked (the default), the server runs transcription, refinement and minutes one after another in that order, and each step's results appear as soon as it finishes:
+1. **Transcript and facts:** transcript, numbers, names, terms, dates, negations, candidate lists.
+2. **Refined transcript:** speaker panel (Accept / Reject / type a name), raw-versus-refined view, an edit table with the evidence for every edit, downloads.
+3. **Minutes:** a live step list, then **A. every model step in order** and **B. the final report** with downloads (see "Phase 3" below).
+
+The chain runs on the server, so it keeps going if you close or reload the tab; reopening the job (`/?job=<job_id>`) picks up the progress. If a step fails, the steps after it are marked *not started* with the reason, and nothing is generated from incomplete input.
+After an Accept / Reject or a typed speaker name, click **Regenerate minutes** to rebuild the minutes from the corrected transcript (the page marks old minutes as out of date).
+Untick **Run all three steps** to run only step 1 and start **Refine transcript** and **Generate minutes** yourself, for example to review the edits and speaker names before the minutes are written.
 
 **The API** (what the page uses; you can call it yourself):
 ```bash
-curl -F "file=@samples/jfk.flac" -F provider=groq localhost:8000/process-audio      # -> {"job_id": "..."}
+curl -F "file=@samples/jfk.flac" -F run_all=true localhost:8000/process-audio       # all three phases in one run -> {"job_id": "..."}
+curl -F "file=@samples/jfk.flac" -F provider=groq localhost:8000/process-audio      # Phase 1 only
 curl localhost:8000/jobs/<id>                                                        # status + results of all phases
 curl -X POST localhost:8000/jobs/<id>/refine                                         # Phase 2
 curl -X POST localhost:8000/jobs/<id>/minutes                                        # Phase 3
@@ -223,7 +229,7 @@ Models are swappable here without touching code.
 ├── prompts/                every LLM prompt, versioned (prompts/minutes/ for Phase 3)
 ├── web/                    the interface: index.html and static/app.js, app.css
 ├── scripts/                run_all, run_phase1, check_keys, fetch_sample, benchmark_asr, eval_refinement
-├── tests/                  196 tests (APIs mocked, no keys needed)
+├── tests/                  203 tests (APIs mocked, no keys needed)
 ├── samples/                test audio (AMI meetings), bad inputs, an example output
 ├── docs/
 │   ├── brief/              the original problem statement and project notes
@@ -237,7 +243,7 @@ Models are swappable here without touching code.
 `samples/` has short excerpts of AMI meetings (CC BY 4.0), five-minute ones in `samples/new/`, and broken inputs in `samples/bad/` that demonstrate the error messages. See `samples/README.md`. Quick first try: `bash run.sh --all samples/new/ami_IS1003b_540s-840s.flac`.
 
 ## Tests and measurements
-- `bash run.sh --test`: 196 tests covering validation errors, extraction checks, the edit gatekeeper, speaker logic, the Phase 3 workflow with a scripted fake model, the API, timeouts and failure paths. They need no keys. The real Groq and Deepgram calls were checked separately, live.
+- `bash run.sh --test`: 203 tests covering validation errors, extraction checks, the edit gatekeeper, speaker logic, the Phase 3 workflow with a scripted fake model, the API, timeouts and failure paths. They need no keys. The real Groq and Deepgram calls were checked separately, live.
 - `python scripts/eval_refinement.py --refine-model openai/gpt-oss-20b --list` benchmarks the Phase 2 refiner on 12 hand-written passages with 13 injected mishearings (and 3 clean controls): **11 of 13 fixed, 0 false edits, 0 changes to numbers or negations**. The fixture is small and written by the authors, so it is indicative, not a general accuracy figure (`docs/phase2/PLAN.md`).
 - Phase 3 was run live on several AMI excerpts; what it measured and the bugs it found are in `docs/phase3/PLAN.md`. A 10-minute excerpt took about 3 to 6 minutes and about 40,000 tokens on Groq's free tier.
 

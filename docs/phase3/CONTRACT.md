@@ -1,7 +1,8 @@
 # Phase 3 output contract
 
 ## API
-- `POST /jobs/{id}/minutes` starts a run (needs Phase 2). Progress: `GET /jobs/{id}` -> `minutes.{stage,message,done[],running[],result?,error?}` (`stage` is `running`, `done` or `failed`; `done`/`running` list graph nodes).
+- `POST /process-audio` with form field `run_all=true` runs Phases 1, 2 and 3 in order in one server-side run (the page's default). `refine` and `minutes` are `queued` from the start; if a phase fails, the later ones get `stage: "skipped"` with the reason in `message`, and can then be started by hand. `auto_refine=true` (older flag) stops after Phase 2. Starting a phase that is queued or running returns 409.
+- `POST /jobs/{id}/minutes` starts a run (needs Phase 2). Progress: `GET /jobs/{id}` -> `minutes.{stage,message,done[],running[],result?,error?}` (`stage` is `queued`, `running`, `done`, `failed` or `skipped`; `done`/`running` list graph nodes).
 - `GET /jobs/{id}/minutes` -> minutes JSON plus `stale` (true if the refined transcript or speaker names changed afterwards).
 - `GET /jobs/{id}/minutes/stages` -> the step log (below). `GET /jobs/{id}/minutes/download?format=md|json|csv|trace|stages`.
 - `GET /jobs` lists earlier jobs on disk; `GET /jobs/{id}` rebuilds a job (Phases 1-3) from disk after a restart.

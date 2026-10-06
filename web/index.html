@@ -22,6 +22,8 @@
     <div class="row">
       <input type="file" id="file" accept=".wav,.mp3,.m4a,.mp4,.flac,.ogg,.opus,.webm,.aac,audio/*">
       <label>Speech-to-text <select id="provider"></select></label>
+      <label class="check" title="Untick to run step 1 only and start steps 2 and 3 yourself with their buttons">
+        <input type="checkbox" id="runall" checked> Run all three steps (transcript, refinement, minutes)</label>
       <button id="go" class="primary">Process</button>
     </div>
     <div id="status" class="muted" aria-live="polite"></div>
