@@ -55,6 +55,25 @@ class Settings(BaseSettings):
     refine_max_words: int = 8
     refine_min_similarity: float = 0.55
 
+    # Phase 3: minutes (extract many lenses in parallel -> verify -> merge -> write the final report)
+    # Measured: the long combined extraction prompt returns nothing on gpt-oss-20b (even at high effort) but works on 120b at medium effort
+    # (low effort under-extracts). Topic finding and writing run on the small model, which has its own per-minute token budget.
+    minutes_extract_model: str = "openai/gpt-oss-120b"
+    minutes_extract_effort: str = "medium"
+    minutes_topics_model: str = "openai/gpt-oss-20b"
+    minutes_topics_effort: str = "medium"
+    minutes_verify_model: str = "openai/gpt-oss-120b"
+    minutes_verify_effort: str = "medium"
+    minutes_write_model: str = "openai/gpt-oss-20b"
+    minutes_write_effort: str = "medium"
+    minutes_extract_mode: str = "combined"  # combined = ONE call per chunk for all lenses (3x fewer tokens); separate = one call per lens family
+    minutes_chunk_segments: int = 60
+    minutes_context_segments: int = 6
+    minutes_concurrency: int = 2  # simultaneous LLM calls (global)
+    minutes_verify_batch: int = 10
+    minutes_max_topics: int = 12
+    minutes_max_seconds: int = 900  # hard time limit for one minutes run; later steps are skipped and reported instead of waiting forever
+
     # Storage
     outputs_dir: str = str(ROOT / "outputs")
     cache_enabled: bool = True

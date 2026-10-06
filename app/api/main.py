@@ -8,16 +8,20 @@ from pathlib import Path
 
 from fastapi import Body, FastAPI, File, Form, HTTPException, UploadFile
 from fastapi.responses import FileResponse, JSONResponse
+from fastapi.staticfiles import StaticFiles
 
 from app.asr.registry import PROVIDERS
 from app.config.settings import ROOT, settings
 from app.preprocessing.pipeline import run_phase1
+from app.minutes.pipeline import latest_folder, load_minutes, run_minutes
+from app.minutes.render import to_export
 from app.refinement.pipeline import job_dir, load_refinement, run_refinement, set_decision, set_manual_name, set_name_decision
 from app.utils.errors import PipelineError
 from app.utils.logging import get_logger
 
 log = get_logger("api")
-app = FastAPI(title="Meeting AI - Phase 1")
+app = FastAPI(title="Meeting AI")
+app.mount("/static", StaticFiles(directory=ROOT / "web" / "static"), name="static")
 pool = ThreadPoolExecutor(max_workers=2)
 jobs: dict[str, dict] = {}
 lock = threading.Lock()
@@ -93,12 +97,31 @@ async def process_audio(file: UploadFile = File(...), provider: str = Form(""), 
     return {"job_id": job_id}
 
 
+@app.get("/jobs")
+def list_jobs(limit: int = 40):
+    """Earlier results found on disk, newest first (so a result can be reopened after a restart)."""
+    out = []
+    base = Path(settings.outputs_dir)
+    for d in base.iterdir() if base.is_dir() else []:
+        f = d / "phase1_result.json"
+        if not f.is_file() or d.name in ("cache", "logs"):
+            continue
+        meta = {}
+        try:
+            meta = json.loads((d / "audio_metadata.json").read_text())
+        except (OSError, ValueError):
+            try:  # older runs: read it from the full Phase 1 result
+                meta = json.loads(f.read_text()).get("audio_metadata", {})
+            except (OSError, ValueError):
+                pass
+        out.append({"job_id": d.name, "file": meta.get("original_file", ""), "duration_seconds": meta.get("duration_seconds"),
+                    "has_refinement": (d / "refinement.json").is_file(), "has_minutes": (d / "minutes" / "latest.json").is_file(), "mtime": f.stat().st_mtime})
+    return sorted(out, key=lambda j: -j["mtime"])[: max(1, min(limit, 200))]
+
+
 @app.get("/jobs/{job_id}")
 def get_job(job_id: str):
-    job = jobs.get(job_id)
-    if not job:
-        raise HTTPException(404, "Unknown job id.")
-    return JSONResponse(job)
+    return JSONResponse(_ensure_job(job_id))
 
 
 @app.get("/jobs/{job_id}/download")
@@ -117,6 +140,14 @@ def _ensure_job(job_id: str) -> dict:
             if not f.is_file():
                 raise HTTPException(404, "Unknown job id (no Phase 1 result found).")
             jobs[job_id] = {"job_id": job_id, "stage": "done", "message": "Finished", "result": json.loads(f.read_text())}
+            r = Path(settings.outputs_dir) / job_id / "refinement.json"
+            if r.is_file():
+                jobs[job_id]["refine"] = {"stage": "done", "message": "Finished", "result": json.loads(r.read_text())}
+            try:
+                m, stale = load_minutes(job_id)
+                jobs[job_id]["minutes"] = {"stage": "done", "message": "Finished", "result": {**to_export(m), "stale": stale}}
+            except PipelineError:
+                pass
         return jobs[job_id]
 
 
@@ -188,6 +219,86 @@ def download_refined(job_id: str, format: str = "txt"):
     f = job_dir(job_id) / name
     if not f.is_file():
         raise HTTPException(404, "Not available: refine this job first.")
+    return FileResponse(f, media_type=mime, filename=f"{job_id}_{name}")
+
+
+def _run_minutes_job(job_id: str):
+    _set(job_id, minutes={"stage": "starting", "message": "Starting", "done": [], "running": []})
+    done: set[str] = set()
+    running: set[str] = set()
+
+    def progress(st: str, msg: str):
+        if st.endswith(":done"):
+            node = st[: -len(":done")]
+            running.discard(node)
+            done.add(node)
+        else:
+            running.add(st)
+        _set(job_id, minutes={"stage": "running", "message": msg or st, "done": sorted(done), "running": sorted(running)})
+
+    try:
+        run_minutes(job_id, status=progress)
+        m, stale = load_minutes(job_id)
+        _set(job_id, minutes={"stage": "done", "message": "Finished", "result": {**to_export(m), "stale": stale}})
+    except PipelineError as e:
+        log.warning("minutes %s failed: %s %s", job_id, e.code, e.message)
+        _set(job_id, minutes={"stage": "failed", "message": e.message, "error": {"code": e.code, "message": e.message}})
+    except Exception:
+        log.exception("minutes %s crashed", job_id)
+        msg = f"Unexpected internal error. Reference: {job_id}. See outputs/logs/phase1.log."
+        _set(job_id, minutes={"stage": "failed", "message": msg, "error": {"code": "INTERNAL_ERROR", "message": msg}})
+
+
+@app.post("/jobs/{job_id}/minutes")
+def start_minutes(job_id: str):
+    job = _ensure_job(job_id)
+    if not (job_dir(job_id) / "refinement.json").is_file():
+        raise HTTPException(409, "Run Phase 2 (Refine transcript) before generating minutes.")
+    if job.get("minutes", {}).get("stage") not in (None, "done", "failed"):
+        raise HTTPException(409, "Minutes are already being generated.")
+    _set(job_id, minutes={"stage": "queued", "message": "Queued"})
+    pool.submit(_run_minutes_job, job_id)
+    return {"job_id": job_id}
+
+
+@app.get("/jobs/{job_id}/minutes")
+def get_minutes(job_id: str):
+    try:
+        m, stale = load_minutes(job_id)
+    except PipelineError as e:
+        raise HTTPException(404, e.message)
+    return JSONResponse({**to_export(m), "stale": stale})
+
+
+@app.get("/jobs/{job_id}/minutes/stages")
+def get_stages(job_id: str):
+    """Every LLM call of the minutes run (input and raw output) plus our keep/drop decision on each result."""
+    try:
+        folder, _ = latest_folder(job_id)
+    except PipelineError as e:
+        raise HTTPException(404, e.message)
+    f = folder / "stages.json"
+    if not f.is_file():
+        raise HTTPException(404, "No stage log for this run (it was generated before stage logging existed). Generate the minutes again.")
+    return JSONResponse(json.loads(f.read_text(encoding="utf-8")))
+
+
+MINUTES_FILES = {"stages": ("stages.json", "application/json"), "md": ("minutes.md", "text/markdown"), "json": ("minutes.json", "application/json"),
+                 "csv": ("action_items.csv", "text/csv"), "trace": ("trace.jsonl", "application/x-ndjson")}
+
+
+@app.get("/jobs/{job_id}/minutes/download")
+def download_minutes(job_id: str, format: str = "md"):
+    if format not in MINUTES_FILES:
+        raise HTTPException(400, f"format must be one of {', '.join(MINUTES_FILES)}")
+    try:
+        folder, _ = latest_folder(job_id)
+    except PipelineError as e:
+        raise HTTPException(404, e.message)
+    name, mime = MINUTES_FILES[format]
+    f = folder / name
+    if not f.is_file():
+        raise HTTPException(404, "Not available.")
     return FileResponse(f, media_type=mime, filename=f"{job_id}_{name}")
 
 

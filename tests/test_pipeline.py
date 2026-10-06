@@ -140,3 +140,22 @@ def test_groq_request_is_valid_multipart(monkeypatch):
     body = seen["body"]
     assert body.count(b'name="timestamp_granularities[]"') == 2
     assert b"verbose_json" in body and b"flac-bytes" in body
+
+
+def test_a_long_rate_limit_wait_fails_at_once_with_the_providers_explanation(monkeypatch):
+    calls = []
+
+    class R:
+        status_code = 429
+        headers = {"retry-after": "1299"}
+        text = ""
+
+        def json(self):
+            return {"error": {"message": "Rate limit reached for model `openai/gpt-oss-120b` on tokens per day (TPD): Limit 200000, Used 199000, Requested 8000."}}
+
+    monkeypatch.setattr(httpx, "post", lambda *a, **k: calls.append(1) or R())
+    monkeypatch.setattr("time.sleep", lambda s: (_ for _ in ()).throw(AssertionError("must not sleep for a daily limit")))
+    with pytest.raises(PipelineError) as e:
+        asr_http.post_with_retry("http://x", provider="LLM", retries=3, max_wait=45)
+    assert e.value.code == "API_RATE_LIMITED" and len(calls) == 1
+    assert "21m" in e.value.message and "tokens per day" in e.value.message

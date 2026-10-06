@@ -13,6 +13,13 @@ def tmp_outputs(tmp_path, monkeypatch):
     monkeypatch.setattr(settings, "deepgram_api_key", "test-key")
     monkeypatch.setattr(settings, "candidate_detector", "off")  # no real LLM calls in tests
     monkeypatch.setattr(settings, "refine_use_second_asr", False)
+    import app.minutes.llm as _mllm
+    from app.utils.errors import PipelineError as _PE
+
+    def _no_network(*a, **k):
+        raise _PE("API_ERROR", "LLM calls are disabled in tests unless a test installs a fake")
+
+    monkeypatch.setattr(_mllm, "_call_model", _no_network)
     import app.refinement.speakers as _spk
     monkeypatch.setattr(_spk, "chat_json", lambda *a, **k: {"speakers": []})  # never call a real LLM from tests
 
