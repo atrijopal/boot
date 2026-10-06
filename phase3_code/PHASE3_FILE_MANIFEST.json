@@ -1,0 +1,202 @@
+{
+  "repository": "https://github.com/atrijopal/boot",
+  "base_commit": "ea58fa4b77f4cd6eb39b23966e421f529dcd5a59",
+  "package_type": "Phase 3 additions and replacements; not a complete repository",
+  "files": [
+    {
+      "path": "PHASE3_SETUP.md",
+      "action": "add",
+      "sha256": "18cbe3618e272527b11405a3b9c65afd428d2e45588fa04acb003864ff879c50"
+    },
+    {
+      "path": "app/api/main.py",
+      "action": "replace",
+      "sha256": "9270bce76e5c57f28d6860889e8ddba3d3bda046566a3144c1c58b996fecadd9"
+    },
+    {
+      "path": "app/config/settings.py",
+      "action": "replace",
+      "sha256": "99c0113efa68c9d2dc5a53cf230429e5fed5c90e53c992f673534614448432c3"
+    },
+    {
+      "path": "app/refinement/pipeline.py",
+      "action": "replace",
+      "sha256": "14a16e3dab5ecc72e14254493346935f9f2e5b566830863cb3a5b575777c939f"
+    },
+    {
+      "path": "app/schemas/phase3.py",
+      "action": "add",
+      "sha256": "625f9f2c198f365ebb1c1820ec6fd59c014e15b382a99123c5ef24bed8c097c2"
+    },
+    {
+      "path": "app/summarization/__init__.py",
+      "action": "add",
+      "sha256": "4f9f73e34bf8bc94a7bca8a095a534f02cae05ae19b2f6342e4e8431f4e0101a"
+    },
+    {
+      "path": "app/summarization/api.py",
+      "action": "add",
+      "sha256": "45d53bd8b45a2aeebc70f25e0d740421f5f9cf668cc0e10268bba42d2897f4ef"
+    },
+    {
+      "path": "app/summarization/embeddings.py",
+      "action": "add",
+      "sha256": "f4ffe4331e7223a6ca388ef17c587a5558edae88708b48ed249d81bdd0700abc"
+    },
+    {
+      "path": "app/summarization/entities.py",
+      "action": "add",
+      "sha256": "c80639791cbc3e8d85ad74e49e47bbf04e2dadd9761878891644758f90dbcaf7"
+    },
+    {
+      "path": "app/summarization/events.py",
+      "action": "add",
+      "sha256": "e7380b6567de3ec24cf96925f45d7afe9fcde82128a36aa62e9d2f56c61a6fbb"
+    },
+    {
+      "path": "app/summarization/evidence.py",
+      "action": "add",
+      "sha256": "101c1616bfb03f4f81668b97e597709bc29d3a5ae2a144d83cd1a90222d853ea"
+    },
+    {
+      "path": "app/summarization/export.py",
+      "action": "add",
+      "sha256": "cc4440b04790d64d7c6236c04a004f976344fe6122e9201a1d71574f0f3eb6d4"
+    },
+    {
+      "path": "app/summarization/graph.py",
+      "action": "add",
+      "sha256": "dbdd403e25599de02d1332b3086acfe0a1d84754f6e2b7c5bafd83c5486c6859"
+    },
+    {
+      "path": "app/summarization/importance.py",
+      "action": "add",
+      "sha256": "f88467589dbee6ded5a71daa637e1742602e50599bee9814c64f2b121d07cdab"
+    },
+    {
+      "path": "app/summarization/llm.py",
+      "action": "add",
+      "sha256": "ad45f13ded97701d8969914de997c4bc68f965d1910c64bc612e031fd8945dce"
+    },
+    {
+      "path": "app/summarization/pipeline.py",
+      "action": "add",
+      "sha256": "f389967765d515d24e66d6608a32ed2a0467801432be2f3dedd3aa0b5c8932e9"
+    },
+    {
+      "path": "app/summarization/relations.py",
+      "action": "add",
+      "sha256": "f5c4111c5992a5c86c14fdf1cc14e9b4475a9d26bd8e0a221231e8d43f4ac7f2"
+    },
+    {
+      "path": "app/summarization/summaries.py",
+      "action": "add",
+      "sha256": "b0c78c383f53a4f9aefeaa0fb8e26bfd695aebc1433a186c395d18a5a87e3ad0"
+    },
+    {
+      "path": "app/summarization/topics.py",
+      "action": "add",
+      "sha256": "e94220e4128809d104cef965f4bd432193a3ec234efe8434e60fe3c3874e137f"
+    },
+    {
+      "path": "app/summarization/units.py",
+      "action": "add",
+      "sha256": "1e9b0b794e6c846cb8cb51c8ca070942153ceead6ed07deeb373fb53adcd5ca3"
+    },
+    {
+      "path": "app/summarization/validation.py",
+      "action": "add",
+      "sha256": "2b4be39fe2770cf6ba3065be0cf249560b56e033a7747d55f7ae5e1af9fea3e9"
+    },
+    {
+      "path": "app/utils/job_locks.py",
+      "action": "add",
+      "sha256": "7fc908909a8b614efc97e46e01206010687b6cf1f75b207a64630a2f83370eec"
+    },
+    {
+      "path": "docs/phase3/CONTRACT.md",
+      "action": "add",
+      "sha256": "0bb94347a42ffb15c8b92d3bbee81a42548238cc66eff6ef61a2e616a2e62730"
+    },
+    {
+      "path": "docs/phase3/PLAN.md",
+      "action": "add",
+      "sha256": "9264c3764dfba620a0aaaeabaa156fde8d92cb16becdc2c980ca6b31c0c378aa"
+    },
+    {
+      "path": "docs/phase3/TEST_RESULTS.md",
+      "action": "add",
+      "sha256": "513d448e7673e8730645305d5ebd4f80d1e493551eae0f6f63fd152f4f9a90d9"
+    },
+    {
+      "path": "prompts/phase3_events_v1.md",
+      "action": "add",
+      "sha256": "23c9bf4552d692a7d79303a4425b7cd23a65e86fa9440a0a2fe0b2e9af85af0a"
+    },
+    {
+      "path": "prompts/phase3_relations_v1.md",
+      "action": "add",
+      "sha256": "abee7ff7b6bf548fb3ed599abd0ccd19513a43e9173097e50798b43ea733316a"
+    },
+    {
+      "path": "prompts/phase3_summary_v1.md",
+      "action": "add",
+      "sha256": "cb2bee8e5f30512e0af98997ffdbc052d49ca2c63168c52b88c73531da44af25"
+    },
+    {
+      "path": "prompts/phase3_verify_v1.md",
+      "action": "add",
+      "sha256": "677108f128d23a1fab686976e060f056a9c9a0f537fbb2cd9c06a1fcaa93930e"
+    },
+    {
+      "path": "samples/phase3/expected.json",
+      "action": "add",
+      "sha256": "1e1644ded5a93a7696652b4ef9ef7e948d9f5448a1a3052599511ec94ba8a3d7"
+    },
+    {
+      "path": "scripts/eval_phase3.py",
+      "action": "add",
+      "sha256": "fef07471bc2c4559fc4c9ca930177038bc7da0c836cfcb79828761c07c8023ee"
+    },
+    {
+      "path": "scripts/run_phase3.py",
+      "action": "add",
+      "sha256": "57f26a7a4737f685369c782ac4451b8e3a198b83e8ab4215544006aff04ae2c7"
+    },
+    {
+      "path": "tests/phase3/__init__.py",
+      "action": "add",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tests/phase3/conftest.py",
+      "action": "add",
+      "sha256": "952d052f34d12307c90a997ea5fff7bcdb094b6d181b3c8a4cb88fb4153d016a"
+    },
+    {
+      "path": "tests/phase3/test_api.py",
+      "action": "add",
+      "sha256": "1c0c3c10e50238b855cd9abfec210bc015e86c859532dbc3688c9054dc9fac8e"
+    },
+    {
+      "path": "tests/phase3/test_contracts.py",
+      "action": "add",
+      "sha256": "450f7ffec8796b3031bb9b026507eb61c6dd30bbcf5cca07d7da6ab42498115d"
+    },
+    {
+      "path": "tests/phase3/test_pipeline.py",
+      "action": "add",
+      "sha256": "7eba581ede162d4e506bb5ad437015e742cb13e4286afb36326d086f864c9da4"
+    },
+    {
+      "path": "web/index.html",
+      "action": "replace",
+      "sha256": "affc285dce3038203854c1f8a8d5e5546876746abb85731b6e8f79dfdae72ec6"
+    },
+    {
+      "path": "web/phase3.js",
+      "action": "add",
+      "sha256": "8a0f95689d8e9659512c612424dc69a2382624eaa5c4da1508f170e4da4540e9"
+    }
+  ]
+}

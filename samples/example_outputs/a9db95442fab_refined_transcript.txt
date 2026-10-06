@@ -1,0 +1,64 @@
+[   0.00-   2.90] Rose (SPEAKER_00): say one thing about yourself and then draw your favorite animal and tell us about it.
+[   3.66-   4.12] Rose (SPEAKER_00): Okay.
+[   6.06-   8.76] Alima Bucintini (SPEAKER_01): I don't know which one of these I have to bring with me.
+[   9.28-  10.04] Alima Bucintini (SPEAKER_01): Probably both.
+[  12.70-  15.60] Alima Bucintini (SPEAKER_01): Right, so I'm supposed to draw my favorite animal.
+[  15.84-  19.60] Alima Bucintini (SPEAKER_01): I have no drawing skills whatsoever, but let's see.
+[  19.66-  20.30] Alima Bucintini (SPEAKER_01): Introduce myself.
+[  20.62-  22.26] Alima Bucintini (SPEAKER_01): My name is Alima Bucintini.
+[  23.24-  26.66] Alima Bucintini (SPEAKER_01): I'm from the state of Maine in the U.S.
+[  26.66-  29.72] Alima Bucintini (SPEAKER_01): I'm doing nationalism studies, blah, blah, blah,
+[  29.72-  30.96] Alima Bucintini (SPEAKER_01): I have no artistic talent.
+[  31.84-  32.80] Alima Bucintini (SPEAKER_01): How do you spell your name?
+[  33.12-  34.46] Alima Bucintini (SPEAKER_01): A-L-I-M-A.
+[  34.66-  34.96] Alima Bucintini (SPEAKER_01): Thanks.
+[  35.68-  39.28] Alima Bucintini (SPEAKER_01): Oh, and I guess I'm the industrial designer on this project.
+[  40.46-  42.56] SPEAKER_UNKNOWN: So let's see if I can get...
+[  42.56-  43.84] SPEAKER_UNKNOWN: Here.
+[  44.84-  49.40] SPEAKER_UNKNOWN: I will draw a little turtle for you all.
+[  51.48-  54.62] Alima Bucintini (SPEAKER_01): Not necessarily because it's my absolute favorite animal,
+[  54.78-  57.22] Alima Bucintini (SPEAKER_01): but just that I think they're drawable.
+[  59.72-  62.72] Alima Bucintini (SPEAKER_01): You have a pretty little shell going on.
+[  62.72-  65.72] Alima Bucintini (SPEAKER_01): Some little eyes.
+[  65.72-  68.72] Alima Bucintini (SPEAKER_01): Happy.
+[  68.72-  80.28] Alima Bucintini (SPEAKER_01): There you go it's a turtle So what are your favorite characteristics I like the whole having a shell thing
+[  81.02-  82.62] Alima Bucintini (SPEAKER_01): It's quite cool.
+[  82.78-  84.20] Alima Bucintini (SPEAKER_01): Carry your home around where you go.
+[  85.30-  86.94] Alima Bucintini (SPEAKER_01): Quite decorative little animals.
+[  87.10-  87.72] Alima Bucintini (SPEAKER_01): They can swim.
+[  88.92-  90.26] Alima Bucintini (SPEAKER_01): They're very adaptable.
+[  90.80-  92.22] Alima Bucintini (SPEAKER_01): They carry everything they need with them.
+[  93.90-  95.36] Alima Bucintini (SPEAKER_01): And they're easy to draw.
+[  96.88-  97.36] Alima Bucintini (SPEAKER_01): Excellent.
+[  97.36-  99.30] Rose (SPEAKER_00): So we just go around the table?
+[ 100.00- 107.90] Ian (SPEAKER_02): Okay, well, my name's Ian, and I'm the user and interface designer for the project.
+[ 110.52- 113.16] Ian (SPEAKER_02): And I'll try and draw my favorite animal.
+[ 118.78- 120.14] Ian (SPEAKER_02): I should leave that one on.
+[ 120.34- 122.18] Rose (SPEAKER_00): No, you can erase the turtle, it's all right.
+[ 122.74- 124.64] Rose (SPEAKER_00): It might be nice to have them all up there at the same time.
+[ 127.04- 128.94] Ian (SPEAKER_02): I'm not going to draw it quite to scale.
+[ 130.00- 156.58] Ian (SPEAKER_02): Is that at least identifiable
+[ 157.72- 158.68] Ian (SPEAKER_02): It's a whale.
+[ 159.48- 159.76] Alima Bucintini (SPEAKER_01): It's a whale.
+[ 160.24- 163.06] Alima Bucintini (SPEAKER_01): Oh my gosh, that's what I'm going to be able to do.
+[ 164.26- 169.18] Ian (SPEAKER_02): Yeah, the reason I like whales is because they're quite intelligent.
+[ 170.58- 172.22] Ian (SPEAKER_02): And also they're kind of mysterious.
+[ 172.22- 179.22] Ian (SPEAKER_02): We don't really know much about them or understand how they work, how they form groups.
+[ 179.22- 182.22] Ian (SPEAKER_02): I just find them interesting animals.
+[ 187.22- 190.22] Jessie (SPEAKER_03): Take my contraptions with me.
+[ 190.22- 198.22] Jessie (SPEAKER_03): All right, I'm Jessie. I'm from around DC-ish, sort of, in the US.
+[ 198.22- 203.22] Jessie (SPEAKER_03): and we're gonna keep the deep sea sort of theme going on
+[ 203.22- 208.22] Jessie (SPEAKER_03): with our animals.
+[ 208.22- 211.22] Alima Bucintini (SPEAKER_01): I don't really know how to draw this.
+[ 211.22- 214.22] SPEAKER_UNKNOWN: I'm just gonna...
+[ 214.22- 217.22] SPEAKER_UNKNOWN: hmmm...
+[ 217.22- 229.18] Jessie (SPEAKER_03): hmmm Maybe if I do the water it'll help Sort of give an idea I have no idea how one would explain this
+[ 230.78- 232.36] Jessie (SPEAKER_03): Maybe some whiskers.
+[ 233.40- 235.12] Jessie (SPEAKER_03): Basically, it's supposed to be a seal.
+[ 236.16- 238.06] Jessie (SPEAKER_03): You can imagine it in the water.
+[ 238.64- 242.88] Jessie (SPEAKER_03): I like them because they're playful and silly, sort of.
+[ 243.28- 244.12] Jessie (SPEAKER_03): Have a good time.
+[ 245.64- 249.00] Jessie (SPEAKER_03): I'm not going to try to pretend like I can get any better than that.
+[ 250.00- 260.44] Rose (SPEAKER_00): Okay, I'm Rose and I'm a project manager from California.
+[ 280.00- 295.00] Jessie (SPEAKER_03): It's definitely significantly harder once you're doing it.
+[ 295.00- 300.00] Rose (SPEAKER_00): It's actually a coyote. Let's see. Give it a little bit of a snout.

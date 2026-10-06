@@ -1,0 +1,14 @@
+{
+  "dataset_note": "Synthetic budget-revisit fixture. Not held-out real-meeting evaluation.",
+  "topic_labels": {
+    "u000001": "budget", "u000002": "budget", "u000003": "testing",
+    "u000004": "budget", "u000005": "budget", "u000006": "budget",
+    "u000007": "budget", "u000008": "budget", "u000009": "budget"
+  },
+  "required_events": [
+    {"anchor_unit_id": "u000001", "kind": "proposal", "status": "proposed"},
+    {"anchor_unit_id": "u000005", "kind": "decision", "status": "superseded"},
+    {"anchor_unit_id": "u000007", "kind": "action", "status": "committed", "owner_speaker_id": "S3", "owner_text": null, "deadline_text": "by next Friday"},
+    {"anchor_unit_id": "u000009", "kind": "decision", "status": "confirmed"}
+  ]
+}

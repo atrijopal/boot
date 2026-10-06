@@ -1,0 +1,39 @@
+[   0.00-   7.44] SPEAKER_00: So we will try to structure this meeting with an agenda as presented here.
+[   7.44-  18.00] SPEAKER_00: After the opening we will get acquainted to each other, see what our roles are in this project.
+[  18.00-  35.00] SPEAKER_00: So we have been provided with some technical tools to communicate and to learn from each other's plans, as I can say.
+[  35.00-  45.34] SPEAKER_00: We will also try to get acquainted to these tools, they are also new to me, I don't know
+[  45.34-  49.82] SPEAKER_00: whether you worked with them before.
+[  49.82-  57.46] SPEAKER_00: Then we will come to the actual project plan, you all know I hope so, it's about the new
+[  57.46-  62.70] SPEAKER_00: remote control we are going to design.
+[  62.70-  80.00] SPEAKER_00: And we will discuss how it should be and what our new product should look like And well then after some 25 minutes I hope we can end this meeting
+[  82.00-  89.00] SPEAKER_00: So, basically this is about a new remote control.
+[  89.00- 102.88] SPEAKER_00: When you design a new product you of course want it to be original, we want to be distinguished.
+[ 102.88- 110.40] SPEAKER_00: People want to, when they look at the shelf, want to think, well that's the product I need.
+[ 110.40- 111.40] SPEAKER_00: So it needs to be trendy.
+[ 111.40- 117.78] SPEAKER_00: I mean trendy is what people want, so then they will buy our product.
+[ 117.78- 131.66] SPEAKER_00: But then it also should work user friendly, otherwise it will not be rated very well in
+[ 131.66- 138.78] SPEAKER_00: consumer articles and things like that.
+[ 138.78- 156.70] SPEAKER_00: So the general outline of a new project will be we first go through a functional design phase you all get certain task in
+[ 156.70- 164.98] SPEAKER_00: this in this phase and then we will meet again and discuss this functional design
+[ 164.98- 174.96] SPEAKER_00: and the same holds for the two phases after this the conceptual design and
+[ 174.96- 182.64] SPEAKER_00: after that a more detailed design in which the final project should get its
+[ 182.64- 191.68] SPEAKER_00: definite shape all right but first we will do some tool training in all in
+[ 191.68- 203.26] SPEAKER_00: front of you you see the notebooks and note blocks and we have here a whiteboard
+[ 203.26- 212.98] SPEAKER_00: and well it should work I've read it from my from some colleague that it
+[ 212.98- 216.88] SPEAKER_00: should work with some kind of toolbar I didn't find out yet how it worked but
+[ 216.88- 218.94] SPEAKER_00: maybe one of you did so
+[ 218.94- 232.00] SPEAKER_00: and the documents in the shared folder yes do you have to say something about that I not fully updated about this shared folder
+[ 232.00- 238.00] SPEAKER_01: Yeah, I guess we'll have a shared folder with documents that we can share.
+[ 238.00- 243.00] SPEAKER_00: Yes, well, we'll then find out how it works.
+[ 243.00- 246.00] SPEAKER_01: Yes.
+[ 246.00- 252.12] SPEAKER_00: Well, this seems to me as some computer program, but I didn't find it yet.
+[ 252.12- 255.40] SPEAKER_00: So we'll come to that later.
+[ 255.40- 262.42] SPEAKER_00: So now we will try out the whiteboard we have here.
+[ 262.42- 267.64] SPEAKER_00: So I would suggest...
+[ 267.64- 269.00] SPEAKER_01: Each of us is going to...
+[ 269.00- 274.14] SPEAKER_00: Well yes, we should try to draw on it.
+[ 274.14- 281.48] SPEAKER_00: then well it should be smart some way I I'm not really sure how this works okay
+[ 281.48- 286.90] SPEAKER_01: should I stop yeah I think for us it's just like a normal whiteboard but they'll
+[ 286.90- 290.56] SPEAKER_01: be recording so I write down now they will record through that there's a
+[ 290.56- 294.48] SPEAKER_03: sensor which is going to record the strokes but for us it's just like a
+[ 294.48- 300.00] SPEAKER_01: normal whiteboard okay hmm

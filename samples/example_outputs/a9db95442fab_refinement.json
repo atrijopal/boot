@@ -1,0 +1,4899 @@
+{
+  "job_id": "a9db95442fab",
+  "refine_model": "openai/gpt-oss-20b",
+  "verify_model": "openai/gpt-oss-120b",
+  "second_asr": "deepgram",
+  "edits": [
+    {
+      "edit_id": "edt_001",
+      "segment_id": "seg_0024",
+      "start": 68.72,
+      "end": 80.28,
+      "kind": "spelling",
+      "find": "It",
+      "replace": "it's",
+      "char_start": 13,
+      "char_end": 15,
+      "reason": "correct contraction",
+      "status": "applied",
+      "reject_reason": null,
+      "support": [
+        {
+          "kind": "elsewhere",
+          "detail": "'it's' also appears in seg_0019 at 51s"
+        },
+        {
+          "kind": "second_asr",
+          "detail": "the second ASR also heard 'it's'"
+        },
+        {
+          "kind": "similarity",
+          "detail": "sounds/looks like the original (score 0.8)"
+        }
+      ],
+      "similarity": 0.8,
+      "verdict": {
+        "same_meaning": true,
+        "new_information": false,
+        "note": "Adds missing contraction, no meaning change"
+      },
+      "unverified": false,
+      "user_decision": null
+    },
+    {
+      "edit_id": "edt_002",
+      "segment_id": "seg_0056",
+      "start": 217.22,
+      "end": 229.18,
+      "kind": "spelling",
+      "find": "it",
+      "replace": "it'll",
+      "char_start": 29,
+      "char_end": 31,
+      "reason": "contraction",
+      "status": "applied",
+      "reject_reason": null,
+      "support": [
+        {
+          "kind": "second_asr",
+          "detail": "the second ASR also heard 'it'll'"
+        },
+        {
+          "kind": "similarity",
+          "detail": "sounds/looks like the original (score 0.667)"
+        }
+      ],
+      "similarity": 0.667,
+      "verdict": {
+        "same_meaning": true,
+        "new_information": false,
+        "note": "Adds missing verb contraction, no new content"
+      },
+      "unverified": false,
+      "user_decision": null
+    }
+  ],
+  "speaker_source": "transplanted:deepgram",
+  "segment_speakers": {
+    "seg_0001": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0002": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0003": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0004": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0005": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0006": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0007": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0008": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0009": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0010": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0011": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0012": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0013": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0014": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0015": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0016": {
+      "speaker": "SPEAKER_UNKNOWN",
+      "speaker_known": false,
+      "share": 0.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0017": {
+      "speaker": "SPEAKER_UNKNOWN",
+      "speaker_known": false,
+      "share": 0.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0018": {
+      "speaker": "SPEAKER_UNKNOWN",
+      "speaker_known": false,
+      "share": 0.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0019": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0020": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0021": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0022": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0023": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0024": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0025": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0026": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0027": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0028": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0029": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0030": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0031": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0032": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0033": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 0.743,
+      "mixed": true,
+      "runner_up": "SPEAKER_01",
+      "runner_up_share": 0.257
+    },
+    "seg_0034": {
+      "speaker": "SPEAKER_02",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": "SPEAKER_00",
+      "runner_up_share": 0.0
+    },
+    "seg_0035": {
+      "speaker": "SPEAKER_02",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0036": {
+      "speaker": "SPEAKER_02",
+      "speaker_known": true,
+      "share": 0.926,
+      "mixed": false,
+      "runner_up": "SPEAKER_01",
+      "runner_up_share": 0.074
+    },
+    "seg_0037": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 0.946,
+      "mixed": false,
+      "runner_up": "SPEAKER_01",
+      "runner_up_share": 0.054
+    },
+    "seg_0038": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0039": {
+      "speaker": "SPEAKER_02",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0040": {
+      "speaker": "SPEAKER_02",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0041": {
+      "speaker": "SPEAKER_02",
+      "speaker_known": true,
+      "share": 0.557,
+      "mixed": true,
+      "runner_up": "SPEAKER_01",
+      "runner_up_share": 0.443
+    },
+    "seg_0043": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 0.518,
+      "mixed": true,
+      "runner_up": "SPEAKER_02",
+      "runner_up_share": 0.482
+    },
+    "seg_0044": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 0.626,
+      "mixed": true,
+      "runner_up": "SPEAKER_03",
+      "runner_up_share": 0.374
+    },
+    "seg_0045": {
+      "speaker": "SPEAKER_02",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": "SPEAKER_01",
+      "runner_up_share": 0.0
+    },
+    "seg_0046": {
+      "speaker": "SPEAKER_02",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0047": {
+      "speaker": "SPEAKER_02",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0048": {
+      "speaker": "SPEAKER_02",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0049": {
+      "speaker": "SPEAKER_03",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0050": {
+      "speaker": "SPEAKER_03",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0051": {
+      "speaker": "SPEAKER_03",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0052": {
+      "speaker": "SPEAKER_03",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0053": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0054": {
+      "speaker": "SPEAKER_UNKNOWN",
+      "speaker_known": false,
+      "share": 0.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0055": {
+      "speaker": "SPEAKER_UNKNOWN",
+      "speaker_known": false,
+      "share": 0.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0056": {
+      "speaker": "SPEAKER_03",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0057": {
+      "speaker": "SPEAKER_03",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0058": {
+      "speaker": "SPEAKER_03",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0059": {
+      "speaker": "SPEAKER_03",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0060": {
+      "speaker": "SPEAKER_03",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0061": {
+      "speaker": "SPEAKER_03",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0062": {
+      "speaker": "SPEAKER_03",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0063": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 0.894,
+      "mixed": false,
+      "runner_up": "SPEAKER_01",
+      "runner_up_share": 0.106
+    },
+    "seg_0064": {
+      "speaker": "SPEAKER_03",
+      "speaker_known": true,
+      "share": 0.948,
+      "mixed": false,
+      "runner_up": "SPEAKER_00",
+      "runner_up_share": 0.052
+    },
+    "seg_0065": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 0.512,
+      "mixed": true,
+      "runner_up": "SPEAKER_03",
+      "runner_up_share": 0.488
+    }
+  },
+  "speaker_names": [
+    {
+      "name_id": "spk_001",
+      "speaker": "SPEAKER_01",
+      "name": "Alima Bucintini",
+      "basis": "self_introduction",
+      "segment_id": "seg_0008",
+      "start": 20.62,
+      "quote": "My name is Alima Bucintini.",
+      "status": "applied",
+      "reject_reason": null,
+      "note": "said by this speaker about themselves",
+      "user_decision": null
+    },
+    {
+      "name_id": "spk_002",
+      "speaker": "SPEAKER_02",
+      "name": "Ian",
+      "basis": "self_introduction",
+      "segment_id": "seg_0034",
+      "start": 100.0,
+      "quote": "Okay, well, my name's Ian, and I'm the user and interface designer for the project.",
+      "status": "applied",
+      "reject_reason": null,
+      "note": "said by this speaker about themselves",
+      "user_decision": null
+    },
+    {
+      "name_id": "spk_003",
+      "speaker": "SPEAKER_03",
+      "name": "Jessie",
+      "basis": "self_introduction",
+      "segment_id": "seg_0050",
+      "start": 190.22,
+      "quote": "All right, I'm Jessie. I'm from around DC-ish, sort of, in the US.",
+      "status": "applied",
+      "reject_reason": null,
+      "note": "said by this speaker about themselves",
+      "user_decision": null
+    },
+    {
+      "name_id": "spk_004",
+      "speaker": "SPEAKER_00",
+      "name": "Rose",
+      "basis": "self_introduction",
+      "segment_id": "seg_0063",
+      "start": 250.0,
+      "quote": "Okay, I'm Rose and I'm a project manager from California.",
+      "status": "applied",
+      "reject_reason": null,
+      "note": "said by this speaker about themselves",
+      "user_decision": null
+    }
+  ],
+  "manual_names": {},
+  "refined_transcript": {
+    "provider": "groq",
+    "model": "whisper-large-v3",
+    "language": "en",
+    "kind": "refined",
+    "duration_seconds": 300.0,
+    "speakers_known": true,
+    "segments": [
+      {
+        "segment_id": "seg_0001",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": "Rose",
+        "start": 0.0,
+        "end": 2.9,
+        "text": "say one thing about yourself and then draw your favorite animal and tell us about it.",
+        "words": [
+          {
+            "text": "say",
+            "start": 0.0,
+            "end": 0.2,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "one",
+            "start": 0.2,
+            "end": 0.4,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "thing",
+            "start": 0.4,
+            "end": 0.56,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "about",
+            "start": 0.56,
+            "end": 0.72,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "yourself",
+            "start": 0.72,
+            "end": 0.98,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "and",
+            "start": 0.98,
+            "end": 1.16,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "then",
+            "start": 1.16,
+            "end": 1.28,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "draw",
+            "start": 1.28,
+            "end": 1.44,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "your",
+            "start": 1.44,
+            "end": 1.56,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "favorite",
+            "start": 1.56,
+            "end": 1.82,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "animal",
+            "start": 1.82,
+            "end": 2.08,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "and",
+            "start": 2.08,
+            "end": 2.22,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "tell",
+            "start": 2.22,
+            "end": 2.38,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "us",
+            "start": 2.38,
+            "end": 2.5,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "about",
+            "start": 2.5,
+            "end": 2.64,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "it.",
+            "start": 2.64,
+            "end": 2.9,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.20905806,
+        "no_speech_prob": 0.06829834,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0002",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": "Rose",
+        "start": 3.66,
+        "end": 4.12,
+        "text": "Okay.",
+        "words": [
+          {
+            "text": "Okay.",
+            "start": 3.74,
+            "end": 4.6,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.20905806,
+        "no_speech_prob": 0.06829834,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0003",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": "Alima Bucintini",
+        "start": 6.06,
+        "end": 8.76,
+        "text": "I don't know which one of these I have to bring with me.",
+        "words": [
+          {
+            "text": "I",
+            "start": 6.38,
+            "end": 6.52,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "don't",
+            "start": 6.52,
+            "end": 6.66,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "know",
+            "start": 6.66,
+            "end": 6.8,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "which",
+            "start": 6.8,
+            "end": 7.02,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "one",
+            "start": 7.02,
+            "end": 7.18,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "of",
+            "start": 7.18,
+            "end": 7.38,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "these",
+            "start": 7.38,
+            "end": 7.56,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I",
+            "start": 7.56,
+            "end": 7.74,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "have",
+            "start": 7.74,
+            "end": 7.92,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "to",
+            "start": 7.92,
+            "end": 8.06,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "bring",
+            "start": 8.06,
+            "end": 8.26,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "with",
+            "start": 8.26,
+            "end": 8.5,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "me.",
+            "start": 8.5,
+            "end": 8.72,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.20905806,
+        "no_speech_prob": 0.06829834,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0004",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": "Alima Bucintini",
+        "start": 9.28,
+        "end": 10.04,
+        "text": "Probably both.",
+        "words": [
+          {
+            "text": "Probably",
+            "start": 9.48,
+            "end": 9.72,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "both.",
+            "start": 9.72,
+            "end": 10.52,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.20905806,
+        "no_speech_prob": 0.06829834,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0005",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": "Alima Bucintini",
+        "start": 12.7,
+        "end": 15.6,
+        "text": "Right, so I'm supposed to draw my favorite animal.",
+        "words": [
+          {
+            "text": "Right,",
+            "start": 12.92,
+            "end": 13.48,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "so",
+            "start": 13.48,
+            "end": 13.7,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I'm",
+            "start": 13.7,
+            "end": 14.22,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "supposed",
+            "start": 14.22,
+            "end": 14.4,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "to",
+            "start": 14.4,
+            "end": 14.58,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "draw",
+            "start": 14.58,
+            "end": 14.82,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "my",
+            "start": 14.82,
+            "end": 15.0,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "favorite",
+            "start": 15.0,
+            "end": 15.28,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "animal.",
+            "start": 15.28,
+            "end": 15.9,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.20905806,
+        "no_speech_prob": 0.06829834,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0006",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": "Alima Bucintini",
+        "start": 15.84,
+        "end": 19.6,
+        "text": "I have no drawing skills whatsoever, but let's see.",
+        "words": [
+          {
+            "text": "I",
+            "start": 15.84,
+            "end": 15.94,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "have",
+            "start": 15.94,
+            "end": 16.1,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "no",
+            "start": 16.1,
+            "end": 16.34,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "drawing",
+            "start": 16.34,
+            "end": 16.68,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "skills",
+            "start": 16.68,
+            "end": 17.06,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "whatsoever,",
+            "start": 17.06,
+            "end": 18.6,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "but",
+            "start": 18.6,
+            "end": 18.64,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "let's",
+            "start": 18.64,
+            "end": 19.46,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "see.",
+            "start": 19.46,
+            "end": 19.6,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "Introduce",
+            "start": 19.16,
+            "end": 19.96,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.20905806,
+        "no_speech_prob": 0.06829834,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0007",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": "Alima Bucintini",
+        "start": 19.66,
+        "end": 20.3,
+        "text": "Introduce myself.",
+        "words": [
+          {
+            "text": "myself.",
+            "start": 19.96,
+            "end": 20.68,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.20905806,
+        "no_speech_prob": 0.06829834,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0008",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": "Alima Bucintini",
+        "start": 20.62,
+        "end": 22.26,
+        "text": "My name is Alima Bucintini.",
+        "words": [
+          {
+            "text": "My",
+            "start": 20.64,
+            "end": 20.76,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "name",
+            "start": 20.76,
+            "end": 20.9,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "is",
+            "start": 20.9,
+            "end": 21.06,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "Alima",
+            "start": 21.06,
+            "end": 21.4,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "Bucintini.",
+            "start": 21.4,
+            "end": 22.74,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.20905806,
+        "no_speech_prob": 0.06829834,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0009",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": "Alima Bucintini",
+        "start": 23.24,
+        "end": 26.66,
+        "text": "I'm from the state of Maine in the U.S.",
+        "words": [
+          {
+            "text": "I'm",
+            "start": 23.52,
+            "end": 23.72,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "from",
+            "start": 23.72,
+            "end": 23.98,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "the",
+            "start": 23.98,
+            "end": 24.96,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "state",
+            "start": 24.96,
+            "end": 25.56,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "of",
+            "start": 25.56,
+            "end": 25.74,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "Maine",
+            "start": 25.74,
+            "end": 25.98,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "in",
+            "start": 25.98,
+            "end": 26.16,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "the",
+            "start": 26.16,
+            "end": 26.3,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "U.S.",
+            "start": 26.3,
+            "end": 26.6,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.20905806,
+        "no_speech_prob": 0.06829834,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0010",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": "Alima Bucintini",
+        "start": 26.66,
+        "end": 29.72,
+        "text": "I'm doing nationalism studies, blah, blah, blah,",
+        "words": [
+          {
+            "text": "I'm",
+            "start": 26.8,
+            "end": 26.96,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "doing",
+            "start": 26.96,
+            "end": 27.16,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "nationalism",
+            "start": 27.16,
+            "end": 27.66,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "studies,",
+            "start": 27.66,
+            "end": 29.26,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "blah,",
+            "start": 29.26,
+            "end": 29.42,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "blah,",
+            "start": 29.42,
+            "end": 29.52,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "blah,",
+            "start": 29.52,
+            "end": 29.98,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.20905806,
+        "no_speech_prob": 0.06829834,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0011",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": "Alima Bucintini",
+        "start": 29.72,
+        "end": 30.96,
+        "text": "I have no artistic talent.",
+        "words": [
+          {
+            "text": "I",
+            "start": 29.72,
+            "end": 29.82,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "have",
+            "start": 29.82,
+            "end": 30.06,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "no",
+            "start": 30.06,
+            "end": 30.2,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "artistic",
+            "start": 30.2,
+            "end": 30.56,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "talent.",
+            "start": 30.56,
+            "end": 31.44,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25853395,
+        "no_speech_prob": 0.24682617,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0012",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": "Alima Bucintini",
+        "start": 31.84,
+        "end": 32.8,
+        "text": "How do you spell your name?",
+        "words": [
+          {
+            "text": "How",
+            "start": 32.02,
+            "end": 32.12,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "do",
+            "start": 32.12,
+            "end": 32.18,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "you",
+            "start": 32.18,
+            "end": 32.28,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "spell",
+            "start": 32.28,
+            "end": 32.42,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "your",
+            "start": 32.42,
+            "end": 32.58,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "name?",
+            "start": 32.58,
+            "end": 33.14,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25853395,
+        "no_speech_prob": 0.24682617,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0013",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": "Alima Bucintini",
+        "start": 33.12,
+        "end": 34.46,
+        "text": "A-L-I-M-A.",
+        "words": [
+          {
+            "text": "A-L-I-M-A.",
+            "start": 33.16,
+            "end": 34.76,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25853395,
+        "no_speech_prob": 0.24682617,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0014",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": "Alima Bucintini",
+        "start": 34.66,
+        "end": 34.96,
+        "text": "Thanks.",
+        "words": [
+          {
+            "text": "Thanks.",
+            "start": 34.7,
+            "end": 34.9,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25853395,
+        "no_speech_prob": 0.24682617,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0015",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": "Alima Bucintini",
+        "start": 35.68,
+        "end": 39.28,
+        "text": "Oh, and I guess I'm the industrial designer on this project.",
+        "words": [
+          {
+            "text": "Oh,",
+            "start": 35.84,
+            "end": 36.0,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "and",
+            "start": 36.0,
+            "end": 36.14,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I",
+            "start": 36.14,
+            "end": 36.26,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "guess",
+            "start": 36.26,
+            "end": 36.42,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I'm",
+            "start": 36.42,
+            "end": 36.62,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "the",
+            "start": 36.62,
+            "end": 36.74,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "industrial",
+            "start": 36.74,
+            "end": 37.14,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "designer",
+            "start": 37.14,
+            "end": 37.68,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "on",
+            "start": 37.68,
+            "end": 38.66,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "this",
+            "start": 38.66,
+            "end": 38.88,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "project.",
+            "start": 38.88,
+            "end": 39.2,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25853395,
+        "no_speech_prob": 0.24682617,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0016",
+        "speaker": "SPEAKER_UNKNOWN",
+        "speaker_known": false,
+        "speaker_name": null,
+        "start": 40.46,
+        "end": 42.56,
+        "text": "So let's see if I can get...",
+        "words": [
+          {
+            "text": "So",
+            "start": 40.46,
+            "end": 40.62,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "let's",
+            "start": 40.62,
+            "end": 40.94,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "see",
+            "start": 40.94,
+            "end": 41.08,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "if",
+            "start": 41.08,
+            "end": 41.3,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I",
+            "start": 41.3,
+            "end": 41.46,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "can",
+            "start": 41.46,
+            "end": 41.64,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "get...",
+            "start": 41.64,
+            "end": 42.48,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25853395,
+        "no_speech_prob": 0.24682617,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0017",
+        "speaker": "SPEAKER_UNKNOWN",
+        "speaker_known": false,
+        "speaker_name": null,
+        "start": 42.56,
+        "end": 43.84,
+        "text": "Here.",
+        "words": [
+          {
+            "text": "Here.",
+            "start": 43.58,
+            "end": 44.32,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25853395,
+        "no_speech_prob": 0.24682617,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0018",
+        "speaker": "SPEAKER_UNKNOWN",
+        "speaker_known": false,
+        "speaker_name": null,
+        "start": 44.84,
+        "end": 49.4,
+        "text": "I will draw a little turtle for you all.",
+        "words": [
+          {
+            "text": "I",
+            "start": 45.18,
+            "end": 45.34,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "will",
+            "start": 45.34,
+            "end": 45.5,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "draw",
+            "start": 45.5,
+            "end": 45.76,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "a",
+            "start": 45.76,
+            "end": 46.0,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "little",
+            "start": 46.0,
+            "end": 46.26,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "turtle",
+            "start": 46.26,
+            "end": 48.26,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "for",
+            "start": 48.26,
+            "end": 48.94,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "you",
+            "start": 48.94,
+            "end": 49.12,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "all.",
+            "start": 49.12,
+            "end": 49.36,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25853395,
+        "no_speech_prob": 0.24682617,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0019",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": "Alima Bucintini",
+        "start": 51.48,
+        "end": 54.62,
+        "text": "Not necessarily because it's my absolute favorite animal,",
+        "words": [
+          {
+            "text": "Not",
+            "start": 51.64,
+            "end": 51.96,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "necessarily",
+            "start": 51.96,
+            "end": 52.52,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "because",
+            "start": 52.52,
+            "end": 52.76,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "it's",
+            "start": 52.76,
+            "end": 53.0,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "my",
+            "start": 53.0,
+            "end": 53.26,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "absolute",
+            "start": 53.26,
+            "end": 53.86,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "favorite",
+            "start": 53.86,
+            "end": 54.26,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "animal,",
+            "start": 54.26,
+            "end": 54.78,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25853395,
+        "no_speech_prob": 0.24682617,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0020",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": "Alima Bucintini",
+        "start": 54.78,
+        "end": 57.22,
+        "text": "but just that I think they're drawable.",
+        "words": [
+          {
+            "text": "but",
+            "start": 54.76,
+            "end": 54.88,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "just",
+            "start": 54.88,
+            "end": 55.1,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "that",
+            "start": 55.1,
+            "end": 55.46,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I",
+            "start": 55.46,
+            "end": 56.2,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "think",
+            "start": 56.2,
+            "end": 56.4,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "they're",
+            "start": 56.4,
+            "end": 56.68,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "drawable.",
+            "start": 56.68,
+            "end": 57.7,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25853395,
+        "no_speech_prob": 0.24682617,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0021",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": "Alima Bucintini",
+        "start": 59.72,
+        "end": 62.72,
+        "text": "You have a pretty little shell going on.",
+        "words": [
+          {
+            "text": "You",
+            "start": 60.36,
+            "end": 60.38,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "have",
+            "start": 60.38,
+            "end": 60.64,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "a",
+            "start": 60.64,
+            "end": 60.74,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "pretty",
+            "start": 60.74,
+            "end": 61.0,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "little",
+            "start": 61.0,
+            "end": 61.24,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "shell",
+            "start": 61.24,
+            "end": 61.5,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "going",
+            "start": 61.5,
+            "end": 61.78,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "on.",
+            "start": 61.78,
+            "end": 63.2,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.39880228,
+        "no_speech_prob": 0.00022161007,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0022",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": "Alima Bucintini",
+        "start": 62.72,
+        "end": 65.72,
+        "text": "Some little eyes.",
+        "words": [
+          {
+            "text": "Some",
+            "start": 64.96,
+            "end": 65.18,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "little",
+            "start": 65.18,
+            "end": 65.48,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "eyes.",
+            "start": 65.48,
+            "end": 66.2,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.39880228,
+        "no_speech_prob": 0.00022161007,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0023",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": "Alima Bucintini",
+        "start": 65.72,
+        "end": 68.72,
+        "text": "Happy.",
+        "words": [
+          {
+            "text": "Happy.",
+            "start": 66.76,
+            "end": 67.42,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.39880228,
+        "no_speech_prob": 0.00022161007,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0024",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": "Alima Bucintini",
+        "start": 68.72,
+        "end": 80.28,
+        "text": "There you go it's a turtle So what are your favorite characteristics I like the whole having a shell thing",
+        "words": [
+          {
+            "text": "There",
+            "start": 72.2,
+            "end": 72.22,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "you",
+            "start": 72.22,
+            "end": 72.24,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "go.",
+            "start": 72.24,
+            "end": 72.26,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "It's",
+            "start": 72.48,
+            "end": 73.64,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "a",
+            "start": 73.64,
+            "end": 73.82,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "turtle.",
+            "start": 73.82,
+            "end": 75.2,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "So",
+            "start": 74.42,
+            "end": 75.96,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "what",
+            "start": 75.96,
+            "end": 76.1,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "are",
+            "start": 76.1,
+            "end": 76.12,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "your",
+            "start": 76.12,
+            "end": 76.24,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "favorite",
+            "start": 76.22,
+            "end": 76.5,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "characteristics?",
+            "start": 76.5,
+            "end": 77.56,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I",
+            "start": 78.48,
+            "end": 78.68,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "like",
+            "start": 78.68,
+            "end": 79.0,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "the",
+            "start": 79.0,
+            "end": 79.18,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "whole",
+            "start": 79.18,
+            "end": 79.3,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "having",
+            "start": 79.3,
+            "end": 79.6,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "a",
+            "start": 79.6,
+            "end": 79.76,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "shell",
+            "start": 79.76,
+            "end": 79.96,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "thing.",
+            "start": 79.96,
+            "end": 80.76,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25388992,
+        "no_speech_prob": 0.16430664,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0025",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": "Alima Bucintini",
+        "start": 81.02,
+        "end": 82.62,
+        "text": "It's quite cool.",
+        "words": [
+          {
+            "text": "It's",
+            "start": 81.14,
+            "end": 81.44,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "quite",
+            "start": 81.44,
+            "end": 82.32,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "cool.",
+            "start": 82.32,
+            "end": 83.1,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25388992,
+        "no_speech_prob": 0.16430664,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0026",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": "Alima Bucintini",
+        "start": 82.78,
+        "end": 84.2,
+        "text": "Carry your home around where you go.",
+        "words": [
+          {
+            "text": "Carry",
+            "start": 82.78,
+            "end": 83.0,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "your",
+            "start": 83.0,
+            "end": 83.18,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "home",
+            "start": 83.18,
+            "end": 83.38,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "around",
+            "start": 83.38,
+            "end": 83.64,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "where",
+            "start": 83.64,
+            "end": 83.84,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "you",
+            "start": 83.84,
+            "end": 83.98,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "go.",
+            "start": 83.98,
+            "end": 84.16,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25388992,
+        "no_speech_prob": 0.16430664,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0027",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": "Alima Bucintini",
+        "start": 85.3,
+        "end": 86.94,
+        "text": "Quite decorative little animals.",
+        "words": [
+          {
+            "text": "Quite",
+            "start": 85.52,
+            "end": 85.76,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "decorative",
+            "start": 85.76,
+            "end": 86.24,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "little",
+            "start": 86.24,
+            "end": 86.54,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "animals.",
+            "start": 86.54,
+            "end": 87.42,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25388992,
+        "no_speech_prob": 0.16430664,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0028",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": "Alima Bucintini",
+        "start": 87.1,
+        "end": 87.72,
+        "text": "They can swim.",
+        "words": [
+          {
+            "text": "They",
+            "start": 87.16,
+            "end": 87.2,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "can",
+            "start": 87.2,
+            "end": 87.34,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "swim.",
+            "start": 87.34,
+            "end": 88.2,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25388992,
+        "no_speech_prob": 0.16430664,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0029",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": "Alima Bucintini",
+        "start": 88.92,
+        "end": 90.26,
+        "text": "They're very adaptable.",
+        "words": [
+          {
+            "text": "very",
+            "start": 89.42,
+            "end": 89.62,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "adaptable.",
+            "start": 89.62,
+            "end": 90.74,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25388992,
+        "no_speech_prob": 0.16430664,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0030",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": "Alima Bucintini",
+        "start": 90.8,
+        "end": 92.22,
+        "text": "They carry everything they need with them.",
+        "words": [
+          {
+            "text": "They",
+            "start": 90.86,
+            "end": 91.0,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "carry",
+            "start": 91.0,
+            "end": 91.2,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "everything",
+            "start": 91.2,
+            "end": 91.48,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "they",
+            "start": 91.48,
+            "end": 91.7,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "need",
+            "start": 91.7,
+            "end": 91.86,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "with",
+            "start": 91.86,
+            "end": 92.04,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "them.",
+            "start": 92.04,
+            "end": 92.18,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25388992,
+        "no_speech_prob": 0.16430664,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0031",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": "Alima Bucintini",
+        "start": 93.9,
+        "end": 95.36,
+        "text": "And they're easy to draw.",
+        "words": [
+          {
+            "text": "And",
+            "start": 94.12,
+            "end": 94.34,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "they're",
+            "start": 94.34,
+            "end": 94.64,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "easy",
+            "start": 94.64,
+            "end": 94.84,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "to",
+            "start": 94.84,
+            "end": 95.02,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "draw.",
+            "start": 95.02,
+            "end": 95.32,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25388992,
+        "no_speech_prob": 0.16430664,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0032",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": "Alima Bucintini",
+        "start": 96.88,
+        "end": 97.36,
+        "text": "Excellent.",
+        "words": [
+          {
+            "text": "Excellent.",
+            "start": 97.02,
+            "end": 97.84,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "So",
+            "start": 96.86,
+            "end": 98.48,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25388992,
+        "no_speech_prob": 0.16430664,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0033",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": "Rose",
+        "start": 97.36,
+        "end": 99.3,
+        "text": "So we just go around the table?",
+        "words": [
+          {
+            "text": "we",
+            "start": 98.48,
+            "end": 98.58,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "just",
+            "start": 98.58,
+            "end": 98.72,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "go",
+            "start": 98.72,
+            "end": 98.84,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "around",
+            "start": 98.84,
+            "end": 98.98,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "the",
+            "start": 98.98,
+            "end": 99.08,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "table?",
+            "start": 99.08,
+            "end": 99.78,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25388992,
+        "no_speech_prob": 0.16430664,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0034",
+        "speaker": "SPEAKER_02",
+        "speaker_known": true,
+        "speaker_name": "Ian",
+        "start": 100.0,
+        "end": 107.9,
+        "text": "Okay, well, my name's Ian, and I'm the user and interface designer for the project.",
+        "words": [
+          {
+            "text": "Okay,",
+            "start": 100.04,
+            "end": 101.0,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "well,",
+            "start": 101.0,
+            "end": 101.7,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "my",
+            "start": 101.7,
+            "end": 101.84,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "name's",
+            "start": 101.84,
+            "end": 102.08,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "Ian,",
+            "start": 102.08,
+            "end": 102.84,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "and",
+            "start": 102.84,
+            "end": 104.84,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I'm",
+            "start": 104.84,
+            "end": 105.24,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "the",
+            "start": 105.24,
+            "end": 105.56,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "user",
+            "start": 105.56,
+            "end": 106.12,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "and",
+            "start": 106.12,
+            "end": 106.26,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "interface",
+            "start": 106.26,
+            "end": 106.64,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "designer",
+            "start": 106.64,
+            "end": 107.14,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "for",
+            "start": 107.14,
+            "end": 107.4,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "the",
+            "start": 107.4,
+            "end": 107.5,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "project.",
+            "start": 107.5,
+            "end": 108.38,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25372347,
+        "no_speech_prob": 0.3503418,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0035",
+        "speaker": "SPEAKER_02",
+        "speaker_known": true,
+        "speaker_name": "Ian",
+        "start": 110.52,
+        "end": 113.16,
+        "text": "And I'll try and draw my favorite animal.",
+        "words": [
+          {
+            "text": "And",
+            "start": 110.58,
+            "end": 110.96,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I'll",
+            "start": 110.96,
+            "end": 111.78,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "try",
+            "start": 111.78,
+            "end": 112.28,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "and",
+            "start": 112.28,
+            "end": 112.36,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "draw",
+            "start": 112.36,
+            "end": 112.46,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "my",
+            "start": 112.46,
+            "end": 112.64,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "favorite",
+            "start": 112.64,
+            "end": 112.9,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "animal.",
+            "start": 112.9,
+            "end": 113.64,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25372347,
+        "no_speech_prob": 0.3503418,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0036",
+        "speaker": "SPEAKER_02",
+        "speaker_known": true,
+        "speaker_name": "Ian",
+        "start": 118.78,
+        "end": 120.14,
+        "text": "I should leave that one on.",
+        "words": [
+          {
+            "text": "should",
+            "start": 119.28,
+            "end": 119.52,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "leave",
+            "start": 119.52,
+            "end": 119.7,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "that",
+            "start": 119.7,
+            "end": 119.84,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "one",
+            "start": 119.84,
+            "end": 119.96,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "on.",
+            "start": 119.96,
+            "end": 120.34,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25372347,
+        "no_speech_prob": 0.3503418,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0037",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": "Rose",
+        "start": 120.34,
+        "end": 122.18,
+        "text": "No, you can erase the turtle, it's all right.",
+        "words": [
+          {
+            "text": "No,",
+            "start": 120.36,
+            "end": 120.66,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "you",
+            "start": 120.66,
+            "end": 120.82,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "can",
+            "start": 120.82,
+            "end": 121.04,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "erase",
+            "start": 121.04,
+            "end": 121.3,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "the",
+            "start": 121.3,
+            "end": 121.46,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "turtle,",
+            "start": 121.46,
+            "end": 121.8,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "it's",
+            "start": 121.8,
+            "end": 122.0,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "all",
+            "start": 122.0,
+            "end": 122.16,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "right.",
+            "start": 122.16,
+            "end": 122.22,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25372347,
+        "no_speech_prob": 0.3503418,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0038",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": "Rose",
+        "start": 122.74,
+        "end": 124.64,
+        "text": "It might be nice to have them all up there at the same time.",
+        "words": [
+          {
+            "text": "It",
+            "start": 122.74,
+            "end": 122.8,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "might",
+            "start": 122.8,
+            "end": 122.9,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "be",
+            "start": 122.9,
+            "end": 123.02,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "nice",
+            "start": 123.02,
+            "end": 123.18,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "to",
+            "start": 123.18,
+            "end": 123.34,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "have",
+            "start": 123.34,
+            "end": 123.46,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "them",
+            "start": 123.46,
+            "end": 123.62,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "all",
+            "start": 123.62,
+            "end": 123.76,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "up",
+            "start": 123.76,
+            "end": 123.92,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "there",
+            "start": 123.92,
+            "end": 124.04,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "at",
+            "start": 124.04,
+            "end": 124.18,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "the",
+            "start": 124.18,
+            "end": 124.2,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "same",
+            "start": 124.2,
+            "end": 124.34,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "time.",
+            "start": 124.34,
+            "end": 124.76,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25372347,
+        "no_speech_prob": 0.3503418,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0039",
+        "speaker": "SPEAKER_02",
+        "speaker_known": true,
+        "speaker_name": "Ian",
+        "start": 127.04,
+        "end": 128.94,
+        "text": "I'm not going to draw it quite to scale.",
+        "words": [
+          {
+            "text": "I'm",
+            "start": 127.26,
+            "end": 127.46,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "not",
+            "start": 127.46,
+            "end": 127.6,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "going",
+            "start": 127.6,
+            "end": 127.76,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "to",
+            "start": 127.76,
+            "end": 127.9,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "draw",
+            "start": 127.9,
+            "end": 128.0,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "it",
+            "start": 128.0,
+            "end": 128.12,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "quite",
+            "start": 128.12,
+            "end": 128.54,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "to",
+            "start": 128.54,
+            "end": 128.74,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "scale.",
+            "start": 128.74,
+            "end": 129.36,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25372347,
+        "no_speech_prob": 0.3503418,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0040",
+        "speaker": "SPEAKER_02",
+        "speaker_known": true,
+        "speaker_name": "Ian",
+        "start": 130.0,
+        "end": 156.58,
+        "text": "Is that at least identifiable",
+        "words": [
+          {
+            "text": ".",
+            "start": 130.0,
+            "end": 130.32,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "Is",
+            "start": 145.02,
+            "end": 154.64,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "that",
+            "start": 154.64,
+            "end": 155.5,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "at",
+            "start": 155.5,
+            "end": 155.66,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "least",
+            "start": 155.66,
+            "end": 155.84,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "identifiable?",
+            "start": 155.84,
+            "end": 157.06,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.4678806,
+        "no_speech_prob": 0.6640625,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0041",
+        "speaker": "SPEAKER_02",
+        "speaker_known": true,
+        "speaker_name": "Ian",
+        "start": 157.72,
+        "end": 158.68,
+        "text": "It's a whale.",
+        "words": [
+          {
+            "text": "It's",
+            "start": 157.74,
+            "end": 158.5,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "a",
+            "start": 158.5,
+            "end": 158.54,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "whale.",
+            "start": 158.54,
+            "end": 158.6,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.4678806,
+        "no_speech_prob": 0.6640625,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0043",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": "Alima Bucintini",
+        "start": 159.48,
+        "end": 159.76,
+        "text": "It's a whale.",
+        "words": [],
+        "avg_logprob": -0.4678806,
+        "no_speech_prob": 0.6640625,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0044",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": "Alima Bucintini",
+        "start": 160.24,
+        "end": 163.06,
+        "text": "Oh my gosh, that's what I'm going to be able to do.",
+        "words": [
+          {
+            "text": "Oh",
+            "start": 161.08,
+            "end": 161.34,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "my",
+            "start": 161.34,
+            "end": 161.42,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "gosh,",
+            "start": 161.42,
+            "end": 161.62,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "that's",
+            "start": 161.62,
+            "end": 161.78,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "what",
+            "start": 161.78,
+            "end": 161.96,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I'm",
+            "start": 161.96,
+            "end": 162.32,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "going",
+            "start": 162.32,
+            "end": 162.4,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "to",
+            "start": 162.4,
+            "end": 162.48,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "be",
+            "start": 162.48,
+            "end": 162.56,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "able",
+            "start": 162.56,
+            "end": 162.7,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "to",
+            "start": 162.7,
+            "end": 162.86,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "do.",
+            "start": 162.86,
+            "end": 163.54,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.4678806,
+        "no_speech_prob": 0.6640625,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0045",
+        "speaker": "SPEAKER_02",
+        "speaker_known": true,
+        "speaker_name": "Ian",
+        "start": 164.26,
+        "end": 169.18,
+        "text": "Yeah, the reason I like whales is because they're quite intelligent.",
+        "words": [
+          {
+            "text": "the",
+            "start": 164.74,
+            "end": 164.82,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "reason",
+            "start": 164.82,
+            "end": 165.08,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I",
+            "start": 165.08,
+            "end": 165.24,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "like",
+            "start": 165.24,
+            "end": 165.4,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "whales",
+            "start": 165.4,
+            "end": 165.62,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "is",
+            "start": 165.62,
+            "end": 165.88,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "because",
+            "start": 165.88,
+            "end": 166.2,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "they're",
+            "start": 166.2,
+            "end": 167.4,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "quite",
+            "start": 167.4,
+            "end": 168.58,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "intelligent.",
+            "start": 168.58,
+            "end": 169.66,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.4678806,
+        "no_speech_prob": 0.6640625,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0046",
+        "speaker": "SPEAKER_02",
+        "speaker_known": true,
+        "speaker_name": "Ian",
+        "start": 170.58,
+        "end": 172.22,
+        "text": "And also they're kind of mysterious.",
+        "words": [
+          {
+            "text": "And",
+            "start": 170.64,
+            "end": 170.82,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "also",
+            "start": 170.82,
+            "end": 171.02,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "they're",
+            "start": 171.02,
+            "end": 171.56,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "kind",
+            "start": 171.56,
+            "end": 171.74,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "of",
+            "start": 171.74,
+            "end": 171.86,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "mysterious.",
+            "start": 171.86,
+            "end": 172.7,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.4678806,
+        "no_speech_prob": 0.6640625,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0047",
+        "speaker": "SPEAKER_02",
+        "speaker_known": true,
+        "speaker_name": "Ian",
+        "start": 172.22,
+        "end": 179.22,
+        "text": "We don't really know much about them or understand how they work, how they form groups.",
+        "words": [
+          {
+            "text": "We",
+            "start": 172.22,
+            "end": 173.1,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "don't",
+            "start": 173.1,
+            "end": 174.14,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "really",
+            "start": 174.14,
+            "end": 174.5,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "know",
+            "start": 174.5,
+            "end": 175.1,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "much",
+            "start": 175.1,
+            "end": 175.32,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "about",
+            "start": 175.32,
+            "end": 175.54,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "them",
+            "start": 175.54,
+            "end": 175.68,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "or",
+            "start": 175.68,
+            "end": 175.92,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "understand",
+            "start": 175.92,
+            "end": 176.9,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "how",
+            "start": 176.9,
+            "end": 177.34,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "they",
+            "start": 177.34,
+            "end": 177.46,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "work,",
+            "start": 177.46,
+            "end": 177.82,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "how",
+            "start": 177.82,
+            "end": 177.96,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "they",
+            "start": 177.96,
+            "end": 178.12,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "form",
+            "start": 178.12,
+            "end": 178.24,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "groups.",
+            "start": 178.24,
+            "end": 179.32,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I",
+            "start": 178.72,
+            "end": 179.36,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.27196416,
+        "no_speech_prob": 0.6196289,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0048",
+        "speaker": "SPEAKER_02",
+        "speaker_known": true,
+        "speaker_name": "Ian",
+        "start": 179.22,
+        "end": 182.22,
+        "text": "I just find them interesting animals.",
+        "words": [
+          {
+            "text": "just",
+            "start": 179.36,
+            "end": 180.2,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "find",
+            "start": 180.2,
+            "end": 180.4,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "them",
+            "start": 180.4,
+            "end": 180.52,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "interesting",
+            "start": 180.52,
+            "end": 180.88,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "animals.",
+            "start": 180.88,
+            "end": 182.7,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.27196416,
+        "no_speech_prob": 0.6196289,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0049",
+        "speaker": "SPEAKER_03",
+        "speaker_known": true,
+        "speaker_name": "Jessie",
+        "start": 187.22,
+        "end": 190.22,
+        "text": "Take my contraptions with me.",
+        "words": [
+          {
+            "text": "Take",
+            "start": 188.0,
+            "end": 188.46,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "my",
+            "start": 188.46,
+            "end": 188.7,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "contraptions",
+            "start": 188.7,
+            "end": 189.22,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "with",
+            "start": 189.22,
+            "end": 189.54,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "me.",
+            "start": 189.54,
+            "end": 190.7,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.27196416,
+        "no_speech_prob": 0.6196289,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0050",
+        "speaker": "SPEAKER_03",
+        "speaker_known": true,
+        "speaker_name": "Jessie",
+        "start": 190.22,
+        "end": 198.22,
+        "text": "All right, I'm Jessie. I'm from around DC-ish, sort of, in the US.",
+        "words": [
+          {
+            "text": "All",
+            "start": 192.06,
+            "end": 192.28,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "right,",
+            "start": 192.28,
+            "end": 192.64,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I'm",
+            "start": 192.64,
+            "end": 192.84,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "Jessie.",
+            "start": 192.84,
+            "end": 193.62,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I'm",
+            "start": 193.62,
+            "end": 193.8,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "from",
+            "start": 193.8,
+            "end": 194.42,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "around",
+            "start": 194.42,
+            "end": 195.42,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "DC-ish,",
+            "start": 195.42,
+            "end": 196.26,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "sort",
+            "start": 196.26,
+            "end": 196.48,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "of,",
+            "start": 196.48,
+            "end": 196.84,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "in",
+            "start": 196.84,
+            "end": 197.56,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "the",
+            "start": 197.56,
+            "end": 197.72,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "US.",
+            "start": 197.72,
+            "end": 198.22,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.27196416,
+        "no_speech_prob": 0.6196289,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0051",
+        "speaker": "SPEAKER_03",
+        "speaker_known": true,
+        "speaker_name": "Jessie",
+        "start": 198.22,
+        "end": 203.22,
+        "text": "and we're gonna keep the deep sea sort of theme going on",
+        "words": [
+          {
+            "text": "and",
+            "start": 199.2,
+            "end": 199.32,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "we're",
+            "start": 199.32,
+            "end": 199.5,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "gonna",
+            "start": 199.5,
+            "end": 199.68,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "keep",
+            "start": 199.68,
+            "end": 200.24,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "the",
+            "start": 200.24,
+            "end": 200.56,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "deep",
+            "start": 200.56,
+            "end": 201.28,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "sea",
+            "start": 201.28,
+            "end": 201.64,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "sort",
+            "start": 201.64,
+            "end": 202.04,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "of",
+            "start": 202.04,
+            "end": 202.16,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "theme",
+            "start": 202.16,
+            "end": 202.5,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "going",
+            "start": 202.5,
+            "end": 202.74,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "on",
+            "start": 202.74,
+            "end": 203.12,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.37741336,
+        "no_speech_prob": 0.06365967,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0052",
+        "speaker": "SPEAKER_03",
+        "speaker_known": true,
+        "speaker_name": "Jessie",
+        "start": 203.22,
+        "end": 208.22,
+        "text": "with our animals.",
+        "words": [
+          {
+            "text": "with",
+            "start": 203.62,
+            "end": 203.82,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "our",
+            "start": 203.82,
+            "end": 203.9,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "animals.",
+            "start": 203.9,
+            "end": 206.76,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I",
+            "start": 207.72,
+            "end": 208.5,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.37741336,
+        "no_speech_prob": 0.06365967,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0053",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": "Alima Bucintini",
+        "start": 208.22,
+        "end": 211.22,
+        "text": "I don't really know how to draw this.",
+        "words": [
+          {
+            "text": "don't",
+            "start": 208.5,
+            "end": 208.62,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "really",
+            "start": 208.62,
+            "end": 208.94,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "know",
+            "start": 208.94,
+            "end": 209.18,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "how",
+            "start": 209.18,
+            "end": 209.34,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "to",
+            "start": 209.34,
+            "end": 209.52,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "draw",
+            "start": 209.52,
+            "end": 209.82,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "this.",
+            "start": 209.82,
+            "end": 210.76,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I'm",
+            "start": 210.72,
+            "end": 210.9,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "just",
+            "start": 210.9,
+            "end": 211.04,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "gonna...",
+            "start": 211.04,
+            "end": 213.24,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.37741336,
+        "no_speech_prob": 0.06365967,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0054",
+        "speaker": "SPEAKER_UNKNOWN",
+        "speaker_known": false,
+        "speaker_name": null,
+        "start": 211.22,
+        "end": 214.22,
+        "text": "I'm just gonna...",
+        "words": [
+          {
+            "text": "hmmm...",
+            "start": 213.72,
+            "end": 215.82,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.37741336,
+        "no_speech_prob": 0.06365967,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0055",
+        "speaker": "SPEAKER_UNKNOWN",
+        "speaker_known": false,
+        "speaker_name": null,
+        "start": 214.22,
+        "end": 217.22,
+        "text": "hmmm...",
+        "words": [],
+        "avg_logprob": -0.37741336,
+        "no_speech_prob": 0.06365967,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0056",
+        "speaker": "SPEAKER_03",
+        "speaker_known": true,
+        "speaker_name": "Jessie",
+        "start": 217.22,
+        "end": 229.18,
+        "text": "hmmm Maybe if I do the water it'll help Sort of give an idea I have no idea how one would explain this",
+        "words": [
+          {
+            "text": "hmmm...",
+            "start": 219.26,
+            "end": 220.62,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "Maybe",
+            "start": 220.82,
+            "end": 221.26,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "if",
+            "start": 221.26,
+            "end": 221.42,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I",
+            "start": 221.42,
+            "end": 221.44,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "do",
+            "start": 221.44,
+            "end": 221.52,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "the",
+            "start": 221.52,
+            "end": 221.66,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "water,",
+            "start": 221.66,
+            "end": 222.54,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "it'll",
+            "start": 222.54,
+            "end": 222.72,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "help.",
+            "start": 222.72,
+            "end": 223.3,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "Sort",
+            "start": 223.88,
+            "end": 224.54,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "of",
+            "start": 224.54,
+            "end": 224.8,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "give",
+            "start": 224.8,
+            "end": 225.04,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "an",
+            "start": 225.04,
+            "end": 225.18,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "idea.",
+            "start": 225.18,
+            "end": 226.12,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I",
+            "start": 226.74,
+            "end": 226.88,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "have",
+            "start": 226.88,
+            "end": 227.06,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "no",
+            "start": 227.06,
+            "end": 227.2,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "idea",
+            "start": 227.2,
+            "end": 227.5,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "how",
+            "start": 227.5,
+            "end": 227.72,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "one",
+            "start": 227.72,
+            "end": 227.92,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "would",
+            "start": 227.92,
+            "end": 228.14,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "explain",
+            "start": 228.14,
+            "end": 228.8,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "this.",
+            "start": 228.8,
+            "end": 229.12,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.28143582,
+        "no_speech_prob": 0.09661865,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0057",
+        "speaker": "SPEAKER_03",
+        "speaker_known": true,
+        "speaker_name": "Jessie",
+        "start": 230.78,
+        "end": 232.36,
+        "text": "Maybe some whiskers.",
+        "words": [
+          {
+            "text": "Maybe",
+            "start": 230.76,
+            "end": 231.4,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "some",
+            "start": 231.4,
+            "end": 231.68,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "whiskers.",
+            "start": 231.68,
+            "end": 232.18,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.28143582,
+        "no_speech_prob": 0.09661865,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0058",
+        "speaker": "SPEAKER_03",
+        "speaker_known": true,
+        "speaker_name": "Jessie",
+        "start": 233.4,
+        "end": 235.12,
+        "text": "Basically, it's supposed to be a seal.",
+        "words": [
+          {
+            "text": "Basically,",
+            "start": 233.48,
+            "end": 233.84,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "it's",
+            "start": 233.84,
+            "end": 234.04,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "supposed",
+            "start": 234.04,
+            "end": 234.32,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "to",
+            "start": 234.32,
+            "end": 234.52,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "be",
+            "start": 234.52,
+            "end": 234.64,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "a",
+            "start": 234.64,
+            "end": 234.86,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "seal.",
+            "start": 234.86,
+            "end": 235.1,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.28143582,
+        "no_speech_prob": 0.09661865,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0059",
+        "speaker": "SPEAKER_03",
+        "speaker_known": true,
+        "speaker_name": "Jessie",
+        "start": 236.16,
+        "end": 238.06,
+        "text": "You can imagine it in the water.",
+        "words": [
+          {
+            "text": "You",
+            "start": 236.58,
+            "end": 236.74,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "can",
+            "start": 236.74,
+            "end": 236.88,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "imagine",
+            "start": 236.88,
+            "end": 237.32,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "it",
+            "start": 237.32,
+            "end": 237.52,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "in",
+            "start": 237.52,
+            "end": 237.6,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "the",
+            "start": 237.6,
+            "end": 237.7,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "water.",
+            "start": 237.7,
+            "end": 238.54,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.28143582,
+        "no_speech_prob": 0.09661865,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0060",
+        "speaker": "SPEAKER_03",
+        "speaker_known": true,
+        "speaker_name": "Jessie",
+        "start": 238.64,
+        "end": 242.88,
+        "text": "I like them because they're playful and silly, sort of.",
+        "words": [
+          {
+            "text": "I",
+            "start": 238.64,
+            "end": 238.78,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "like",
+            "start": 238.78,
+            "end": 239.04,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "them",
+            "start": 239.04,
+            "end": 239.56,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "because",
+            "start": 239.56,
+            "end": 240.12,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "they're",
+            "start": 240.12,
+            "end": 241.28,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "playful",
+            "start": 241.28,
+            "end": 241.72,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "and",
+            "start": 241.72,
+            "end": 242.04,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "silly,",
+            "start": 242.04,
+            "end": 242.52,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "sort",
+            "start": 242.52,
+            "end": 242.66,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "of.",
+            "start": 242.66,
+            "end": 242.84,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.28143582,
+        "no_speech_prob": 0.09661865,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0061",
+        "speaker": "SPEAKER_03",
+        "speaker_known": true,
+        "speaker_name": "Jessie",
+        "start": 243.28,
+        "end": 244.12,
+        "text": "Have a good time.",
+        "words": [
+          {
+            "text": "Have",
+            "start": 243.44,
+            "end": 243.58,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "a",
+            "start": 243.58,
+            "end": 243.68,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "good",
+            "start": 243.68,
+            "end": 243.74,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "time.",
+            "start": 243.74,
+            "end": 244.1,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.28143582,
+        "no_speech_prob": 0.09661865,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0062",
+        "speaker": "SPEAKER_03",
+        "speaker_known": true,
+        "speaker_name": "Jessie",
+        "start": 245.64,
+        "end": 249.0,
+        "text": "I'm not going to try to pretend like I can get any better than that.",
+        "words": [
+          {
+            "text": "I'm",
+            "start": 245.98,
+            "end": 246.1,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "not",
+            "start": 246.1,
+            "end": 246.26,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "going",
+            "start": 246.26,
+            "end": 246.36,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "to",
+            "start": 246.36,
+            "end": 246.5,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "try",
+            "start": 246.5,
+            "end": 247.18,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "to",
+            "start": 247.18,
+            "end": 247.3,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "pretend",
+            "start": 247.3,
+            "end": 247.56,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "like",
+            "start": 247.56,
+            "end": 247.78,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I",
+            "start": 247.78,
+            "end": 247.9,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "can",
+            "start": 247.9,
+            "end": 248.02,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "get",
+            "start": 248.02,
+            "end": 248.18,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "any",
+            "start": 248.18,
+            "end": 248.32,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "better",
+            "start": 248.32,
+            "end": 248.54,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "than",
+            "start": 248.54,
+            "end": 248.74,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "that.",
+            "start": 248.74,
+            "end": 248.98,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.28143582,
+        "no_speech_prob": 0.09661865,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0063",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": "Rose",
+        "start": 250.0,
+        "end": 260.44,
+        "text": "Okay, I'm Rose and I'm a project manager from California.",
+        "words": [
+          {
+            "text": "Okay,",
+            "start": 250.0,
+            "end": 255.84,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I'm",
+            "start": 255.84,
+            "end": 256.24,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "Rose",
+            "start": 256.24,
+            "end": 256.48,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "and",
+            "start": 256.48,
+            "end": 256.74,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I'm",
+            "start": 256.74,
+            "end": 257.34,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "a",
+            "start": 257.34,
+            "end": 257.46,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "project",
+            "start": 257.46,
+            "end": 257.74,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "manager",
+            "start": 257.74,
+            "end": 258.14,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "from",
+            "start": 258.14,
+            "end": 259.92,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "California.",
+            "start": 259.92,
+            "end": 260.92,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.4602194,
+        "no_speech_prob": 0.12017822,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0064",
+        "speaker": "SPEAKER_03",
+        "speaker_known": true,
+        "speaker_name": "Jessie",
+        "start": 280.0,
+        "end": 295.0,
+        "text": "It's definitely significantly harder once you're doing it.",
+        "words": [
+          {
+            "text": "It's",
+            "start": 280.0,
+            "end": 291.74,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "definitely",
+            "start": 291.74,
+            "end": 292.18,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "significantly",
+            "start": 292.18,
+            "end": 292.9,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "harder",
+            "start": 292.9,
+            "end": 293.32,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "once",
+            "start": 293.32,
+            "end": 293.68,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "you're",
+            "start": 293.68,
+            "end": 293.82,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "doing",
+            "start": 293.82,
+            "end": 294.24,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "it.",
+            "start": 294.24,
+            "end": 295.3,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "It's",
+            "start": 294.5,
+            "end": 295.44,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.26624677,
+        "no_speech_prob": 0.00056648254,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0065",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": "Rose",
+        "start": 295.0,
+        "end": 300.0,
+        "text": "It's actually a coyote. Let's see. Give it a little bit of a snout.",
+        "words": [
+          {
+            "text": "actually",
+            "start": 295.44,
+            "end": 295.7,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "a",
+            "start": 295.7,
+            "end": 296.04,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "coyote.",
+            "start": 296.04,
+            "end": 296.82,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "Let's",
+            "start": 296.82,
+            "end": 296.94,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "see.",
+            "start": 296.94,
+            "end": 297.86,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "Give",
+            "start": 297.86,
+            "end": 298.78,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "it",
+            "start": 298.78,
+            "end": 298.94,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "a",
+            "start": 298.94,
+            "end": 299.22,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "little",
+            "start": 299.22,
+            "end": 299.38,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "bit",
+            "start": 299.38,
+            "end": 299.52,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "of",
+            "start": 299.52,
+            "end": 299.64,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "a",
+            "start": 299.64,
+            "end": 299.78,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "snout.",
+            "start": 299.78,
+            "end": 300.28,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.26624677,
+        "no_speech_prob": 0.00056648254,
+        "confidence": null,
+        "language": "English"
+      }
+    ],
+    "notes": [
+      "dropped seg_0042: duplicate of seg_0041"
+    ]
+  },
+  "invariants": {
+    "segment_count_unchanged": true,
+    "ids_times_speakers_unchanged": true,
+    "numbers_unchanged": true,
+    "dates_times_unchanged": true,
+    "negations_unchanged": true,
+    "details": []
+  },
+  "stats": {
+    "proposed": 2,
+    "applied": 2,
+    "suggested": 0,
+    "rejected": 0,
+    "segments_total": 64,
+    "segments_changed": 2,
+    "user_overrides": 0,
+    "speakers_named": 4
+  },
+  "warnings": [],
+  "timings_seconds": {
+    "second_asr": 4.311,
+    "propose": 9.541,
+    "validate": 0.032,
+    "verify": 1.084,
+    "speaker_names": 9.732,
+    "total": 24.744
+  }
+}

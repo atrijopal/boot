@@ -1,0 +1,320 @@
+{
+  "source": "transplanted:deepgram",
+  "names": {},
+  "proposals": [],
+  "manual": {},
+  "segments": {
+    "seg_0001": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0002": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0003": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0004": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0005": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0006": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0007": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0008": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0009": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0010": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0011": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0012": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0013": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0014": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0015": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0016": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0017": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0018": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0019": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0020": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0021": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0022": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0023": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0024": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0025": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 0.756,
+      "mixed": true,
+      "runner_up": "SPEAKER_01",
+      "runner_up_share": 0.244
+    },
+    "seg_0026": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": "SPEAKER_00",
+      "runner_up_share": 0.0
+    },
+    "seg_0027": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 0.916,
+      "mixed": false,
+      "runner_up": "SPEAKER_01",
+      "runner_up_share": 0.084
+    },
+    "seg_0028": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": "SPEAKER_00",
+      "runner_up_share": 0.0
+    },
+    "seg_0029": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0030": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0031": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0032": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 0.95,
+      "mixed": false,
+      "runner_up": "SPEAKER_01",
+      "runner_up_share": 0.05
+    },
+    "seg_0033": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 0.854,
+      "mixed": false,
+      "runner_up": "SPEAKER_00",
+      "runner_up_share": 0.146
+    },
+    "seg_0034": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": "SPEAKER_01",
+      "runner_up_share": 0.0
+    },
+    "seg_0035": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 0.974,
+      "mixed": false,
+      "runner_up": "SPEAKER_01",
+      "runner_up_share": 0.026
+    },
+    "seg_0036": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 0.704,
+      "mixed": true,
+      "runner_up": "SPEAKER_02",
+      "runner_up_share": 0.296
+    },
+    "seg_0037": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 0.546,
+      "mixed": true,
+      "runner_up": "SPEAKER_02",
+      "runner_up_share": 0.454
+    },
+    "seg_0038": {
+      "speaker": "SPEAKER_03",
+      "speaker_known": true,
+      "share": 0.367,
+      "mixed": true,
+      "runner_up": "SPEAKER_01",
+      "runner_up_share": 0.337
+    },
+    "seg_0039": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 0.636,
+      "mixed": true,
+      "runner_up": "SPEAKER_00",
+      "runner_up_share": 0.364
+    }
+  }
+}

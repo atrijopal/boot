@@ -1,0 +1,4830 @@
+{
+  "job_id": "dc8cf5025f5f",
+  "refine_model": "openai/gpt-oss-20b",
+  "verify_model": "openai/gpt-oss-120b",
+  "second_asr": "deepgram",
+  "edits": [
+    {
+      "edit_id": "edt_001",
+      "segment_id": "seg_0015",
+      "start": 74.96,
+      "end": 93.0,
+      "kind": "spelling",
+      "find": "I going",
+      "replace": "I'm going",
+      "char_start": 112,
+      "char_end": 119,
+      "reason": "missing apostrophe",
+      "status": "applied",
+      "reject_reason": null,
+      "support": [
+        {
+          "kind": "elsewhere",
+          "detail": "'I'm going' also appears in seg_0025 at 122s"
+        },
+        {
+          "kind": "similarity",
+          "detail": "sounds/looks like the original (score 0.923)"
+        }
+      ],
+      "similarity": 0.923,
+      "verdict": {
+        "same_meaning": true,
+        "new_information": false,
+        "note": "Only adds missing contraction, preserving meaning"
+      },
+      "unverified": false,
+      "user_decision": null
+    }
+  ],
+  "speaker_source": "transplanted:deepgram",
+  "segment_speakers": {
+    "seg_0001": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0002": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0003": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0004": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0005": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0006": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0007": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 0.911,
+      "mixed": false,
+      "runner_up": "SPEAKER_01",
+      "runner_up_share": 0.089
+    },
+    "seg_0008": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0009": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0010": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0011": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0012": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0013": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0014": {
+      "speaker": "SPEAKER_UNKNOWN",
+      "speaker_known": false,
+      "share": 0.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0015": {
+      "speaker": "SPEAKER_02",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0016": {
+      "speaker": "SPEAKER_02",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0017": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 0.58,
+      "mixed": true,
+      "runner_up": "SPEAKER_03",
+      "runner_up_share": 0.42
+    },
+    "seg_0018": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0019": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0020": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0021": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 0.964,
+      "mixed": false,
+      "runner_up": "SPEAKER_03",
+      "runner_up_share": 0.036
+    },
+    "seg_0022": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0023": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": "SPEAKER_00",
+      "runner_up_share": 0.0
+    },
+    "seg_0024": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0025": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0026": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0027": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 0.548,
+      "mixed": true,
+      "runner_up": "SPEAKER_01",
+      "runner_up_share": 0.452
+    },
+    "seg_0028": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0030": {
+      "speaker": "SPEAKER_03",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0031": {
+      "speaker": "SPEAKER_03",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0032": {
+      "speaker": "SPEAKER_03",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0033": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0034": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0035": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0036": {
+      "speaker": "SPEAKER_03",
+      "speaker_known": true,
+      "share": 0.9,
+      "mixed": false,
+      "runner_up": "SPEAKER_01",
+      "runner_up_share": 0.1
+    },
+    "seg_0037": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": "SPEAKER_03",
+      "runner_up_share": 0.0
+    },
+    "seg_0038": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0039": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0040": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0041": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 0.572,
+      "mixed": true,
+      "runner_up": "SPEAKER_01",
+      "runner_up_share": 0.428
+    },
+    "seg_0042": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 0.895,
+      "mixed": false,
+      "runner_up": "SPEAKER_00",
+      "runner_up_share": 0.105
+    },
+    "seg_0043": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0044": {
+      "speaker": "SPEAKER_UNKNOWN",
+      "speaker_known": false,
+      "share": 0.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0045": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 0.679,
+      "mixed": true,
+      "runner_up": "SPEAKER_00",
+      "runner_up_share": 0.321
+    },
+    "seg_0046": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0047": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0048": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0049": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0050": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 0.985,
+      "mixed": false,
+      "runner_up": "SPEAKER_01",
+      "runner_up_share": 0.015
+    },
+    "seg_0051": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 0.952,
+      "mixed": false,
+      "runner_up": "SPEAKER_00",
+      "runner_up_share": 0.048
+    },
+    "seg_0052": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0053": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0054": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0055": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 0.608,
+      "mixed": true,
+      "runner_up": "SPEAKER_01",
+      "runner_up_share": 0.392
+    },
+    "seg_0056": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0057": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0058": {
+      "speaker": "SPEAKER_UNKNOWN",
+      "speaker_known": false,
+      "share": 0.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0059": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0060": {
+      "speaker": "SPEAKER_UNKNOWN",
+      "speaker_known": false,
+      "share": 0.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0061": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0062": {
+      "speaker": "SPEAKER_01",
+      "speaker_known": true,
+      "share": 0.92,
+      "mixed": false,
+      "runner_up": "SPEAKER_00",
+      "runner_up_share": 0.08
+    }
+  },
+  "speaker_names": [],
+  "manual_names": {},
+  "refined_transcript": {
+    "provider": "groq",
+    "model": "whisper-large-v3",
+    "language": "en",
+    "kind": "refined",
+    "duration_seconds": 300.0,
+    "speakers_known": true,
+    "segments": [
+      {
+        "segment_id": "seg_0001",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 0.0,
+        "end": 2.14,
+        "text": "This one here, right?",
+        "words": [
+          {
+            "text": "This",
+            "start": 1.4,
+            "end": 1.52,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "one",
+            "start": 1.52,
+            "end": 1.72,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "here,",
+            "start": 1.72,
+            "end": 1.98,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "right?",
+            "start": 1.98,
+            "end": 2.62,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.40651172,
+        "no_speech_prob": 0.25317383,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0002",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 3.24,
+        "end": 3.64,
+        "text": "Mm-hmm.",
+        "words": [
+          {
+            "text": "Mm-hmm.",
+            "start": 3.34,
+            "end": 3.52,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.40651172,
+        "no_speech_prob": 0.25317383,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0003",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 3.82,
+        "end": 4.22,
+        "text": "Okay.",
+        "words": [
+          {
+            "text": "Okay.",
+            "start": 3.92,
+            "end": 4.16,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.40651172,
+        "no_speech_prob": 0.25317383,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0004",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 5.24,
+        "end": 5.76,
+        "text": "Very nice.",
+        "words": [
+          {
+            "text": "Very",
+            "start": 5.26,
+            "end": 5.52,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "nice.",
+            "start": 5.52,
+            "end": 5.74,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.40651172,
+        "no_speech_prob": 0.25317383,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0005",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 6.48,
+        "end": 6.92,
+        "text": "All right.",
+        "words": [
+          {
+            "text": "All",
+            "start": 6.56,
+            "end": 6.72,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "right.",
+            "start": 6.72,
+            "end": 6.88,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.40651172,
+        "no_speech_prob": 0.25317383,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0006",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 6.92,
+        "end": 23.92,
+        "text": "My favorite animal is like a beagle.",
+        "words": [
+          {
+            "text": "My",
+            "start": 7.5,
+            "end": 7.58,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "favorite",
+            "start": 7.58,
+            "end": 7.84,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "animal",
+            "start": 7.84,
+            "end": 8.18,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "is",
+            "start": 8.18,
+            "end": 10.74,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "like",
+            "start": 10.74,
+            "end": 11.62,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "a",
+            "start": 11.62,
+            "end": 19.04,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "beagle.",
+            "start": 19.04,
+            "end": 23.86,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.40651172,
+        "no_speech_prob": 0.25317383,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0007",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 30.0,
+        "end": 41.1,
+        "text": "favorite characteristics of it is that right yeah uh right well basically um high priority for any",
+        "words": [
+          {
+            "text": "favorite",
+            "start": 33.2,
+            "end": 33.4,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "characteristics",
+            "start": 33.4,
+            "end": 34.32,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "of",
+            "start": 34.32,
+            "end": 34.7,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "it",
+            "start": 34.7,
+            "end": 34.8,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "is",
+            "start": 34.8,
+            "end": 35.0,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "that",
+            "start": 35.0,
+            "end": 35.12,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "right",
+            "start": 35.12,
+            "end": 35.32,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "yeah",
+            "start": 35.32,
+            "end": 36.18,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "uh",
+            "start": 36.18,
+            "end": 36.68,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "right",
+            "start": 36.68,
+            "end": 37.04,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "well",
+            "start": 37.04,
+            "end": 37.24,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "basically",
+            "start": 37.24,
+            "end": 38.36,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "um",
+            "start": 38.36,
+            "end": 39.2,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "high",
+            "start": 39.2,
+            "end": 40.26,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "priority",
+            "start": 40.26,
+            "end": 40.66,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "for",
+            "start": 40.66,
+            "end": 40.9,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "any",
+            "start": 40.9,
+            "end": 41.06,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "animal",
+            "start": 41.0,
+            "end": 41.42,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.13872476,
+        "no_speech_prob": 0.21228027,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0008",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 41.1,
+        "end": 49.82,
+        "text": "animal for me is that they be willing to take a lot of physical affection from their family and",
+        "words": [
+          {
+            "text": "for",
+            "start": 41.42,
+            "end": 41.62,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "me",
+            "start": 41.62,
+            "end": 41.72,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "is",
+            "start": 41.72,
+            "end": 41.92,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "that",
+            "start": 41.92,
+            "end": 42.06,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "they",
+            "start": 42.06,
+            "end": 42.26,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "be",
+            "start": 42.26,
+            "end": 43.12,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "willing",
+            "start": 43.12,
+            "end": 43.34,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "to",
+            "start": 43.34,
+            "end": 43.54,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "take",
+            "start": 43.54,
+            "end": 43.72,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "a",
+            "start": 43.72,
+            "end": 43.84,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "lot",
+            "start": 43.84,
+            "end": 44.0,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "of",
+            "start": 44.0,
+            "end": 44.26,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "physical",
+            "start": 44.26,
+            "end": 45.6,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "affection",
+            "start": 45.6,
+            "end": 46.02,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "from",
+            "start": 46.02,
+            "end": 47.22,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "their",
+            "start": 47.22,
+            "end": 48.04,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "family",
+            "start": 48.04,
+            "end": 48.44,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "and",
+            "start": 48.44,
+            "end": 49.56,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "yeah",
+            "start": 49.32,
+            "end": 51.26,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.13872476,
+        "no_speech_prob": 0.21228027,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0009",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 49.82,
+        "end": 53.34,
+        "text": "yeah they have lots of personality and",
+        "words": [
+          {
+            "text": "they",
+            "start": 51.26,
+            "end": 51.5,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "have",
+            "start": 51.5,
+            "end": 51.62,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "lots",
+            "start": 51.62,
+            "end": 51.84,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "of",
+            "start": 51.84,
+            "end": 51.88,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "personality",
+            "start": 51.88,
+            "end": 52.54,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "and",
+            "start": 52.54,
+            "end": 53.1,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.13872476,
+        "no_speech_prob": 0.21228027,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0010",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 53.34,
+        "end": 57.58,
+        "text": "be fit and in robust good health.",
+        "words": [
+          {
+            "text": "be",
+            "start": 53.34,
+            "end": 55.84,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "fit",
+            "start": 55.84,
+            "end": 56.22,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "and",
+            "start": 56.22,
+            "end": 56.5,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "in",
+            "start": 56.5,
+            "end": 56.58,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "robust",
+            "start": 56.58,
+            "end": 56.98,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "good",
+            "start": 56.98,
+            "end": 57.24,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "health.",
+            "start": 57.24,
+            "end": 58.06,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.43966907,
+        "no_speech_prob": 0.0082473755,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0011",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 58.04,
+        "end": 60.32,
+        "text": "So this is Blue Beagle.",
+        "words": [
+          {
+            "text": "So",
+            "start": 58.02,
+            "end": 58.28,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "this",
+            "start": 58.28,
+            "end": 58.38,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "is",
+            "start": 58.38,
+            "end": 58.6,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "Blue",
+            "start": 58.6,
+            "end": 58.82,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "Beagle.",
+            "start": 58.82,
+            "end": 60.3,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.43966907,
+        "no_speech_prob": 0.0082473755,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0012",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 61.42,
+        "end": 62.22,
+        "text": "My family's Beagle.",
+        "words": [
+          {
+            "text": "My",
+            "start": 61.42,
+            "end": 61.64,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "family's",
+            "start": 61.64,
+            "end": 61.94,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "Beagle.",
+            "start": 61.94,
+            "end": 62.16,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.43966907,
+        "no_speech_prob": 0.0082473755,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0013",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 63.32,
+        "end": 65.0,
+        "text": "Right. Lovely.",
+        "words": [
+          {
+            "text": "Right.",
+            "start": 63.36,
+            "end": 64.78,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "Lovely.",
+            "start": 64.78,
+            "end": 65.48,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "Lovely.",
+            "start": 64.5,
+            "end": 65.56,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.43966907,
+        "no_speech_prob": 0.0082473755,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0014",
+        "speaker": "SPEAKER_UNKNOWN",
+        "speaker_known": false,
+        "speaker_name": null,
+        "start": 65.0,
+        "end": 65.08,
+        "text": "Lovely.",
+        "words": [],
+        "avg_logprob": -0.43966907,
+        "no_speech_prob": 0.0082473755,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0015",
+        "speaker": "SPEAKER_02",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 74.96,
+        "end": 93.0,
+        "text": "My favorite animal would be a monkey And then the small cute and furry and when Planet of the Apes becomes real I'm going",
+        "words": [
+          {
+            "text": "My",
+            "start": 75.08,
+            "end": 75.44,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "favorite",
+            "start": 75.44,
+            "end": 75.62,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "animal",
+            "start": 75.62,
+            "end": 75.84,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "would",
+            "start": 75.84,
+            "end": 75.98,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "be",
+            "start": 75.98,
+            "end": 76.08,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "a",
+            "start": 76.08,
+            "end": 76.2,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "monkey.",
+            "start": 76.2,
+            "end": 77.48,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "And",
+            "start": 88.02,
+            "end": 88.14,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "then",
+            "start": 88.14,
+            "end": 88.38,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "the",
+            "start": 88.38,
+            "end": 88.96,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "small",
+            "start": 88.96,
+            "end": 89.28,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "cute",
+            "start": 89.28,
+            "end": 89.5,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "and",
+            "start": 89.5,
+            "end": 89.68,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "furry",
+            "start": 89.68,
+            "end": 89.86,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "and",
+            "start": 89.86,
+            "end": 90.28,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "when",
+            "start": 90.28,
+            "end": 90.68,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "Planet",
+            "start": 90.68,
+            "end": 90.96,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "of",
+            "start": 90.96,
+            "end": 91.12,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "the",
+            "start": 91.12,
+            "end": 91.14,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "Apes",
+            "start": 91.14,
+            "end": 91.16,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "becomes",
+            "start": 91.16,
+            "end": 91.4,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "real,",
+            "start": 91.4,
+            "end": 92.64,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I'm",
+            "start": 92.64,
+            "end": 92.76,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "going",
+            "start": 92.76,
+            "end": 92.86,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "to",
+            "start": 92.5,
+            "end": 92.84,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "be",
+            "start": 92.84,
+            "end": 93.02,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.58088183,
+        "no_speech_prob": 0.4086914,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0016",
+        "speaker": "SPEAKER_02",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 93.0,
+        "end": 98.0,
+        "text": "to be up there with them.",
+        "words": [
+          {
+            "text": "up",
+            "start": 93.02,
+            "end": 93.08,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "there",
+            "start": 93.08,
+            "end": 93.16,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "with",
+            "start": 93.16,
+            "end": 93.3,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "them.",
+            "start": 93.3,
+            "end": 96.2,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.58088183,
+        "no_speech_prob": 0.4086914,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0017",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 98.0,
+        "end": 107.72,
+        "text": "You can take as long over this as you like",
+        "words": [
+          {
+            "text": "You",
+            "start": 100.72,
+            "end": 101.54,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "can",
+            "start": 101.54,
+            "end": 106.18,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "take",
+            "start": 106.18,
+            "end": 106.42,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "as",
+            "start": 106.42,
+            "end": 106.6,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "long",
+            "start": 106.6,
+            "end": 106.86,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "over",
+            "start": 106.86,
+            "end": 107.06,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "this",
+            "start": 107.06,
+            "end": 107.28,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "as",
+            "start": 107.28,
+            "end": 107.4,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "you",
+            "start": 107.4,
+            "end": 107.54,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "like",
+            "start": 107.54,
+            "end": 107.7,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "because",
+            "start": 107.5,
+            "end": 107.94,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.24805693,
+        "no_speech_prob": 0.6279297,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0018",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 107.72,
+        "end": 110.14,
+        "text": "because we haven't got an awful lot to discuss.",
+        "words": [
+          {
+            "text": "we",
+            "start": 107.94,
+            "end": 108.14,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "haven't",
+            "start": 108.14,
+            "end": 108.32,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "got",
+            "start": 108.32,
+            "end": 108.52,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "an",
+            "start": 108.52,
+            "end": 109.24,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "awful",
+            "start": 109.24,
+            "end": 109.56,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "lot",
+            "start": 109.56,
+            "end": 109.78,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "to",
+            "start": 109.78,
+            "end": 109.94,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "discuss.",
+            "start": 109.94,
+            "end": 110.38,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.24805693,
+        "no_speech_prob": 0.6279297,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0019",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 110.34,
+        "end": 111.22,
+        "text": "Oh, go on, we do, we do.",
+        "words": [
+          {
+            "text": "Oh,",
+            "start": 110.36,
+            "end": 110.52,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "go",
+            "start": 110.52,
+            "end": 110.62,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "on,",
+            "start": 110.62,
+            "end": 110.66,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "we",
+            "start": 110.66,
+            "end": 110.9,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "do,",
+            "start": 110.9,
+            "end": 110.92,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "we",
+            "start": 110.92,
+            "end": 111.06,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "do.",
+            "start": 111.06,
+            "end": 111.7,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.24805693,
+        "no_speech_prob": 0.6279297,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0020",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 111.64,
+        "end": 113.22,
+        "text": "Don't feel like you're in a rush anyway.",
+        "words": [
+          {
+            "text": "Don't",
+            "start": 111.76,
+            "end": 111.96,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "feel",
+            "start": 111.96,
+            "end": 112.2,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "like",
+            "start": 112.2,
+            "end": 112.32,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "you're",
+            "start": 112.32,
+            "end": 112.48,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "in",
+            "start": 112.48,
+            "end": 112.62,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "a",
+            "start": 112.62,
+            "end": 112.68,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "rush",
+            "start": 112.68,
+            "end": 112.92,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "anyway.",
+            "start": 112.92,
+            "end": 113.7,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "Okay.",
+            "start": 112.72,
+            "end": 113.72,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.24805693,
+        "no_speech_prob": 0.6279297,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0021",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 113.22,
+        "end": 113.5,
+        "text": "Okay.",
+        "words": [],
+        "avg_logprob": -0.24805693,
+        "no_speech_prob": 0.6279297,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0022",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 115.7,
+        "end": 117.82,
+        "text": "I could have told you a whole lot more about beagles.",
+        "words": [
+          {
+            "text": "I",
+            "start": 115.96,
+            "end": 116.12,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "could",
+            "start": 116.12,
+            "end": 116.22,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "have",
+            "start": 116.22,
+            "end": 116.3,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "told",
+            "start": 116.3,
+            "end": 116.44,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "you",
+            "start": 116.44,
+            "end": 116.54,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "a",
+            "start": 116.54,
+            "end": 116.56,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "whole",
+            "start": 116.56,
+            "end": 116.68,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "lot",
+            "start": 116.68,
+            "end": 116.78,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "more",
+            "start": 116.78,
+            "end": 117.0,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "about",
+            "start": 117.0,
+            "end": 117.24,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "beagles.",
+            "start": 117.24,
+            "end": 118.3,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.24805693,
+        "no_speech_prob": 0.6279297,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0023",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 118.14,
+        "end": 120.16,
+        "text": "Okay, well, I'd have to get you up again.",
+        "words": [
+          {
+            "text": "well,",
+            "start": 118.34,
+            "end": 118.82,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I'd",
+            "start": 118.82,
+            "end": 119.3,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "have",
+            "start": 119.3,
+            "end": 119.38,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "to",
+            "start": 119.38,
+            "end": 119.52,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "get",
+            "start": 119.52,
+            "end": 119.64,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "you",
+            "start": 119.64,
+            "end": 119.78,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "up",
+            "start": 119.78,
+            "end": 119.92,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "again.",
+            "start": 119.92,
+            "end": 120.64,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.24805693,
+        "no_speech_prob": 0.6279297,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0024",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 120.96,
+        "end": 122.1,
+        "text": "I don't know what mine is.",
+        "words": [
+          {
+            "text": "I",
+            "start": 121.14,
+            "end": 121.34,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "don't",
+            "start": 121.34,
+            "end": 121.52,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "know",
+            "start": 121.52,
+            "end": 121.66,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "what",
+            "start": 121.66,
+            "end": 121.78,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "mine",
+            "start": 121.78,
+            "end": 121.94,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "is.",
+            "start": 121.94,
+            "end": 122.58,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I'm",
+            "start": 121.68,
+            "end": 122.28,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.24805693,
+        "no_speech_prob": 0.6279297,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0025",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 122.18,
+        "end": 123.48,
+        "text": "I'm going to have to think on the spot now.",
+        "words": [
+          {
+            "text": "going",
+            "start": 122.28,
+            "end": 122.32,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "to",
+            "start": 122.32,
+            "end": 122.38,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "have",
+            "start": 122.38,
+            "end": 122.46,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "to",
+            "start": 122.46,
+            "end": 122.54,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "think",
+            "start": 122.54,
+            "end": 122.74,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "on",
+            "start": 122.74,
+            "end": 122.86,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "the",
+            "start": 122.86,
+            "end": 123.02,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "spot",
+            "start": 123.02,
+            "end": 123.24,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "now.",
+            "start": 123.24,
+            "end": 123.46,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.24805693,
+        "no_speech_prob": 0.6279297,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0026",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 127.5,
+        "end": 127.9,
+        "text": "Impressionist.",
+        "words": [],
+        "avg_logprob": -0.24805693,
+        "no_speech_prob": 0.6279297,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0027",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 128.0,
+        "end": 133.0,
+        "text": "Is that a whale?",
+        "words": [
+          {
+            "text": "Is",
+            "start": 129.24,
+            "end": 129.9,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "that",
+            "start": 129.9,
+            "end": 132.26,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "a",
+            "start": 132.26,
+            "end": 132.38,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "whale?",
+            "start": 132.38,
+            "end": 133.18,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "Yeah.",
+            "start": 132.5,
+            "end": 133.66,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.27038202,
+        "no_speech_prob": 0.0015058517,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0028",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 133.0,
+        "end": 134.0,
+        "text": "Yeah.",
+        "words": [
+          {
+            "text": "Yeah.",
+            "start": 133.5,
+            "end": 134.72,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.27038202,
+        "no_speech_prob": 0.0015058517,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0030",
+        "speaker": "SPEAKER_03",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 135.0,
+        "end": 144.0,
+        "text": "Well, I don't know, it's just the first animal I can think of off the top of my head.",
+        "words": [
+          {
+            "text": "Well,",
+            "start": 138.64,
+            "end": 140.3,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I",
+            "start": 140.3,
+            "end": 140.36,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "don't",
+            "start": 140.36,
+            "end": 141.78,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "know,",
+            "start": 141.78,
+            "end": 141.98,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "it's",
+            "start": 141.98,
+            "end": 142.02,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "just",
+            "start": 142.02,
+            "end": 142.18,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "the",
+            "start": 142.18,
+            "end": 142.28,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "first",
+            "start": 142.28,
+            "end": 142.48,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "animal",
+            "start": 142.48,
+            "end": 142.66,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I",
+            "start": 142.66,
+            "end": 142.78,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "can",
+            "start": 142.78,
+            "end": 142.88,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "think",
+            "start": 142.88,
+            "end": 143.04,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "of",
+            "start": 143.04,
+            "end": 143.14,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "off",
+            "start": 143.14,
+            "end": 143.28,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "the",
+            "start": 143.28,
+            "end": 143.3,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "top",
+            "start": 143.3,
+            "end": 143.44,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "of",
+            "start": 143.44,
+            "end": 143.58,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "my",
+            "start": 143.58,
+            "end": 143.74,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "head.",
+            "start": 143.74,
+            "end": 144.48,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.27038202,
+        "no_speech_prob": 0.0015058517,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0031",
+        "speaker": "SPEAKER_03",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 144.0,
+        "end": 156.56,
+        "text": "I guess the big reason is because I allergic to most animals Allergic to animals fur so fish was a natural choice Yeah and I kind of like whales They come in and go everything inside",
+        "words": [
+          {
+            "text": "I",
+            "start": 144.16,
+            "end": 145.26,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "guess",
+            "start": 145.26,
+            "end": 145.28,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "the",
+            "start": 145.28,
+            "end": 145.46,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "big",
+            "start": 145.46,
+            "end": 145.62,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "reason",
+            "start": 145.62,
+            "end": 145.92,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "is",
+            "start": 145.92,
+            "end": 146.12,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "because",
+            "start": 146.12,
+            "end": 146.28,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I'm",
+            "start": 146.28,
+            "end": 146.46,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "allergic",
+            "start": 146.46,
+            "end": 146.72,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "to",
+            "start": 146.72,
+            "end": 146.9,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "most",
+            "start": 146.9,
+            "end": 147.08,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "animals.",
+            "start": 147.08,
+            "end": 147.48,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "Allergic",
+            "start": 146.5,
+            "end": 148.16,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "to",
+            "start": 148.16,
+            "end": 148.36,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "animals",
+            "start": 148.36,
+            "end": 148.58,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "fur,",
+            "start": 148.62,
+            "end": 148.74,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "so",
+            "start": 148.74,
+            "end": 149.02,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "fish",
+            "start": 149.02,
+            "end": 150.32,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "was",
+            "start": 150.32,
+            "end": 150.52,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "a",
+            "start": 150.52,
+            "end": 150.6,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "natural",
+            "start": 150.6,
+            "end": 150.88,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "choice.",
+            "start": 150.88,
+            "end": 151.16,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "Yeah,",
+            "start": 152.88,
+            "end": 153.02,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "and",
+            "start": 153.02,
+            "end": 153.22,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I",
+            "start": 153.22,
+            "end": 153.32,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "kind",
+            "start": 153.32,
+            "end": 153.46,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "of",
+            "start": 153.46,
+            "end": 153.54,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "like",
+            "start": 153.54,
+            "end": 153.7,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "whales.",
+            "start": 153.7,
+            "end": 154.46,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "They",
+            "start": 154.32,
+            "end": 154.46,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "come",
+            "start": 154.46,
+            "end": 154.58,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "in",
+            "start": 154.58,
+            "end": 154.68,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "and",
+            "start": 154.68,
+            "end": 154.8,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "go,",
+            "start": 154.8,
+            "end": 155.04,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "everything",
+            "start": 155.04,
+            "end": 156.12,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "inside.",
+            "start": 156.12,
+            "end": 157.04,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.33240116,
+        "no_speech_prob": 0.43945312,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0032",
+        "speaker": "SPEAKER_03",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 158.2,
+        "end": 161.26,
+        "text": "They're quite harmless and mild and interesting.",
+        "words": [
+          {
+            "text": "They're",
+            "start": 158.28,
+            "end": 158.5,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "quite",
+            "start": 158.5,
+            "end": 158.74,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "harmless",
+            "start": 158.74,
+            "end": 159.16,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "and",
+            "start": 159.16,
+            "end": 159.42,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "mild",
+            "start": 159.42,
+            "end": 159.72,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "and",
+            "start": 159.72,
+            "end": 159.98,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "interesting.",
+            "start": 159.98,
+            "end": 161.74,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.33240116,
+        "no_speech_prob": 0.43945312,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0033",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 162.36,
+        "end": 162.62,
+        "text": "Okay.",
+        "words": [
+          {
+            "text": "Okay.",
+            "start": 162.4,
+            "end": 162.62,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.33240116,
+        "no_speech_prob": 0.43945312,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0034",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 163.58,
+        "end": 165.24,
+        "text": "I still don't know what I'm going to write about.",
+        "words": [
+          {
+            "text": "I",
+            "start": 163.64,
+            "end": 163.82,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "still",
+            "start": 163.82,
+            "end": 164.14,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "don't",
+            "start": 164.14,
+            "end": 164.28,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "know",
+            "start": 164.28,
+            "end": 164.42,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "what",
+            "start": 164.42,
+            "end": 164.52,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I'm",
+            "start": 164.52,
+            "end": 164.66,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "going",
+            "start": 164.66,
+            "end": 164.7,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "to",
+            "start": 164.7,
+            "end": 164.8,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "write",
+            "start": 164.8,
+            "end": 164.96,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "about.",
+            "start": 164.96,
+            "end": 165.72,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.33240116,
+        "no_speech_prob": 0.43945312,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0035",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 169.7,
+        "end": 170.86,
+        "text": "Superb sketch, by the way.",
+        "words": [
+          {
+            "text": "Superb",
+            "start": 169.66,
+            "end": 170.12,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "sketch,",
+            "start": 170.12,
+            "end": 170.5,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "by",
+            "start": 170.5,
+            "end": 170.64,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "the",
+            "start": 170.64,
+            "end": 170.74,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "way.",
+            "start": 170.74,
+            "end": 170.84,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.33240116,
+        "no_speech_prob": 0.43945312,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0036",
+        "speaker": "SPEAKER_03",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 173.8,
+        "end": 174.8,
+        "text": "Tail's a bit big, I think.",
+        "words": [
+          {
+            "text": "Tail's",
+            "start": 173.82,
+            "end": 174.2,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "a",
+            "start": 174.2,
+            "end": 174.38,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "bit",
+            "start": 174.38,
+            "end": 174.4,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "big,",
+            "start": 174.4,
+            "end": 174.58,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I",
+            "start": 174.58,
+            "end": 174.7,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "think.",
+            "start": 174.7,
+            "end": 174.98,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.33240116,
+        "no_speech_prob": 0.43945312,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0037",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 175.0,
+        "end": 179.58,
+        "text": "I was going to choose a dog as well, but I just draw a different kind of dog.",
+        "words": [
+          {
+            "text": "I",
+            "start": 175.0,
+            "end": 175.16,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "was",
+            "start": 175.16,
+            "end": 175.32,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "going",
+            "start": 175.32,
+            "end": 175.44,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "to",
+            "start": 175.44,
+            "end": 175.54,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "choose",
+            "start": 175.54,
+            "end": 175.78,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "a",
+            "start": 175.78,
+            "end": 175.92,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "dog",
+            "start": 175.92,
+            "end": 176.12,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "as",
+            "start": 176.12,
+            "end": 176.34,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "well,",
+            "start": 176.34,
+            "end": 177.6,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "but",
+            "start": 177.6,
+            "end": 177.74,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I",
+            "start": 177.74,
+            "end": 178.4,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "just",
+            "start": 178.4,
+            "end": 178.58,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "draw",
+            "start": 178.58,
+            "end": 178.68,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "a",
+            "start": 178.68,
+            "end": 178.78,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "different",
+            "start": 178.78,
+            "end": 178.92,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "kind",
+            "start": 178.92,
+            "end": 179.24,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "of",
+            "start": 179.24,
+            "end": 179.3,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "dog.",
+            "start": 179.3,
+            "end": 180.06,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.22590455,
+        "no_speech_prob": 0.14428711,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0038",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 180.14,
+        "end": 182.88,
+        "text": "My favourite animal is my own dog at home.",
+        "words": [
+          {
+            "text": "My",
+            "start": 180.16,
+            "end": 180.56,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "favourite",
+            "start": 180.56,
+            "end": 180.86,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "animal",
+            "start": 180.86,
+            "end": 181.2,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "is",
+            "start": 181.2,
+            "end": 181.52,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "my",
+            "start": 181.52,
+            "end": 181.86,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "own",
+            "start": 181.86,
+            "end": 182.12,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "dog",
+            "start": 182.12,
+            "end": 182.38,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "at",
+            "start": 182.38,
+            "end": 182.64,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "home.",
+            "start": 182.64,
+            "end": 182.86,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.22590455,
+        "no_speech_prob": 0.14428711,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0039",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 186.72,
+        "end": 188.54,
+        "text": "That doesn't really look like him, actually.",
+        "words": [
+          {
+            "text": "That",
+            "start": 186.96,
+            "end": 187.14,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "doesn't",
+            "start": 187.14,
+            "end": 187.32,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "really",
+            "start": 187.32,
+            "end": 187.56,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "look",
+            "start": 187.56,
+            "end": 187.76,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "like",
+            "start": 187.76,
+            "end": 187.98,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "him,",
+            "start": 187.98,
+            "end": 188.16,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "actually.",
+            "start": 188.16,
+            "end": 188.5,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.22590455,
+        "no_speech_prob": 0.14428711,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0040",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 193.02,
+        "end": 194.62,
+        "text": "He looks more like a pig, actually.",
+        "words": [
+          {
+            "text": "He",
+            "start": 193.28,
+            "end": 193.44,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "looks",
+            "start": 193.44,
+            "end": 193.6,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "more",
+            "start": 193.6,
+            "end": 193.78,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "like",
+            "start": 193.78,
+            "end": 193.9,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "a",
+            "start": 193.9,
+            "end": 194.04,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "pig,",
+            "start": 194.04,
+            "end": 194.26,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "actually.",
+            "start": 194.26,
+            "end": 194.6,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.22590455,
+        "no_speech_prob": 0.14428711,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0041",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 195.82,
+        "end": 199.38,
+        "text": "I see a dog in there.",
+        "words": [
+          {
+            "text": "I",
+            "start": 195.86,
+            "end": 196.08,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "see",
+            "start": 196.08,
+            "end": 198.74,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "a",
+            "start": 198.74,
+            "end": 198.86,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "dog",
+            "start": 198.86,
+            "end": 199.02,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "in",
+            "start": 199.02,
+            "end": 199.2,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "there.",
+            "start": 199.2,
+            "end": 199.56,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.22590455,
+        "no_speech_prob": 0.14428711,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0042",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 199.38,
+        "end": 201.0,
+        "text": "There you are. Oh, that's very good of you.",
+        "words": [
+          {
+            "text": "There",
+            "start": 199.54,
+            "end": 199.76,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "you",
+            "start": 199.76,
+            "end": 199.82,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "are.",
+            "start": 199.82,
+            "end": 199.94,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "Oh,",
+            "start": 199.94,
+            "end": 200.22,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "that's",
+            "start": 200.22,
+            "end": 200.42,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "very",
+            "start": 200.42,
+            "end": 200.62,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "good",
+            "start": 200.62,
+            "end": 200.76,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "of",
+            "start": 200.76,
+            "end": 200.88,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "you.",
+            "start": 200.88,
+            "end": 200.98,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.22590455,
+        "no_speech_prob": 0.14428711,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0043",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 202.56,
+        "end": 203.56,
+        "text": "Now I see a rooster.",
+        "words": [
+          {
+            "text": "Now",
+            "start": 202.78,
+            "end": 202.96,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I",
+            "start": 202.96,
+            "end": 203.06,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "see",
+            "start": 203.06,
+            "end": 203.18,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "a",
+            "start": 203.18,
+            "end": 203.34,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "rooster.",
+            "start": 203.34,
+            "end": 204.04,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.22590455,
+        "no_speech_prob": 0.14428711,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0044",
+        "speaker": "SPEAKER_UNKNOWN",
+        "speaker_known": false,
+        "speaker_name": null,
+        "start": 205.0,
+        "end": 212.0,
+        "text": "What kind is it?",
+        "words": [
+          {
+            "text": "What",
+            "start": 205.0,
+            "end": 208.86,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "kind",
+            "start": 208.86,
+            "end": 211.2,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "is",
+            "start": 211.2,
+            "end": 212.48,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.2585787,
+        "no_speech_prob": 0.0011816025,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0045",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 212.0,
+        "end": 219.0,
+        "text": "He's a mixture of various things. What do I like about him? That's supposed to suggest",
+        "words": [
+          {
+            "text": "it?",
+            "start": 212.48,
+            "end": 212.5,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "He's",
+            "start": 214.64,
+            "end": 215.46,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "a",
+            "start": 215.46,
+            "end": 215.6,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "mixture",
+            "start": 215.6,
+            "end": 216.02,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "of",
+            "start": 216.02,
+            "end": 216.78,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "various",
+            "start": 216.78,
+            "end": 217.82,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "things.",
+            "start": 217.82,
+            "end": 219.48,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.2585787,
+        "no_speech_prob": 0.0011816025,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0046",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 224.0,
+        "end": 231.06,
+        "text": "that his tail wags He very friendly and cheery and always pleased to see you and very kind and affectionate",
+        "words": [
+          {
+            "text": "that",
+            "start": 224.2,
+            "end": 224.38,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "his",
+            "start": 224.38,
+            "end": 224.54,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "tail",
+            "start": 224.54,
+            "end": 224.84,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "wags.",
+            "start": 224.84,
+            "end": 225.76,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "He's",
+            "start": 225.76,
+            "end": 226.04,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "very",
+            "start": 226.04,
+            "end": 226.22,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "friendly",
+            "start": 226.22,
+            "end": 226.72,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "and",
+            "start": 226.72,
+            "end": 227.04,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "cheery",
+            "start": 226.96,
+            "end": 227.26,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "and",
+            "start": 227.26,
+            "end": 227.6,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "always",
+            "start": 227.6,
+            "end": 228.24,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "pleased",
+            "start": 228.24,
+            "end": 228.52,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "to",
+            "start": 228.52,
+            "end": 228.66,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "see",
+            "start": 228.66,
+            "end": 228.88,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "you",
+            "start": 228.88,
+            "end": 229.16,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "and",
+            "start": 228.7,
+            "end": 229.48,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "very",
+            "start": 229.48,
+            "end": 230.06,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "kind",
+            "start": 230.06,
+            "end": 230.24,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "and",
+            "start": 230.24,
+            "end": 230.38,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "affectionate.",
+            "start": 230.38,
+            "end": 231.54,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.23726504,
+        "no_speech_prob": 0.51660156,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0047",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 236.18,
+        "end": 240.8,
+        "text": "And he's quite wee as well, so he doesn't take up too much space.",
+        "words": [
+          {
+            "text": "And",
+            "start": 236.42,
+            "end": 236.7,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "he's",
+            "start": 236.7,
+            "end": 236.82,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "quite",
+            "start": 236.82,
+            "end": 237.48,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "wee",
+            "start": 237.48,
+            "end": 237.74,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "as",
+            "start": 237.74,
+            "end": 237.98,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "well,",
+            "start": 237.98,
+            "end": 238.42,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "so",
+            "start": 238.42,
+            "end": 238.46,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "he",
+            "start": 238.46,
+            "end": 238.7,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "doesn't",
+            "start": 238.7,
+            "end": 239.7,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "take",
+            "start": 239.7,
+            "end": 239.94,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "up",
+            "start": 239.94,
+            "end": 240.04,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "too",
+            "start": 240.04,
+            "end": 240.22,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "much",
+            "start": 240.22,
+            "end": 240.42,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "space.",
+            "start": 240.42,
+            "end": 240.76,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.23726504,
+        "no_speech_prob": 0.51660156,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0048",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 246.84,
+        "end": 249.24,
+        "text": "And he does a funny thing where he chases his tail.",
+        "words": [
+          {
+            "text": "does",
+            "start": 247.68,
+            "end": 247.82,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "a",
+            "start": 247.82,
+            "end": 247.98,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "funny",
+            "start": 247.98,
+            "end": 248.14,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "thing",
+            "start": 248.14,
+            "end": 248.32,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "where",
+            "start": 248.32,
+            "end": 248.46,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "he",
+            "start": 248.46,
+            "end": 248.54,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "chases",
+            "start": 248.54,
+            "end": 248.78,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "his",
+            "start": 248.78,
+            "end": 249.02,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "tail.",
+            "start": 249.02,
+            "end": 249.24,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.23726504,
+        "no_speech_prob": 0.51660156,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0049",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 249.24,
+        "end": 251.16,
+        "text": "as well. This is quite amusing.",
+        "words": [
+          {
+            "text": "as",
+            "start": 249.94,
+            "end": 250.06,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "well.",
+            "start": 250.06,
+            "end": 250.34,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "This",
+            "start": 250.34,
+            "end": 250.42,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "is",
+            "start": 250.42,
+            "end": 250.52,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "quite",
+            "start": 250.52,
+            "end": 250.76,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "amusing.",
+            "start": 250.76,
+            "end": 251.64,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25670817,
+        "no_speech_prob": 0.49121094,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0050",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 251.28,
+        "end": 253.3,
+        "text": "Is he aware that this is his own tail he's chasing?",
+        "words": [
+          {
+            "text": "Is",
+            "start": 251.26,
+            "end": 251.42,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "he",
+            "start": 251.42,
+            "end": 251.56,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "aware",
+            "start": 251.56,
+            "end": 251.72,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "that",
+            "start": 251.72,
+            "end": 251.88,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "this",
+            "start": 251.88,
+            "end": 252.0,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "is",
+            "start": 252.0,
+            "end": 252.06,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "his",
+            "start": 252.06,
+            "end": 252.22,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "own",
+            "start": 252.22,
+            "end": 252.32,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "tail",
+            "start": 252.32,
+            "end": 252.8,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "he's",
+            "start": 252.8,
+            "end": 253.02,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "chasing?",
+            "start": 253.02,
+            "end": 253.62,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25670817,
+        "no_speech_prob": 0.49121094,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0051",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 253.62,
+        "end": 255.48,
+        "text": "It is, I think it is. He only does it after",
+        "words": [
+          {
+            "text": "It",
+            "start": 253.84,
+            "end": 253.96,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "is,",
+            "start": 253.96,
+            "end": 254.18,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "I",
+            "start": 254.18,
+            "end": 254.3,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "think",
+            "start": 254.3,
+            "end": 254.46,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "it",
+            "start": 254.46,
+            "end": 254.58,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "is.",
+            "start": 254.58,
+            "end": 254.72,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "He",
+            "start": 254.72,
+            "end": 254.8,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "only",
+            "start": 254.8,
+            "end": 254.94,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "does",
+            "start": 254.94,
+            "end": 255.14,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "it",
+            "start": 255.14,
+            "end": 255.24,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "after",
+            "start": 255.24,
+            "end": 255.48,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "he's",
+            "start": 255.08,
+            "end": 255.7,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25670817,
+        "no_speech_prob": 0.49121094,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0052",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 255.48,
+        "end": 256.2,
+        "text": "he's had his dinner.",
+        "words": [
+          {
+            "text": "had",
+            "start": 255.7,
+            "end": 255.84,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "his",
+            "start": 255.84,
+            "end": 255.96,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "dinner.",
+            "start": 255.96,
+            "end": 256.2,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25670817,
+        "no_speech_prob": 0.49121094,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0053",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 257.44,
+        "end": 259.6,
+        "text": "He'll just all of a sudden get up and start chasing",
+        "words": [
+          {
+            "text": "just",
+            "start": 257.86,
+            "end": 258.0,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "all",
+            "start": 258.0,
+            "end": 258.14,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "of",
+            "start": 258.14,
+            "end": 258.26,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "a",
+            "start": 258.26,
+            "end": 258.36,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "sudden",
+            "start": 258.36,
+            "end": 258.5,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "get",
+            "start": 258.5,
+            "end": 258.78,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "up",
+            "start": 258.78,
+            "end": 258.94,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "and",
+            "start": 258.94,
+            "end": 259.06,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "start",
+            "start": 259.06,
+            "end": 259.28,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "chasing",
+            "start": 259.28,
+            "end": 259.58,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "his",
+            "start": 259.1,
+            "end": 259.8,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25670817,
+        "no_speech_prob": 0.49121094,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0054",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 259.6,
+        "end": 260.04,
+        "text": "his tail.",
+        "words": [
+          {
+            "text": "tail.",
+            "start": 259.8,
+            "end": 260.02,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25670817,
+        "no_speech_prob": 0.49121094,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0055",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 261.84,
+        "end": 265.56,
+        "text": "Probably when he was little he got lots",
+        "words": [
+          {
+            "text": "Probably",
+            "start": 262.06,
+            "end": 263.76,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "when",
+            "start": 263.76,
+            "end": 264.38,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "he",
+            "start": 264.38,
+            "end": 264.48,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "was",
+            "start": 264.48,
+            "end": 264.62,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "little",
+            "start": 264.62,
+            "end": 264.86,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "he",
+            "start": 264.86,
+            "end": 265.04,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "got",
+            "start": 265.04,
+            "end": 265.22,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "lots",
+            "start": 265.22,
+            "end": 265.52,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "of",
+            "start": 265.06,
+            "end": 265.7,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25670817,
+        "no_speech_prob": 0.49121094,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0056",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 265.56,
+        "end": 266.66,
+        "text": "of attention for doing it.",
+        "words": [
+          {
+            "text": "attention",
+            "start": 265.7,
+            "end": 266.04,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "for",
+            "start": 266.04,
+            "end": 266.24,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "doing",
+            "start": 266.24,
+            "end": 266.46,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "it.",
+            "start": 266.46,
+            "end": 267.08,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25670817,
+        "no_speech_prob": 0.49121094,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0057",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 267.18,
+        "end": 268.5,
+        "text": "He's forever been conditioned.",
+        "words": [
+          {
+            "text": "He's",
+            "start": 267.3,
+            "end": 267.62,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "forever",
+            "start": 267.62,
+            "end": 267.84,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "been",
+            "start": 267.84,
+            "end": 268.02,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "conditioned.",
+            "start": 268.02,
+            "end": 268.98,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25670817,
+        "no_speech_prob": 0.49121094,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0058",
+        "speaker": "SPEAKER_UNKNOWN",
+        "speaker_known": false,
+        "speaker_name": null,
+        "start": 269.06,
+        "end": 269.26,
+        "text": "Maybe.",
+        "words": [
+          {
+            "text": "Maybe.",
+            "start": 269.04,
+            "end": 269.74,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25670817,
+        "no_speech_prob": 0.49121094,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0059",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 271.32,
+        "end": 272.82,
+        "text": "Where did you find this? Just down here?",
+        "words": [
+          {
+            "text": "Where",
+            "start": 271.54,
+            "end": 271.74,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "did",
+            "start": 271.74,
+            "end": 271.88,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "you",
+            "start": 271.88,
+            "end": 271.98,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "find",
+            "start": 271.98,
+            "end": 272.16,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "this?",
+            "start": 272.16,
+            "end": 272.3,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "Just",
+            "start": 272.3,
+            "end": 272.44,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "down",
+            "start": 272.44,
+            "end": 272.64,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "here?",
+            "start": 272.64,
+            "end": 272.8,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25670817,
+        "no_speech_prob": 0.49121094,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0060",
+        "speaker": "SPEAKER_UNKNOWN",
+        "speaker_known": false,
+        "speaker_name": null,
+        "start": 275.42,
+        "end": 275.82,
+        "text": "Okay.",
+        "words": [
+          {
+            "text": "Okay.",
+            "start": 275.54,
+            "end": 275.76,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.25670817,
+        "no_speech_prob": 0.49121094,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0061",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 279.24,
+        "end": 292.54,
+        "text": "Okay, we now need to discuss the project finance.",
+        "words": [
+          {
+            "text": "Okay,",
+            "start": 279.24,
+            "end": 286.42,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "we",
+            "start": 286.42,
+            "end": 286.46,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "now",
+            "start": 286.46,
+            "end": 286.56,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "need",
+            "start": 286.56,
+            "end": 286.72,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "to",
+            "start": 286.72,
+            "end": 286.84,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "discuss",
+            "start": 286.84,
+            "end": 287.18,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "the",
+            "start": 287.18,
+            "end": 287.36,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "project",
+            "start": 287.36,
+            "end": 287.78,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "finance.",
+            "start": 287.78,
+            "end": 290.46,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "So",
+            "start": 292.04,
+            "end": 292.62,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.27896595,
+        "no_speech_prob": 0.0044517517,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0062",
+        "speaker": "SPEAKER_01",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 292.54,
+        "end": 300.0,
+        "text": "So according to the brief, we're going to be selling this remote control for 25 euro",
+        "words": [
+          {
+            "text": "according",
+            "start": 292.62,
+            "end": 292.92,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "to",
+            "start": 292.92,
+            "end": 293.08,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "the",
+            "start": 293.08,
+            "end": 293.18,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "brief,",
+            "start": 293.18,
+            "end": 294.12,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "we're",
+            "start": 294.12,
+            "end": 294.24,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "going",
+            "start": 294.24,
+            "end": 294.34,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "to",
+            "start": 294.34,
+            "end": 294.4,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "be",
+            "start": 294.4,
+            "end": 294.5,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "selling",
+            "start": 294.5,
+            "end": 294.84,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "this",
+            "start": 294.84,
+            "end": 295.06,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "remote",
+            "start": 295.06,
+            "end": 295.24,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "control",
+            "start": 295.24,
+            "end": 295.58,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "for",
+            "start": 295.58,
+            "end": 295.72,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "25",
+            "start": 295.72,
+            "end": 296.16,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "euro",
+            "start": 296.16,
+            "end": 296.5,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.27896595,
+        "no_speech_prob": 0.0044517517,
+        "confidence": null,
+        "language": "English"
+      }
+    ],
+    "notes": [
+      "dropped seg_0029: duplicate of seg_0028"
+    ]
+  },
+  "invariants": {
+    "segment_count_unchanged": true,
+    "ids_times_speakers_unchanged": true,
+    "numbers_unchanged": true,
+    "dates_times_unchanged": true,
+    "negations_unchanged": true,
+    "details": []
+  },
+  "stats": {
+    "proposed": 1,
+    "applied": 1,
+    "suggested": 0,
+    "rejected": 0,
+    "segments_total": 61,
+    "segments_changed": 1,
+    "speakers_named": 0
+  },
+  "warnings": [],
+  "timings_seconds": {
+    "second_asr": 4.37,
+    "propose": 11.928,
+    "validate": 0.068,
+    "verify": 1.513,
+    "speaker_names": 8.627,
+    "total": 26.576
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "job_id": "32ca9e10e504",
+  "refine_model": "openai/gpt-oss-20b",
+  "verify_model": "openai/gpt-oss-120b",
+  "second_asr": "deepgram",
+  "edits": [],
+  "speaker_source": "transplanted:deepgram",
+  "segment_speakers": {
+    "seg_0001": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0002": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    },
+    "seg_0003": {
+      "speaker": "SPEAKER_00",
+      "speaker_known": true,
+      "share": 1.0,
+      "mixed": false,
+      "runner_up": null,
+      "runner_up_share": 0.0
+    }
+  },
+  "speaker_names": [],
+  "manual_names": {},
+  "refined_transcript": {
+    "provider": "groq",
+    "model": "whisper-large-v3",
+    "language": "en",
+    "kind": "refined",
+    "duration_seconds": 11.0,
+    "speakers_known": true,
+    "segments": [
+      {
+        "segment_id": "seg_0001",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 0.0,
+        "end": 3.0,
+        "text": "And so my fellow Americans,",
+        "words": [
+          {
+            "text": "And",
+            "start": 0.3,
+            "end": 0.5,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "so",
+            "start": 0.5,
+            "end": 0.92,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "my",
+            "start": 0.92,
+            "end": 1.2,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "fellow",
+            "start": 1.2,
+            "end": 1.62,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "Americans,",
+            "start": 1.62,
+            "end": 3.38,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.20170312,
+        "no_speech_prob": 0.025680542,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0002",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 3.0,
+        "end": 8.0,
+        "text": "ask not what your country can do for you,",
+        "words": [
+          {
+            "text": "ask",
+            "start": 3.3,
+            "end": 3.8,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "not",
+            "start": 3.8,
+            "end": 4.38,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "what",
+            "start": 4.38,
+            "end": 5.54,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "your",
+            "start": 5.54,
+            "end": 5.82,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "country",
+            "start": 5.82,
+            "end": 6.32,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "can",
+            "start": 6.32,
+            "end": 6.62,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "do",
+            "start": 6.62,
+            "end": 6.84,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "for",
+            "start": 6.84,
+            "end": 7.1,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "you,",
+            "start": 7.1,
+            "end": 7.86,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.20170312,
+        "no_speech_prob": 0.025680542,
+        "confidence": null,
+        "language": "English"
+      },
+      {
+        "segment_id": "seg_0003",
+        "speaker": "SPEAKER_00",
+        "speaker_known": true,
+        "speaker_name": null,
+        "start": 8.0,
+        "end": 11.0,
+        "text": "ask what you can do for your country.",
+        "words": [
+          {
+            "text": "ask",
+            "start": 8.14,
+            "end": 8.54,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "what",
+            "start": 8.54,
+            "end": 8.78,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "you",
+            "start": 8.78,
+            "end": 9.08,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "can",
+            "start": 9.08,
+            "end": 9.36,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "do",
+            "start": 9.36,
+            "end": 9.58,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "for",
+            "start": 9.58,
+            "end": 9.8,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "your",
+            "start": 9.8,
+            "end": 9.98,
+            "confidence": null,
+            "speaker": null
+          },
+          {
+            "text": "country.",
+            "start": 9.98,
+            "end": 10.5,
+            "confidence": null,
+            "speaker": null
+          }
+        ],
+        "avg_logprob": -0.20170312,
+        "no_speech_prob": 0.025680542,
+        "confidence": null,
+        "language": "English"
+      }
+    ],
+    "notes": []
+  },
+  "invariants": {
+    "segment_count_unchanged": true,
+    "ids_times_speakers_unchanged": true,
+    "numbers_unchanged": true,
+    "dates_times_unchanged": true,
+    "negations_unchanged": true,
+    "details": []
+  },
+  "stats": {
+    "proposed": 0,
+    "applied": 0,
+    "suggested": 0,
+    "rejected": 0,
+    "segments_total": 3,
+    "segments_changed": 0,
+    "speakers_named": 0
+  },
+  "warnings": [],
+  "timings_seconds": {
+    "second_asr": 5.182,
+    "propose": 1.012,
+    "validate": 0.0,
+    "speaker_names": 1.136,
+    "total": 7.331
+  }
+}

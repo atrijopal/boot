@@ -1,0 +1,61 @@
+[   0.00-   2.14] SPEAKER_00: This one here, right?
+[   3.24-   3.64] SPEAKER_00: Mm-hmm.
+[   3.82-   4.22] SPEAKER_00: Okay.
+[   5.24-   5.76] SPEAKER_00: Very nice.
+[   6.48-   6.92] SPEAKER_00: All right.
+[   6.92-  23.92] SPEAKER_00: My favorite animal is like a beagle.
+[  30.00-  41.10] SPEAKER_00: favorite characteristics of it is that right yeah uh right well basically um high priority for any
+[  41.10-  49.82] SPEAKER_00: animal for me is that they be willing to take a lot of physical affection from their family and
+[  49.82-  53.34] SPEAKER_00: yeah they have lots of personality and
+[  53.34-  57.58] SPEAKER_00: be fit and in robust good health.
+[  58.04-  60.32] SPEAKER_00: So this is Blue Beagle.
+[  61.42-  62.22] SPEAKER_00: My family's Beagle.
+[  63.32-  65.00] SPEAKER_01: Right. Lovely.
+[  65.00-  65.08] SPEAKER_UNKNOWN: Lovely.
+[  74.96-  93.00] SPEAKER_02: My favorite animal would be a monkey And then the small cute and furry and when Planet of the Apes becomes real I'm going
+[  93.00-  98.00] SPEAKER_02: to be up there with them.
+[  98.00- 107.72] SPEAKER_01: You can take as long over this as you like
+[ 107.72- 110.14] SPEAKER_01: because we haven't got an awful lot to discuss.
+[ 110.34- 111.22] SPEAKER_01: Oh, go on, we do, we do.
+[ 111.64- 113.22] SPEAKER_01: Don't feel like you're in a rush anyway.
+[ 113.22- 113.50] SPEAKER_01: Okay.
+[ 115.70- 117.82] SPEAKER_00: I could have told you a whole lot more about beagles.
+[ 118.14- 120.16] SPEAKER_01: Okay, well, I'd have to get you up again.
+[ 120.96- 122.10] SPEAKER_01: I don't know what mine is.
+[ 122.18- 123.48] SPEAKER_01: I'm going to have to think on the spot now.
+[ 127.50- 127.90] SPEAKER_00: Impressionist.
+[ 128.00- 133.00] SPEAKER_00: Is that a whale?
+[ 133.00- 134.00] SPEAKER_01: Yeah.
+[ 135.00- 144.00] SPEAKER_03: Well, I don't know, it's just the first animal I can think of off the top of my head.
+[ 144.00- 156.56] SPEAKER_03: I guess the big reason is because I allergic to most animals Allergic to animals fur so fish was a natural choice Yeah and I kind of like whales They come in and go everything inside
+[ 158.20- 161.26] SPEAKER_03: They're quite harmless and mild and interesting.
+[ 162.36- 162.62] SPEAKER_01: Okay.
+[ 163.58- 165.24] SPEAKER_01: I still don't know what I'm going to write about.
+[ 169.70- 170.86] SPEAKER_00: Superb sketch, by the way.
+[ 173.80- 174.80] SPEAKER_03: Tail's a bit big, I think.
+[ 175.00- 179.58] SPEAKER_01: I was going to choose a dog as well, but I just draw a different kind of dog.
+[ 180.14- 182.88] SPEAKER_01: My favourite animal is my own dog at home.
+[ 186.72- 188.54] SPEAKER_01: That doesn't really look like him, actually.
+[ 193.02- 194.62] SPEAKER_01: He looks more like a pig, actually.
+[ 195.82- 199.38] SPEAKER_00: I see a dog in there.
+[ 199.38- 201.00] SPEAKER_01: There you are. Oh, that's very good of you.
+[ 202.56- 203.56] SPEAKER_00: Now I see a rooster.
+[ 205.00- 212.00] SPEAKER_UNKNOWN: What kind is it?
+[ 212.00- 219.00] SPEAKER_01: He's a mixture of various things. What do I like about him? That's supposed to suggest
+[ 224.00- 231.06] SPEAKER_01: that his tail wags He very friendly and cheery and always pleased to see you and very kind and affectionate
+[ 236.18- 240.80] SPEAKER_01: And he's quite wee as well, so he doesn't take up too much space.
+[ 246.84- 249.24] SPEAKER_01: And he does a funny thing where he chases his tail.
+[ 249.24- 251.16] SPEAKER_01: as well. This is quite amusing.
+[ 251.28- 253.30] SPEAKER_00: Is he aware that this is his own tail he's chasing?
+[ 253.62- 255.48] SPEAKER_01: It is, I think it is. He only does it after
+[ 255.48- 256.20] SPEAKER_01: he's had his dinner.
+[ 257.44- 259.60] SPEAKER_01: He'll just all of a sudden get up and start chasing
+[ 259.60- 260.04] SPEAKER_01: his tail.
+[ 261.84- 265.56] SPEAKER_00: Probably when he was little he got lots
+[ 265.56- 266.66] SPEAKER_00: of attention for doing it.
+[ 267.18- 268.50] SPEAKER_00: He's forever been conditioned.
+[ 269.06- 269.26] SPEAKER_UNKNOWN: Maybe.
+[ 271.32- 272.82] SPEAKER_01: Where did you find this? Just down here?
+[ 275.42- 275.82] SPEAKER_UNKNOWN: Okay.
+[ 279.24- 292.54] SPEAKER_01: Okay, we now need to discuss the project finance.
+[ 292.54- 300.00] SPEAKER_01: So according to the brief, we're going to be selling this remote control for 25 euro

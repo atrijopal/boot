@@ -1,0 +1,3 @@
+[   0.00-   3.00] SPEAKER_00: And so my fellow Americans,
+[   3.00-   8.00] SPEAKER_00: ask not what your country can do for you,
+[   8.00-  11.00] SPEAKER_00: ask what you can do for your country.

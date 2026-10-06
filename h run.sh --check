@@ -1,0 +1,20 @@
+warning: in the working copy of 'run.sh', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/run.sh b/run.sh[m
+[1mindex 6e07aa0..67e5198 100644[m
+[1m--- a/run.sh[m
+[1m+++ b/run.sh[m
+[36m@@ -33,7 +33,13 @@[m [mensure_uv() {[m
+   command -v uv >/dev/null 2>&1 || die "Could not install uv. Install it from https://docs.astral.sh/uv/ and re-run."[m
+ }[m
+ [m
+[31m-venv_python() { echo "$1/bin/python"; }[m
+[32m+[m[32mvenv_python() {[m
+[32m+[m[32m  if [ -f "$1/Scripts/python.exe" ]; then[m
+[32m+[m[32m    printf '%s\n' "$1/Scripts/python.exe"[m
+[32m+[m[32m  else[m
+[32m+[m[32m    printf '%s\n' "$1/bin/python"[m
+[32m+[m[32m  fi[m
+[32m+[m[32m}[m
+ [m
+ pick_venv() {[m
+   # 1) explicit VENV_DIR  2) remembered fallback  3) ./.venv[m
