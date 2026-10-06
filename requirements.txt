@@ -16,6 +16,7 @@ spacy>=3.7
 wordfreq
 scikit-learn
 jellyfish
+langgraph>=1.0  # Phase 3 workflow (tested with 1.2.13); its dependency langsmith is only used if you opt in to tracing
 pytest
 
 # spaCy English model (installed from its release URL, not PyPI)

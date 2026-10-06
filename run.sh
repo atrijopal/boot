@@ -5,7 +5,8 @@
 #   bash run.sh --setup         install only
 #   bash run.sh --check         verify your API keys
 #   bash run.sh --test          run the test suite (no keys needed)
-#   bash run.sh --cli FILE      process one audio file from the terminal (add --provider groq|deepgram)
+#   bash run.sh --cli FILE      Phase 1 only on one audio file (add --provider groq|deepgram)
+#   bash run.sh --all FILE      the whole pipeline (Phase 1, 2 and 3) on one audio file, from the terminal
 #
 # Works on Linux, macOS and Windows via WSL / Git Bash. Needs: bash, curl (or pip), internet.
 # Optional env vars: PORT (default 8000), VENV_DIR (where to put the Python environment).
@@ -61,7 +62,7 @@ make_venv() {
 install_deps() {
   local py stamp want
   py="$(venv_python "$VENV")"; stamp="$VENV/.requirements.cksum"; want="$(cksum < requirements.txt)"
-  if [ -f "$stamp" ] && [ "$(cat "$stamp")" = "$want" ] && "$py" -c "import fastapi, spacy, av, en_core_web_md" 2>/dev/null; then
+  if [ -f "$stamp" ] && [ "$(cat "$stamp")" = "$want" ] && "$py" -c "import fastapi, spacy, av, langgraph, jellyfish, en_core_web_md" 2>/dev/null; then
     return
   fi
   say "Installing dependencies (first time takes a few minutes)"
@@ -96,7 +97,7 @@ setup() {
 cmd="${1:-start}"
 case "$cmd" in
   -h|--help|help)
-    sed -n '2,11p' "$0" | sed 's/^# \{0,1\}//'
+    sed -n '2,12p' "$0" | sed 's/^# \{0,1\}//'
     ;;
   --setup)
     setup; keys_status; say "Setup complete. Start the app with:  bash run.sh"
@@ -110,6 +111,10 @@ case "$cmd" in
   --cli)
     shift; [ $# -ge 1 ] || die "Usage: bash run.sh --cli FILE [--provider groq|deepgram]"
     setup; exec "$(venv_python "$VENV")" scripts/run_phase1.py "$@"
+    ;;
+  --all)
+    shift; [ $# -ge 1 ] || die "Usage: bash run.sh --all FILE [--provider groq|deepgram] [--no-minutes]"
+    setup; exec "$(venv_python "$VENV")" scripts/run_all.py "$@"
     ;;
   start|--start)
     setup; keys_status
