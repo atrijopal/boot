@@ -74,7 +74,7 @@ flowchart LR
     R -. needs_review .-> P2[/PAUSED/]
     P1 -- approve / retry --> E
     P2 -- approve / retry --> E
-    T -. failure .-> F[/FAILED: retry this stage/]
+    T -. failure .-> F[/FAILED, retry this stage/]
     D -. failure .-> F
     F -- retry --> E
 ```
