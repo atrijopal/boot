@@ -1,0 +1,724 @@
+{
+ "meeting": {
+  "id": "example-es2010b",
+  "source_file": "ami_ES2010b_600s-900s.flac (example)",
+  "date": "2026-10-07",
+  "date_provided": true,
+  "duration_seconds": 300.0
+ },
+ "kind": "refined_transcript",
+ "note": "The raw transcript after terminology, name and acronym corrections; the raw transcript is a separate file and is never modified.",
+ "segments": [
+  {
+   "id": "seg_0001",
+   "start": 1.2,
+   "end": 4.48,
+   "speaker": "Speaker 1",
+   "speaker_label": "SPEAKER_00",
+   "speaker_name": null,
+   "text": "The functionality of the product really needs to be considered",
+   "changes": []
+  },
+  {
+   "id": "seg_0002",
+   "start": 4.64,
+   "end": 8.16,
+   "speaker": "Speaker 1",
+   "speaker_label": "SPEAKER_00",
+   "speaker_name": null,
+   "text": "as to, like, what type of buttons do we really need on it,",
+   "changes": []
+  },
+  {
+   "id": "seg_0003",
+   "start": 8.8,
+   "end": 9.36,
+   "speaker": "Speaker 1",
+   "speaker_label": "SPEAKER_00",
+   "speaker_name": null,
+   "text": "and",
+   "changes": []
+  },
+  {
+   "id": "seg_0004",
+   "start": 9.84,
+   "end": 12.56,
+   "speaker": "Speaker 1",
+   "speaker_label": "SPEAKER_00",
+   "speaker_name": null,
+   "text": "it needs to be open to a wide range of consumers. So",
+   "changes": []
+  },
+  {
+   "id": "seg_0005",
+   "start": 13.12,
+   "end": 16.47,
+   "speaker": "Speaker 1",
+   "speaker_label": "SPEAKER_00",
+   "speaker_name": null,
+   "text": "even though we need a small number of buttons, we also need to take in...",
+   "changes": []
+  },
+  {
+   "id": "seg_0006",
+   "start": 16.8,
+   "end": 21.36,
+   "speaker": "Speaker 1",
+   "speaker_label": "SPEAKER_00",
+   "speaker_name": null,
+   "text": "Like, are most people going to be using it for a DVD player or TiVo?",
+   "changes": []
+  },
+  {
+   "id": "seg_0007",
+   "start": 21.43,
+   "end": 23.99,
+   "speaker": "Speaker 1",
+   "speaker_label": "SPEAKER_00",
+   "speaker_name": null,
+   "text": "What what exactly are we using it for?",
+   "changes": []
+  },
+  {
+   "id": "seg_0008",
+   "start": 24.47,
+   "end": 31.22,
+   "speaker": "Speaker 1",
+   "speaker_label": "SPEAKER_00",
+   "speaker_name": null,
+   "text": "As well as the age range. So we need a hip, but not a corny marketing scheme for promoting",
+   "changes": []
+  },
+  {
+   "id": "seg_0009",
+   "start": 31.22,
+   "end": 32.02,
+   "speaker": "Speaker 1",
+   "speaker_label": "SPEAKER_00",
+   "speaker_name": null,
+   "text": "our product.",
+   "changes": []
+  },
+  {
+   "id": "seg_0010",
+   "start": 32.5,
+   "end": 35.54,
+   "speaker": "Speaker 1",
+   "speaker_label": "SPEAKER_00",
+   "speaker_name": null,
+   "text": "And, also, we found... Our team found that speech recognition",
+   "changes": []
+  },
+  {
+   "id": "seg_0011",
+   "start": 36.34,
+   "end": 38.98,
+   "speaker": "Speaker 1",
+   "speaker_label": "SPEAKER_00",
+   "speaker_name": null,
+   "text": "is... It's like an up and coming thing. They really",
+   "changes": []
+  },
+  {
+   "id": "seg_0012",
+   "start": 39.34,
+   "end": 56.16,
+   "speaker": "Speaker 1",
+   "speaker_label": "SPEAKER_00",
+   "speaker_name": null,
+   "text": "consumers are really interested in it. And since our findings found that people are willing to pay more money for a remote for it to be more high class And so just consider to it. Just to clarify, by speech recognition, you mean they would say channel five and the thing would I guess so. Yeah. Mhmm.",
+   "changes": []
+  },
+  {
+   "id": "seg_0013",
+   "start": 56.72,
+   "end": 57.36,
+   "speaker": "Speaker 2",
+   "speaker_label": "SPEAKER_01",
+   "speaker_name": null,
+   "text": "Okay.",
+   "changes": []
+  },
+  {
+   "id": "seg_0014",
+   "start": 57.6,
+   "end": 65.52,
+   "speaker": "Speaker 1",
+   "speaker_label": "SPEAKER_00",
+   "speaker_name": null,
+   "text": "I had to just say where are you? The thing beats, you know? Yeah. I guess we can interpret it like Lovely. We can just try out different types of speech recognition",
+   "changes": []
+  },
+  {
+   "id": "seg_0015",
+   "start": 65.76,
+   "end": 67.58,
+   "speaker": "Speaker 1",
+   "speaker_label": "SPEAKER_00",
+   "speaker_name": null,
+   "text": "within our... Didn't they...",
+   "changes": []
+  },
+  {
+   "id": "seg_0016",
+   "start": 68.3,
+   "end": 75.97,
+   "speaker": "Speaker 1",
+   "speaker_label": "SPEAKER_00",
+   "speaker_name": null,
+   "text": "Didn't our rival companies manufacture a remote that you would press the button on TV and it would... The remote would beep so that if you ever lost remote",
+   "changes": []
+  },
+  {
+   "id": "seg_0017",
+   "start": 76.38,
+   "end": 77.97,
+   "speaker": "Speaker 2",
+   "speaker_label": "SPEAKER_01",
+   "speaker_name": null,
+   "text": "phone used to do. Oh,",
+   "changes": []
+  },
+  {
+   "id": "seg_0018",
+   "start": 78.3,
+   "end": 84.56,
+   "speaker": "Speaker 1",
+   "speaker_label": "SPEAKER_00",
+   "speaker_name": null,
+   "text": "yeah. That's true. We could definitely include that if we wanted to. Yeah. If it's within our price.",
+   "changes": []
+  },
+  {
+   "id": "seg_0019",
+   "start": 84.8,
+   "end": 85.52,
+   "speaker": "Speaker 1",
+   "speaker_label": "SPEAKER_00",
+   "speaker_name": null,
+   "text": "Okay.",
+   "changes": []
+  },
+  {
+   "id": "seg_0020",
+   "start": 85.84,
+   "end": 90.0,
+   "speaker": "Speaker 1",
+   "speaker_label": "SPEAKER_00",
+   "speaker_name": null,
+   "text": "Are we ready for our last presentation, Amber? Yeah. I'm just trying to move it. Okay.",
+   "changes": []
+  },
+  {
+   "id": "seg_0021",
+   "start": 98.6,
+   "end": 101.97,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "Okay. I think it should be there. Working design.",
+   "changes": []
+  },
+  {
+   "id": "seg_0022",
+   "start": 104.92,
+   "end": 105.64,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "Okay.",
+   "changes": []
+  },
+  {
+   "id": "seg_0024",
+   "start": 107.13,
+   "end": 113.61,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "I didn't get a chance to complete this one, because some of the tools that I was given were frustrating.",
+   "changes": []
+  },
+  {
+   "id": "seg_0025",
+   "start": 113.77,
+   "end": 115.85,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "Oh, that's fine. Okay.",
+   "changes": []
+  },
+  {
+   "id": "seg_0026",
+   "start": 115.85,
+   "end": 116.57,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "So",
+   "changes": []
+  },
+  {
+   "id": "seg_0027",
+   "start": 117.69,
+   "end": 118.41,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "method",
+   "changes": []
+  },
+  {
+   "id": "seg_0028",
+   "start": 118.73,
+   "end": 129.01,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "method of our design. I think I just started listing some of the things that we actually need to put into this. We need a power source. We're gonna need a smart chip if we're gonna make it multifunctional.",
+   "changes": []
+  },
+  {
+   "id": "seg_0029",
+   "start": 130.53,
+   "end": 131.81,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "Extra functions,",
+   "changes": []
+  },
+  {
+   "id": "seg_0030",
+   "start": 131.81,
+   "end": 136.44,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "we'll probably need an additional chip. Either that or the smart chip will have to be",
+   "changes": []
+  },
+  {
+   "id": "seg_0031",
+   "start": 136.84,
+   "end": 138.76,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "extremely smart. What",
+   "changes": []
+  },
+  {
+   "id": "seg_0032",
+   "start": 139.88,
+   "end": 146.76,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "exactly is a smart chip? Usually, a smart chip is just a chip that's been programmed and designed so that it can complete",
+   "changes": []
+  },
+  {
+   "id": "seg_0033",
+   "start": 147.25,
+   "end": 149.16,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "a fair range of functions.",
+   "changes": []
+  },
+  {
+   "id": "seg_0034",
+   "start": 149.41,
+   "end": 159.41,
+   "speaker": "Speaker 2",
+   "speaker_label": "SPEAKER_01",
+   "speaker_name": null,
+   "text": "Well, how much extra would the additional chip be? Is that gonna push us over our production costs? I wouldn't think so because we could probably get it from, like, bulk from a",
+   "changes": []
+  },
+  {
+   "id": "seg_0035",
+   "start": 160.36,
+   "end": 164.57,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "newer company. Mhmm. And they tend to sell their chips pretty cheap. Okay.",
+   "changes": []
+  },
+  {
+   "id": "seg_0036",
+   "start": 165.61,
+   "end": 167.05,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "Ready? Yep.",
+   "changes": []
+  },
+  {
+   "id": "seg_0037",
+   "start": 167.53,
+   "end": 169.37,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "Nothing here. That's okay.",
+   "changes": []
+  },
+  {
+   "id": "seg_0038",
+   "start": 170.73,
+   "end": 172.81,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "Power source. I figured batteries...",
+   "changes": []
+  },
+  {
+   "id": "seg_0039",
+   "start": 172.89,
+   "end": 174.97,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "Because they're easily",
+   "changes": []
+  },
+  {
+   "id": "seg_0040",
+   "start": 175.12,
+   "end": 175.93,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "available.",
+   "changes": []
+  },
+  {
+   "id": "seg_0041",
+   "start": 176.08,
+   "end": 180.81,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "Typically, a remote has either two double a's or four triple a's, sometimes three.",
+   "changes": []
+  },
+  {
+   "id": "seg_0042",
+   "start": 181.84,
+   "end": 184.65,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "Really kinda depends on the size of the actual remote itself.",
+   "changes": []
+  },
+  {
+   "id": "seg_0043",
+   "start": 186.51,
+   "end": 188.19,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "A large on off button.",
+   "changes": []
+  },
+  {
+   "id": "seg_0044",
+   "start": 188.51,
+   "end": 189.55,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "Demographically,",
+   "changes": []
+  },
+  {
+   "id": "seg_0045",
+   "start": 190.03,
+   "end": 191.31,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "we're moving towards",
+   "changes": []
+  },
+  {
+   "id": "seg_0046",
+   "start": 191.47,
+   "end": 192.03,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "older",
+   "changes": []
+  },
+  {
+   "id": "seg_0047",
+   "start": 192.35,
+   "end": 196.51,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "generation of people, so a large on off button would probably be good.",
+   "changes": []
+  },
+  {
+   "id": "seg_0048",
+   "start": 197.15,
+   "end": 201.95,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "Selection button for various entertainment devices. So you want something that'll permit you to select",
+   "changes": []
+  },
+  {
+   "id": "seg_0049",
+   "start": 202.25,
+   "end": 204.56,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "the DVD player or the",
+   "changes": []
+  },
+  {
+   "id": "seg_0050",
+   "start": 204.72,
+   "end": 206.65,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "TV or the stereo system.",
+   "changes": []
+  },
+  {
+   "id": "seg_0051",
+   "start": 208.32,
+   "end": 211.53,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "Smart chip that perverts... That permits... Sorry.",
+   "changes": []
+  },
+  {
+   "id": "seg_0052",
+   "start": 211.84,
+   "end": 213.21,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "Universal application.",
+   "changes": []
+  },
+  {
+   "id": "seg_0053",
+   "start": 213.28,
+   "end": 213.6,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "Again,",
+   "changes": []
+  },
+  {
+   "id": "seg_0054",
+   "start": 215.23,
+   "end": 218.27,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "something that'll allow us to skip over between devices.",
+   "changes": []
+  },
+  {
+   "id": "seg_0055",
+   "start": 218.99,
+   "end": 220.59,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "That's kinda it.",
+   "changes": []
+  },
+  {
+   "id": "seg_0056",
+   "start": 222.75,
+   "end": 223.87,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "This is my",
+   "changes": []
+  },
+  {
+   "id": "seg_0057",
+   "start": 224.67,
+   "end": 226.43,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "fifty second design.",
+   "changes": []
+  },
+  {
+   "id": "seg_0058",
+   "start": 228.03,
+   "end": 229.39,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "Power source",
+   "changes": []
+  },
+  {
+   "id": "seg_0059",
+   "start": 229.31,
+   "end": 235.15,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "over here. We're gonna have a switch, obviously, between the power source and the rest of it. You're gonna need the switch.",
+   "changes": []
+  },
+  {
+   "id": "seg_0060",
+   "start": 236.03,
+   "end": 237.94,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "Extra bulb could just be",
+   "changes": []
+  },
+  {
+   "id": "seg_0061",
+   "start": 238.19,
+   "end": 238.82,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "for",
+   "changes": []
+  },
+  {
+   "id": "seg_0062",
+   "start": 239.22,
+   "end": 240.26,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "flashiness.",
+   "changes": []
+  },
+  {
+   "id": "seg_0063",
+   "start": 242.66,
+   "end": 243.78,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "Subcomponent,",
+   "changes": []
+  },
+  {
+   "id": "seg_0064",
+   "start": 243.78,
+   "end": 249.22,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "which would be, like, a way of diverting the power to different parts of the the device,",
+   "changes": []
+  },
+  {
+   "id": "seg_0065",
+   "start": 249.94,
+   "end": 260.6,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "the chip, and of course, the infrared bulb, so it can communicate with the various devices that it needs to talk to. So what exactly are we looking at? This is like the front of the... This is just like a rough schematic.",
+   "changes": []
+  },
+  {
+   "id": "seg_0066",
+   "start": 260.83,
+   "end": 262.83,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "So this is the internal workings.",
+   "changes": []
+  },
+  {
+   "id": "seg_0067",
+   "start": 262.83,
+   "end": 273.25,
+   "speaker": "Speaker 2",
+   "speaker_label": "SPEAKER_01",
+   "speaker_name": null,
+   "text": "So the red would be the front of the remote though. Right? Yeah. That's gonna be what's communicating with the TV. But the other bulb, I think, is good just to indicate I'm doing something sort of like yeah.",
+   "changes": []
+  },
+  {
+   "id": "seg_0068",
+   "start": 273.81,
+   "end": 278.77,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "You don't have to stare at that infrared because, you know, when the battery starts dying on your remote currently,",
+   "changes": []
+  },
+  {
+   "id": "seg_0069",
+   "start": 278.93,
+   "end": 286.77,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "you have to actually stare at that bulb and go, okay. When I push this button, is it working? Okay. Probably be lighting up the keys. Right? Yeah. Yeah.",
+   "changes": []
+  },
+  {
+   "id": "seg_0070",
+   "start": 287.67,
+   "end": 290.15,
+   "speaker": "Speaker 3",
+   "speaker_label": "SPEAKER_02",
+   "speaker_name": null,
+   "text": "So you can The bugs. Put it in the dark. Yeah.",
+   "changes": []
+  },
+  {
+   "id": "seg_0071",
+   "start": 290.47,
+   "end": 295.59,
+   "speaker": "Speaker 1",
+   "speaker_label": "SPEAKER_00",
+   "speaker_name": null,
+   "text": "That's good. We should make it glow in the dark. Yeah. Definitely. K. Next. Ready?",
+   "changes": []
+  },
+  {
+   "id": "seg_0072",
+   "start": 295.59,
+   "end": 298.47,
+   "speaker": "Speaker 1",
+   "speaker_label": "SPEAKER_00",
+   "speaker_name": null,
+   "text": "Yeah. That's it. K. Any... Okay. K.",
+   "changes": []
+  }
+ ],
+ "proposed_corrections": []
+}

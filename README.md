@@ -1,275 +1,258 @@
-# Meeting AI
+<div align="center">
 
-Upload an English meeting recording and get:
+# Meeting Intelligence Assistant
 
-1. **Phase 1, transcript and facts:** a timestamped transcript plus everything extracted from it before any language model rewrites anything: numbers, dates and times, names, technical terms, negations, and candidate questions / proposals / commitments / decisions / tasks.
-2. **Phase 2, refinement and speakers:** a **refined transcript** where mis-heard terms, acronyms and names are fixed, with a side-by-side view of **exactly what changed and why**, plus **who is speaking** and, when people say it themselves, **their names**.
-3. **Phase 3, minutes:** decisions, action items (owner and deadline **only when stated**), open questions, proposals, disagreements, risks and key figures, topic minutes and an executive summary. Every item carries a quote from the transcript and was checked by a second model. The page shows **every model step** (what was asked, what came back, what our checks kept or dropped) and then the final report.
+### From a recorded meeting to a verified, structured record
 
-All heavy models run on APIs. Nothing needs a GPU. Nothing is tied to one meeting topic: terms and names are discovered from each recording.
+Transcript · terminology corrections · minutes · decisions · action items, every line traceable to what was said.
+
+![Python](https://img.shields.io/badge/python-3.12-B71C1C?style=flat-square)
+![FastAPI](https://img.shields.io/badge/FastAPI-backend-B71C1C?style=flat-square)
+![LangGraph](https://img.shields.io/badge/orchestration-LangGraph-B71C1C?style=flat-square)
+![Tests](https://img.shields.io/badge/tests-181%20passing-B71C1C?style=flat-square)
+![Team](https://img.shields.io/badge/team-Linear%20Regression-7F0F0F?style=flat-square)
+
+**Team Linear Regression** · Akansha Das · Atrijo Pal · Anuj Sharma
+Inter IIT Bootcamp · ML Problem Statement, Phase 2
+
+[Technical report (PDF)](docs/report/main.pdf) · [Quick start](#quick-start) · [How it works](#how-it-works) · [Models](#models-and-fallbacks)
+
+</div>
 
 ---
+
+## What it does
+
+Upload an English meeting recording. In one run the application produces the five outputs the problem statement asks for, shows them side by side in an interactive workspace, and lets you download them.
+
+| Output | Content | Where it appears | Export |
+|---|---|---|---|
+| **Raw transcript** | The speech-to-text result, before any language-model step | Transcript tab | TXT, JSON |
+| **Refined transcript** | After domain-aware terminology correction; every change listed with its evidence | Refinement tab | TXT, JSON |
+| **Meeting minutes** | Headline, summary, topics, open questions, key figures | Meeting report | PDF, Markdown, HTML |
+| **Key decisions** | Decisions reached (an empty list if none) | Meeting report | JSON, report |
+| **Action items** | Task, plus owner and deadline *only when stated*, otherwise **unspecified** | Meeting report | JSON, CSV, ICS |
+
+The human-readable record (PDF, Markdown, HTML) and the machine-readable record (JSON, schema `meeting-record/1`) are generated from **one structure**, so they carry identical decisions and tasks. A test enforces it.
+
+<table>
+<tr>
+<td width="50%"><img src="docs/report/figures/overview.png" alt="Overview with the five required outputs"></td>
+<td width="50%"><img src="docs/report/figures/refinement_crop.png" alt="Refinement review"></td>
+</tr>
+<tr>
+<td align="center"><sub>Overview: stage status, next step, and the five outputs with view and download</sub></td>
+<td align="center"><sub>Refinement review: every proposed change with its evidence</sub></td>
+</tr>
+</table>
+
+## Why you can trust the output
+
+Language models invent things. This system is built so that they cannot do it silently.
+
+- **Every item has a quote.** A record is kept only if its quote appears *word for word* in the transcript; a quote may not skip a negation; a number in a record must be in its quote.
+- **A proposal is not a decision.** A decision needs the group to settle it. A suggestion nobody agreed to stays a proposal, and an unstated assignment is never reported as a confirmed task.
+- **Nothing guessed.** An owner is reported only when the speaker commits in the first person or is named in the quote; a deadline only when it is quoted. Otherwise the record says **unspecified**.
+- **Corrections are edit-only and gated.** The refiner returns `find`/`replace` pairs, never rewritten text. A correction may not touch a number, date, time, duration or negation, may not add sentence punctuation, is size-limited, and is applied automatically only when the transcript itself supports it or an independent second check by a different model family confirms it. Everything else is a *suggestion* you accept or reject.
+- **A second opinion on decisions and tasks.** A review call from a different model family can only *remove or weaken* a record, never add one.
+- **If a step cannot run, the record says so.** A failed final check produces a visible banner, every decision tagged *not confirmed*, and a one-click retry. It is never hidden.
+- **The raw transcript is never modified.** It is kept next to the refined one.
+
+## How it works
+
+The pipeline is a **LangGraph** state machine. The backend owns the state (a persisted `session.json` with an explicit status per stage); the interface only reads it. Two stages end in a **human checkpoint** where the graph pauses and resumes when you approve.
+
+```mermaid
+flowchart LR
+    S((START)) --> E{entry:<br/>first open stage}
+    E --> T[transcribe<br/><i>speech-to-text</i>]
+    T --> SP[speakers<br/><i>who is who</i>]
+    SP --> R[refine<br/><b>LLM role 1</b>]
+    R --> D[report<br/><b>LLM role 2</b>]
+    D --> X((END))
+    SP -. needs_review .-> P1[/PAUSED/]
+    R -. needs_review .-> P2[/PAUSED/]
+    P1 -- approve / retry --> E
+    P2 -- approve / retry --> E
+    T -. failure .-> F[/FAILED: retry this stage/]
+    D -. failure .-> F
+    F -- retry --> E
+```
+
+```mermaid
+flowchart LR
+    A[Audio] --> ASR[Speech-to-text<br/>Deepgram nova-3]
+    ASR --> RAW[(Raw transcript<br/>timestamps · speakers · word confidence)]
+    RAW --> REF[Refiner<br/>language model, role 1<br/>+ code gates + second check]
+    REF --> RF[(Refined transcript<br/>+ list of changes)]
+    RF --> DOC[Documenter<br/>language model, role 2<br/>5 focused readers + review]
+    DOC --> REC[(Meeting record<br/>minutes · decisions · actions)]
+    REC --> EX[PDF · MD · HTML · JSON · CSV · ICS · ZIP]
+```
+
+The two language-model roles are separate stages with their own prompts, models and outputs. The documenter reads the **refined** transcript, never the raw one. A stage that fails can be retried alone; finished stages are kept.
+
+## Models and fallbacks
+
+| Role | Model | Purpose |
+|---|---|---|
+| Speech-to-text | **Deepgram nova-3** | Whole file in one request: word timestamps, confidences, **voice-based speaker labels** |
+| Speech-to-text (alternative) | Groq **whisper-large-v3** (10-minute chunks) | Used when no Deepgram key is set; text only, no speakers |
+| Role 1: proposer | **gpt-oss-20b** (reasoning: medium) | Proposes small exact fixes to terms, acronyms, names |
+| Role 1: second check | **qwen3.8-27b** (low) | A different model family confirms or rejects a fix that the recording does not itself support |
+| Speaker names | **gpt-oss-20b** (low) | Suggests a name or role only with a quote that shows it |
+| Role 2: readers | **qwen3.8-27b** ×4, **gpt-oss-120b** ×1 | Five focused readers: decisions and proposals; tasks, owners and deadlines (the 120b); questions and concerns; figures, topics and names; discussion points |
+| Role 2: review | **gpt-oss-120b** (low) | Checks decisions and tasks, writes headline, summary and topic bullets |
+
+Each call uses the smallest model and reasoning effort that does its job, and the review model is a different family from most readers, so it checks them independently.
+
+**Fallbacks.** A call whose model is refused or unavailable is answered by a configurable backup (`FALLBACK_MODEL`, e.g. NVIDIA nemotron); an unreadable JSON answer is retried once with lower reasoning effort; a speech-to-text chunk falls back from `whisper-large-v3` to `whisper-large-v3-turbo`; a failed stage is retried alone. Any provider can be used by prefixing a model name (`nvidia:…`, `openrouter:…`).
+
+### Prompts
+
+All 13 prompts live in [`prompts/`](prompts) and are the only model instructions: `refine`, `verify_edits`, `names`, `speakers` (optional), five readers (`extract_decisions`, `extract_actions`, `extract_issues`, `extract_details`, `extract_discussion`), their two-reader and single-reader variants (`extract_core`, `extract_context`, `extract`) and `review`. Each treats the transcript as untrusted data and demands JSON only.
+
+## Token efficiency
+
+Compact transcript encoding (`u012 A: text`, merged short lines, short JSON keys) · numbers, dates, negations and rare words found **by code** and pre-flagged · refinement returns only edits · the review reads *records*, not the transcript · about 3,500 transcript tokens per call with a hard call cap · small models for narrow tasks · second check only for fixes the recording does not support · per-call and per-run token budgets (a run that would exceed them is refused before it starts) · a content-addressed cache and per-stage retry.
+
+Measured on a 5-minute meeting (full run, all stages completed):
+
+| Stage | Calls | Tokens |
+|---|---:|---:|
+| Speaker names | 1 | 1,757 |
+| Refinement (+ check) | 1 | 3,531 |
+| Five readers | 5 | 11,873 |
+| Review and summary | 1 | 4,270 |
+| **Total** | **8** | **21,431** (about 4.3k per minute of audio) |
+
+## The workspace
+
+Upload → Speakers → Transcript → Refinement → Meeting report → Export, plus a **Pipeline** tab that shows what each stage received and returned.
+
+- **Upload:** WAV, MP3, M4A, FLAC, OGG, OPUS, WebM, AAC. Unsupported, empty, silent, corrupt or too-short files are rejected with a clear explanation.
+- **Speakers:** suggested names with their evidence quote; accept, edit, or leave a speaker unnamed.
+- **Transcript:** raw and refined views, search with highlighting, speaker filter, click any timestamp to play the real recording from that point, copy and download.
+- **Refinement review:** original, proposed text, reason and evidence for every change; accept, reject, accept all, filters, side-by-side view.
+- **Meeting report:** a numbered document; every item links back to its line in the transcript; uncertainty is listed with severity (info, review, warning, error).
+- **Export:** only files that exist are offered, with professional names (`meeting_<date>_<kind>.<ext>`); a ZIP bundles them with a manifest.
+- Clear status at all times, plain-language errors, a retry button for a failed stage, and a layout that works on a phone.
 
 ## Quick start
 
 ```bash
 git clone https://github.com/atrijopal/boot.git && cd boot
-cp .env.example .env          # paste your API keys into .env (see "Get your API keys")
-bash run.sh                   # installs everything on first run, then starts the app
+cp .env.example .env        # paste your keys (below)
+bash run.sh                 # installs everything on first run, then starts the app
 # open http://localhost:8000
 ```
 
-`bash run.sh` creates a private Python 3.12 environment and installs all dependencies the first time (a few minutes), then only starts the app on later runs.
-Works on Linux, macOS, and Windows through WSL or Git Bash. Needs `bash`, internet access, and either `curl` or `pip`.
-
-## All the ways to run it
+Works on Linux, macOS, and Windows through WSL or Git Bash. Needs `bash`, internet access, and `curl` or `pip`.
 
 | Command | What it does |
 |---|---|
-| `bash run.sh` | install if needed, start the web app on port 8000 |
-| `bash run.sh --check` | check that your API keys work (prints OK / INVALID, never shows the keys) |
-| `bash run.sh --all FILE` | run the **whole pipeline** (Phases 1, 2, 3) on one audio file from the terminal |
-| `bash run.sh --cli FILE` | Phase 1 only, from the terminal |
-| `bash run.sh --test` | run the 196 tests (no keys needed; the APIs are mocked) |
-| `bash run.sh --setup` | install only |
-| `PORT=8001 bash run.sh` | use another port |
+| `bash run.sh` | install if needed and start the workspace on port 8000 |
+| `bash run.sh --all FILE` | run the pipeline on one audio file from the terminal |
+| `bash run.sh --check` | check that your API keys work |
+| `bash run.sh --test` | run the test suite (no keys needed; recogniser and models are faked) |
+| `PORT=8002 bash run.sh` | another port |
 
-Examples:
-```bash
-bash run.sh --all samples/new/ami_IS1003b_540s-840s.flac        # whole pipeline, results in outputs/<job_id>/
-bash run.sh --all samples/jfk.flac --no-minutes                 # stop after Phase 2
-```
-After a terminal run, open the same job in the page: `http://localhost:8000/?job=<job_id>` (or use "Open an earlier result" at the top right).
+**Keys.** `GROQ_API_KEY` (required, <https://console.groq.com>) runs all the language models; `DEEPGRAM_API_KEY` (<https://console.deepgram.com>) gives speaker labels by voice. Optional: `NVIDIA_API_KEY` or `OPENROUTER_API_KEY` for the fallback model. Never commit `.env`.
 
-**The web page** (three steps on one page):
-1. Choose an audio file (`.wav .mp3 .m4a .flac .ogg .opus .webm .aac`, up to 500 MB / 4 hours) and click **Process**. Phase 1 results appear: transcript, numbers, names, terms, dates, negations, candidate lists.
-2. Click **Refine transcript**. Speaker panel (Accept / Reject / type a name), raw-versus-refined view, an edit table with the evidence for every edit, downloads.
-3. Click **Generate minutes**. A live step list, then **A. every model step in order** and **B. the final report** (see "Phase 3" below).
-
-**The API** (what the page uses; you can call it yourself):
-```bash
-curl -F "file=@samples/jfk.flac" -F provider=groq localhost:8000/process-audio      # -> {"job_id": "..."}
-curl localhost:8000/jobs/<id>                                                        # status + results of all phases
-curl -X POST localhost:8000/jobs/<id>/refine                                         # Phase 2
-curl -X POST localhost:8000/jobs/<id>/minutes                                        # Phase 3
-curl localhost:8000/jobs/<id>/minutes/stages                                         # every model call and our decisions
-curl -O -J "localhost:8000/jobs/<id>/minutes/download?format=md"                     # md | json | csv | trace | stages
-curl localhost:8000/jobs                                                             # earlier jobs on disk
-```
-Full contracts: `docs/phase1/CONTRACT.md`, `docs/phase2/CONTRACT.md`, `docs/phase3/CONTRACT.md`.
-
----
-
-## Get your API keys
-
-You need **one required key (Groq)** and **one optional key (Deepgram)**. Both have free tiers. Paste them into `.env`.
-
-### Groq (required): transcription and the language models
-1. Go to <https://console.groq.com> and sign up (Google login works).
-2. Open **API Keys**, click **Create API Key**, copy it. It starts with `gsk_` and is shown only once.
-3. In `.env`: `GROQ_API_KEY=gsk_...`
-
-Groq does the speech-to-text (Whisper large-v3) and every language-model step.
-**Free-tier limits** (from [Groq's rate-limit page](https://console.groq.com/docs/rate-limits), per model and per organisation): `gpt-oss-120b` and `gpt-oss-20b` get 30 requests per minute, 1,000 per day, **8,000 tokens per minute and 200,000 tokens per day**; Whisper gets 20 requests per minute and 2,000 per day.
-A 10-minute meeting uses roughly 40,000 tokens through Phase 3, so the free tier covers only a handful of meetings a day (see Troubleshooting).
-
-### Deepgram (optional, strongly recommended): speaker labels
-1. Go to <https://console.deepgram.com> and sign up. Free credit is added automatically.
-2. Open your project, then **Settings, API Keys, Create a New API Key**, copy it.
-3. In `.env`: `DEEPGRAM_API_KEY=...`
-
-Without it everything works except **who is speaking**: all lines show `SPEAKER_UNKNOWN`, and Phase 2 loses its "second opinion" signal.
-
-Then run `bash run.sh --check`:
-```
-Groq      OK       key works, all needed models available (...)
-Deepgram  OK       key works
-```
-Never commit `.env`: it is in `.gitignore`. Never paste keys into chat or tickets. If a key leaks, delete it in the console and create a new one.
-
----
-
-## How it works
-
-```
-audio
- | Phase 1  (app/audio, app/asr, app/preprocessing)
- |-- validate -> decode to 16 kHz mono -> split at pauses (< 10 min chunks)
- |-- speech-to-text (API) -> RAW transcript (timestamped segments, word timings)
- |-- normalize (whitespace / duplicates only) -> NORMALIZED transcript
- '-- extract facts and context (every item points back to its segment)
- | Phase 2  (app/refinement)
- |-- second opinion from the other ASR + speaker labels
- |-- small LLM proposes exact edits -> code checks every edit -> larger LLM verifies
- '-- REFINED transcript + change log + speaker names
- | Phase 3  (app/minutes)        <- a LangGraph workflow, described below
- |-- extract records -> verify each against the transcript -> link them -> topics -> summaries
- '-- MINUTES (Markdown + JSON + CSV of action items) and the full step-by-step model log
-```
-
-### Phase 1: what runs where
-| Step | Tool / model | Notes |
-|---|---|---|
-| Validation, decoding, chunking | PyAV, numpy, soundfile (local) | Empty, corrupt, silent, too-short or wrong-format files give a clear message. Your original file is never modified. |
-| Speech-to-text | **Groq `whisper-large-v3`** (default) or **Deepgram `nova-3`** (adds speakers) | Switch in the dropdown or with `ASR_PROVIDER`. Results are cached, so re-running a file costs no new API call. |
-| Normalization | pure Python | Whitespace, exact duplicates and Whisper's "no speech" hallucinations only. The raw transcript is kept. |
-| Numbers, dates, times, durations | regex plus a spoken-number parser | Exact original text kept (`81.73%`, `2x`, `$200`, "twenty five percent"). Relative dates are never resolved. |
-| Names | spaCy `en_core_web_md` | plus a low-confidence capitalisation check |
-| Technical terms, acronyms | acronym patterns, `wordfreq` word rarity, TF-IDF noun phrases | Discovered per meeting, no domain word lists. Words in shaky ASR regions are flagged. |
-| Negations | spaCy dependency parse | cue plus its scope |
-| Questions, proposals, commitments, decisions, tasks, hedges | **LLM** (`LLM_MODEL`, default `openai/gpt-oss-120b`) | Only *candidates*. Every quote is checked to be verbatim; no owner or deadline is ever inferred. |
-
-### Phase 2: how hallucination is kept down
-| Step | Tool / model | Notes |
-|---|---|---|
-| Second opinion | the *other* ASR provider | Shows where two recognisers disagree ("Jessie" vs "Jesse"). |
-| **Who speaks** | Deepgram diarization copied onto the text by timestamp | Acoustic, not an LLM guess. Mixed or uncovered lines are flagged, never split. |
-| Proposing fixes | **`openai/gpt-oss-20b`** | Returns only `{find, replace, kind}` edits, never rewritten text. |
-| Checking fixes | code, no LLM | Verbatim and unique; no overlap with numbers, dates, times, negations; no new digits; no deletions; size limits; then the Phase 1 extractors are **re-run** and must find the same facts. |
-| Evidence rule | code | Auto-applied only if the new text appears elsewhere, the second ASR heard it, or it matches a Phase 1 term, **and** it sounds or looks like the original. Otherwise it is only *suggested*. |
-| Verification | **`openai/gpt-oss-120b`** | Must confirm the same meaning and no new information. |
-| **Who they are** | LLM proposal plus code check | Names only from what people say ("my name is..."), with a quote that must be verbatim and spoken by that voice. Weaker evidence ("Rose, can you...") is only suggested. No evidence means the speaker stays `SPEAKER_01`. |
-
-Every edit ends as **applied**, **suggested** (you decide) or **blocked** (a rule failed, with the reason). The whole transcript is re-checked at the end: segment count, ids, timestamps, speakers, numbers, dates and negations must be unchanged, or the stage refuses to finish.
-
-### Phase 3: the minutes, orchestrated with LangGraph
-Phase 3 is a [LangGraph](https://langchain-ai.github.io/langgraph/) state graph (`app/minutes/graph.py`). Independent steps run in parallel, joins wait for everything they depend on, and each step has a typed state it reads and writes. The model calls themselves go through our own small client (`app/llm/client.py`), not through LangChain.
-
-```mermaid
-flowchart TD
-  S([start]) --> chunk[chunk: split the refined transcript into windows]
-  S --> topics[topics: find the topics, in parallel]
-  chunk --> extract[extract: one model call per window, all kinds of records]
-  extract --> verify[verify: a second model checks every record]
-  verify --> reconcile[reconcile: link decisions, proposals, questions]
-  reconcile --> summarize[summarize: write and check topic bullets]
-  topics --> summarize
-  summarize --> executive[executive: write and check the executive summary]
-  executive --> E([end])
-```
-
-| Node | Model (default) | What it does | What our code checks (no model) |
-|---|---|---|---|
-| `chunk` | none | 60-segment windows, plus 6 segments of read-only context on each side | |
-| `extract` | `gpt-oss-120b`, medium effort | Proposes records (decision, proposal, disagreement, action, question, risk, fact) with quotes | each quote must exist in the cited segment (a neighbouring one is accepted only if the quote is verbatim there); at least one quote from the window; no number that is not in the cited text; an owner only from a first-person commitment by a labelled speaker, or a name or role that appears in the quote; a deadline only if it appears in the quote |
-| merge (inside `verify`) | none | joins duplicates from overlapping windows | text similarity plus shared evidence |
-| `verify` | `gpt-oss-120b` | judges each record against the transcript around its quote; may correct a wrong status | each status has a plain-language meaning (`app/minutes/lenses.py`); unconfirmed records go to "needs review" and never reach the summaries |
-| `reconcile` | `gpt-oss-120b` | links records (replaces, contradicts, adopts, rejects, answers) | the quote must be in the evidence of one of the two records |
-| `topics` | `gpt-oss-20b` | proposes contiguous topics | ranges are made complete, non-overlapping and capped |
-| `summarize` | `gpt-oss-20b` | writes 2 to 5 bullets per topic from its segments and verified records | no new numbers; cited ids must exist; then an independent checker confirms each bullet |
-| `executive` | `gpt-oss-20b` | writes the executive summary | same checks; falls back to restating verified items if nothing passes |
-
-**How LangGraph is used:** the state is a typed dictionary; parallel branches write to it through reducers (lists are concatenated, dictionaries merged). `topics` runs alongside the whole extraction branch, and `summarize` has two incoming edges, so it waits for both. In `MINUTES_EXTRACT_MODE=separate`, `extract` becomes four parallel nodes (decisions and proposals, actions, questions and risks, figures), which suits paid keys with higher limits.
-
-**Tracing and visibility** (nothing leaves your machine):
-- `trace.jsonl`: every node and model call with model, tokens, seconds, retries and cache hits.
-- `stages.json`: every model call's input and raw output plus each keep or drop decision. This is what the page shows in part A.
-- Optional **LangSmith** tracing (off by default, untested here): set `LANGSMITH_TRACING=true` and `LANGSMITH_API_KEY=...` in your shell (not in `.env`). It sends prompts and meeting transcripts to LangSmith's cloud, so only enable it for non-sensitive meetings.
-
-**Reliability rules (kept deliberately simple):** every model call has a 90-second timeout and at most 3 tries; a rate-limit wait is capped at 45 seconds, and if the provider asks for a longer wait (a daily quota) the call fails at once with the provider's own message. A failed extraction window gets one more try at the end. One run stops after `MINUTES_MAX_SECONDS` (default 900) and reports what it could not finish. A run with failures is marked `partial`, never hidden.
-
-Prompts are in `prompts/` and can be edited directly; a changed prompt automatically bypasses old cached answers.
-
-### Outputs
-Everything is written to `outputs/<job_id>/`:
-- Phase 1: `raw_transcript.txt|json`, `normalized_transcript.json`, `protected_facts.json`, `meeting_context.json`, `phase1_result.json`, `asr_raw.json`
-- Phase 2: `refined_transcript.txt|json`, `edits.csv|json`, `diff.txt`, `speakers.json`, `refinement.json`
-- Phase 3: `minutes/runs/<run_id>/` with `minutes.md`, `minutes.json`, `action_items.csv`, `stages.json`, `trace.jsonl`
-- `outputs/cache/` stores API results so repeat runs are free. `samples/example_outputs/` has one saved Phase 1 result.
-
----
-
-## Configuration (`.env`)
+<details>
+<summary><b>Configuration</b> (<code>.env</code>)</summary>
 
 | Variable | Default | Meaning |
 |---|---|---|
-| `GROQ_API_KEY` | | required |
-| `DEEPGRAM_API_KEY` | | optional (speaker labels) |
-| `ASR_PROVIDER` / `ASR_MODEL` | `groq` / provider default | speech-to-text provider (`groq` or `deepgram`) and model |
-| `CANDIDATE_DETECTOR` / `LLM_MODEL` | `llm` / `openai/gpt-oss-120b` | Phase 1 candidate labelling (`off` to disable) |
-| `REFINE_MODEL` / `REFINE_REASONING_EFFORT` | `openai/gpt-oss-20b` / `medium` | the small refiner (Phase 2) |
-| `VERIFY_MODEL` / `VERIFY_ENABLED` | `openai/gpt-oss-120b` / `true` | the Phase 2 checker |
-| `REFINE_USE_SECOND_ASR` | `true` | use the other ASR as evidence and for speaker labels |
-| `MINUTES_EXTRACT_MODE` | `combined` | `combined` (one call per window) or `separate` (four) |
-| `MINUTES_EXTRACT_MODEL` / `MINUTES_VERIFY_MODEL` | `openai/gpt-oss-120b` | Phase 3 extraction and checking (the 20b model returns nothing on the long combined prompt: measured) |
-| `MINUTES_TOPICS_MODEL` / `MINUTES_WRITE_MODEL` | `openai/gpt-oss-20b` | Phase 3 topics and writing |
-| `MINUTES_MAX_SECONDS` / `MINUTES_CONCURRENCY` | `900` / `2` | hard time limit for one run; simultaneous model calls |
-| `LLM_BASE_URL` | Groq | any OpenAI-compatible endpoint (also change the key) |
-| `CACHE_ENABLED`, `CHUNK_SECONDS` | `true`, `600` | caching; audio chunk size |
+| `ASR_PROVIDER` | `auto` | `auto` uses Deepgram (voices) when its key is set, otherwise Groq Whisper (text only) |
+| `REFINE_MODEL` / `REFINE_EFFORT` | `openai/gpt-oss-20b` / `medium` | the refinement proposer |
+| `VERIFY_EDITS_MODEL` | `qwen/qwen3.8-27b` | the independent second check of fixes |
+| `EXTRACT_MODEL_DECISIONS` `_ACTIONS` `_ISSUES` `_DETAILS` `_DISCUSSION` | qwen ×4, gpt-oss-120b for actions | one model per reader |
+| `REVIEW_MODEL` / `REVIEW_EFFORT` / `REVIEW_SCOPE` | `openai/gpt-oss-120b` / `low` / `decisions,actions` | final check and summary |
+| `EXTRACTION_LENSES` | `5` | focused readers per window: 5, 2 or 1 |
+| `PHASE3_MAX_CALLS` | `6` | hard cap on model calls in the report stage |
+| `FALLBACK_MODEL` | empty | backup model used when a call is refused or unavailable |
+| `MAX_CALL_TOKENS` / `MAX_RUN_TOKENS` | `7000` / `80000` | per-call and per-run token budgets |
+| `RUN_TIMEOUT_SECONDS` | `600` | hard time limit for a stage |
+| `CACHE_ENABLED` | `false` | reuse saved speech-to-text and model answers for identical inputs |
 
-Models are swappable here without touching code.
+</details>
 
----
+## API
+
+```
+POST /meetings                      upload (file, meeting_date, mode=review|auto) and start
+GET  /meetings, /meetings/{id}      list; stages, issues, available exports
+GET  /meetings/{id}/{transcript|speakers|refinement|report|pipeline}
+POST /meetings/{id}/continue        {"stage": "speakers"|"refinement"}: approve and run on
+POST /meetings/{id}/retry           {"stage": ...}: run a stage again
+POST /meetings/{id}/edits/{edit}    {"decision": "accept|reject|reset"}
+POST /meetings/{id}/speaker-names   name or un-name a speaker
+GET  /meetings/{id}/audio           the recording, with range requests for seeking
+GET  /meetings/{id}/exports, /export/{key}
+```
+
+<details>
+<summary><b>Example of the machine-readable record</b></summary>
+
+```json
+{
+  "schema_version": "meeting-record/1",
+  "decisions": [{
+    "id": "dec_001", "decision": "The group agreed to use a simple battery.", "status": "confirmed",
+    "source": {"quote": "we'll use the simple battery", "speaker": "Speaker 2", "time": "7:41"}
+  }],
+  "action_items": [{
+    "id": "act_001", "task": "Negotiate the production cost with the vendors.",
+    "owner": "Speaker 1", "owner_stated": true, "deadline": "unspecified", "deadline_stated": false,
+    "source": {"quote": "I will try to negotiate with the vendors", "speaker": "Speaker 1", "time": "3:12"}
+  }],
+  "minutes": {"headline": "…", "summary": ["…"], "topics": ["…"], "open_questions": [], "key_figures": []},
+  "raw_transcript": ["…"], "refined_transcript": ["…"]
+}
+```
+
+</details>
+
+## Evaluation
+
+Ground truth comes from the public human transcripts and annotations of the [AMI Meeting Corpus](https://groups.inf.ed.ac.uk/ami/corpus/) (CC BY 4.0). `scripts/make_reference.py` builds a reference for any clip and `scripts/evaluate.py` scores a run.
+
+| Measurement (single runs) | Result |
+|---|---|
+| Word error rate, Deepgram nova-3, quiet meeting (12 min) | 19.8% |
+| Word error rate, Deepgram nova-3, loud office meeting (12 min) | 25.4% |
+| Word error rate, Deepgram nova-3, 8-minute design meeting | 24.5% |
+| Words attributed to the correct speaker (4 real speakers found) | 95.7% / 86.5% / 89.2% |
+
+Most word errors are words lost where people talk over each other. **181 automated tests** run offline with a faked recogniser and model: the gates, graph routing, session recovery, every export, error messages, and a scan proving that no model name, token count or prompt text reaches a user-visible page or file.
+
+## Samples
+
+[`samples/`](samples) has recordings of 5 to 15 minutes from the AMI corpus (including the 7- and 8-minute demo clips), human reference transcripts, inputs that must fail cleanly (`bad/`), and a saved example meeting with all its generated outputs in [`samples/example_outputs/`](samples/example_outputs): raw and refined transcript, minutes, decisions and action items. A saved example is labelled **Example** in the interface and is never returned for a new upload: every new recording is processed by the pipeline.
 
 ## Project structure
 
 ```
-.
-├── run.sh                  one command: install, start, check, test, run the pipeline
-├── README.md               this file
-├── requirements.txt        all dependencies (including langgraph and the spaCy model)
-├── .env.example            copy to .env and add your keys
-├── app/
-│   ├── api/                FastAPI server (upload, jobs, refine, minutes, downloads)
-│   ├── asr/                Groq and Deepgram providers, retry handling
-│   ├── audio/              validation, decoding, silence-aware chunking
-│   ├── preprocessing/      Phase 1: normalization, extractors, LLM candidate labelling
-│   ├── refinement/         Phase 2: edit proposals, gatekeeper, verifier, speakers, second ASR
-│   ├── minutes/            Phase 3: LangGraph workflow, extraction, grounding checks, verifier, reconcile, topics, summaries, step log
-│   ├── llm/                small OpenAI-compatible chat client (timeouts, retries, usage)
-│   ├── schemas/            typed data models (Pydantic)
-│   ├── config/             settings (.env)
-│   └── utils/              errors, logging, cache
-├── prompts/                every LLM prompt, versioned (prompts/minutes/ for Phase 3)
-├── web/                    the interface: index.html and static/app.js, app.css
-├── scripts/                run_all, run_phase1, check_keys, fetch_sample, benchmark_asr, eval_refinement
-├── tests/                  196 tests (APIs mocked, no keys needed)
-├── samples/                test audio (AMI meetings), bad inputs, an example output
-├── docs/
-│   ├── brief/              the original problem statement and project notes
-│   └── phase1/ phase2/ phase3/   PLAN.md and CONTRACT.md for each phase
-└── outputs/                generated at run time (git-ignored)
+app/api.py, app/meetings.py   FastAPI application and the meeting workspace API
+app/core/                     graph (LangGraph), session (persisted state), pipeline (stage code),
+                              steps / gates / review / echoes (model calls and every code check),
+                              views, issues, errors, wording, record, exports, pdf, examples
+app/asr/ app/audio/ app/llm/  speech-to-text providers, audio preparation, model client with provider routing
+app/refinement/               the correction gate (verbatim, invariants, evidence, similarity)
+prompts/                      all 13 model instructions
+web/                          index.html, static/app.css, static/js/ (one file per view), IBM Plex fonts
+scripts/                      run_all, check_keys, make_reference, evaluate, fetch_sample
+tests/                        offline test suite
+docs/report/                  technical report (LaTeX source and PDF)
 ```
 
----
+## Limits
 
-## Samples
-`samples/` has short excerpts of AMI meetings (CC BY 4.0), five-minute ones in `samples/new/`, and broken inputs in `samples/bad/` that demonstrate the error messages. See `samples/README.md`. Quick first try: `bash run.sh --all samples/new/ami_IS1003b_540s-840s.flac`.
+English only. Language models can be wrong; the checks reduce this but do not prove correctness. Speaker separation needs the Deepgram provider (guessing speakers from text alone was measured at chance level and is off). Free-tier model quotas can slow a run or stop the final check; the record then says so and offers a retry. Meetings beyond about 15 minutes are covered by tests with a fake model, not by live runs.
 
-## Tests and measurements
-- `bash run.sh --test`: 196 tests covering validation errors, extraction checks, the edit gatekeeper, speaker logic, the Phase 3 workflow with a scripted fake model, the API, timeouts and failure paths. They need no keys. The real Groq and Deepgram calls were checked separately, live.
-- `python scripts/eval_refinement.py --refine-model openai/gpt-oss-20b --list` benchmarks the Phase 2 refiner on 12 hand-written passages with 13 injected mishearings (and 3 clean controls): **11 of 13 fixed, 0 false edits, 0 changes to numbers or negations**. The fixture is small and written by the authors, so it is indicative, not a general accuracy figure (`docs/phase2/PLAN.md`).
-- Phase 3 was run live on several AMI excerpts; what it measured and the bugs it found are in `docs/phase3/PLAN.md`. A 10-minute excerpt took about 3 to 6 minutes and about 40,000 tokens on Groq's free tier.
+## Acknowledgements
 
----
+Sample meetings are excerpts from the AMI Meeting Corpus (Carletta et al., CC BY 4.0). Interface typeface: IBM Plex (SIL Open Font License).
 
-## Troubleshooting
-
-| Problem | Fix |
-|---|---|
-| "GROQ_API_KEY is not set" | Paste the key into `.env` (not `.env.example`) and **save the file**, then `bash run.sh --check`. |
-| Minutes show "verifier unreachable", or a step says the provider's limit is reached and asks you to wait | Groq's free tier allows 200,000 tokens per day per model. The message includes how long to wait. Wait, then use "Regenerate minutes". Cached results are reused, so a re-run costs little. |
-| A run seems stuck | It stops by itself after 15 minutes (`MINUTES_MAX_SECONDS`) and reports what it could not finish. The page shows elapsed time. |
-| Port already in use | `PORT=8001 bash run.sh` |
-| Install failed or a broken environment | `rm -rf .venv .venv_dir` then `bash run.sh` again (needs internet). |
-| `Permission denied: run.sh` | Always start it with `bash run.sh`. |
-| All speakers show `SPEAKER_UNKNOWN` | Add a Deepgram key, or select the `deepgram` provider. |
-| A refinement you don't want | Click Reject on that edit. Rejected edits are saved in the outputs. |
-| The page is blank after a restart | Use "Open an earlier result" (top right) or `/?job=<job_id>`: everything is reloaded from `outputs/`. |
-
----
-
-## Known limits and weaknesses
-- English only. 4 hours and 500 MB maximum per recording.
-- **Long meetings are untested**, and the free tier would be too small for them (about 4,000 tokens per minute of meeting through Phase 3).
-- Results vary from run to run on borderline items. Recall of action items on short excerpts is incomplete: models can miss a task that is stated in passing.
-- Speaker voices come from Deepgram; a segment where two people talk can only be flagged, not split.
-- Name detection is imperfect: it can mislabel an acronym or a rare word as an organisation, and the capitalisation heuristic can list ordinary sentence-initial words. Both are marked low confidence.
-- Negations come only from the spaCy parser, so some forms ("no budget") can be missed.
-- Numbers are never changed by refinement, so a speech-recognition error in a number (for example "1250" for "12.50") carries into the minutes. The minutes flag a probable misplaced decimal when the same digits appear at another scale nearby.
-- Models can be wrong. Candidates are not confirmed decisions or tasks; suggested edits and names are only proposals until you accept them; a second-model check reduces errors but is not proof.
-- The extractor and the verifier are the same model family (different sizes); a different family would be more independent.
-- Job status lives in memory; results persist in `outputs/`.
-
-## Credits
-Sample meetings are excerpts from the [AMI Meeting Corpus](https://groups.inf.ed.ac.uk/ami/corpus/) (CC BY 4.0). `jfk.flac` is US public domain.
+<div align="center"><sub>Built by <b>Team Linear Regression</b></sub></div>

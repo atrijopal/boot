@@ -1,0 +1,4 @@
+id,task,owner,deadline,status,time,speaker,quote
+act_001,Obtain a power source.,unspecified,unspecified,requested,1:58,Speaker 3,We need a power source.
+act_002,Obtain an additional chip.,unspecified,unspecified,requested,2:11,Speaker 3,we'll probably need an additional chip.
+act_003,Make the remote glow in the dark.,unspecified,unspecified,requested,4:50,Speaker 1,We should make it glow in the dark.

@@ -1,0 +1,619 @@
+[
+ {
+  "n": 1,
+  "stage": "names",
+  "model": "openai/gpt-oss-20b",
+  "effort": "low",
+  "prompt_tokens": 1707,
+  "completion_tokens": 50,
+  "secs": 0.913,
+  "cache_hit": false,
+  "fallback_for": null,
+  "effort_fallback": false,
+  "window": "w1",
+  "input": "SPEAKERS: A, B, C\n\nTRANSCRIPT:\nu001 A: The functionality of the product really needs to be considered as to, like, what type of buttons do we really need on it, and it needs to be open to a wide range of consumers. So even though we need a small number of buttons, we also need to take in... Like, are most people going to be using it for a DVD player or TiVo? What what exactly are we using it for?\nu002 A: As well as the age range. So we need a hip, but not a corny marketing scheme for promoting our product. And, also, we found... Our team found that speech recognition is... It's like an up and coming thing. They really\nu003 A: consumers are really interested in it. And since our findings found that people are willing to pay more money for a remote for it to be more high class And so just consider to it. Just to clarify, by speech recognition, you mean they would say channel five and the thing would I guess so. Yeah. Mhmm.\nu004 B: Okay.\nu005 A: I had to just say where are you? The thing beats, you know? Yeah. I guess we can interpret it like Lovely. We can just try out different types of speech recognition within our... Didn't they... Didn't our rival companies manufacture a remote that you would press the button on TV and it would... The remote would beep so that if you ever lost remote\nu006 B: phone used to do. Oh,\nu007 A: yeah. That's true. We could definitely include that if we wanted to. Yeah. If it's within our price. Okay. Are we ready for our last presentation, Amber? Yeah. I'm just trying to move it. Okay.\nu008 C: Okay. I think it should be there. Working design.\nu009 C: Okay. I didn't get a chance to complete this one, because some of the tools that I was given were frustrating. Oh, that's fine. Okay. So method method of our design. I think I just started listing some of the things that we actually need to put into this. We need a power source. We're gonna need a smart chip if we're gonna make it multifunctional.\nu010 C: Extra functions, we'll probably need an additional chip. Either that or the smart chip will have to be extremely smart. What exactly is a smart chip? Usually, a smart chip is just a chip that's been programmed and designed so that it can complete a fair range of functions.\nu011 B: Well, how much extra would the additional chip be? Is that gonna push us over our production costs? I wouldn't think so because we could probably get it from, like, bulk from a\nu012 C: newer company. Mhmm. And they tend to sell their chips pretty cheap. Okay. Ready? Yep. Nothing here. That's okay. Power source. I figured batteries... Because they're easily available. Typically, a remote has either two double a's or four triple a's, sometimes three. Really kinda depends on the size of the actual remote itself. A large on off button.\nu013 C: Demographically, we're moving towards older generation of people, so a large on off button would probably be good. Selection button for various entertainment devices. So you want something that'll permit you to select the DVD player or the TV or the stereo system. Smart chip that perverts... That permits... Sorry. Universal application. Again,\nu014 C: something that'll allow us to skip over between devices. That's kinda it. This is my fifty second design. Power source over here. We're gonna have a switch, obviously, between the power source and the rest of it. You're gonna need the switch. Extra bulb could just be for flashiness. Subcomponent,\nu015 C: which would be, like, a way of diverting the power to different parts of the the device, the chip, and of course, the infrared bulb, so it can communicate with the various devices that it needs to talk to. So what exactly are we looking at? This is like the front of the... This is just like a rough schematic. So this is the internal workings.\nu016 B: So the red would be the front of the remote though. Right? Yeah. That's gonna be what's communicating with the TV. But the other bulb, I think, is good just to indicate I'm doing something sort of like yeah.\nu017 C: You don't have to stare at that infrared because, you know, when the battery starts dying on your remote currently, you have to actually stare at that bulb and go, okay. When I push this button, is it working? Okay. Probably be lighting up the keys. Right? Yeah. Yeah. So you can The bugs. Put it in the dark. Yeah.\nu018 A: That's good. We should make it glow in the dark. Yeah. Definitely. K. Next. Ready? Yeah. That's it. K. Any... Okay. K.",
+  "output": {
+   "people": []
+  },
+  "error": null
+ },
+ {
+  "n": 2,
+  "stage": "refine",
+  "model": "openai/gpt-oss-20b",
+  "effort": "medium",
+  "prompt_tokens": 1802,
+  "completion_tokens": 1729,
+  "secs": 2.535,
+  "cache_hit": false,
+  "fallback_for": null,
+  "effort_fallback": false,
+  "window": "w1",
+  "input": "SPEAKERS: A, B, C\nCHECK (rare words, maybe mis-heard): u001 tivo, u003 mhmm, u009 multifunctional, u013 demographically, u013 perverts, u014 flashiness, u014 subcomponent\n\nTRANSCRIPT:\nu001 A: The functionality of the product really needs to be considered as to, like, what type of buttons do we really need on it, and it needs to be open to a wide range of consumers. So even though we need a small number of buttons, we also need to take in... Like, are most people going to be using it for a DVD player or TiVo? What what exactly are we using it for?\nu002 A: As well as the age range. So we need a hip, but not a corny marketing scheme for promoting our product. And, also, we found... Our team found that speech recognition is... It's like an up and coming thing. They really\nu003 A: consumers are really interested in it. And since our findings found that people are willing to pay more money for a remote for it to be more high class And so just consider to it. Just to clarify, by speech recognition, you mean they would say channel five and the thing would I guess so. Yeah. Mhmm.\nu004 B: Okay.\nu005 A: I had to just say where are you? The thing beats, you know? Yeah. I guess we can interpret it like Lovely. We can just try out different types of speech recognition within our... Didn't they... Didn't our rival companies manufacture a remote that you would press the button on TV and it would... The remote would beep so that if you ever lost remote\nu006 B: phone used to do. Oh,\nu007 A: yeah. That's true. We could definitely include that if we wanted to. Yeah. If it's within our price. Okay. Are we ready for our last presentation, Amber? Yeah. I'm just trying to move it. Okay.\nu008 C: Okay. I think it should be there. Working design.\nu009 C: Okay. I didn't get a chance to complete this one, because some of the tools that I was given were frustrating. Oh, that's fine. Okay. So method method of our design. I think I just started listing some of the things that we actually need to put into this. We need a power source. We're gonna need a smart chip if we're gonna make it multifunctional.\nu010 C: Extra functions, we'll probably need an additional chip. Either that or the smart chip will have to be extremely smart. What exactly is a smart chip? Usually, a smart chip is just a chip that's been programmed and designed so that it can complete a fair range of functions.\nu011 B: Well, how much extra would the additional chip be? Is that gonna push us over our production costs? I wouldn't think so because we could probably get it from, like, bulk from a\nu012 C: newer company. Mhmm. And they tend to sell their chips pretty cheap. Okay. Ready? Yep. Nothing here. That's okay. Power source. I figured batteries... Because they're easily available. Typically, a remote has either two double a's or four triple a's, sometimes three. Really kinda depends on the size of the actual remote itself. A large on off button.\nu013 C: Demographically, we're moving towards older generation of people, so a large on off button would probably be good. Selection button for various entertainment devices. So you want something that'll permit you to select the DVD player or the TV or the stereo system. Smart chip that perverts... That permits... Sorry. Universal application. Again,\nu014 C: something that'll allow us to skip over between devices. That's kinda it. This is my fifty second design. Power source over here. We're gonna have a switch, obviously, between the power source and the rest of it. You're gonna need the switch. Extra bulb could just be for flashiness. Subcomponent,\nu015 C: which would be, like, a way of diverting the power to different parts of the the device, the chip, and of course, the infrared bulb, so it can communicate with the various devices that it needs to talk to. So what exactly are we looking at? This is like the front of the... This is just like a rough schematic. So this is the internal workings.\nu016 B: So the red would be the front of the remote though. Right? Yeah. That's gonna be what's communicating with the TV. But the other bulb, I think, is good just to indicate I'm doing something sort of like yeah.\nu017 C: You don't have to stare at that infrared because, you know, when the battery starts dying on your remote currently, you have to actually stare at that bulb and go, okay. When I push this button, is it working? Okay. Probably be lighting up the keys. Right? Yeah. Yeah. So you can The bugs. Put it in the dark. Yeah.\nu018 A: That's good. We should make it glow in the dark. Yeah. Definitely. K. Next. Ready? Yeah. That's it. K. Any... Okay. K.",
+  "output": {
+   "edits": []
+  },
+  "error": null
+ },
+ {
+  "n": 3,
+  "stage": "extract",
+  "model": "qwen/qwen3.8-27b",
+  "effort": "medium",
+  "prompt_tokens": 1947,
+  "completion_tokens": 6,
+  "secs": 0.483,
+  "cache_hit": false,
+  "fallback_for": null,
+  "effort_fallback": false,
+  "window": "w1-decisions",
+  "input": "SPEAKERS: A, B, C\n\nTRANSCRIPT:\nu001 A: The functionality of the product really needs to be considered as to, like, what type of buttons do we really need on it, and it needs to be open to a wide range of consumers. So even though we need a small number of buttons, we also need to take in... Like, are most people going to be using it for a DVD player or TiVo? What what exactly are we using it for?\nu002 A: As well as the age range. So we need a hip, but not a corny marketing scheme for promoting our product. And, also, we found... Our team found that speech recognition is... It's like an up and coming thing. They really\nu003 A: consumers are really interested in it. And since our findings found that people are willing to pay more money for a remote for it to be more high class And so just consider to it. Just to clarify, by speech recognition, you mean they would say channel five and the thing would I guess so. Yeah. Mhmm.\nu004 B: Okay.\nu005 A: I had to just say where are you? The thing beats, you know? Yeah. I guess we can interpret it like Lovely. We can just try out different types of speech recognition within our... Didn't they... Didn't our rival companies manufacture a remote that you would press the button on TV and it would... The remote would beep so that if you ever lost remote\nu006 B: phone used to do. Oh,\nu007 A: yeah. That's true. We could definitely include that if we wanted to. Yeah. If it's within our price. Okay. Are we ready for our last presentation, Amber? Yeah. I'm just trying to move it. Okay.\nu008 C: Okay. I think it should be there. Working design.\nu009 C: Okay. I didn't get a chance to complete this one, because some of the tools that I was given were frustrating. Oh, that's fine. Okay. So method method of our design. I think I just started listing some of the things that we actually need to put into this. We need a power source. We're gonna need a smart chip if we're gonna make it multifunctional.\nu010 C: Extra functions, we'll probably need an additional chip. Either that or the smart chip will have to be extremely smart. What exactly is a smart chip? Usually, a smart chip is just a chip that's been programmed and designed so that it can complete a fair range of functions.\nu011 B: Well, how much extra would the additional chip be? Is that gonna push us over our production costs? I wouldn't think so because we could probably get it from, like, bulk from a\nu012 C: newer company. Mhmm. And they tend to sell their chips pretty cheap. Okay. Ready? Yep. Nothing here. That's okay. Power source. I figured batteries... Because they're easily available. Typically, a remote has either two double a's or four triple a's, sometimes three. Really kinda depends on the size of the actual remote itself. A large on off button.\nu013 C: Demographically, we're moving towards older generation of people, so a large on off button would probably be good. Selection button for various entertainment devices. So you want something that'll permit you to select the DVD player or the TV or the stereo system. Smart chip that perverts... That permits... Sorry. Universal application. Again,\nu014 C: something that'll allow us to skip over between devices. That's kinda it. This is my fifty second design. Power source over here. We're gonna have a switch, obviously, between the power source and the rest of it. You're gonna need the switch. Extra bulb could just be for flashiness. Subcomponent,\nu015 C: which would be, like, a way of diverting the power to different parts of the the device, the chip, and of course, the infrared bulb, so it can communicate with the various devices that it needs to talk to. So what exactly are we looking at? This is like the front of the... This is just like a rough schematic. So this is the internal workings.\nu016 B: So the red would be the front of the remote though. Right? Yeah. That's gonna be what's communicating with the TV. But the other bulb, I think, is good just to indicate I'm doing something sort of like yeah.\nu017 C: You don't have to stare at that infrared because, you know, when the battery starts dying on your remote currently, you have to actually stare at that bulb and go, okay. When I push this button, is it working? Okay. Probably be lighting up the keys. Right? Yeah. Yeah. So you can The bugs. Put it in the dark. Yeah.\nu018 A: That's good. We should make it glow in the dark. Yeah. Definitely. K. Next. Ready? Yeah. That's it. K. Any... Okay. K.",
+  "output": {
+   "items": [],
+   "topics": [],
+   "names": []
+  },
+  "error": null
+ },
+ {
+  "n": 4,
+  "stage": "extract",
+  "model": "openai/gpt-oss-120b",
+  "effort": "medium",
+  "prompt_tokens": 1997,
+  "completion_tokens": 1192,
+  "secs": 3.271,
+  "cache_hit": false,
+  "fallback_for": null,
+  "effort_fallback": false,
+  "window": "w1-actions",
+  "input": "SPEAKERS: A, B, C\n\nTRANSCRIPT:\nu001 A: The functionality of the product really needs to be considered as to, like, what type of buttons do we really need on it, and it needs to be open to a wide range of consumers. So even though we need a small number of buttons, we also need to take in... Like, are most people going to be using it for a DVD player or TiVo? What what exactly are we using it for?\nu002 A: As well as the age range. So we need a hip, but not a corny marketing scheme for promoting our product. And, also, we found... Our team found that speech recognition is... It's like an up and coming thing. They really\nu003 A: consumers are really interested in it. And since our findings found that people are willing to pay more money for a remote for it to be more high class And so just consider to it. Just to clarify, by speech recognition, you mean they would say channel five and the thing would I guess so. Yeah. Mhmm.\nu004 B: Okay.\nu005 A: I had to just say where are you? The thing beats, you know? Yeah. I guess we can interpret it like Lovely. We can just try out different types of speech recognition within our... Didn't they... Didn't our rival companies manufacture a remote that you would press the button on TV and it would... The remote would beep so that if you ever lost remote\nu006 B: phone used to do. Oh,\nu007 A: yeah. That's true. We could definitely include that if we wanted to. Yeah. If it's within our price. Okay. Are we ready for our last presentation, Amber? Yeah. I'm just trying to move it. Okay.\nu008 C: Okay. I think it should be there. Working design.\nu009 C: Okay. I didn't get a chance to complete this one, because some of the tools that I was given were frustrating. Oh, that's fine. Okay. So method method of our design. I think I just started listing some of the things that we actually need to put into this. We need a power source. We're gonna need a smart chip if we're gonna make it multifunctional.\nu010 C: Extra functions, we'll probably need an additional chip. Either that or the smart chip will have to be extremely smart. What exactly is a smart chip? Usually, a smart chip is just a chip that's been programmed and designed so that it can complete a fair range of functions.\nu011 B: Well, how much extra would the additional chip be? Is that gonna push us over our production costs? I wouldn't think so because we could probably get it from, like, bulk from a\nu012 C: newer company. Mhmm. And they tend to sell their chips pretty cheap. Okay. Ready? Yep. Nothing here. That's okay. Power source. I figured batteries... Because they're easily available. Typically, a remote has either two double a's or four triple a's, sometimes three. Really kinda depends on the size of the actual remote itself. A large on off button.\nu013 C: Demographically, we're moving towards older generation of people, so a large on off button would probably be good. Selection button for various entertainment devices. So you want something that'll permit you to select the DVD player or the TV or the stereo system. Smart chip that perverts... That permits... Sorry. Universal application. Again,\nu014 C: something that'll allow us to skip over between devices. That's kinda it. This is my fifty second design. Power source over here. We're gonna have a switch, obviously, between the power source and the rest of it. You're gonna need the switch. Extra bulb could just be for flashiness. Subcomponent,\nu015 C: which would be, like, a way of diverting the power to different parts of the the device, the chip, and of course, the infrared bulb, so it can communicate with the various devices that it needs to talk to. So what exactly are we looking at? This is like the front of the... This is just like a rough schematic. So this is the internal workings.\nu016 B: So the red would be the front of the remote though. Right? Yeah. That's gonna be what's communicating with the TV. But the other bulb, I think, is good just to indicate I'm doing something sort of like yeah.\nu017 C: You don't have to stare at that infrared because, you know, when the battery starts dying on your remote currently, you have to actually stare at that bulb and go, okay. When I push this button, is it working? Okay. Probably be lighting up the keys. Right? Yeah. Yeah. So you can The bugs. Put it in the dark. Yeah.\nu018 A: That's good. We should make it glow in the dark. Yeah. Definitely. K. Next. Ready? Yeah. That's it. K. Any... Okay. K.",
+  "output": {
+   "items": [
+    {
+     "t": "action",
+     "s": "requested",
+     "x": "Obtain a power source.",
+     "o": null,
+     "ou": "u009",
+     "d": null,
+     "q": [
+      [
+       "u009",
+       "We need a power source."
+      ]
+     ]
+    },
+    {
+     "t": "action",
+     "s": "requested",
+     "x": "Obtain an additional chip.",
+     "o": null,
+     "ou": "u010",
+     "d": null,
+     "q": [
+      [
+       "u010",
+       "we'll probably need an additional chip."
+      ]
+     ]
+    },
+    {
+     "t": "action",
+     "s": "requested",
+     "x": "Make the remote glow in the dark.",
+     "o": null,
+     "ou": "u018",
+     "d": null,
+     "q": [
+      [
+       "u018",
+       "We should make it glow in the dark."
+      ]
+     ]
+    }
+   ],
+   "topics": [],
+   "names": []
+  },
+  "error": null
+ },
+ {
+  "n": 5,
+  "stage": "extract",
+  "model": "qwen/qwen3.8-27b",
+  "effort": "medium",
+  "prompt_tokens": 1800,
+  "completion_tokens": 6,
+  "secs": 0.466,
+  "cache_hit": false,
+  "fallback_for": null,
+  "effort_fallback": false,
+  "window": "w1-issues",
+  "input": "SPEAKERS: A, B, C\n\nTRANSCRIPT:\nu001 A: The functionality of the product really needs to be considered as to, like, what type of buttons do we really need on it, and it needs to be open to a wide range of consumers. So even though we need a small number of buttons, we also need to take in... Like, are most people going to be using it for a DVD player or TiVo? What what exactly are we using it for?\nu002 A: As well as the age range. So we need a hip, but not a corny marketing scheme for promoting our product. And, also, we found... Our team found that speech recognition is... It's like an up and coming thing. They really\nu003 A: consumers are really interested in it. And since our findings found that people are willing to pay more money for a remote for it to be more high class And so just consider to it. Just to clarify, by speech recognition, you mean they would say channel five and the thing would I guess so. Yeah. Mhmm.\nu004 B: Okay.\nu005 A: I had to just say where are you? The thing beats, you know? Yeah. I guess we can interpret it like Lovely. We can just try out different types of speech recognition within our... Didn't they... Didn't our rival companies manufacture a remote that you would press the button on TV and it would... The remote would beep so that if you ever lost remote\nu006 B: phone used to do. Oh,\nu007 A: yeah. That's true. We could definitely include that if we wanted to. Yeah. If it's within our price. Okay. Are we ready for our last presentation, Amber? Yeah. I'm just trying to move it. Okay.\nu008 C: Okay. I think it should be there. Working design.\nu009 C: Okay. I didn't get a chance to complete this one, because some of the tools that I was given were frustrating. Oh, that's fine. Okay. So method method of our design. I think I just started listing some of the things that we actually need to put into this. We need a power source. We're gonna need a smart chip if we're gonna make it multifunctional.\nu010 C: Extra functions, we'll probably need an additional chip. Either that or the smart chip will have to be extremely smart. What exactly is a smart chip? Usually, a smart chip is just a chip that's been programmed and designed so that it can complete a fair range of functions.\nu011 B: Well, how much extra would the additional chip be? Is that gonna push us over our production costs? I wouldn't think so because we could probably get it from, like, bulk from a\nu012 C: newer company. Mhmm. And they tend to sell their chips pretty cheap. Okay. Ready? Yep. Nothing here. That's okay. Power source. I figured batteries... Because they're easily available. Typically, a remote has either two double a's or four triple a's, sometimes three. Really kinda depends on the size of the actual remote itself. A large on off button.\nu013 C: Demographically, we're moving towards older generation of people, so a large on off button would probably be good. Selection button for various entertainment devices. So you want something that'll permit you to select the DVD player or the TV or the stereo system. Smart chip that perverts... That permits... Sorry. Universal application. Again,\nu014 C: something that'll allow us to skip over between devices. That's kinda it. This is my fifty second design. Power source over here. We're gonna have a switch, obviously, between the power source and the rest of it. You're gonna need the switch. Extra bulb could just be for flashiness. Subcomponent,\nu015 C: which would be, like, a way of diverting the power to different parts of the the device, the chip, and of course, the infrared bulb, so it can communicate with the various devices that it needs to talk to. So what exactly are we looking at? This is like the front of the... This is just like a rough schematic. So this is the internal workings.\nu016 B: So the red would be the front of the remote though. Right? Yeah. That's gonna be what's communicating with the TV. But the other bulb, I think, is good just to indicate I'm doing something sort of like yeah.\nu017 C: You don't have to stare at that infrared because, you know, when the battery starts dying on your remote currently, you have to actually stare at that bulb and go, okay. When I push this button, is it working? Okay. Probably be lighting up the keys. Right? Yeah. Yeah. So you can The bugs. Put it in the dark. Yeah.\nu018 A: That's good. We should make it glow in the dark. Yeah. Definitely. K. Next. Ready? Yeah. That's it. K. Any... Okay. K.",
+  "output": {
+   "items": [],
+   "topics": [],
+   "names": []
+  },
+  "error": null
+ },
+ {
+  "n": 6,
+  "stage": "extract",
+  "model": "qwen/qwen3.8-27b",
+  "effort": "medium",
+  "prompt_tokens": 1861,
+  "completion_tokens": 373,
+  "secs": 1.23,
+  "cache_hit": false,
+  "fallback_for": null,
+  "effort_fallback": false,
+  "window": "w1-details",
+  "input": "SPEAKERS: A, B, C\n\nTRANSCRIPT:\nu001 A: The functionality of the product really needs to be considered as to, like, what type of buttons do we really need on it, and it needs to be open to a wide range of consumers. So even though we need a small number of buttons, we also need to take in... Like, are most people going to be using it for a DVD player or TiVo? What what exactly are we using it for?\nu002 A: As well as the age range. So we need a hip, but not a corny marketing scheme for promoting our product. And, also, we found... Our team found that speech recognition is... It's like an up and coming thing. They really\nu003 A: consumers are really interested in it. And since our findings found that people are willing to pay more money for a remote for it to be more high class And so just consider to it. Just to clarify, by speech recognition, you mean they would say channel five and the thing would I guess so. Yeah. Mhmm.\nu004 B: Okay.\nu005 A: I had to just say where are you? The thing beats, you know? Yeah. I guess we can interpret it like Lovely. We can just try out different types of speech recognition within our... Didn't they... Didn't our rival companies manufacture a remote that you would press the button on TV and it would... The remote would beep so that if you ever lost remote\nu006 B: phone used to do. Oh,\nu007 A: yeah. That's true. We could definitely include that if we wanted to. Yeah. If it's within our price. Okay. Are we ready for our last presentation, Amber? Yeah. I'm just trying to move it. Okay.\nu008 C: Okay. I think it should be there. Working design.\nu009 C: Okay. I didn't get a chance to complete this one, because some of the tools that I was given were frustrating. Oh, that's fine. Okay. So method method of our design. I think I just started listing some of the things that we actually need to put into this. We need a power source. We're gonna need a smart chip if we're gonna make it multifunctional.\nu010 C: Extra functions, we'll probably need an additional chip. Either that or the smart chip will have to be extremely smart. What exactly is a smart chip? Usually, a smart chip is just a chip that's been programmed and designed so that it can complete a fair range of functions.\nu011 B: Well, how much extra would the additional chip be? Is that gonna push us over our production costs? I wouldn't think so because we could probably get it from, like, bulk from a\nu012 C: newer company. Mhmm. And they tend to sell their chips pretty cheap. Okay. Ready? Yep. Nothing here. That's okay. Power source. I figured batteries... Because they're easily available. Typically, a remote has either two double a's or four triple a's, sometimes three. Really kinda depends on the size of the actual remote itself. A large on off button.\nu013 C: Demographically, we're moving towards older generation of people, so a large on off button would probably be good. Selection button for various entertainment devices. So you want something that'll permit you to select the DVD player or the TV or the stereo system. Smart chip that perverts... That permits... Sorry. Universal application. Again,\nu014 C: something that'll allow us to skip over between devices. That's kinda it. This is my fifty second design. Power source over here. We're gonna have a switch, obviously, between the power source and the rest of it. You're gonna need the switch. Extra bulb could just be for flashiness. Subcomponent,\nu015 C: which would be, like, a way of diverting the power to different parts of the the device, the chip, and of course, the infrared bulb, so it can communicate with the various devices that it needs to talk to. So what exactly are we looking at? This is like the front of the... This is just like a rough schematic. So this is the internal workings.\nu016 B: So the red would be the front of the remote though. Right? Yeah. That's gonna be what's communicating with the TV. But the other bulb, I think, is good just to indicate I'm doing something sort of like yeah.\nu017 C: You don't have to stare at that infrared because, you know, when the battery starts dying on your remote currently, you have to actually stare at that bulb and go, okay. When I push this button, is it working? Okay. Probably be lighting up the keys. Right? Yeah. Yeah. So you can The bugs. Put it in the dark. Yeah.\nu018 A: That's good. We should make it glow in the dark. Yeah. Definitely. K. Next. Ready? Yeah. That's it. K. Any... Okay. K.",
+  "output": {
+   "items": [
+    {
+     "t": "fact",
+     "s": "stated",
+     "x": "A typical remote uses two double a's or four triple a's, sometimes three.",
+     "l": "battery configuration",
+     "v": "two double a's or four triple a's, sometimes three",
+     "q": [
+      [
+       "u012",
+       "a remote has either two double a's or four triple a's, sometimes three"
+      ]
+     ]
+    }
+   ],
+   "topics": [
+    {
+     "n": "Product functionality and speech recognition",
+     "a": "u001",
+     "b": "u007"
+    },
+    {
+     "n": "Design components and smart chip",
+     "a": "u008",
+     "b": "u012"
+    },
+    {
+     "n": "Power source and button layout",
+     "a": "u012",
+     "b": "u013"
+    },
+    {
+     "n": "Schematic and infrared bulb function",
+     "a": "u014",
+     "b": "u018"
+    }
+   ],
+   "names": [
+    {
+     "t": "B",
+     "n": "Amber",
+     "u": "u007",
+     "q": "Are we ready for our last presentation, Amber?",
+     "how": "addressed"
+    }
+   ]
+  },
+  "error": null
+ },
+ {
+  "n": 7,
+  "stage": "extract",
+  "model": "qwen/qwen3.8-27b",
+  "effort": "medium",
+  "prompt_tokens": 1742,
+  "completion_tokens": 949,
+  "secs": 2.449,
+  "cache_hit": false,
+  "fallback_for": null,
+  "effort_fallback": false,
+  "window": "w1-discussion",
+  "input": "SPEAKERS: A, B, C\n\nTRANSCRIPT:\nu001 A: The functionality of the product really needs to be considered as to, like, what type of buttons do we really need on it, and it needs to be open to a wide range of consumers. So even though we need a small number of buttons, we also need to take in... Like, are most people going to be using it for a DVD player or TiVo? What what exactly are we using it for?\nu002 A: As well as the age range. So we need a hip, but not a corny marketing scheme for promoting our product. And, also, we found... Our team found that speech recognition is... It's like an up and coming thing. They really\nu003 A: consumers are really interested in it. And since our findings found that people are willing to pay more money for a remote for it to be more high class And so just consider to it. Just to clarify, by speech recognition, you mean they would say channel five and the thing would I guess so. Yeah. Mhmm.\nu004 B: Okay.\nu005 A: I had to just say where are you? The thing beats, you know? Yeah. I guess we can interpret it like Lovely. We can just try out different types of speech recognition within our... Didn't they... Didn't our rival companies manufacture a remote that you would press the button on TV and it would... The remote would beep so that if you ever lost remote\nu006 B: phone used to do. Oh,\nu007 A: yeah. That's true. We could definitely include that if we wanted to. Yeah. If it's within our price. Okay. Are we ready for our last presentation, Amber? Yeah. I'm just trying to move it. Okay.\nu008 C: Okay. I think it should be there. Working design.\nu009 C: Okay. I didn't get a chance to complete this one, because some of the tools that I was given were frustrating. Oh, that's fine. Okay. So method method of our design. I think I just started listing some of the things that we actually need to put into this. We need a power source. We're gonna need a smart chip if we're gonna make it multifunctional.\nu010 C: Extra functions, we'll probably need an additional chip. Either that or the smart chip will have to be extremely smart. What exactly is a smart chip? Usually, a smart chip is just a chip that's been programmed and designed so that it can complete a fair range of functions.\nu011 B: Well, how much extra would the additional chip be? Is that gonna push us over our production costs? I wouldn't think so because we could probably get it from, like, bulk from a\nu012 C: newer company. Mhmm. And they tend to sell their chips pretty cheap. Okay. Ready? Yep. Nothing here. That's okay. Power source. I figured batteries... Because they're easily available. Typically, a remote has either two double a's or four triple a's, sometimes three. Really kinda depends on the size of the actual remote itself. A large on off button.\nu013 C: Demographically, we're moving towards older generation of people, so a large on off button would probably be good. Selection button for various entertainment devices. So you want something that'll permit you to select the DVD player or the TV or the stereo system. Smart chip that perverts... That permits... Sorry. Universal application. Again,\nu014 C: something that'll allow us to skip over between devices. That's kinda it. This is my fifty second design. Power source over here. We're gonna have a switch, obviously, between the power source and the rest of it. You're gonna need the switch. Extra bulb could just be for flashiness. Subcomponent,\nu015 C: which would be, like, a way of diverting the power to different parts of the the device, the chip, and of course, the infrared bulb, so it can communicate with the various devices that it needs to talk to. So what exactly are we looking at? This is like the front of the... This is just like a rough schematic. So this is the internal workings.\nu016 B: So the red would be the front of the remote though. Right? Yeah. That's gonna be what's communicating with the TV. But the other bulb, I think, is good just to indicate I'm doing something sort of like yeah.\nu017 C: You don't have to stare at that infrared because, you know, when the battery starts dying on your remote currently, you have to actually stare at that bulb and go, okay. When I push this button, is it working? Okay. Probably be lighting up the keys. Right? Yeah. Yeah. So you can The bugs. Put it in the dark. Yeah.\nu018 A: That's good. We should make it glow in the dark. Yeah. Definitely. K. Next. Ready? Yeah. That's it. K. Any... Okay. K.",
+  "output": {
+   "items": [
+    {
+     "t": "point",
+     "s": "discussed",
+     "x": "A participant argued that the product's functionality must be defined by the specific devices it controls, such as a DVD player or TiVo, to ensure it serves a wide range of consumers.",
+     "q": [
+      [
+       "u001",
+       "are most people going to be using it for a DVD player or TiVo?"
+      ]
+     ]
+    },
+    {
+     "t": "point",
+     "s": "discussed",
+     "x": "A participant noted that the team's research indicated consumers are interested in speech recognition and are willing to pay more for a remote with this high-class feature.",
+     "q": [
+      [
+       "u003",
+       "people are willing to pay more money for a remote for it to be more high class"
+      ]
+     ]
+    },
+    {
+     "t": "point",
+     "s": "discussed",
+     "x": "A participant suggested including a beeping feature, similar to rival companies' remotes, to help users locate the device if it is lost.",
+     "q": [
+      [
+       "u005",
+       "The remote would beep so that if you ever lost remote"
+      ]
+     ]
+    },
+    {
+     "t": "point",
+     "s": "discussed",
+     "x": "A participant stated that a smart chip is required to make the remote multifunctional, or an additional chip would be needed for extra functions.",
+     "q": [
+      [
+       "u009",
+       "We're gonna need a smart chip if we're gonna make it multifunctional."
+      ]
+     ]
+    },
+    {
+     "t": "point",
+     "s": "discussed",
+     "x": "A participant explained that a smart chip is a programmed component designed to complete a fair range of functions.",
+     "q": [
+      [
+       "u010",
+       "a chip that's been programmed and designed so that it can complete a fair range of functions"
+      ]
+     ]
+    },
+    {
+     "t": "point",
+     "s": "discussed",
+     "x": "A participant argued that the cost of an additional chip would not push production costs over budget because they could be purchased in bulk from a newer company.",
+     "q": [
+      [
+       "u011",
+       "we could probably get it from, like, bulk from a"
+      ],
+      [
+       "u012",
+       "they tend to sell their chips pretty cheap"
+      ]
+     ]
+    },
+    {
+     "t": "point",
+     "s": "discussed",
+     "x": "A participant selected batteries as the power source because they are easily available and typically used in remotes, with the number depending on the remote's size.",
+     "q": [
+      [
+       "u012",
+       "I figured batteries... Because they're easily available."
+      ]
+     ]
+    },
+    {
+     "t": "point",
+     "s": "discussed",
+     "x": "A participant recommended a large on/off button because the target demographic is moving towards an older generation of people.",
+     "q": [
+      [
+       "u013",
+       "Demographically, we're moving towards older generation of people, so a large on off button would probably be good."
+      ]
+     ]
+    },
+    {
+     "t": "point",
+     "s": "discussed",
+     "x": "A participant described the internal schematic, which includes a switch between the power source and the rest of the device, and an infrared bulb to communicate with various devices.",
+     "q": [
+      [
+       "u015",
+       "the infrared bulb, so it can communicate with the various devices that it needs to talk to"
+      ]
+     ]
+    },
+    {
+     "t": "point",
+     "s": "discussed",
+     "x": "A participant suggested adding a second bulb to indicate that the remote is functioning, eliminating the need to stare at the infrared light to check if the battery is dying.",
+     "q": [
+      [
+       "u017",
+       "when the battery starts dying on your remote currently, you have to actually stare at that bulb"
+      ]
+     ]
+    }
+   ],
+   "topics": [],
+   "names": []
+  },
+  "error": null
+ },
+ {
+  "n": 8,
+  "stage": "review",
+  "model": "openai/gpt-oss-120b",
+  "effort": "low",
+  "prompt_tokens": 2872,
+  "completion_tokens": 1398,
+  "secs": 3.932,
+  "cache_hit": false,
+  "fallback_for": null,
+  "effort_fallback": false,
+  "window": "",
+  "input": "TOPICS:\n0 | Product functionality and speech recognition | 0:01-1:30\n1 | Design components and smart chip | 1:38-3:08\n2 | Power source and button layout | 2:40-3:33\n3 | Schematic and infrared bulb function | 3:35-4:58\n\nRECORDS:\n{\"n\": 0, \"w\": \"SPEAKER_00\", \"k\": \"point\", \"s\": \"discussed\", \"x\": \"A participant argued that the product's functionality must be defined by the specific devices it controls, such as a DVD player or TiVo, to ensure it serves a wide range of consumers.\", \"q\": \"are most people going to be using it for a DVD player or TiVo?\"}\n{\"n\": 1, \"w\": \"SPEAKER_00\", \"k\": \"point\", \"s\": \"discussed\", \"x\": \"A participant noted that the team's research indicated consumers are interested in speech recognition and are willing to pay more for a remote with this high-class feature.\", \"q\": \"people are willing to pay more money for a remote for it to be more high class\"}\n{\"n\": 2, \"w\": \"SPEAKER_00\", \"k\": \"point\", \"s\": \"discussed\", \"x\": \"A participant suggested including a beeping feature, similar to rival companies' remotes, to help users locate the device if it is lost.\", \"q\": \"The remote would beep so that if you ever lost remote\"}\n{\"n\": 3, \"w\": \"SPEAKER_02\", \"k\": \"action\", \"s\": \"requested\", \"x\": \"Obtain a power source.\", \"q\": \"We need a power source.\", \"m\": \"someone asked for this to be done or said it needs to be done\", \"c\": [\"u008 C: Okay. I think it should be there. Working design.\", \"u009 C: Okay. I didn't get a chance to complete this one, because some of the tools that I was given were frustrating. Oh, that's fine. Okay. So method method of our design. I think I just started listing some of the things that we actually need to put into this. We need a power source. We're gonna need a smart chip if we're gonna make it multifunctional.\", \"u010 C: Extra functions, we'll probably need an additional chip. Either that or the smart chip will have to be extremely smart. What exactly is a smart chip? Usually, a smart chip is just a chip that's been programmed and designed so that it can complete a fair range of functions.\"]}\n{\"n\": 4, \"w\": \"SPEAKER_02\", \"k\": \"point\", \"s\": \"discussed\", \"x\": \"A participant stated that a smart chip is required to make the remote multifunctional, or an additional chip would be needed for extra functions.\", \"q\": \"We're gonna need a smart chip if we're gonna make it multifunctional.\"}\n{\"n\": 5, \"w\": \"SPEAKER_02\", \"k\": \"action\", \"s\": \"requested\", \"x\": \"Obtain an additional chip.\", \"q\": \"we'll probably need an additional chip.\", \"m\": \"someone asked for this to be done or said it needs to be done\", \"c\": [\"u009 C: Okay. I didn't get a chance to complete this one, because some of the tools that I was given were frustrating. Oh, that's fine. Okay. So method method of our design. I think I just started listing some of the things that we actually need to put into this. We need a power source. We're gonna need a smart chip if we're gonna make it multifunctional.\", \"u010 C: Extra functions, we'll probably need an additional chip. Either that or the smart chip will have to be extremely smart. What exactly is a smart chip? Usually, a smart chip is just a chip that's been programmed and designed so that it can complete a fair range of functions.\", \"u011 B: Well, how much extra would the additional chip be? Is that gonna push us over our production costs? I wouldn't think so because we could probably get it from, like, bulk from a\"]}\n{\"n\": 6, \"w\": \"SPEAKER_02\", \"k\": \"point\", \"s\": \"discussed\", \"x\": \"A participant explained that a smart chip is a programmed component designed to complete a fair range of functions.\", \"q\": \"a chip that's been programmed and designed so that it can complete a fair range of functions\"}\n{\"n\": 7, \"w\": \"SPEAKER_01\", \"k\": \"point\", \"s\": \"discussed\", \"x\": \"A participant argued that the cost of an additional chip would not push production costs over budget because they could be purchased in bulk from a newer company.\", \"q\": \"we could probably get it from, like, bulk from a\"}\n{\"n\": 8, \"w\": \"SPEAKER_02\", \"k\": \"point\", \"s\": \"discussed\", \"x\": \"A participant selected batteries as the power source because they are easily available and typically used in remotes, with the number depending on the remote's size.\", \"q\": \"I figured batteries\"}\n{\"n\": 9, \"w\": \"SPEAKER_02\", \"k\": \"fact\", \"s\": \"stated\", \"x\": \"A typical remote uses two double a's or four triple a's, sometimes three.\", \"q\": \"a remote has either two double a's or four triple a's, sometimes three\", \"v\": \"two double a's or four triple a's, sometimes three\"}\n{\"n\": 10, \"w\": \"SPEAKER_02\", \"k\": \"point\", \"s\": \"discussed\", \"x\": \"A participant recommended a large on/off button because the target demographic is moving towards an older generation of people.\", \"q\": \"Demographically, we're moving towards older generation of people, so a large on off button would probably be good.\"}\n{\"n\": 11, \"w\": \"SPEAKER_02\", \"k\": \"point\", \"s\": \"discussed\", \"x\": \"A participant described the internal schematic, which includes a switch between the power source and the rest of the device, and an infrared bulb to communicate with various devices.\", \"q\": \"the infrared bulb, so it can communicate with the various devices that it needs to talk to\"}\n{\"n\": 12, \"w\": \"SPEAKER_02\", \"k\": \"point\", \"s\": \"discussed\", \"x\": \"A participant suggested adding a second bulb to indicate that the remote is functioning, eliminating the need to stare at the infrared light to check if the battery is dying.\", \"q\": \"when the battery starts dying on your remote currently, you have to actually stare at that bulb\"}\n{\"n\": 13, \"w\": \"SPEAKER_00\", \"k\": \"action\", \"s\": \"requested\", \"x\": \"Make the remote glow in the dark.\", \"q\": \"We should make it glow in the dark.\", \"m\": \"someone asked for this to be done or said it needs to be done\", \"c\": [\"u017 C: You don't have to stare at that infrared because, you know, when the battery starts dying on your remote currently, you have to actually stare at that bulb and go, okay. When I push this button, is it working? Okay. Probably be lighting up the keys. Right? Yeah. Yeah. So you can The bugs. Put it in the dark. Yeah.\", \"u018 A: That's good. We should make it glow in the dark. Yeah. Definitely. K. Next. Ready? Yeah. That's it. K. Any... Okay. K.\"]}",
+  "output": {
+   "v": [
+    {
+     "n": 3,
+     "ok": true,
+     "st": null,
+     "own": null,
+     "dl": null
+    },
+    {
+     "n": 5,
+     "ok": true,
+     "st": null,
+     "own": null,
+     "dl": null
+    },
+    {
+     "n": 13,
+     "ok": true,
+     "st": null,
+     "own": null,
+     "dl": null
+    }
+   ],
+   "head": {
+    "x": "The meeting reviewed remote‑control product features, component choices, power options, and internal design.",
+    "i": [
+     0
+    ]
+   },
+   "sum": [
+    {
+     "x": "The team discussed defining the remote's functionality by the devices it controls, such as DVD players or TiVo, to broaden consumer appeal.",
+     "i": [
+      0
+     ]
+    },
+    {
+     "x": "Research was cited indicating consumers are willing to pay more for speech‑recognition capability, positioning it as a high‑class feature.",
+     "i": [
+      1
+     ]
+    },
+    {
+     "x": "A beeping feature was proposed to help users locate a lost remote, mirroring rival products.",
+     "i": [
+      2
+     ]
+    },
+    {
+     "x": "It was noted that a smart chip is required for multifunctionality, or an additional chip would be needed for extra functions.",
+     "i": [
+      4
+     ]
+    },
+    {
+     "x": "The smart chip was described as a programmed component that can perform a fair range of functions.",
+     "i": [
+      6
+     ]
+    },
+    {
+     "x": "Cost concerns about an additional chip were dismissed, with the belief bulk purchasing from a newer supplier would keep production costs within budget.",
+     "i": [
+      7
+     ]
+    },
+    {
+     "x": "Batteries were selected as the power source because they are readily available and standard for remotes, with the number depending on size.",
+     "i": [
+      8
+     ]
+    },
+    {
+     "x": "Typical remotes use two AA or four AAA batteries, sometimes three, as a reference point for the design.",
+     "i": [
+      9
+     ]
+    },
+    {
+     "x": "A large on/off button was recommended to accommodate an older target demographic.",
+     "i": [
+      10
+     ]
+    },
+    {
+     "x": "The internal schematic includes a switch between the power source and the rest of the device, and an infrared bulb for communication with various devices.",
+     "i": [
+      11
+     ]
+    },
+    {
+     "x": "Adding a second infrared bulb was suggested to indicate functionality without requiring users to stare at the primary bulb when the battery is low.",
+     "i": [
+      12
+     ]
+    }
+   ],
+   "topics": [
+    {
+     "t": 0,
+     "o": "info",
+     "b": [
+      {
+       "x": "Debated that functionality should be tied to specific devices like DVD players or TiVo to serve a wide range of consumers.",
+       "i": [
+        0
+       ]
+      },
+      {
+       "x": "Cited consumer willingness to pay more for speech‑recognition as a premium feature.",
+       "i": [
+        1
+       ]
+      },
+      {
+       "x": "Proposed a beeping locator feature similar to competitors.",
+       "i": [
+        2
+       ]
+      }
+     ]
+    },
+    {
+     "t": 1,
+     "o": "info",
+     "b": [
+      {
+       "x": "Stated that a smart chip is needed for multifunctionality, otherwise an additional chip would be required.",
+       "i": [
+        4
+       ]
+      },
+      {
+       "x": "Explained what a smart chip is—a programmed component capable of a fair range of functions.",
+       "i": [
+        6
+       ]
+      },
+      {
+       "x": "Asserted that extra chip costs would not exceed budget due to bulk purchasing options.",
+       "i": [
+        7
+       ]
+      }
+     ]
+    },
+    {
+     "t": 2,
+     "o": "info",
+     "b": [
+      {
+       "x": "Selected batteries as the power source because they are easily available and typical for remotes.",
+       "i": [
+        8
+       ]
+      },
+      {
+       "x": "Provided the standard battery configurations: two AA or four AAA, sometimes three.",
+       "i": [
+        9
+       ]
+      },
+      {
+       "x": "Recommended a large on/off button to suit an older demographic.",
+       "i": [
+        10
+       ]
+      }
+     ]
+    },
+    {
+     "t": 3,
+     "o": "info",
+     "b": [
+      {
+       "x": "Described the internal schematic with a switch and an infrared bulb for device communication.",
+       "i": [
+        11
+       ]
+      },
+      {
+       "x": "Suggested adding a second infrared bulb to signal functionality without staring at the primary bulb.",
+       "i": [
+        12
+       ]
+      }
+     ]
+    }
+   ],
+   "ctx": [],
+   "speakers": [
+    {
+     "w": "SPEAKER_00",
+     "b": [
+      {
+       "x": "Argued that the remote’s functionality should be defined by the specific devices it controls, such as DVD players or TiVo, to reach a broad consumer base.",
+       "i": [
+        0
+       ]
+      },
+      {
+       "x": "Noted that research shows consumers are willing to pay more for a high‑class speech‑recognition feature.",
+       "i": [
+        1
+       ]
+      },
+      {
+       "x": "Proposed adding a beeping locator feature similar to rival remotes to help users find a lost device.",
+       "i": [
+        2
+       ]
+      }
+     ]
+    },
+    {
+     "w": "SPEAKER_01",
+     "b": [
+      {
+       "x": "Claimed that the cost of an additional chip would not push production costs over budget because bulk purchasing from a newer supplier is possible.",
+       "i": [
+        7
+       ]
+      }
+     ]
+    },
+    {
+     "w": "SPEAKER_02",
+     "b": [
+      {
+       "x": "Requested obtaining a power source for the remote design.",
+       "i": [
+        3
+       ]
+      },
+      {
+       "x": "Requested obtaining an additional chip to support extra functions.",
+       "i": [
+        5
+       ]
+      },
+      {
+       "x": "Suggested batteries as the power source, explaining typical configurations and availability.",
+       "i": [
+        8,
+        9
+       ]
+      },
+      {
+       "x": "Recommended a large on/off button to accommodate an older target demographic.",
+       "i": [
+        10
+       ]
+      },
+      {
+       "x": "Described the internal schematic, including a switch and infrared bulb for communication, and proposed a second bulb to indicate functionality without staring at the infrared light.",
+       "i": [
+        11,
+        12
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "error": null
+ }
+]

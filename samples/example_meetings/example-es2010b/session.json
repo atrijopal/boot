@@ -1,0 +1,133 @@
+{
+ "id": "example-es2010b",
+ "created_at": "2026-10-07T09:49:02+00:00",
+ "updated_at": "2026-10-07T09:50:18+00:00",
+ "filename": "ami_ES2010b_600s-900s.flac (example)",
+ "meeting_date": "2026-10-07",
+ "mode": "review",
+ "status": "report_ready",
+ "awaiting": null,
+ "audio": {
+  "duration_seconds": 300.0,
+  "format": "flac",
+  "file_size_bytes": 3200949,
+  "channels": 1
+ },
+ "stages": {
+  "audio": {
+   "state": "completed",
+   "started_at": "2026-10-07T09:49:02+00:00",
+   "finished_at": "2026-10-07T09:49:02+00:00",
+   "seconds": 0.8,
+   "message": "Audio is readable",
+   "error": null,
+   "attempts": 1
+  },
+  "transcription": {
+   "state": "completed",
+   "started_at": "2026-10-07T09:49:02+00:00",
+   "finished_at": "2026-10-07T09:49:18+00:00",
+   "seconds": 16.8,
+   "message": "71 lines transcribed",
+   "error": null,
+   "attempts": 1
+  },
+  "speakers": {
+   "state": "completed",
+   "started_at": "2026-10-07T09:49:18+00:00",
+   "finished_at": "2026-10-07T09:50:03+00:00",
+   "seconds": 45.9,
+   "message": "3 speakers found, no names suggested",
+   "error": null,
+   "attempts": 1
+  },
+  "refinement": {
+   "state": "completed",
+   "started_at": "2026-10-07T09:50:03+00:00",
+   "finished_at": "2026-10-07T09:50:07+00:00",
+   "seconds": 4.0,
+   "message": "No corrections were needed",
+   "error": null,
+   "attempts": 1
+  },
+  "report": {
+   "state": "completed",
+   "started_at": "2026-10-07T09:50:07+00:00",
+   "finished_at": "2026-10-07T09:50:18+00:00",
+   "seconds": 11.9,
+   "message": "14 items recorded",
+   "error": null,
+   "attempts": 1
+  }
+ },
+ "events": [
+  {
+   "t": "2026-10-07T09:49:02+00:00",
+   "stage": "audio",
+   "event": "started",
+   "detail": "Checking and preparing the audio"
+  },
+  {
+   "t": "2026-10-07T09:49:02+00:00",
+   "stage": "audio",
+   "event": "completed",
+   "detail": "Audio is readable"
+  },
+  {
+   "t": "2026-10-07T09:49:02+00:00",
+   "stage": "transcription",
+   "event": "started",
+   "detail": "Converting speech to text"
+  },
+  {
+   "t": "2026-10-07T09:49:18+00:00",
+   "stage": "transcription",
+   "event": "completed",
+   "detail": "71 lines transcribed"
+  },
+  {
+   "t": "2026-10-07T09:49:18+00:00",
+   "stage": "speakers",
+   "event": "started",
+   "detail": "Finding the speakers"
+  },
+  {
+   "t": "2026-10-07T09:49:19+00:00",
+   "stage": "speakers",
+   "event": "needs_review",
+   "detail": "3 speakers found, no names suggested"
+  },
+  {
+   "t": "2026-10-07T09:50:03+00:00",
+   "stage": "speakers",
+   "event": "completed",
+   "detail": "3 speakers found, no names suggested"
+  },
+  {
+   "t": "2026-10-07T09:50:03+00:00",
+   "stage": "refinement",
+   "event": "started",
+   "detail": "Checking the transcript for recognition errors"
+  },
+  {
+   "t": "2026-10-07T09:50:07+00:00",
+   "stage": "refinement",
+   "event": "completed",
+   "detail": "No corrections were needed"
+  },
+  {
+   "t": "2026-10-07T09:50:07+00:00",
+   "stage": "report",
+   "event": "started",
+   "detail": "Producing the meeting record"
+  },
+  {
+   "t": "2026-10-07T09:50:18+00:00",
+   "stage": "report",
+   "event": "completed",
+   "detail": "14 items recorded"
+  }
+ ],
+ "example": true,
+ "example_note": "A record this application produced earlier from a sample recording (AMI meeting ES2010b, 5 minutes). It is saved so you can look around without waiting; upload a recording to have a new one produced."
+}

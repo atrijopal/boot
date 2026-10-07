@@ -1,0 +1,28 @@
+Subject: Meeting summary (12:00 meeting)
+
+Hello,
+
+Here is a short summary of the meeting.
+
+The meeting focused on office layout, including printer placement and room assignments, and resulted in a confirmed printer location and an action to update the staff list.
+
+SUMMARY
+- The participants noted that the office currently has 15 people, which creates a 250% occupancy rate for the three‑person room.
+- They discussed the need to place the photocopier and network printer next to the mailboxes.
+- The group explicitly agreed to locate the photocopier and network printer beside the mailboxes.
+- A suggestion was made to temporarily put the Chisel device in the corner room, pending agreement.
+- The question of whether Chisel can be placed in the corner room remains open.
+- The timeline for implementing these changes was asked about but not answered, leaving the duration uncertain.
+- Consequently, the printer placement decision is settled, while the Chisel placement and overall schedule remain unresolved.
+
+DECISIONS
+- The group agreed to place the photocopier and network printer next to the mailboxes.
+
+ACTION ITEMS
+- B will remove Gisela from the list and put her in gray. | owner: Speaker 2 | deadline: unspecified
+
+OPEN QUESTIONS
+- Can we put Chisel in the corner room?
+- How long is it going to take?
+
+Best regards

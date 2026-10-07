@@ -1,0 +1,12776 @@
+{
+ "meeting": "ES2002a",
+ "window_seconds": [
+  300.0,
+  1200.0
+ ],
+ "source": "AMI Meeting Corpus manual annotations 1.7 (CC BY 4.0)",
+ "speakers": [
+  "A",
+  "B",
+  "C",
+  "D"
+ ],
+ "words": [
+  {
+   "w": "then",
+   "start": 0.2,
+   "end": 0.43,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 1.14,
+   "end": 1.36,
+   "spk": "B"
+  },
+  {
+   "w": "don't",
+   "start": 1.36,
+   "end": 1.53,
+   "spk": "B"
+  },
+  {
+   "w": "know",
+   "start": 1.53,
+   "end": 1.63,
+   "spk": "B"
+  },
+  {
+   "w": "what",
+   "start": 1.63,
+   "end": 1.74,
+   "spk": "B"
+  },
+  {
+   "w": "mine",
+   "start": 1.74,
+   "end": 1.94,
+   "spk": "B"
+  },
+  {
+   "w": "is",
+   "start": 1.94,
+   "end": 2.11,
+   "spk": "B"
+  },
+  {
+   "w": "I'm",
+   "start": 2.11,
+   "end": 2.2,
+   "spk": "B"
+  },
+  {
+   "w": "gonna",
+   "start": 2.2,
+   "end": 2.33,
+   "spk": "B"
+  },
+  {
+   "w": "have",
+   "start": 2.33,
+   "end": 2.43,
+   "spk": "B"
+  },
+  {
+   "w": "to",
+   "start": 2.43,
+   "end": 2.49,
+   "spk": "B"
+  },
+  {
+   "w": "think",
+   "start": 2.49,
+   "end": 2.72,
+   "spk": "B"
+  },
+  {
+   "w": "on",
+   "start": 2.72,
+   "end": 2.82,
+   "spk": "B"
+  },
+  {
+   "w": "the",
+   "start": 2.82,
+   "end": 2.9,
+   "spk": "B"
+  },
+  {
+   "w": "spot",
+   "start": 2.9,
+   "end": 3.25,
+   "spk": "B"
+  },
+  {
+   "w": "now",
+   "start": 3.25,
+   "end": 3.58,
+   "spk": "B"
+  },
+  {
+   "w": "Impressionist",
+   "start": 7.06,
+   "end": 7.9,
+   "spk": "D"
+  },
+  {
+   "w": "Can't",
+   "start": 9.38,
+   "end": 9.56,
+   "spk": "A"
+  },
+  {
+   "w": "draw",
+   "start": 9.56,
+   "end": 10.85,
+   "spk": "A"
+  },
+  {
+   "w": "Is",
+   "start": 12.05,
+   "end": 12.14,
+   "spk": "B"
+  },
+  {
+   "w": "Um",
+   "start": 12.06,
+   "end": 12.84,
+   "spk": "A"
+  },
+  {
+   "w": "that",
+   "start": 12.14,
+   "end": 12.26,
+   "spk": "B"
+  },
+  {
+   "w": "a",
+   "start": 12.26,
+   "end": 12.33,
+   "spk": "B"
+  },
+  {
+   "w": "whale",
+   "start": 12.33,
+   "end": 15.13,
+   "spk": "B"
+  },
+  {
+   "w": "Yeah",
+   "start": 13.09,
+   "end": 13.52,
+   "spk": "A"
+  },
+  {
+   "w": "Um",
+   "start": 18.58,
+   "end": 20.03,
+   "spk": "A"
+  },
+  {
+   "w": "well",
+   "start": 20.03,
+   "end": 20.32,
+   "spk": "A"
+  },
+  {
+   "w": "anyway",
+   "start": 20.32,
+   "end": 21.53,
+   "spk": "A"
+  },
+  {
+   "w": "I",
+   "start": 21.53,
+   "end": 21.65,
+   "spk": "A"
+  },
+  {
+   "w": "don't",
+   "start": 21.65,
+   "end": 21.82,
+   "spk": "A"
+  },
+  {
+   "w": "know",
+   "start": 21.82,
+   "end": 21.88,
+   "spk": "A"
+  },
+  {
+   "w": "it's",
+   "start": 21.88,
+   "end": 21.99,
+   "spk": "A"
+  },
+  {
+   "w": "just",
+   "start": 21.99,
+   "end": 22.17,
+   "spk": "A"
+  },
+  {
+   "w": "the",
+   "start": 22.17,
+   "end": 22.23,
+   "spk": "A"
+  },
+  {
+   "w": "first",
+   "start": 22.23,
+   "end": 22.46,
+   "spk": "A"
+  },
+  {
+   "w": "animal",
+   "start": 22.46,
+   "end": 22.68,
+   "spk": "A"
+  },
+  {
+   "w": "I",
+   "start": 22.68,
+   "end": 22.72,
+   "spk": "A"
+  },
+  {
+   "w": "can",
+   "start": 22.72,
+   "end": 22.86,
+   "spk": "A"
+  },
+  {
+   "w": "think",
+   "start": 22.86,
+   "end": 23.01,
+   "spk": "A"
+  },
+  {
+   "w": "off",
+   "start": 23.01,
+   "end": 23.18,
+   "spk": "A"
+  },
+  {
+   "w": "the",
+   "start": 23.18,
+   "end": 23.26,
+   "spk": "A"
+  },
+  {
+   "w": "top",
+   "start": 23.26,
+   "end": 23.45,
+   "spk": "A"
+  },
+  {
+   "w": "of",
+   "start": 23.45,
+   "end": 23.57,
+   "spk": "A"
+  },
+  {
+   "w": "my",
+   "start": 23.57,
+   "end": 23.73,
+   "spk": "A"
+  },
+  {
+   "w": "head",
+   "start": 23.73,
+   "end": 24.11,
+   "spk": "A"
+  },
+  {
+   "w": "Um",
+   "start": 24.11,
+   "end": 25.0,
+   "spk": "A"
+  },
+  {
+   "w": "Yes",
+   "start": 25.0,
+   "end": 25.43,
+   "spk": "A"
+  },
+  {
+   "w": "Big",
+   "start": 25.43,
+   "end": 25.58,
+   "spk": "A"
+  },
+  {
+   "w": "reason",
+   "start": 25.58,
+   "end": 25.92,
+   "spk": "A"
+  },
+  {
+   "w": "is",
+   "start": 25.92,
+   "end": 26.12,
+   "spk": "A"
+  },
+  {
+   "w": "'cause",
+   "start": 26.12,
+   "end": 26.3,
+   "spk": "A"
+  },
+  {
+   "w": "I'm",
+   "start": 26.3,
+   "end": 26.4,
+   "spk": "A"
+  },
+  {
+   "w": "allergic",
+   "start": 26.4,
+   "end": 26.77,
+   "spk": "A"
+  },
+  {
+   "w": "to",
+   "start": 26.77,
+   "end": 26.87,
+   "spk": "A"
+  },
+  {
+   "w": "most",
+   "start": 26.87,
+   "end": 27.1,
+   "spk": "A"
+  },
+  {
+   "w": "animals",
+   "start": 27.1,
+   "end": 27.86,
+   "spk": "A"
+  },
+  {
+   "w": "Allergic",
+   "start": 27.86,
+   "end": 28.15,
+   "spk": "A"
+  },
+  {
+   "w": "Ah",
+   "start": 27.91,
+   "end": 28.53,
+   "spk": "B"
+  },
+  {
+   "w": "to",
+   "start": 28.15,
+   "end": 28.27,
+   "spk": "A"
+  },
+  {
+   "w": "animal",
+   "start": 28.27,
+   "end": 28.53,
+   "spk": "A"
+  },
+  {
+   "w": "fur",
+   "start": 28.53,
+   "end": 28.76,
+   "spk": "A"
+  },
+  {
+   "w": "so",
+   "start": 28.76,
+   "end": 29.61,
+   "spk": "A"
+  },
+  {
+   "w": "um",
+   "start": 29.61,
+   "end": 30.15,
+   "spk": "A"
+  },
+  {
+   "w": "fish",
+   "start": 30.15,
+   "end": 30.32,
+   "spk": "A"
+  },
+  {
+   "w": "was",
+   "start": 30.32,
+   "end": 30.51,
+   "spk": "A"
+  },
+  {
+   "w": "a",
+   "start": 30.51,
+   "end": 30.55,
+   "spk": "A"
+  },
+  {
+   "w": "natural",
+   "start": 30.55,
+   "end": 30.91,
+   "spk": "A"
+  },
+  {
+   "w": "choice",
+   "start": 30.91,
+   "end": 31.57,
+   "spk": "A"
+  },
+  {
+   "w": "Um",
+   "start": 32.03,
+   "end": 32.82,
+   "spk": "A"
+  },
+  {
+   "w": "yeah",
+   "start": 32.82,
+   "end": 33.1,
+   "spk": "A"
+  },
+  {
+   "w": "and",
+   "start": 33.1,
+   "end": 33.21,
+   "spk": "A"
+  },
+  {
+   "w": "I",
+   "start": 33.21,
+   "end": 33.26,
+   "spk": "A"
+  },
+  {
+   "w": "kind",
+   "start": 33.26,
+   "end": 33.47,
+   "spk": "A"
+  },
+  {
+   "w": "of",
+   "start": 33.47,
+   "end": 33.54,
+   "spk": "A"
+  },
+  {
+   "w": "like",
+   "start": 33.54,
+   "end": 33.68,
+   "spk": "A"
+  },
+  {
+   "w": "whales",
+   "start": 33.68,
+   "end": 34.32,
+   "spk": "A"
+  },
+  {
+   "w": "They",
+   "start": 34.32,
+   "end": 34.39,
+   "spk": "A"
+  },
+  {
+   "w": "come",
+   "start": 34.39,
+   "end": 34.58,
+   "spk": "A"
+  },
+  {
+   "w": "in",
+   "start": 34.58,
+   "end": 34.65,
+   "spk": "A"
+  },
+  {
+   "w": "and",
+   "start": 34.65,
+   "end": 34.77,
+   "spk": "A"
+  },
+  {
+   "w": "go",
+   "start": 34.77,
+   "end": 35.8,
+   "spk": "A"
+  },
+  {
+   "w": "eat",
+   "start": 35.8,
+   "end": 35.93,
+   "spk": "A"
+  },
+  {
+   "w": "everything",
+   "start": 35.93,
+   "end": 36.24,
+   "spk": "A"
+  },
+  {
+   "w": "in",
+   "start": 36.24,
+   "end": 36.34,
+   "spk": "A"
+  },
+  {
+   "w": "sight",
+   "start": 36.34,
+   "end": 37.7,
+   "spk": "A"
+  },
+  {
+   "w": "And",
+   "start": 38.22,
+   "end": 38.31,
+   "spk": "A"
+  },
+  {
+   "w": "they're",
+   "start": 38.31,
+   "end": 38.42,
+   "spk": "A"
+  },
+  {
+   "w": "quite",
+   "start": 38.42,
+   "end": 38.76,
+   "spk": "A"
+  },
+  {
+   "w": "Alright",
+   "start": 38.48,
+   "end": 39.05,
+   "spk": "D"
+  },
+  {
+   "w": "harmless",
+   "start": 38.76,
+   "end": 39.27,
+   "spk": "A"
+  },
+  {
+   "w": "and",
+   "start": 39.27,
+   "end": 39.39,
+   "spk": "A"
+  },
+  {
+   "w": "mild",
+   "start": 39.39,
+   "end": 39.79,
+   "spk": "A"
+  },
+  {
+   "w": "and",
+   "start": 39.79,
+   "end": 40.89,
+   "spk": "A"
+  },
+  {
+   "w": "interesting",
+   "start": 40.89,
+   "end": 41.52,
+   "spk": "A"
+  },
+  {
+   "w": "Mm",
+   "start": 41.85,
+   "end": 42.2,
+   "spk": "D"
+  },
+  {
+   "w": "Okay",
+   "start": 42.42,
+   "end": 43.63,
+   "spk": "B"
+  },
+  {
+   "w": "God",
+   "start": 43.63,
+   "end": 43.81,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 43.81,
+   "end": 43.89,
+   "spk": "B"
+  },
+  {
+   "w": "still",
+   "start": 43.89,
+   "end": 44.14,
+   "spk": "B"
+  },
+  {
+   "w": "don't",
+   "start": 44.14,
+   "end": 44.29,
+   "spk": "B"
+  },
+  {
+   "w": "know",
+   "start": 44.29,
+   "end": 44.39,
+   "spk": "B"
+  },
+  {
+   "w": "what",
+   "start": 44.39,
+   "end": 44.49,
+   "spk": "B"
+  },
+  {
+   "w": "I'm",
+   "start": 44.49,
+   "end": 44.56,
+   "spk": "B"
+  },
+  {
+   "w": "gonna",
+   "start": 44.56,
+   "end": 44.72,
+   "spk": "B"
+  },
+  {
+   "w": "write",
+   "start": 44.72,
+   "end": 44.95,
+   "spk": "B"
+  },
+  {
+   "w": "about",
+   "start": 44.95,
+   "end": 46.39,
+   "spk": "B"
+  },
+  {
+   "w": "Um",
+   "start": 46.39,
+   "end": 46.85,
+   "spk": "B"
+  },
+  {
+   "w": "Superb",
+   "start": 49.66,
+   "end": 50.08,
+   "spk": "D"
+  },
+  {
+   "w": "sketch",
+   "start": 50.08,
+   "end": 50.46,
+   "spk": "D"
+  },
+  {
+   "w": "by",
+   "start": 50.46,
+   "end": 50.61,
+   "spk": "D"
+  },
+  {
+   "w": "the",
+   "start": 50.61,
+   "end": 50.71,
+   "spk": "D"
+  },
+  {
+   "w": "way",
+   "start": 50.71,
+   "end": 50.84,
+   "spk": "D"
+  },
+  {
+   "w": "Tail's",
+   "start": 53.86,
+   "end": 54.16,
+   "spk": "A"
+  },
+  {
+   "w": "a",
+   "start": 54.16,
+   "end": 54.21,
+   "spk": "A"
+  },
+  {
+   "w": "bit",
+   "start": 54.21,
+   "end": 54.37,
+   "spk": "A"
+  },
+  {
+   "w": "big",
+   "start": 54.37,
+   "end": 54.53,
+   "spk": "A"
+  },
+  {
+   "w": "I",
+   "start": 54.53,
+   "end": 54.62,
+   "spk": "A"
+  },
+  {
+   "w": "think",
+   "start": 54.62,
+   "end": 55.11,
+   "spk": "A"
+  },
+  {
+   "w": "I",
+   "start": 54.91,
+   "end": 55.17,
+   "spk": "B"
+  },
+  {
+   "w": "was",
+   "start": 55.17,
+   "end": 55.27,
+   "spk": "B"
+  },
+  {
+   "w": "gonna",
+   "start": 55.27,
+   "end": 55.52,
+   "spk": "B"
+  },
+  {
+   "w": "choose",
+   "start": 55.52,
+   "end": 55.81,
+   "spk": "B"
+  },
+  {
+   "w": "a",
+   "start": 55.81,
+   "end": 55.86,
+   "spk": "B"
+  },
+  {
+   "w": "dog",
+   "start": 55.86,
+   "end": 56.16,
+   "spk": "B"
+  },
+  {
+   "w": "as",
+   "start": 56.16,
+   "end": 56.3,
+   "spk": "B"
+  },
+  {
+   "w": "well",
+   "start": 56.3,
+   "end": 57.54,
+   "spk": "B"
+  },
+  {
+   "w": "But",
+   "start": 57.54,
+   "end": 58.27,
+   "spk": "B"
+  },
+  {
+   "w": "I'll",
+   "start": 58.27,
+   "end": 58.4,
+   "spk": "B"
+  },
+  {
+   "w": "just",
+   "start": 58.4,
+   "end": 58.55,
+   "spk": "B"
+  },
+  {
+   "w": "draw",
+   "start": 58.55,
+   "end": 58.66,
+   "spk": "B"
+  },
+  {
+   "w": "a",
+   "start": 58.66,
+   "end": 58.73,
+   "spk": "B"
+  },
+  {
+   "w": "different",
+   "start": 58.73,
+   "end": 58.99,
+   "spk": "B"
+  },
+  {
+   "w": "kind",
+   "start": 58.99,
+   "end": 59.21,
+   "spk": "B"
+  },
+  {
+   "w": "of",
+   "start": 59.21,
+   "end": 59.27,
+   "spk": "B"
+  },
+  {
+   "w": "dog",
+   "start": 59.27,
+   "end": 60.21,
+   "spk": "B"
+  },
+  {
+   "w": "Yep",
+   "start": 59.62,
+   "end": 59.9,
+   "spk": "D"
+  },
+  {
+   "w": "M",
+   "start": 60.21,
+   "end": 60.36,
+   "spk": "B"
+  },
+  {
+   "w": "my",
+   "start": 60.36,
+   "end": 60.55,
+   "spk": "B"
+  },
+  {
+   "w": "favourite",
+   "start": 60.55,
+   "end": 60.87,
+   "spk": "B"
+  },
+  {
+   "w": "animal",
+   "start": 60.87,
+   "end": 61.31,
+   "spk": "B"
+  },
+  {
+   "w": "is",
+   "start": 61.31,
+   "end": 61.64,
+   "spk": "B"
+  },
+  {
+   "w": "my",
+   "start": 61.64,
+   "end": 61.84,
+   "spk": "B"
+  },
+  {
+   "w": "own",
+   "start": 61.84,
+   "end": 62.08,
+   "spk": "B"
+  },
+  {
+   "w": "dog",
+   "start": 62.08,
+   "end": 62.46,
+   "spk": "B"
+  },
+  {
+   "w": "at",
+   "start": 62.46,
+   "end": 62.54,
+   "spk": "B"
+  },
+  {
+   "w": "home",
+   "start": 62.54,
+   "end": 64.23,
+   "spk": "B"
+  },
+  {
+   "w": "Um",
+   "start": 64.23,
+   "end": 64.92,
+   "spk": "B"
+  },
+  {
+   "w": "That",
+   "start": 67.01,
+   "end": 67.14,
+   "spk": "B"
+  },
+  {
+   "w": "doesn't",
+   "start": 67.14,
+   "end": 67.37,
+   "spk": "B"
+  },
+  {
+   "w": "really",
+   "start": 67.37,
+   "end": 67.57,
+   "spk": "B"
+  },
+  {
+   "w": "look",
+   "start": 67.57,
+   "end": 67.8,
+   "spk": "B"
+  },
+  {
+   "w": "like",
+   "start": 67.8,
+   "end": 68.01,
+   "spk": "B"
+  },
+  {
+   "w": "him",
+   "start": 68.01,
+   "end": 68.15,
+   "spk": "B"
+  },
+  {
+   "w": "actually",
+   "start": 68.15,
+   "end": 68.63,
+   "spk": "B"
+  },
+  {
+   "w": "He",
+   "start": 73.3,
+   "end": 73.41,
+   "spk": "B"
+  },
+  {
+   "w": "looks",
+   "start": 73.41,
+   "end": 73.63,
+   "spk": "B"
+  },
+  {
+   "w": "more",
+   "start": 73.63,
+   "end": 73.78,
+   "spk": "B"
+  },
+  {
+   "w": "like",
+   "start": 73.78,
+   "end": 73.92,
+   "spk": "B"
+  },
+  {
+   "w": "a",
+   "start": 73.92,
+   "end": 73.98,
+   "spk": "B"
+  },
+  {
+   "w": "pig",
+   "start": 73.98,
+   "end": 74.22,
+   "spk": "B"
+  },
+  {
+   "w": "actually",
+   "start": 74.22,
+   "end": 74.72,
+   "spk": "B"
+  },
+  {
+   "w": "Ah",
+   "start": 75.84,
+   "end": 75.95,
+   "spk": "B"
+  },
+  {
+   "w": "well",
+   "start": 75.95,
+   "end": 76.27,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 78.46,
+   "end": 78.57,
+   "spk": "D"
+  },
+  {
+   "w": "see",
+   "start": 78.57,
+   "end": 78.78,
+   "spk": "D"
+  },
+  {
+   "w": "a",
+   "start": 78.78,
+   "end": 78.84,
+   "spk": "D"
+  },
+  {
+   "w": "dog",
+   "start": 78.84,
+   "end": 79.08,
+   "spk": "D"
+  },
+  {
+   "w": "in",
+   "start": 79.08,
+   "end": 79.16,
+   "spk": "D"
+  },
+  {
+   "w": "there",
+   "start": 79.16,
+   "end": 79.99,
+   "spk": "D"
+  },
+  {
+   "w": "Do",
+   "start": 79.52,
+   "end": 79.98,
+   "spk": "B"
+  },
+  {
+   "w": "you",
+   "start": 79.98,
+   "end": 80.06,
+   "spk": "B"
+  },
+  {
+   "w": "Yep",
+   "start": 79.99,
+   "end": 80.14,
+   "spk": "D"
+  },
+  {
+   "w": "Oh",
+   "start": 80.06,
+   "end": 80.19,
+   "spk": "B"
+  },
+  {
+   "w": "that's",
+   "start": 80.19,
+   "end": 80.41,
+   "spk": "B"
+  },
+  {
+   "w": "very",
+   "start": 80.41,
+   "end": 80.61,
+   "spk": "B"
+  },
+  {
+   "w": "good",
+   "start": 80.61,
+   "end": 80.74,
+   "spk": "B"
+  },
+  {
+   "w": "of",
+   "start": 80.74,
+   "end": 80.82,
+   "spk": "B"
+  },
+  {
+   "w": "you",
+   "start": 80.82,
+   "end": 80.97,
+   "spk": "B"
+  },
+  {
+   "w": "Now",
+   "start": 82.82,
+   "end": 82.95,
+   "spk": "D"
+  },
+  {
+   "w": "I",
+   "start": 82.95,
+   "end": 83.02,
+   "spk": "D"
+  },
+  {
+   "w": "see",
+   "start": 83.02,
+   "end": 83.19,
+   "spk": "D"
+  },
+  {
+   "w": "a",
+   "start": 83.19,
+   "end": 83.27,
+   "spk": "D"
+  },
+  {
+   "w": "rooster",
+   "start": 83.27,
+   "end": 83.68,
+   "spk": "D"
+  },
+  {
+   "w": "Uh",
+   "start": 88.27,
+   "end": 89.07,
+   "spk": "B"
+  },
+  {
+   "w": "What",
+   "start": 93.42,
+   "end": 93.52,
+   "spk": "D"
+  },
+  {
+   "w": "kind",
+   "start": 93.52,
+   "end": 93.77,
+   "spk": "D"
+  },
+  {
+   "w": "is",
+   "start": 93.77,
+   "end": 93.86,
+   "spk": "D"
+  },
+  {
+   "w": "it",
+   "start": 93.86,
+   "end": 94.21,
+   "spk": "D"
+  },
+  {
+   "w": "Um",
+   "start": 94.87,
+   "end": 95.33,
+   "spk": "B"
+  },
+  {
+   "w": "he's",
+   "start": 95.33,
+   "end": 95.51,
+   "spk": "B"
+  },
+  {
+   "w": "a",
+   "start": 95.51,
+   "end": 95.58,
+   "spk": "B"
+  },
+  {
+   "w": "mixture",
+   "start": 95.58,
+   "end": 96.41,
+   "spk": "B"
+  },
+  {
+   "w": "of",
+   "start": 96.41,
+   "end": 96.78,
+   "spk": "B"
+  },
+  {
+   "w": "uh",
+   "start": 96.78,
+   "end": 97.46,
+   "spk": "B"
+  },
+  {
+   "w": "various",
+   "start": 97.46,
+   "end": 97.91,
+   "spk": "B"
+  },
+  {
+   "w": "things",
+   "start": 97.91,
+   "end": 98.71,
+   "spk": "B"
+  },
+  {
+   "w": "Um",
+   "start": 98.71,
+   "end": 99.72,
+   "spk": "B"
+  },
+  {
+   "w": "and",
+   "start": 99.72,
+   "end": 100.38,
+   "spk": "B"
+  },
+  {
+   "w": "what",
+   "start": 100.38,
+   "end": 100.6,
+   "spk": "B"
+  },
+  {
+   "w": "do",
+   "start": 100.6,
+   "end": 100.68,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 100.68,
+   "end": 100.76,
+   "spk": "B"
+  },
+  {
+   "w": "like",
+   "start": 100.76,
+   "end": 100.92,
+   "spk": "B"
+  },
+  {
+   "w": "about",
+   "start": 100.92,
+   "end": 101.1,
+   "spk": "B"
+  },
+  {
+   "w": "him",
+   "start": 101.1,
+   "end": 101.36,
+   "spk": "B"
+  },
+  {
+   "w": "um",
+   "start": 101.36,
+   "end": 103.23,
+   "spk": "B"
+  },
+  {
+   "w": "That's",
+   "start": 103.23,
+   "end": 103.51,
+   "spk": "B"
+  },
+  {
+   "w": "just",
+   "start": 103.51,
+   "end": 103.69,
+   "spk": "B"
+  },
+  {
+   "w": "to",
+   "start": 103.69,
+   "end": 103.79,
+   "spk": "B"
+  },
+  {
+   "w": "suggest",
+   "start": 103.79,
+   "end": 104.21,
+   "spk": "B"
+  },
+  {
+   "w": "that",
+   "start": 104.21,
+   "end": 104.35,
+   "spk": "B"
+  },
+  {
+   "w": "his",
+   "start": 104.35,
+   "end": 104.53,
+   "spk": "B"
+  },
+  {
+   "w": "tail",
+   "start": 104.53,
+   "end": 104.87,
+   "spk": "B"
+  },
+  {
+   "w": "wags",
+   "start": 104.87,
+   "end": 105.71,
+   "spk": "B"
+  },
+  {
+   "w": "Um",
+   "start": 105.71,
+   "end": 105.88,
+   "spk": "B"
+  },
+  {
+   "w": "he's",
+   "start": 105.88,
+   "end": 106.02,
+   "spk": "B"
+  },
+  {
+   "w": "very",
+   "start": 106.02,
+   "end": 106.25,
+   "spk": "B"
+  },
+  {
+   "w": "friendly",
+   "start": 106.25,
+   "end": 106.78,
+   "spk": "B"
+  },
+  {
+   "w": "and",
+   "start": 106.78,
+   "end": 107.0,
+   "spk": "B"
+  },
+  {
+   "w": "cheery",
+   "start": 107.0,
+   "end": 107.37,
+   "spk": "B"
+  },
+  {
+   "w": "and",
+   "start": 107.37,
+   "end": 107.99,
+   "spk": "B"
+  },
+  {
+   "w": "always",
+   "start": 107.99,
+   "end": 108.25,
+   "spk": "B"
+  },
+  {
+   "w": "pleased",
+   "start": 108.25,
+   "end": 108.56,
+   "spk": "B"
+  },
+  {
+   "w": "to",
+   "start": 108.56,
+   "end": 108.66,
+   "spk": "B"
+  },
+  {
+   "w": "see",
+   "start": 108.66,
+   "end": 109.12,
+   "spk": "B"
+  },
+  {
+   "w": "you",
+   "start": 109.12,
+   "end": 109.2,
+   "spk": "B"
+  },
+  {
+   "w": "and",
+   "start": 109.2,
+   "end": 109.87,
+   "spk": "B"
+  },
+  {
+   "w": "very",
+   "start": 109.87,
+   "end": 110.02,
+   "spk": "B"
+  },
+  {
+   "w": "kind",
+   "start": 110.02,
+   "end": 110.24,
+   "spk": "B"
+  },
+  {
+   "w": "of",
+   "start": 110.24,
+   "end": 110.34,
+   "spk": "B"
+  },
+  {
+   "w": "affectionate",
+   "start": 110.34,
+   "end": 111.11,
+   "spk": "B"
+  },
+  {
+   "w": "and",
+   "start": 111.11,
+   "end": 112.22,
+   "spk": "B"
+  },
+  {
+   "w": "um",
+   "start": 112.22,
+   "end": 113.77,
+   "spk": "B"
+  },
+  {
+   "w": "uh",
+   "start": 115.0,
+   "end": 115.12,
+   "spk": "B"
+  },
+  {
+   "w": "and",
+   "start": 115.12,
+   "end": 116.66,
+   "spk": "B"
+  },
+  {
+   "w": "he's",
+   "start": 116.66,
+   "end": 116.78,
+   "spk": "B"
+  },
+  {
+   "w": "quite",
+   "start": 116.78,
+   "end": 117.29,
+   "spk": "B"
+  },
+  {
+   "w": "quite",
+   "start": 117.29,
+   "end": 117.56,
+   "spk": "B"
+  },
+  {
+   "w": "wee",
+   "start": 117.56,
+   "end": 117.75,
+   "spk": "B"
+  },
+  {
+   "w": "as",
+   "start": 117.75,
+   "end": 117.92,
+   "spk": "B"
+  },
+  {
+   "w": "well",
+   "start": 117.92,
+   "end": 118.28,
+   "spk": "B"
+  },
+  {
+   "w": "so",
+   "start": 118.28,
+   "end": 118.55,
+   "spk": "B"
+  },
+  {
+   "w": "you",
+   "start": 118.55,
+   "end": 118.67,
+   "spk": "B"
+  },
+  {
+   "w": "know",
+   "start": 118.67,
+   "end": 118.8,
+   "spk": "B"
+  },
+  {
+   "w": "he",
+   "start": 118.8,
+   "end": 118.88,
+   "spk": "B"
+  },
+  {
+   "w": "can",
+   "start": 118.88,
+   "end": 119.52,
+   "spk": "B"
+  },
+  {
+   "w": "doesn't",
+   "start": 119.52,
+   "end": 119.73,
+   "spk": "B"
+  },
+  {
+   "w": "take",
+   "start": 119.73,
+   "end": 119.94,
+   "spk": "B"
+  },
+  {
+   "w": "up",
+   "start": 119.94,
+   "end": 120.07,
+   "spk": "B"
+  },
+  {
+   "w": "too",
+   "start": 120.07,
+   "end": 120.22,
+   "spk": "B"
+  },
+  {
+   "w": "much",
+   "start": 120.22,
+   "end": 120.41,
+   "spk": "B"
+  },
+  {
+   "w": "space",
+   "start": 120.41,
+   "end": 121.48,
+   "spk": "B"
+  },
+  {
+   "w": "Um",
+   "start": 121.48,
+   "end": 122.22,
+   "spk": "B"
+  },
+  {
+   "w": "and",
+   "start": 125.56,
+   "end": 126.19,
+   "spk": "B"
+  },
+  {
+   "w": "uh",
+   "start": 126.19,
+   "end": 127.52,
+   "spk": "B"
+  },
+  {
+   "w": "And",
+   "start": 127.52,
+   "end": 127.62,
+   "spk": "B"
+  },
+  {
+   "w": "he",
+   "start": 127.62,
+   "end": 127.69,
+   "spk": "B"
+  },
+  {
+   "w": "does",
+   "start": 127.69,
+   "end": 127.87,
+   "spk": "B"
+  },
+  {
+   "w": "a",
+   "start": 127.87,
+   "end": 127.93,
+   "spk": "B"
+  },
+  {
+   "w": "funny",
+   "start": 127.93,
+   "end": 128.14,
+   "spk": "B"
+  },
+  {
+   "w": "thing",
+   "start": 128.14,
+   "end": 128.3,
+   "spk": "B"
+  },
+  {
+   "w": "where",
+   "start": 128.3,
+   "end": 128.39,
+   "spk": "B"
+  },
+  {
+   "w": "he",
+   "start": 128.39,
+   "end": 128.46,
+   "spk": "B"
+  },
+  {
+   "w": "chases",
+   "start": 128.46,
+   "end": 128.85,
+   "spk": "B"
+  },
+  {
+   "w": "his",
+   "start": 128.85,
+   "end": 128.94,
+   "spk": "B"
+  },
+  {
+   "w": "tail",
+   "start": 128.94,
+   "end": 129.88,
+   "spk": "B"
+  },
+  {
+   "w": "as",
+   "start": 129.88,
+   "end": 130.01,
+   "spk": "B"
+  },
+  {
+   "w": "well",
+   "start": 130.01,
+   "end": 130.28,
+   "spk": "B"
+  },
+  {
+   "w": "which",
+   "start": 130.28,
+   "end": 130.44,
+   "spk": "B"
+  },
+  {
+   "w": "is",
+   "start": 130.44,
+   "end": 130.51,
+   "spk": "B"
+  },
+  {
+   "w": "quite",
+   "start": 130.51,
+   "end": 130.79,
+   "spk": "B"
+  },
+  {
+   "w": "amusing",
+   "start": 130.79,
+   "end": 131.32,
+   "spk": "B"
+  },
+  {
+   "w": "Is",
+   "start": 131.27,
+   "end": 131.38,
+   "spk": "D"
+  },
+  {
+   "w": "so",
+   "start": 131.32,
+   "end": 131.6,
+   "spk": "B"
+  },
+  {
+   "w": "he",
+   "start": 131.38,
+   "end": 131.46,
+   "spk": "D"
+  },
+  {
+   "w": "aware",
+   "start": 131.46,
+   "end": 131.73,
+   "spk": "D"
+  },
+  {
+   "w": "that",
+   "start": 131.73,
+   "end": 131.87,
+   "spk": "D"
+  },
+  {
+   "w": "th",
+   "start": 131.87,
+   "end": 131.9,
+   "spk": "D"
+  },
+  {
+   "w": "it's",
+   "start": 131.9,
+   "end": 132.0,
+   "spk": "D"
+  },
+  {
+   "w": "his",
+   "start": 132.0,
+   "end": 132.14,
+   "spk": "D"
+  },
+  {
+   "w": "own",
+   "start": 132.14,
+   "end": 132.3,
+   "spk": "D"
+  },
+  {
+   "w": "cha",
+   "start": 132.3,
+   "end": 132.59,
+   "spk": "D"
+  },
+  {
+   "w": "tail",
+   "start": 132.59,
+   "end": 132.87,
+   "spk": "D"
+  },
+  {
+   "w": "he's",
+   "start": 132.87,
+   "end": 133.04,
+   "spk": "D"
+  },
+  {
+   "w": "chasing",
+   "start": 133.04,
+   "end": 133.44,
+   "spk": "D"
+  },
+  {
+   "w": "It",
+   "start": 133.83,
+   "end": 133.95,
+   "spk": "B"
+  },
+  {
+   "w": "is",
+   "start": 133.95,
+   "end": 134.2,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 134.2,
+   "end": 134.3,
+   "spk": "B"
+  },
+  {
+   "w": "think",
+   "start": 134.3,
+   "end": 134.47,
+   "spk": "B"
+  },
+  {
+   "w": "it",
+   "start": 134.47,
+   "end": 134.55,
+   "spk": "B"
+  },
+  {
+   "w": "is",
+   "start": 134.55,
+   "end": 134.67,
+   "spk": "B"
+  },
+  {
+   "w": "He",
+   "start": 134.67,
+   "end": 134.78,
+   "spk": "B"
+  },
+  {
+   "w": "only",
+   "start": 134.78,
+   "end": 134.98,
+   "spk": "B"
+  },
+  {
+   "w": "does",
+   "start": 134.98,
+   "end": 135.16,
+   "spk": "B"
+  },
+  {
+   "w": "it",
+   "start": 135.16,
+   "end": 135.22,
+   "spk": "B"
+  },
+  {
+   "w": "after",
+   "start": 135.22,
+   "end": 135.54,
+   "spk": "B"
+  },
+  {
+   "w": "he's",
+   "start": 135.54,
+   "end": 135.63,
+   "spk": "B"
+  },
+  {
+   "w": "had",
+   "start": 135.63,
+   "end": 135.81,
+   "spk": "B"
+  },
+  {
+   "w": "his",
+   "start": 135.81,
+   "end": 135.94,
+   "spk": "B"
+  },
+  {
+   "w": "dinner",
+   "start": 135.94,
+   "end": 136.84,
+   "spk": "B"
+  },
+  {
+   "w": "and",
+   "start": 136.84,
+   "end": 137.29,
+   "spk": "B"
+  },
+  {
+   "w": "um",
+   "start": 137.29,
+   "end": 137.66,
+   "spk": "B"
+  },
+  {
+   "w": "he'll",
+   "start": 137.66,
+   "end": 137.76,
+   "spk": "B"
+  },
+  {
+   "w": "just",
+   "start": 137.76,
+   "end": 137.95,
+   "spk": "B"
+  },
+  {
+   "w": "all",
+   "start": 137.95,
+   "end": 138.14,
+   "spk": "B"
+  },
+  {
+   "w": "of",
+   "start": 138.14,
+   "end": 138.2,
+   "spk": "B"
+  },
+  {
+   "w": "a",
+   "start": 138.2,
+   "end": 138.24,
+   "spk": "B"
+  },
+  {
+   "w": "sudden",
+   "start": 138.24,
+   "end": 138.48,
+   "spk": "B"
+  },
+  {
+   "w": "just",
+   "start": 138.48,
+   "end": 138.64,
+   "spk": "B"
+  },
+  {
+   "w": "get",
+   "start": 138.64,
+   "end": 138.81,
+   "spk": "B"
+  },
+  {
+   "w": "up",
+   "start": 138.81,
+   "end": 138.98,
+   "spk": "B"
+  },
+  {
+   "w": "and",
+   "start": 138.98,
+   "end": 139.1,
+   "spk": "B"
+  },
+  {
+   "w": "start",
+   "start": 139.1,
+   "end": 139.31,
+   "spk": "B"
+  },
+  {
+   "w": "chasing",
+   "start": 139.31,
+   "end": 139.66,
+   "spk": "B"
+  },
+  {
+   "w": "his",
+   "start": 139.66,
+   "end": 139.76,
+   "spk": "B"
+  },
+  {
+   "w": "tail",
+   "start": 139.76,
+   "end": 140.9,
+   "spk": "B"
+  },
+  {
+   "w": "Hmm",
+   "start": 140.33,
+   "end": 140.47,
+   "spk": "D"
+  },
+  {
+   "w": "'round",
+   "start": 140.9,
+   "end": 141.07,
+   "spk": "B"
+  },
+  {
+   "w": "the",
+   "start": 141.07,
+   "end": 141.13,
+   "spk": "B"
+  },
+  {
+   "w": "living",
+   "start": 141.13,
+   "end": 141.38,
+   "spk": "B"
+  },
+  {
+   "w": "room",
+   "start": 141.38,
+   "end": 141.92,
+   "spk": "B"
+  },
+  {
+   "w": "It's",
+   "start": 142.02,
+   "end": 142.11,
+   "spk": "A"
+  },
+  {
+   "w": "an",
+   "start": 142.11,
+   "end": 142.2,
+   "spk": "A"
+  },
+  {
+   "w": "after",
+   "start": 142.2,
+   "end": 142.5,
+   "spk": "A"
+  },
+  {
+   "w": "dinner",
+   "start": 142.5,
+   "end": 142.75,
+   "spk": "A"
+  },
+  {
+   "w": "dog",
+   "start": 142.75,
+   "end": 143.02,
+   "spk": "A"
+  },
+  {
+   "w": "then",
+   "start": 143.02,
+   "end": 143.21,
+   "spk": "A"
+  },
+  {
+   "w": "Yeah",
+   "start": 143.59,
+   "end": 144.02,
+   "spk": "B"
+  },
+  {
+   "w": "so",
+   "start": 144.02,
+   "end": 144.34,
+   "spk": "B"
+  },
+  {
+   "w": "Probably",
+   "start": 144.05,
+   "end": 144.3,
+   "spk": "D"
+  },
+  {
+   "w": "when",
+   "start": 144.3,
+   "end": 144.41,
+   "spk": "D"
+  },
+  {
+   "w": "uh",
+   "start": 144.34,
+   "end": 145.26,
+   "spk": "B"
+  },
+  {
+   "w": "he",
+   "start": 144.41,
+   "end": 144.5,
+   "spk": "D"
+  },
+  {
+   "w": "was",
+   "start": 144.5,
+   "end": 144.67,
+   "spk": "D"
+  },
+  {
+   "w": "little",
+   "start": 144.67,
+   "end": 144.95,
+   "spk": "D"
+  },
+  {
+   "w": "he",
+   "start": 144.95,
+   "end": 145.06,
+   "spk": "D"
+  },
+  {
+   "w": "got",
+   "start": 145.06,
+   "end": 145.29,
+   "spk": "D"
+  },
+  {
+   "w": "lots",
+   "start": 145.29,
+   "end": 145.58,
+   "spk": "D"
+  },
+  {
+   "w": "of",
+   "start": 145.58,
+   "end": 145.65,
+   "spk": "D"
+  },
+  {
+   "w": "attention",
+   "start": 145.65,
+   "end": 146.12,
+   "spk": "D"
+  },
+  {
+   "w": "for",
+   "start": 146.12,
+   "end": 146.23,
+   "spk": "D"
+  },
+  {
+   "w": "doing",
+   "start": 146.23,
+   "end": 146.49,
+   "spk": "D"
+  },
+  {
+   "w": "it",
+   "start": 146.49,
+   "end": 146.68,
+   "spk": "D"
+  },
+  {
+   "w": "and",
+   "start": 146.68,
+   "end": 147.35,
+   "spk": "D"
+  },
+  {
+   "w": "Yeah",
+   "start": 147.15,
+   "end": 147.47,
+   "spk": "B"
+  },
+  {
+   "w": "has",
+   "start": 147.35,
+   "end": 147.54,
+   "spk": "D"
+  },
+  {
+   "w": "maybe",
+   "start": 147.47,
+   "end": 148.08,
+   "spk": "B"
+  },
+  {
+   "w": "forever",
+   "start": 147.54,
+   "end": 147.84,
+   "spk": "D"
+  },
+  {
+   "w": "been",
+   "start": 147.84,
+   "end": 148.0,
+   "spk": "D"
+  },
+  {
+   "w": "conditioned",
+   "start": 148.0,
+   "end": 148.71,
+   "spk": "D"
+  },
+  {
+   "w": "Maybe",
+   "start": 149.0,
+   "end": 150.7,
+   "spk": "B"
+  },
+  {
+   "w": "Right",
+   "start": 150.7,
+   "end": 150.84,
+   "spk": "B"
+  },
+  {
+   "w": "um",
+   "start": 150.84,
+   "end": 151.55,
+   "spk": "B"
+  },
+  {
+   "w": "where",
+   "start": 151.55,
+   "end": 151.75,
+   "spk": "B"
+  },
+  {
+   "w": "did",
+   "start": 151.75,
+   "end": 151.86,
+   "spk": "B"
+  },
+  {
+   "w": "you",
+   "start": 151.86,
+   "end": 151.97,
+   "spk": "B"
+  },
+  {
+   "w": "find",
+   "start": 151.97,
+   "end": 152.17,
+   "spk": "B"
+  },
+  {
+   "w": "this",
+   "start": 152.17,
+   "end": 152.3,
+   "spk": "B"
+  },
+  {
+   "w": "Just",
+   "start": 152.3,
+   "end": 152.46,
+   "spk": "B"
+  },
+  {
+   "w": "down",
+   "start": 152.46,
+   "end": 152.62,
+   "spk": "B"
+  },
+  {
+   "w": "here",
+   "start": 152.62,
+   "end": 153.39,
+   "spk": "B"
+  },
+  {
+   "w": "Yeah",
+   "start": 153.39,
+   "end": 153.61,
+   "spk": "B"
+  },
+  {
+   "w": "Okay",
+   "start": 155.51,
+   "end": 156.76,
+   "spk": "B"
+  },
+  {
+   "w": "Um",
+   "start": 158.92,
+   "end": 160.34,
+   "spk": "B"
+  },
+  {
+   "w": "what",
+   "start": 160.34,
+   "end": 160.47,
+   "spk": "B"
+  },
+  {
+   "w": "are",
+   "start": 160.47,
+   "end": 160.5,
+   "spk": "B"
+  },
+  {
+   "w": "we",
+   "start": 160.5,
+   "end": 160.58,
+   "spk": "B"
+  },
+  {
+   "w": "doing",
+   "start": 160.58,
+   "end": 160.95,
+   "spk": "B"
+  },
+  {
+   "w": "next",
+   "start": 160.95,
+   "end": 162.47,
+   "spk": "B"
+  },
+  {
+   "w": "Uh",
+   "start": 162.47,
+   "end": 162.75,
+   "spk": "B"
+  },
+  {
+   "w": "um",
+   "start": 162.75,
+   "end": 162.97,
+   "spk": "B"
+  },
+  {
+   "w": "Okay",
+   "start": 165.51,
+   "end": 166.02,
+   "spk": "B"
+  },
+  {
+   "w": "uh",
+   "start": 166.02,
+   "end": 166.31,
+   "spk": "B"
+  },
+  {
+   "w": "we",
+   "start": 166.31,
+   "end": 166.41,
+   "spk": "B"
+  },
+  {
+   "w": "now",
+   "start": 166.41,
+   "end": 166.51,
+   "spk": "B"
+  },
+  {
+   "w": "need",
+   "start": 166.51,
+   "end": 166.73,
+   "spk": "B"
+  },
+  {
+   "w": "to",
+   "start": 166.73,
+   "end": 166.83,
+   "spk": "B"
+  },
+  {
+   "w": "discuss",
+   "start": 166.83,
+   "end": 167.25,
+   "spk": "B"
+  },
+  {
+   "w": "the",
+   "start": 167.25,
+   "end": 167.33,
+   "spk": "B"
+  },
+  {
+   "w": "project",
+   "start": 167.33,
+   "end": 167.81,
+   "spk": "B"
+  },
+  {
+   "w": "finance",
+   "start": 167.81,
+   "end": 170.01,
+   "spk": "B"
+  },
+  {
+   "w": "Um",
+   "start": 170.01,
+   "end": 170.66,
+   "spk": "B"
+  },
+  {
+   "w": "so",
+   "start": 172.41,
+   "end": 172.61,
+   "spk": "B"
+  },
+  {
+   "w": "according",
+   "start": 172.61,
+   "end": 172.93,
+   "spk": "B"
+  },
+  {
+   "w": "to",
+   "start": 172.93,
+   "end": 173.04,
+   "spk": "B"
+  },
+  {
+   "w": "the",
+   "start": 173.04,
+   "end": 173.15,
+   "spk": "B"
+  },
+  {
+   "w": "brief",
+   "start": 173.15,
+   "end": 173.68,
+   "spk": "B"
+  },
+  {
+   "w": "um",
+   "start": 173.68,
+   "end": 174.11,
+   "spk": "B"
+  },
+  {
+   "w": "we're",
+   "start": 174.11,
+   "end": 174.22,
+   "spk": "B"
+  },
+  {
+   "w": "gonna",
+   "start": 174.22,
+   "end": 174.39,
+   "spk": "B"
+  },
+  {
+   "w": "be",
+   "start": 174.39,
+   "end": 174.49,
+   "spk": "B"
+  },
+  {
+   "w": "selling",
+   "start": 174.49,
+   "end": 174.86,
+   "spk": "B"
+  },
+  {
+   "w": "this",
+   "start": 174.86,
+   "end": 175.06,
+   "spk": "B"
+  },
+  {
+   "w": "remote",
+   "start": 175.06,
+   "end": 175.26,
+   "spk": "B"
+  },
+  {
+   "w": "control",
+   "start": 175.26,
+   "end": 175.59,
+   "spk": "B"
+  },
+  {
+   "w": "for",
+   "start": 175.59,
+   "end": 175.72,
+   "spk": "B"
+  },
+  {
+   "w": "twenty",
+   "start": 175.72,
+   "end": 175.97,
+   "spk": "B"
+  },
+  {
+   "w": "five",
+   "start": 175.97,
+   "end": 176.23,
+   "spk": "B"
+  },
+  {
+   "w": "Euro",
+   "start": 176.23,
+   "end": 176.53,
+   "spk": "B"
+  },
+  {
+   "w": "um",
+   "start": 176.53,
+   "end": 177.18,
+   "spk": "B"
+  },
+  {
+   "w": "and",
+   "start": 177.18,
+   "end": 177.89,
+   "spk": "B"
+  },
+  {
+   "w": "we're",
+   "start": 177.89,
+   "end": 178.86,
+   "spk": "B"
+  },
+  {
+   "w": "aiming",
+   "start": 178.86,
+   "end": 179.24,
+   "spk": "B"
+  },
+  {
+   "w": "to",
+   "start": 179.24,
+   "end": 179.39,
+   "spk": "B"
+  },
+  {
+   "w": "make",
+   "start": 179.39,
+   "end": 180.29,
+   "spk": "B"
+  },
+  {
+   "w": "fifty",
+   "start": 180.29,
+   "end": 180.73,
+   "spk": "B"
+  },
+  {
+   "w": "million",
+   "start": 180.73,
+   "end": 181.32,
+   "spk": "B"
+  },
+  {
+   "w": "Euro",
+   "start": 181.32,
+   "end": 182.77,
+   "spk": "B"
+  },
+  {
+   "w": "Um",
+   "start": 182.77,
+   "end": 183.24,
+   "spk": "B"
+  },
+  {
+   "w": "so",
+   "start": 183.24,
+   "end": 183.42,
+   "spk": "B"
+  },
+  {
+   "w": "we're",
+   "start": 183.42,
+   "end": 183.56,
+   "spk": "B"
+  },
+  {
+   "w": "gonna",
+   "start": 183.56,
+   "end": 183.74,
+   "spk": "B"
+  },
+  {
+   "w": "be",
+   "start": 183.74,
+   "end": 184.35,
+   "spk": "B"
+  },
+  {
+   "w": "selling",
+   "start": 184.35,
+   "end": 184.74,
+   "spk": "B"
+  },
+  {
+   "w": "this",
+   "start": 184.74,
+   "end": 184.93,
+   "spk": "B"
+  },
+  {
+   "w": "on",
+   "start": 184.93,
+   "end": 185.05,
+   "spk": "B"
+  },
+  {
+   "w": "an",
+   "start": 185.05,
+   "end": 185.43,
+   "spk": "B"
+  },
+  {
+   "w": "international",
+   "start": 185.43,
+   "end": 186.12,
+   "spk": "B"
+  },
+  {
+   "w": "scale",
+   "start": 186.12,
+   "end": 187.21,
+   "spk": "B"
+  },
+  {
+   "w": "And",
+   "start": 187.21,
+   "end": 187.76,
+   "spk": "B"
+  },
+  {
+   "w": "uh",
+   "start": 187.76,
+   "end": 188.07,
+   "spk": "B"
+  },
+  {
+   "w": "we",
+   "start": 188.07,
+   "end": 188.42,
+   "spk": "B"
+  },
+  {
+   "w": "don't",
+   "start": 188.42,
+   "end": 188.64,
+   "spk": "B"
+  },
+  {
+   "w": "'Kay",
+   "start": 188.56,
+   "end": 188.91,
+   "spk": "D"
+  },
+  {
+   "w": "want",
+   "start": 188.64,
+   "end": 188.76,
+   "spk": "B"
+  },
+  {
+   "w": "it",
+   "start": 188.76,
+   "end": 188.84,
+   "spk": "B"
+  },
+  {
+   "w": "to",
+   "start": 188.84,
+   "end": 188.93,
+   "spk": "B"
+  },
+  {
+   "w": "cost",
+   "start": 188.93,
+   "end": 189.23,
+   "spk": "B"
+  },
+  {
+   "w": "any",
+   "start": 189.23,
+   "end": 189.49,
+   "spk": "B"
+  },
+  {
+   "w": "more",
+   "start": 189.49,
+   "end": 189.93,
+   "spk": "B"
+  },
+  {
+   "w": "than",
+   "start": 189.93,
+   "end": 190.47,
+   "spk": "B"
+  },
+  {
+   "w": "uh",
+   "start": 190.47,
+   "end": 190.79,
+   "spk": "B"
+  },
+  {
+   "w": "twelve",
+   "start": 190.79,
+   "end": 191.07,
+   "spk": "B"
+  },
+  {
+   "w": "fifty",
+   "start": 191.07,
+   "end": 191.41,
+   "spk": "B"
+  },
+  {
+   "w": "Euros",
+   "start": 191.41,
+   "end": 191.96,
+   "spk": "B"
+  },
+  {
+   "w": "so",
+   "start": 191.96,
+   "end": 192.88,
+   "spk": "B"
+  },
+  {
+   "w": "fifty",
+   "start": 192.88,
+   "end": 193.25,
+   "spk": "B"
+  },
+  {
+   "w": "percent",
+   "start": 193.25,
+   "end": 193.74,
+   "spk": "B"
+  },
+  {
+   "w": "of",
+   "start": 193.74,
+   "end": 193.81,
+   "spk": "B"
+  },
+  {
+   "w": "the",
+   "start": 193.81,
+   "end": 193.92,
+   "spk": "B"
+  },
+  {
+   "w": "selling",
+   "start": 193.92,
+   "end": 194.29,
+   "spk": "B"
+  },
+  {
+   "w": "price",
+   "start": 194.29,
+   "end": 195.0,
+   "spk": "B"
+  },
+  {
+   "w": "Um",
+   "start": 196.02,
+   "end": 196.6,
+   "spk": "D"
+  },
+  {
+   "w": "can",
+   "start": 196.6,
+   "end": 196.7,
+   "spk": "D"
+  },
+  {
+   "w": "we",
+   "start": 196.7,
+   "end": 196.78,
+   "spk": "D"
+  },
+  {
+   "w": "just",
+   "start": 196.78,
+   "end": 196.94,
+   "spk": "D"
+  },
+  {
+   "w": "go",
+   "start": 196.94,
+   "end": 197.01,
+   "spk": "D"
+  },
+  {
+   "w": "over",
+   "start": 197.01,
+   "end": 197.15,
+   "spk": "D"
+  },
+  {
+   "w": "that",
+   "start": 197.15,
+   "end": 197.33,
+   "spk": "D"
+  },
+  {
+   "w": "again",
+   "start": 197.33,
+   "end": 197.6,
+   "spk": "D"
+  },
+  {
+   "w": "Sure",
+   "start": 197.99,
+   "end": 198.46,
+   "spk": "B"
+  },
+  {
+   "w": "Uh",
+   "start": 199.16,
+   "end": 199.8,
+   "spk": "D"
+  },
+  {
+   "w": "so",
+   "start": 199.8,
+   "end": 200.3,
+   "spk": "D"
+  },
+  {
+   "w": "bas",
+   "start": 200.3,
+   "end": 200.95,
+   "spk": "D"
+  },
+  {
+   "w": "at",
+   "start": 200.95,
+   "end": 201.04,
+   "spk": "D"
+  },
+  {
+   "w": "twel",
+   "start": 201.04,
+   "end": 202.11,
+   "spk": "D"
+  },
+  {
+   "w": "Alright",
+   "start": 202.11,
+   "end": 202.42,
+   "spk": "D"
+  },
+  {
+   "w": "yeah",
+   "start": 202.42,
+   "end": 203.79,
+   "spk": "D"
+  },
+  {
+   "w": "Okay",
+   "start": 203.79,
+   "end": 204.1,
+   "spk": "D"
+  },
+  {
+   "w": "So",
+   "start": 205.28,
+   "end": 205.44,
+   "spk": "D"
+  },
+  {
+   "w": "cost",
+   "start": 205.44,
+   "end": 205.91,
+   "spk": "D"
+  },
+  {
+   "w": "like",
+   "start": 205.91,
+   "end": 206.6,
+   "spk": "D"
+  },
+  {
+   "w": "production",
+   "start": 206.6,
+   "end": 207.01,
+   "spk": "D"
+  },
+  {
+   "w": "cost",
+   "start": 207.01,
+   "end": 207.44,
+   "spk": "D"
+  },
+  {
+   "w": "is",
+   "start": 207.44,
+   "end": 208.76,
+   "spk": "D"
+  },
+  {
+   "w": "All",
+   "start": 208.17,
+   "end": 208.36,
+   "spk": "B"
+  },
+  {
+   "w": "together",
+   "start": 208.36,
+   "end": 208.92,
+   "spk": "B"
+  },
+  {
+   "w": "twelve",
+   "start": 208.76,
+   "end": 209.0,
+   "spk": "D"
+  },
+  {
+   "w": "fifty",
+   "start": 209.0,
+   "end": 209.26,
+   "spk": "D"
+  },
+  {
+   "w": "but",
+   "start": 209.26,
+   "end": 209.52,
+   "spk": "D"
+  },
+  {
+   "w": "selling",
+   "start": 209.52,
+   "end": 209.9,
+   "spk": "D"
+  },
+  {
+   "w": "price",
+   "start": 209.9,
+   "end": 210.31,
+   "spk": "D"
+  },
+  {
+   "w": "is",
+   "start": 210.31,
+   "end": 210.84,
+   "spk": "D"
+  },
+  {
+   "w": "is",
+   "start": 210.84,
+   "end": 210.95,
+   "spk": "D"
+  },
+  {
+   "w": "that",
+   "start": 210.95,
+   "end": 211.1,
+   "spk": "D"
+  },
+  {
+   "w": "wholesale",
+   "start": 211.1,
+   "end": 211.65,
+   "spk": "D"
+  },
+  {
+   "w": "or",
+   "start": 211.65,
+   "end": 211.71,
+   "spk": "D"
+  },
+  {
+   "w": "retail",
+   "start": 211.71,
+   "end": 213.06,
+   "spk": "D"
+  },
+  {
+   "w": "Like",
+   "start": 213.06,
+   "end": 213.23,
+   "spk": "D"
+  },
+  {
+   "w": "on",
+   "start": 213.23,
+   "end": 213.37,
+   "spk": "D"
+  },
+  {
+   "w": "the",
+   "start": 213.37,
+   "end": 213.46,
+   "spk": "D"
+  },
+  {
+   "w": "shelf",
+   "start": 213.46,
+   "end": 214.0,
+   "spk": "D"
+  },
+  {
+   "w": "Um",
+   "start": 215.16,
+   "end": 216.3,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 216.3,
+   "end": 216.47,
+   "spk": "B"
+  },
+  {
+   "w": "dunno",
+   "start": 216.47,
+   "end": 216.78,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 216.78,
+   "end": 216.83,
+   "spk": "B"
+  },
+  {
+   "w": "imagine",
+   "start": 216.83,
+   "end": 217.97,
+   "spk": "B"
+  },
+  {
+   "w": "That's",
+   "start": 217.97,
+   "end": 218.14,
+   "spk": "B"
+  },
+  {
+   "w": "a",
+   "start": 218.14,
+   "end": 218.19,
+   "spk": "B"
+  },
+  {
+   "w": "good",
+   "start": 218.19,
+   "end": 218.35,
+   "spk": "B"
+  },
+  {
+   "w": "Our",
+   "start": 218.31,
+   "end": 218.59,
+   "spk": "D"
+  },
+  {
+   "w": "question",
+   "start": 218.35,
+   "end": 218.91,
+   "spk": "B"
+  },
+  {
+   "w": "sale",
+   "start": 218.59,
+   "end": 219.09,
+   "spk": "D"
+  },
+  {
+   "w": "our",
+   "start": 219.09,
+   "end": 219.32,
+   "spk": "D"
+  },
+  {
+   "w": "sale",
+   "start": 219.32,
+   "end": 219.62,
+   "spk": "D"
+  },
+  {
+   "w": "anyway",
+   "start": 219.62,
+   "end": 220.65,
+   "spk": "D"
+  },
+  {
+   "w": "I",
+   "start": 219.67,
+   "end": 219.73,
+   "spk": "B"
+  },
+  {
+   "w": "imagine",
+   "start": 219.73,
+   "end": 220.08,
+   "spk": "B"
+  },
+  {
+   "w": "it",
+   "start": 220.08,
+   "end": 220.16,
+   "spk": "B"
+  },
+  {
+   "w": "probably",
+   "start": 220.16,
+   "end": 220.44,
+   "spk": "B"
+  },
+  {
+   "w": "is",
+   "start": 220.44,
+   "end": 220.65,
+   "spk": "B"
+  },
+  {
+   "w": "our",
+   "start": 220.65,
+   "end": 220.81,
+   "spk": "B"
+  },
+  {
+   "w": "Yeah",
+   "start": 220.65,
+   "end": 221.09,
+   "spk": "D"
+  },
+  {
+   "w": "sale",
+   "start": 220.81,
+   "end": 221.13,
+   "spk": "B"
+  },
+  {
+   "w": "okay",
+   "start": 221.09,
+   "end": 222.24,
+   "spk": "D"
+  },
+  {
+   "w": "actually",
+   "start": 221.13,
+   "end": 221.58,
+   "spk": "B"
+  },
+  {
+   "w": "because",
+   "start": 221.58,
+   "end": 221.87,
+   "spk": "B"
+  },
+  {
+   "w": "it's",
+   "start": 221.87,
+   "end": 221.99,
+   "spk": "B"
+  },
+  {
+   "w": "probably",
+   "start": 221.99,
+   "end": 222.28,
+   "spk": "B"
+  },
+  {
+   "w": "okay",
+   "start": 222.24,
+   "end": 222.57,
+   "spk": "D"
+  },
+  {
+   "w": "up",
+   "start": 222.28,
+   "end": 222.44,
+   "spk": "B"
+  },
+  {
+   "w": "to",
+   "start": 222.44,
+   "end": 222.6,
+   "spk": "B"
+  },
+  {
+   "w": "the",
+   "start": 222.6,
+   "end": 222.91,
+   "spk": "B"
+  },
+  {
+   "w": "the",
+   "start": 224.21,
+   "end": 224.5,
+   "spk": "B"
+  },
+  {
+   "w": "um",
+   "start": 224.5,
+   "end": 225.59,
+   "spk": "B"
+  },
+  {
+   "w": "the",
+   "start": 225.59,
+   "end": 225.69,
+   "spk": "B"
+  },
+  {
+   "w": "retailer",
+   "start": 225.69,
+   "end": 226.51,
+   "spk": "B"
+  },
+  {
+   "w": "to",
+   "start": 226.51,
+   "end": 226.72,
+   "spk": "B"
+  },
+  {
+   "w": "uh",
+   "start": 226.72,
+   "end": 226.94,
+   "spk": "B"
+  },
+  {
+   "w": "Okay",
+   "start": 226.79,
+   "end": 227.05,
+   "spk": "D"
+  },
+  {
+   "w": "sell",
+   "start": 226.94,
+   "end": 227.21,
+   "spk": "B"
+  },
+  {
+   "w": "it",
+   "start": 227.21,
+   "end": 227.28,
+   "spk": "B"
+  },
+  {
+   "w": "for",
+   "start": 227.28,
+   "end": 227.37,
+   "spk": "B"
+  },
+  {
+   "w": "whatever",
+   "start": 227.37,
+   "end": 227.62,
+   "spk": "B"
+  },
+  {
+   "w": "price",
+   "start": 227.62,
+   "end": 227.91,
+   "spk": "B"
+  },
+  {
+   "w": "they",
+   "start": 227.91,
+   "end": 228.06,
+   "spk": "B"
+  },
+  {
+   "w": "want",
+   "start": 228.06,
+   "end": 229.56,
+   "spk": "B"
+  },
+  {
+   "w": "Mm-hmm",
+   "start": 228.9,
+   "end": 229.14,
+   "spk": "D"
+  },
+  {
+   "w": "Um",
+   "start": 229.56,
+   "end": 230.2,
+   "spk": "B"
+  },
+  {
+   "w": "Alright",
+   "start": 231.58,
+   "end": 231.81,
+   "spk": "D"
+  },
+  {
+   "w": "But",
+   "start": 231.83,
+   "end": 231.93,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 231.93,
+   "end": 232.06,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 232.06,
+   "end": 232.18,
+   "spk": "B"
+  },
+  {
+   "w": "don't",
+   "start": 232.18,
+   "end": 232.33,
+   "spk": "B"
+  },
+  {
+   "w": "know",
+   "start": 232.33,
+   "end": 232.46,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 232.46,
+   "end": 232.51,
+   "spk": "B"
+  },
+  {
+   "w": "mean",
+   "start": 232.51,
+   "end": 232.86,
+   "spk": "B"
+  },
+  {
+   "w": "do",
+   "start": 232.86,
+   "end": 232.93,
+   "spk": "B"
+  },
+  {
+   "w": "you",
+   "start": 232.93,
+   "end": 232.99,
+   "spk": "B"
+  },
+  {
+   "w": "think",
+   "start": 232.99,
+   "end": 233.3,
+   "spk": "B"
+  },
+  {
+   "w": "the",
+   "start": 233.3,
+   "end": 233.41,
+   "spk": "B"
+  },
+  {
+   "w": "fact",
+   "start": 233.41,
+   "end": 233.64,
+   "spk": "B"
+  },
+  {
+   "w": "that",
+   "start": 233.64,
+   "end": 233.79,
+   "spk": "B"
+  },
+  {
+   "w": "it's",
+   "start": 233.79,
+   "end": 233.93,
+   "spk": "B"
+  },
+  {
+   "w": "going",
+   "start": 233.93,
+   "end": 234.11,
+   "spk": "B"
+  },
+  {
+   "w": "to",
+   "start": 234.11,
+   "end": 234.17,
+   "spk": "B"
+  },
+  {
+   "w": "be",
+   "start": 234.17,
+   "end": 234.28,
+   "spk": "B"
+  },
+  {
+   "w": "sold",
+   "start": 234.28,
+   "end": 234.58,
+   "spk": "B"
+  },
+  {
+   "w": "internationally",
+   "start": 234.58,
+   "end": 235.28,
+   "spk": "B"
+  },
+  {
+   "w": "will",
+   "start": 235.28,
+   "end": 235.37,
+   "spk": "B"
+  },
+  {
+   "w": "have",
+   "start": 235.37,
+   "end": 235.48,
+   "spk": "B"
+  },
+  {
+   "w": "a",
+   "start": 235.48,
+   "end": 235.54,
+   "spk": "B"
+  },
+  {
+   "w": "bearing",
+   "start": 235.54,
+   "end": 235.97,
+   "spk": "B"
+  },
+  {
+   "w": "on",
+   "start": 235.97,
+   "end": 236.86,
+   "spk": "B"
+  },
+  {
+   "w": "how",
+   "start": 236.86,
+   "end": 237.05,
+   "spk": "B"
+  },
+  {
+   "w": "we",
+   "start": 237.05,
+   "end": 237.22,
+   "spk": "B"
+  },
+  {
+   "w": "design",
+   "start": 237.22,
+   "end": 237.6,
+   "spk": "B"
+  },
+  {
+   "w": "it",
+   "start": 237.6,
+   "end": 237.71,
+   "spk": "B"
+  },
+  {
+   "w": "at",
+   "start": 237.71,
+   "end": 237.89,
+   "spk": "B"
+  },
+  {
+   "w": "all",
+   "start": 237.89,
+   "end": 238.19,
+   "spk": "B"
+  },
+  {
+   "w": "Yes",
+   "start": 238.77,
+   "end": 239.13,
+   "spk": "D"
+  },
+  {
+   "w": "Think",
+   "start": 239.31,
+   "end": 239.49,
+   "spk": "B"
+  },
+  {
+   "w": "it",
+   "start": 239.49,
+   "end": 239.6,
+   "spk": "B"
+  },
+  {
+   "w": "will",
+   "start": 239.6,
+   "end": 241.17,
+   "spk": "B"
+  },
+  {
+   "w": "Mm-hmm",
+   "start": 240.69,
+   "end": 240.94,
+   "spk": "D"
+  },
+  {
+   "w": "Um",
+   "start": 241.17,
+   "end": 242.15,
+   "spk": "B"
+  },
+  {
+   "w": "Mm-hmm",
+   "start": 243.86,
+   "end": 244.12,
+   "spk": "D"
+  },
+  {
+   "w": "Hmm",
+   "start": 245.43,
+   "end": 246.06,
+   "spk": "B"
+  },
+  {
+   "w": "Well",
+   "start": 248.28,
+   "end": 248.4,
+   "spk": "D"
+  },
+  {
+   "w": "right",
+   "start": 248.4,
+   "end": 248.57,
+   "spk": "D"
+  },
+  {
+   "w": "away",
+   "start": 248.57,
+   "end": 248.75,
+   "spk": "D"
+  },
+  {
+   "w": "I'm",
+   "start": 248.75,
+   "end": 248.89,
+   "spk": "D"
+  },
+  {
+   "w": "wondering",
+   "start": 248.89,
+   "end": 249.21,
+   "spk": "D"
+  },
+  {
+   "w": "if",
+   "start": 249.21,
+   "end": 249.37,
+   "spk": "D"
+  },
+  {
+   "w": "there's",
+   "start": 249.37,
+   "end": 249.8,
+   "spk": "D"
+  },
+  {
+   "w": "um",
+   "start": 249.8,
+   "end": 250.59,
+   "spk": "D"
+  },
+  {
+   "w": "th",
+   "start": 250.59,
+   "end": 251.08,
+   "spk": "D"
+  },
+  {
+   "w": "th",
+   "start": 251.08,
+   "end": 251.13,
+   "spk": "D"
+  },
+  {
+   "w": "uh",
+   "start": 251.13,
+   "end": 251.46,
+   "spk": "D"
+  },
+  {
+   "w": "like",
+   "start": 251.46,
+   "end": 251.66,
+   "spk": "D"
+  },
+  {
+   "w": "with",
+   "start": 251.66,
+   "end": 251.77,
+   "spk": "D"
+  },
+  {
+   "w": "D_V_D_",
+   "start": 251.77,
+   "end": 252.13,
+   "spk": "D"
+  },
+  {
+   "w": "players",
+   "start": 252.13,
+   "end": 252.53,
+   "spk": "D"
+  },
+  {
+   "w": "if",
+   "start": 252.53,
+   "end": 252.65,
+   "spk": "D"
+  },
+  {
+   "w": "there",
+   "start": 252.65,
+   "end": 252.8,
+   "spk": "D"
+  },
+  {
+   "w": "are",
+   "start": 252.8,
+   "end": 253.08,
+   "spk": "D"
+  },
+  {
+   "w": "zones",
+   "start": 253.08,
+   "end": 254.28,
+   "spk": "D"
+  },
+  {
+   "w": "Oh",
+   "start": 253.78,
+   "end": 253.96,
+   "spk": "B"
+  },
+  {
+   "w": "yeah",
+   "start": 253.96,
+   "end": 254.46,
+   "spk": "B"
+  },
+  {
+   "w": "Um",
+   "start": 254.28,
+   "end": 255.01,
+   "spk": "D"
+  },
+  {
+   "w": "regions",
+   "start": 254.46,
+   "end": 254.91,
+   "spk": "B"
+  },
+  {
+   "w": "and",
+   "start": 254.91,
+   "end": 255.06,
+   "spk": "B"
+  },
+  {
+   "w": "f",
+   "start": 255.01,
+   "end": 255.52,
+   "spk": "D"
+  },
+  {
+   "w": "stuff",
+   "start": 255.06,
+   "end": 255.43,
+   "spk": "B"
+  },
+  {
+   "w": "yeah",
+   "start": 255.43,
+   "end": 256.62,
+   "spk": "B"
+  },
+  {
+   "w": "frequencies",
+   "start": 255.52,
+   "end": 256.02,
+   "spk": "D"
+  },
+  {
+   "w": "or",
+   "start": 256.02,
+   "end": 256.13,
+   "spk": "D"
+  },
+  {
+   "w": "something",
+   "start": 256.13,
+   "end": 257.41,
+   "spk": "D"
+  },
+  {
+   "w": "Yeah",
+   "start": 256.62,
+   "end": 257.56,
+   "spk": "B"
+  },
+  {
+   "w": "um",
+   "start": 257.41,
+   "end": 258.44,
+   "spk": "D"
+  },
+  {
+   "w": "Okay",
+   "start": 257.56,
+   "end": 258.06,
+   "spk": "B"
+  },
+  {
+   "w": "as",
+   "start": 258.44,
+   "end": 258.62,
+   "spk": "D"
+  },
+  {
+   "w": "well",
+   "start": 258.62,
+   "end": 258.9,
+   "spk": "D"
+  },
+  {
+   "w": "as",
+   "start": 258.9,
+   "end": 259.18,
+   "spk": "D"
+  },
+  {
+   "w": "uh",
+   "start": 259.18,
+   "end": 260.31,
+   "spk": "D"
+  },
+  {
+   "w": "characters",
+   "start": 260.31,
+   "end": 261.17,
+   "spk": "D"
+  },
+  {
+   "w": "um",
+   "start": 261.17,
+   "end": 261.95,
+   "spk": "D"
+  },
+  {
+   "w": "different",
+   "start": 261.95,
+   "end": 262.53,
+   "spk": "D"
+  },
+  {
+   "w": "uh",
+   "start": 262.53,
+   "end": 263.31,
+   "spk": "D"
+  },
+  {
+   "w": "keypad",
+   "start": 263.31,
+   "end": 263.87,
+   "spk": "D"
+  },
+  {
+   "w": "styles",
+   "start": 263.87,
+   "end": 264.36,
+   "spk": "D"
+  },
+  {
+   "w": "and",
+   "start": 264.36,
+   "end": 264.6,
+   "spk": "D"
+  },
+  {
+   "w": "s",
+   "start": 264.6,
+   "end": 264.8,
+   "spk": "D"
+  },
+  {
+   "w": "symbols",
+   "start": 264.8,
+   "end": 265.35,
+   "spk": "D"
+  },
+  {
+   "w": "Hmm",
+   "start": 265.05,
+   "end": 265.32,
+   "spk": "A"
+  },
+  {
+   "w": "Yeah",
+   "start": 265.13,
+   "end": 265.93,
+   "spk": "B"
+  },
+  {
+   "w": "Well",
+   "start": 265.93,
+   "end": 266.03,
+   "spk": "B"
+  },
+  {
+   "w": "for",
+   "start": 266.03,
+   "end": 266.23,
+   "spk": "B"
+  },
+  {
+   "w": "Um",
+   "start": 266.17,
+   "end": 266.7,
+   "spk": "D"
+  },
+  {
+   "w": "a",
+   "start": 266.23,
+   "end": 266.26,
+   "spk": "B"
+  },
+  {
+   "w": "remote",
+   "start": 266.26,
+   "end": 266.5,
+   "spk": "B"
+  },
+  {
+   "w": "control",
+   "start": 266.5,
+   "end": 266.84,
+   "spk": "B"
+  },
+  {
+   "w": "do",
+   "start": 266.84,
+   "end": 267.07,
+   "spk": "B"
+  },
+  {
+   "w": "you",
+   "start": 267.07,
+   "end": 267.15,
+   "spk": "B"
+  },
+  {
+   "w": "think",
+   "start": 267.15,
+   "end": 267.35,
+   "spk": "B"
+  },
+  {
+   "w": "that",
+   "start": 267.35,
+   "end": 267.48,
+   "spk": "B"
+  },
+  {
+   "w": "will",
+   "start": 267.48,
+   "end": 267.58,
+   "spk": "B"
+  },
+  {
+   "w": "be",
+   "start": 267.58,
+   "end": 268.3,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 268.3,
+   "end": 268.37,
+   "spk": "B"
+  },
+  {
+   "w": "suppose",
+   "start": 268.37,
+   "end": 268.63,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 268.46,
+   "end": 268.51,
+   "spk": "D"
+  },
+  {
+   "w": "don't",
+   "start": 268.51,
+   "end": 268.66,
+   "spk": "D"
+  },
+  {
+   "w": "it's",
+   "start": 268.63,
+   "end": 268.81,
+   "spk": "B"
+  },
+  {
+   "w": "know",
+   "start": 268.66,
+   "end": 268.83,
+   "spk": "D"
+  },
+  {
+   "w": "depends",
+   "start": 268.81,
+   "end": 269.16,
+   "spk": "B"
+  },
+  {
+   "w": "on",
+   "start": 269.16,
+   "end": 269.24,
+   "spk": "B"
+  },
+  {
+   "w": "how",
+   "start": 269.24,
+   "end": 269.41,
+   "spk": "B"
+  },
+  {
+   "w": "complicated",
+   "start": 269.41,
+   "end": 269.97,
+   "spk": "B"
+  },
+  {
+   "w": "our",
+   "start": 269.97,
+   "end": 270.08,
+   "spk": "B"
+  },
+  {
+   "w": "remote",
+   "start": 270.08,
+   "end": 270.31,
+   "spk": "B"
+  },
+  {
+   "w": "control",
+   "start": 270.31,
+   "end": 270.72,
+   "spk": "B"
+  },
+  {
+   "w": "is",
+   "start": 270.72,
+   "end": 271.01,
+   "spk": "B"
+  },
+  {
+   "w": "Yeah",
+   "start": 271.22,
+   "end": 271.58,
+   "spk": "D"
+  },
+  {
+   "w": "It",
+   "start": 271.74,
+   "end": 271.83,
+   "spk": "A"
+  },
+  {
+   "w": "does",
+   "start": 271.83,
+   "end": 271.99,
+   "spk": "A"
+  },
+  {
+   "w": "make",
+   "start": 271.99,
+   "end": 272.18,
+   "spk": "A"
+  },
+  {
+   "w": "sense",
+   "start": 272.18,
+   "end": 272.73,
+   "spk": "A"
+  },
+  {
+   "w": "from",
+   "start": 272.73,
+   "end": 273.61,
+   "spk": "A"
+  },
+  {
+   "w": "maybe",
+   "start": 273.61,
+   "end": 273.86,
+   "spk": "A"
+  },
+  {
+   "w": "the",
+   "start": 273.86,
+   "end": 274.01,
+   "spk": "A"
+  },
+  {
+   "w": "design",
+   "start": 274.01,
+   "end": 274.43,
+   "spk": "A"
+  },
+  {
+   "w": "point",
+   "start": 274.43,
+   "end": 274.6,
+   "spk": "A"
+  },
+  {
+   "w": "of",
+   "start": 274.6,
+   "end": 274.67,
+   "spk": "A"
+  },
+  {
+   "w": "view",
+   "start": 274.67,
+   "end": 274.91,
+   "spk": "A"
+  },
+  {
+   "w": "'cause",
+   "start": 274.91,
+   "end": 275.92,
+   "spk": "A"
+  },
+  {
+   "w": "you",
+   "start": 275.92,
+   "end": 276.03,
+   "spk": "A"
+  },
+  {
+   "w": "have",
+   "start": 276.03,
+   "end": 277.14,
+   "spk": "A"
+  },
+  {
+   "w": "more",
+   "start": 277.14,
+   "end": 277.32,
+   "spk": "A"
+  },
+  {
+   "w": "complicated",
+   "start": 277.32,
+   "end": 277.83,
+   "spk": "A"
+  },
+  {
+   "w": "characters",
+   "start": 277.83,
+   "end": 278.25,
+   "spk": "A"
+  },
+  {
+   "w": "like",
+   "start": 278.25,
+   "end": 278.38,
+   "spk": "A"
+  },
+  {
+   "w": "European",
+   "start": 278.38,
+   "end": 278.74,
+   "spk": "A"
+  },
+  {
+   "w": "languages",
+   "start": 278.74,
+   "end": 279.25,
+   "spk": "A"
+  },
+  {
+   "w": "then",
+   "start": 279.25,
+   "end": 279.41,
+   "spk": "A"
+  },
+  {
+   "w": "you",
+   "start": 279.41,
+   "end": 279.52,
+   "spk": "A"
+  },
+  {
+   "w": "need",
+   "start": 279.52,
+   "end": 279.68,
+   "spk": "A"
+  },
+  {
+   "w": "more",
+   "start": 279.68,
+   "end": 279.79,
+   "spk": "A"
+  },
+  {
+   "w": "buttons",
+   "start": 279.79,
+   "end": 280.21,
+   "spk": "A"
+  },
+  {
+   "w": "Yeah",
+   "start": 280.42,
+   "end": 281.33,
+   "spk": "B"
+  },
+  {
+   "w": "Yeah",
+   "start": 280.66,
+   "end": 280.94,
+   "spk": "D"
+  },
+  {
+   "w": "So",
+   "start": 281.3,
+   "end": 281.96,
+   "spk": "A"
+  },
+  {
+   "w": "yeah",
+   "start": 281.33,
+   "end": 283.04,
+   "spk": "B"
+  },
+  {
+   "w": "possibly",
+   "start": 281.96,
+   "end": 282.52,
+   "spk": "A"
+  },
+  {
+   "w": "Yeah",
+   "start": 282.33,
+   "end": 283.5,
+   "spk": "D"
+  },
+  {
+   "w": "Okay",
+   "start": 283.04,
+   "end": 283.9,
+   "spk": "B"
+  },
+  {
+   "w": "And",
+   "start": 283.5,
+   "end": 283.65,
+   "spk": "D"
+  },
+  {
+   "w": "then",
+   "start": 283.65,
+   "end": 283.79,
+   "spk": "D"
+  },
+  {
+   "w": "a",
+   "start": 283.79,
+   "end": 284.13,
+   "spk": "D"
+  },
+  {
+   "w": "and",
+   "start": 284.13,
+   "end": 284.26,
+   "spk": "D"
+  },
+  {
+   "w": "then",
+   "start": 284.26,
+   "end": 284.4,
+   "spk": "D"
+  },
+  {
+   "w": "al",
+   "start": 284.4,
+   "end": 284.64,
+   "spk": "D"
+  },
+  {
+   "w": "the",
+   "start": 284.64,
+   "end": 284.76,
+   "spk": "D"
+  },
+  {
+   "w": "other",
+   "start": 284.76,
+   "end": 284.93,
+   "spk": "D"
+  },
+  {
+   "w": "thing",
+   "start": 284.93,
+   "end": 285.19,
+   "spk": "D"
+  },
+  {
+   "w": "international",
+   "start": 285.19,
+   "end": 286.0,
+   "spk": "D"
+  },
+  {
+   "w": "is",
+   "start": 286.0,
+   "end": 286.19,
+   "spk": "D"
+  },
+  {
+   "w": "on",
+   "start": 286.19,
+   "end": 286.47,
+   "spk": "D"
+  },
+  {
+   "w": "top",
+   "start": 286.47,
+   "end": 286.69,
+   "spk": "D"
+  },
+  {
+   "w": "of",
+   "start": 286.69,
+   "end": 286.75,
+   "spk": "D"
+  },
+  {
+   "w": "the",
+   "start": 286.75,
+   "end": 286.84,
+   "spk": "D"
+  },
+  {
+   "w": "price",
+   "start": 286.84,
+   "end": 287.78,
+   "spk": "D"
+  },
+  {
+   "w": "I'm",
+   "start": 287.78,
+   "end": 287.95,
+   "spk": "D"
+  },
+  {
+   "w": "thinking",
+   "start": 287.95,
+   "end": 288.82,
+   "spk": "D"
+  },
+  {
+   "w": "the",
+   "start": 291.0,
+   "end": 291.13,
+   "spk": "D"
+  },
+  {
+   "w": "price",
+   "start": 291.13,
+   "end": 291.48,
+   "spk": "D"
+  },
+  {
+   "w": "might",
+   "start": 291.48,
+   "end": 292.27,
+   "spk": "D"
+  },
+  {
+   "w": "might",
+   "start": 292.27,
+   "end": 292.63,
+   "spk": "D"
+  },
+  {
+   "w": "appeal",
+   "start": 292.63,
+   "end": 293.07,
+   "spk": "D"
+  },
+  {
+   "w": "to",
+   "start": 293.07,
+   "end": 293.25,
+   "spk": "D"
+  },
+  {
+   "w": "a",
+   "start": 293.25,
+   "end": 293.33,
+   "spk": "D"
+  },
+  {
+   "w": "certain",
+   "start": 293.33,
+   "end": 293.65,
+   "spk": "D"
+  },
+  {
+   "w": "market",
+   "start": 293.65,
+   "end": 294.02,
+   "spk": "D"
+  },
+  {
+   "w": "in",
+   "start": 294.02,
+   "end": 294.18,
+   "spk": "D"
+  },
+  {
+   "w": "one",
+   "start": 294.18,
+   "end": 294.57,
+   "spk": "D"
+  },
+  {
+   "w": "region",
+   "start": 294.57,
+   "end": 295.06,
+   "spk": "D"
+  },
+  {
+   "w": "whereas",
+   "start": 295.06,
+   "end": 295.28,
+   "spk": "D"
+  },
+  {
+   "w": "in",
+   "start": 295.28,
+   "end": 295.4,
+   "spk": "D"
+  },
+  {
+   "w": "another",
+   "start": 295.4,
+   "end": 295.71,
+   "spk": "D"
+  },
+  {
+   "w": "it'll",
+   "start": 295.71,
+   "end": 295.87,
+   "spk": "D"
+  },
+  {
+   "w": "be",
+   "start": 295.87,
+   "end": 296.11,
+   "spk": "D"
+  },
+  {
+   "w": "different",
+   "start": 296.11,
+   "end": 296.52,
+   "spk": "D"
+  },
+  {
+   "w": "so",
+   "start": 296.52,
+   "end": 296.78,
+   "spk": "D"
+  },
+  {
+   "w": "What",
+   "start": 297.79,
+   "end": 297.95,
+   "spk": "B"
+  },
+  {
+   "w": "just",
+   "start": 297.95,
+   "end": 298.21,
+   "spk": "B"
+  },
+  {
+   "w": "like",
+   "start": 298.21,
+   "end": 298.37,
+   "spk": "B"
+  },
+  {
+   "w": "Just",
+   "start": 298.26,
+   "end": 298.45,
+   "spk": "D"
+  },
+  {
+   "w": "in",
+   "start": 298.37,
+   "end": 298.48,
+   "spk": "B"
+  },
+  {
+   "w": "a",
+   "start": 298.45,
+   "end": 298.51,
+   "spk": "D"
+  },
+  {
+   "w": "terms",
+   "start": 298.48,
+   "end": 298.85,
+   "spk": "B"
+  },
+  {
+   "w": "chara",
+   "start": 298.51,
+   "end": 298.78,
+   "spk": "D"
+  },
+  {
+   "w": "just",
+   "start": 298.78,
+   "end": 299.01,
+   "spk": "D"
+  },
+  {
+   "w": "of",
+   "start": 298.85,
+   "end": 298.97,
+   "spk": "B"
+  },
+  {
+   "w": "like",
+   "start": 298.97,
+   "end": 299.18,
+   "spk": "B"
+  },
+  {
+   "w": "a",
+   "start": 299.01,
+   "end": 299.07,
+   "spk": "D"
+  },
+  {
+   "w": "characteristic",
+   "start": 299.07,
+   "end": 299.73,
+   "spk": "D"
+  },
+  {
+   "w": "the",
+   "start": 299.18,
+   "end": 299.27,
+   "spk": "B"
+  },
+  {
+   "w": "wealth",
+   "start": 299.27,
+   "end": 299.58,
+   "spk": "B"
+  },
+  {
+   "w": "of",
+   "start": 299.58,
+   "end": 299.64,
+   "spk": "B"
+  },
+  {
+   "w": "the",
+   "start": 299.64,
+   "end": 299.74,
+   "spk": "B"
+  },
+  {
+   "w": "of",
+   "start": 299.73,
+   "end": 299.88,
+   "spk": "D"
+  },
+  {
+   "w": "country",
+   "start": 299.74,
+   "end": 300.43,
+   "spk": "B"
+  },
+  {
+   "w": "the",
+   "start": 299.88,
+   "end": 300.01,
+   "spk": "D"
+  },
+  {
+   "w": "Like",
+   "start": 300.43,
+   "end": 301.02,
+   "spk": "B"
+  },
+  {
+   "w": "how",
+   "start": 301.02,
+   "end": 301.18,
+   "spk": "B"
+  },
+  {
+   "w": "Just",
+   "start": 301.09,
+   "end": 301.65,
+   "spk": "D"
+  },
+  {
+   "w": "much",
+   "start": 301.18,
+   "end": 301.69,
+   "spk": "B"
+  },
+  {
+   "w": "money",
+   "start": 301.69,
+   "end": 301.92,
+   "spk": "B"
+  },
+  {
+   "w": "people",
+   "start": 301.92,
+   "end": 302.16,
+   "spk": "B"
+  },
+  {
+   "w": "have",
+   "start": 302.16,
+   "end": 302.29,
+   "spk": "B"
+  },
+  {
+   "w": "to",
+   "start": 302.29,
+   "end": 302.36,
+   "spk": "B"
+  },
+  {
+   "w": "spend",
+   "start": 302.36,
+   "end": 302.69,
+   "spk": "B"
+  },
+  {
+   "w": "on",
+   "start": 302.69,
+   "end": 302.81,
+   "spk": "B"
+  },
+  {
+   "w": "things",
+   "start": 302.81,
+   "end": 303.05,
+   "spk": "B"
+  },
+  {
+   "w": "Or",
+   "start": 302.87,
+   "end": 303.03,
+   "spk": "D"
+  },
+  {
+   "w": "just",
+   "start": 303.03,
+   "end": 303.27,
+   "spk": "D"
+  },
+  {
+   "w": "like",
+   "start": 303.05,
+   "end": 303.43,
+   "spk": "B"
+  },
+  {
+   "w": "like",
+   "start": 303.27,
+   "end": 304.08,
+   "spk": "D"
+  },
+  {
+   "w": "basic",
+   "start": 304.08,
+   "end": 304.44,
+   "spk": "D"
+  },
+  {
+   "w": "product",
+   "start": 304.44,
+   "end": 304.79,
+   "spk": "D"
+  },
+  {
+   "w": "podi",
+   "start": 304.79,
+   "end": 305.16,
+   "spk": "D"
+  },
+  {
+   "w": "positioning",
+   "start": 305.16,
+   "end": 306.29,
+   "spk": "D"
+  },
+  {
+   "w": "the",
+   "start": 306.29,
+   "end": 306.39,
+   "spk": "D"
+  },
+  {
+   "w": "twenty",
+   "start": 306.39,
+   "end": 306.69,
+   "spk": "D"
+  },
+  {
+   "w": "five",
+   "start": 306.69,
+   "end": 307.01,
+   "spk": "D"
+  },
+  {
+   "w": "Euro",
+   "start": 307.01,
+   "end": 308.06,
+   "spk": "D"
+  },
+  {
+   "w": "remote",
+   "start": 308.06,
+   "end": 308.36,
+   "spk": "D"
+  },
+  {
+   "w": "control",
+   "start": 308.36,
+   "end": 308.72,
+   "spk": "D"
+  },
+  {
+   "w": "might",
+   "start": 308.72,
+   "end": 308.92,
+   "spk": "D"
+  },
+  {
+   "w": "be",
+   "start": 308.92,
+   "end": 309.04,
+   "spk": "D"
+  },
+  {
+   "w": "a",
+   "start": 309.04,
+   "end": 309.1,
+   "spk": "D"
+  },
+  {
+   "w": "big",
+   "start": 309.1,
+   "end": 309.48,
+   "spk": "D"
+  },
+  {
+   "w": "hit",
+   "start": 309.48,
+   "end": 309.75,
+   "spk": "D"
+  },
+  {
+   "w": "in",
+   "start": 309.75,
+   "end": 310.24,
+   "spk": "D"
+  },
+  {
+   "w": "London",
+   "start": 310.24,
+   "end": 311.16,
+   "spk": "D"
+  },
+  {
+   "w": "might",
+   "start": 311.16,
+   "end": 311.39,
+   "spk": "D"
+  },
+  {
+   "w": "not",
+   "start": 311.39,
+   "end": 311.56,
+   "spk": "D"
+  },
+  {
+   "w": "be",
+   "start": 311.56,
+   "end": 311.72,
+   "spk": "D"
+  },
+  {
+   "w": "such",
+   "start": 311.72,
+   "end": 311.99,
+   "spk": "D"
+  },
+  {
+   "w": "a",
+   "start": 311.99,
+   "end": 312.07,
+   "spk": "D"
+  },
+  {
+   "w": "big",
+   "start": 312.07,
+   "end": 312.44,
+   "spk": "D"
+  },
+  {
+   "w": "hit",
+   "start": 312.44,
+   "end": 312.83,
+   "spk": "D"
+  },
+  {
+   "w": "in",
+   "start": 312.83,
+   "end": 314.6,
+   "spk": "D"
+  },
+  {
+   "w": "Greece",
+   "start": 314.6,
+   "end": 315.2,
+   "spk": "D"
+  },
+  {
+   "w": "who",
+   "start": 315.2,
+   "end": 315.31,
+   "spk": "D"
+  },
+  {
+   "w": "knows",
+   "start": 315.31,
+   "end": 315.98,
+   "spk": "D"
+  },
+  {
+   "w": "Aye",
+   "start": 315.74,
+   "end": 315.98,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 315.98,
+   "end": 316.01,
+   "spk": "B"
+  },
+  {
+   "w": "something",
+   "start": 315.98,
+   "end": 316.26,
+   "spk": "D"
+  },
+  {
+   "w": "see",
+   "start": 316.01,
+   "end": 316.18,
+   "spk": "B"
+  },
+  {
+   "w": "what",
+   "start": 316.18,
+   "end": 316.3,
+   "spk": "B"
+  },
+  {
+   "w": "like",
+   "start": 316.26,
+   "end": 316.39,
+   "spk": "D"
+  },
+  {
+   "w": "you",
+   "start": 316.3,
+   "end": 316.41,
+   "spk": "B"
+  },
+  {
+   "w": "that",
+   "start": 316.39,
+   "end": 316.77,
+   "spk": "D"
+  },
+  {
+   "w": "mean",
+   "start": 316.41,
+   "end": 316.91,
+   "spk": "B"
+  },
+  {
+   "w": "yeah",
+   "start": 316.77,
+   "end": 316.94,
+   "spk": "D"
+  },
+  {
+   "w": "yeah",
+   "start": 316.91,
+   "end": 317.28,
+   "spk": "B"
+  },
+  {
+   "w": "Marketing",
+   "start": 319.01,
+   "end": 320.06,
+   "spk": "B"
+  },
+  {
+   "w": "Good",
+   "start": 320.06,
+   "end": 320.21,
+   "spk": "B"
+  },
+  {
+   "w": "marketing",
+   "start": 320.21,
+   "end": 320.64,
+   "spk": "B"
+  },
+  {
+   "w": "Yep",
+   "start": 320.48,
+   "end": 320.64,
+   "spk": "D"
+  },
+  {
+   "w": "thoughts",
+   "start": 320.64,
+   "end": 321.09,
+   "spk": "B"
+  },
+  {
+   "w": "Oh",
+   "start": 321.09,
+   "end": 321.21,
+   "spk": "B"
+  },
+  {
+   "w": "gosh",
+   "start": 321.21,
+   "end": 321.49,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 321.49,
+   "end": 321.55,
+   "spk": "B"
+  },
+  {
+   "w": "should",
+   "start": 321.55,
+   "end": 321.71,
+   "spk": "B"
+  },
+  {
+   "w": "be",
+   "start": 321.71,
+   "end": 321.81,
+   "spk": "B"
+  },
+  {
+   "w": "writing",
+   "start": 321.81,
+   "end": 322.05,
+   "spk": "B"
+  },
+  {
+   "w": "all",
+   "start": 322.05,
+   "end": 322.18,
+   "spk": "B"
+  },
+  {
+   "w": "this",
+   "start": 322.18,
+   "end": 322.33,
+   "spk": "B"
+  },
+  {
+   "w": "down",
+   "start": 322.33,
+   "end": 323.26,
+   "spk": "B"
+  },
+  {
+   "w": "Um",
+   "start": 323.26,
+   "end": 324.87,
+   "spk": "B"
+  },
+  {
+   "w": "Right",
+   "start": 355.45,
+   "end": 355.63,
+   "spk": "D"
+  },
+  {
+   "w": "away",
+   "start": 355.63,
+   "end": 355.82,
+   "spk": "D"
+  },
+  {
+   "w": "I'm",
+   "start": 355.82,
+   "end": 355.94,
+   "spk": "D"
+  },
+  {
+   "w": "making",
+   "start": 355.94,
+   "end": 356.28,
+   "spk": "D"
+  },
+  {
+   "w": "some",
+   "start": 356.28,
+   "end": 356.58,
+   "spk": "D"
+  },
+  {
+   "w": "kind",
+   "start": 356.58,
+   "end": 356.83,
+   "spk": "D"
+  },
+  {
+   "w": "of",
+   "start": 356.83,
+   "end": 357.12,
+   "spk": "D"
+  },
+  {
+   "w": "assumptions",
+   "start": 357.12,
+   "end": 357.76,
+   "spk": "D"
+  },
+  {
+   "w": "about",
+   "start": 357.76,
+   "end": 358.12,
+   "spk": "D"
+  },
+  {
+   "w": "what",
+   "start": 358.12,
+   "end": 358.9,
+   "spk": "D"
+  },
+  {
+   "w": "what",
+   "start": 358.9,
+   "end": 359.16,
+   "spk": "D"
+  },
+  {
+   "w": "information",
+   "start": 359.16,
+   "end": 359.68,
+   "spk": "D"
+  },
+  {
+   "w": "we're",
+   "start": 359.68,
+   "end": 359.81,
+   "spk": "D"
+  },
+  {
+   "w": "given",
+   "start": 359.81,
+   "end": 360.07,
+   "spk": "D"
+  },
+  {
+   "w": "here",
+   "start": 360.07,
+   "end": 360.71,
+   "spk": "D"
+  },
+  {
+   "w": "Mm",
+   "start": 360.7,
+   "end": 361.22,
+   "spk": "B"
+  },
+  {
+   "w": "thinking",
+   "start": 360.71,
+   "end": 362.11,
+   "spk": "D"
+  },
+  {
+   "w": "'kay",
+   "start": 362.11,
+   "end": 362.28,
+   "spk": "D"
+  },
+  {
+   "w": "trendy",
+   "start": 362.28,
+   "end": 362.74,
+   "spk": "D"
+  },
+  {
+   "w": "probably",
+   "start": 362.74,
+   "end": 363.08,
+   "spk": "D"
+  },
+  {
+   "w": "means",
+   "start": 363.08,
+   "end": 363.34,
+   "spk": "D"
+  },
+  {
+   "w": "something",
+   "start": 363.34,
+   "end": 364.19,
+   "spk": "D"
+  },
+  {
+   "w": "other",
+   "start": 364.19,
+   "end": 364.44,
+   "spk": "D"
+  },
+  {
+   "w": "than",
+   "start": 364.44,
+   "end": 364.57,
+   "spk": "D"
+  },
+  {
+   "w": "just",
+   "start": 364.57,
+   "end": 364.77,
+   "spk": "D"
+  },
+  {
+   "w": "basic",
+   "start": 364.77,
+   "end": 365.64,
+   "spk": "D"
+  },
+  {
+   "w": "Yeah",
+   "start": 365.36,
+   "end": 365.84,
+   "spk": "B"
+  },
+  {
+   "w": "something",
+   "start": 365.64,
+   "end": 365.95,
+   "spk": "D"
+  },
+  {
+   "w": "other",
+   "start": 365.95,
+   "end": 366.15,
+   "spk": "D"
+  },
+  {
+   "w": "than",
+   "start": 366.15,
+   "end": 366.31,
+   "spk": "D"
+  },
+  {
+   "w": "just",
+   "start": 366.31,
+   "end": 367.29,
+   "spk": "D"
+  },
+  {
+   "w": "standard",
+   "start": 367.29,
+   "end": 368.59,
+   "spk": "D"
+  },
+  {
+   "w": "Um",
+   "start": 368.59,
+   "end": 369.16,
+   "spk": "D"
+  },
+  {
+   "w": "so",
+   "start": 370.31,
+   "end": 370.54,
+   "spk": "D"
+  },
+  {
+   "w": "I'm",
+   "start": 370.54,
+   "end": 371.29,
+   "spk": "D"
+  },
+  {
+   "w": "wondering",
+   "start": 371.29,
+   "end": 371.73,
+   "spk": "D"
+  },
+  {
+   "w": "right",
+   "start": 371.73,
+   "end": 371.9,
+   "spk": "D"
+  },
+  {
+   "w": "away",
+   "start": 371.9,
+   "end": 372.15,
+   "spk": "D"
+  },
+  {
+   "w": "is",
+   "start": 372.15,
+   "end": 372.29,
+   "spk": "D"
+  },
+  {
+   "w": "selling",
+   "start": 372.29,
+   "end": 372.81,
+   "spk": "D"
+  },
+  {
+   "w": "twenty",
+   "start": 372.81,
+   "end": 373.06,
+   "spk": "D"
+  },
+  {
+   "w": "five",
+   "start": 373.06,
+   "end": 373.26,
+   "spk": "D"
+  },
+  {
+   "w": "Euros",
+   "start": 373.26,
+   "end": 373.51,
+   "spk": "D"
+  },
+  {
+   "w": "is",
+   "start": 373.51,
+   "end": 373.6,
+   "spk": "D"
+  },
+  {
+   "w": "that",
+   "start": 373.6,
+   "end": 373.76,
+   "spk": "D"
+  },
+  {
+   "w": "sort",
+   "start": 373.76,
+   "end": 373.98,
+   "spk": "D"
+  },
+  {
+   "w": "of",
+   "start": 373.98,
+   "end": 374.06,
+   "spk": "D"
+  },
+  {
+   "w": "the",
+   "start": 374.06,
+   "end": 374.38,
+   "spk": "D"
+  },
+  {
+   "w": "thi",
+   "start": 374.38,
+   "end": 374.68,
+   "spk": "D"
+  },
+  {
+   "w": "is",
+   "start": 374.68,
+   "end": 374.78,
+   "spk": "D"
+  },
+  {
+   "w": "this",
+   "start": 374.78,
+   "end": 374.95,
+   "spk": "D"
+  },
+  {
+   "w": "gonna",
+   "start": 374.95,
+   "end": 375.09,
+   "spk": "D"
+  },
+  {
+   "w": "to",
+   "start": 375.09,
+   "end": 375.15,
+   "spk": "D"
+  },
+  {
+   "w": "be",
+   "start": 375.15,
+   "end": 375.21,
+   "spk": "D"
+  },
+  {
+   "w": "like",
+   "start": 375.21,
+   "end": 375.39,
+   "spk": "D"
+  },
+  {
+   "w": "the",
+   "start": 375.39,
+   "end": 375.48,
+   "spk": "D"
+  },
+  {
+   "w": "premium",
+   "start": 375.48,
+   "end": 375.89,
+   "spk": "D"
+  },
+  {
+   "w": "product",
+   "start": 375.89,
+   "end": 376.96,
+   "spk": "D"
+  },
+  {
+   "w": "kinda",
+   "start": 376.96,
+   "end": 377.31,
+   "spk": "D"
+  },
+  {
+   "w": "Yeah",
+   "start": 377.15,
+   "end": 377.5,
+   "spk": "B"
+  },
+  {
+   "w": "thing",
+   "start": 377.31,
+   "end": 377.5,
+   "spk": "D"
+  },
+  {
+   "w": "yeah",
+   "start": 377.5,
+   "end": 377.66,
+   "spk": "B"
+  },
+  {
+   "w": "or",
+   "start": 377.5,
+   "end": 377.53,
+   "spk": "D"
+  },
+  {
+   "w": "Like",
+   "start": 377.66,
+   "end": 377.84,
+   "spk": "B"
+  },
+  {
+   "w": "how",
+   "start": 377.84,
+   "end": 377.98,
+   "spk": "B"
+  },
+  {
+   "w": "much",
+   "start": 377.98,
+   "end": 378.28,
+   "spk": "B"
+  },
+  {
+   "w": "does",
+   "start": 378.28,
+   "end": 378.79,
+   "spk": "B"
+  },
+  {
+   "w": "you",
+   "start": 378.79,
+   "end": 378.93,
+   "spk": "B"
+  },
+  {
+   "w": "know",
+   "start": 378.93,
+   "end": 379.08,
+   "spk": "B"
+  },
+  {
+   "w": "a",
+   "start": 379.08,
+   "end": 379.19,
+   "spk": "B"
+  },
+  {
+   "w": "remote",
+   "start": 379.19,
+   "end": 379.36,
+   "spk": "B"
+  },
+  {
+   "w": "control",
+   "start": 379.36,
+   "end": 379.78,
+   "spk": "B"
+  },
+  {
+   "w": "cost",
+   "start": 379.78,
+   "end": 380.53,
+   "spk": "B"
+  },
+  {
+   "w": "Uh-huh",
+   "start": 380.52,
+   "end": 380.81,
+   "spk": "D"
+  },
+  {
+   "w": "Well",
+   "start": 381.66,
+   "end": 381.81,
+   "spk": "B"
+  },
+  {
+   "w": "twenty",
+   "start": 381.81,
+   "end": 382.07,
+   "spk": "B"
+  },
+  {
+   "w": "five",
+   "start": 382.07,
+   "end": 382.33,
+   "spk": "B"
+  },
+  {
+   "w": "Euro",
+   "start": 382.33,
+   "end": 382.58,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 382.58,
+   "end": 382.63,
+   "spk": "B"
+  },
+  {
+   "w": "mean",
+   "start": 382.63,
+   "end": 382.8,
+   "spk": "B"
+  },
+  {
+   "w": "that's",
+   "start": 382.8,
+   "end": 383.22,
+   "spk": "B"
+  },
+  {
+   "w": "um",
+   "start": 383.22,
+   "end": 383.81,
+   "spk": "B"
+  },
+  {
+   "w": "that's",
+   "start": 384.9,
+   "end": 385.11,
+   "spk": "B"
+  },
+  {
+   "w": "about",
+   "start": 385.11,
+   "end": 385.35,
+   "spk": "B"
+  },
+  {
+   "w": "like",
+   "start": 385.35,
+   "end": 385.95,
+   "spk": "B"
+  },
+  {
+   "w": "eighteen",
+   "start": 385.95,
+   "end": 386.37,
+   "spk": "B"
+  },
+  {
+   "w": "pounds",
+   "start": 386.37,
+   "end": 386.69,
+   "spk": "B"
+  },
+  {
+   "w": "or",
+   "start": 386.69,
+   "end": 386.78,
+   "spk": "B"
+  },
+  {
+   "w": "something",
+   "start": 386.78,
+   "end": 387.09,
+   "spk": "B"
+  },
+  {
+   "w": "isn't",
+   "start": 387.09,
+   "end": 387.31,
+   "spk": "B"
+  },
+  {
+   "w": "it",
+   "start": 387.31,
+   "end": 387.81,
+   "spk": "B"
+  },
+  {
+   "w": "Mm-hmm",
+   "start": 387.72,
+   "end": 388.11,
+   "spk": "D"
+  },
+  {
+   "w": "Or",
+   "start": 387.81,
+   "end": 387.93,
+   "spk": "B"
+  },
+  {
+   "w": "no",
+   "start": 387.93,
+   "end": 388.04,
+   "spk": "B"
+  },
+  {
+   "w": "is",
+   "start": 388.04,
+   "end": 388.31,
+   "spk": "B"
+  },
+  {
+   "w": "it",
+   "start": 388.31,
+   "end": 388.39,
+   "spk": "B"
+  },
+  {
+   "w": "as",
+   "start": 388.39,
+   "end": 388.5,
+   "spk": "B"
+  },
+  {
+   "w": "much",
+   "start": 388.5,
+   "end": 388.74,
+   "spk": "B"
+  },
+  {
+   "w": "as",
+   "start": 388.74,
+   "end": 388.85,
+   "spk": "B"
+  },
+  {
+   "w": "that",
+   "start": 388.85,
+   "end": 389.7,
+   "spk": "B"
+  },
+  {
+   "w": "Sixteen",
+   "start": 389.7,
+   "end": 390.16,
+   "spk": "B"
+  },
+  {
+   "w": "Yep",
+   "start": 389.77,
+   "end": 389.98,
+   "spk": "D"
+  },
+  {
+   "w": "seventeen",
+   "start": 390.16,
+   "end": 390.51,
+   "spk": "B"
+  },
+  {
+   "w": "eighteen",
+   "start": 390.51,
+   "end": 390.8,
+   "spk": "B"
+  },
+  {
+   "w": "pounds",
+   "start": 390.8,
+   "end": 391.58,
+   "spk": "B"
+  },
+  {
+   "w": "Yeah",
+   "start": 391.16,
+   "end": 391.33,
+   "spk": "D"
+  },
+  {
+   "w": "I'd",
+   "start": 391.33,
+   "end": 391.44,
+   "spk": "D"
+  },
+  {
+   "w": "say",
+   "start": 391.44,
+   "end": 391.56,
+   "spk": "D"
+  },
+  {
+   "w": "so",
+   "start": 391.56,
+   "end": 391.82,
+   "spk": "D"
+  },
+  {
+   "w": "yeah",
+   "start": 391.82,
+   "end": 391.97,
+   "spk": "D"
+  },
+  {
+   "w": "Um",
+   "start": 392.42,
+   "end": 393.79,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 393.79,
+   "end": 393.93,
+   "spk": "B"
+  },
+  {
+   "w": "dunno",
+   "start": 393.93,
+   "end": 394.16,
+   "spk": "B"
+  },
+  {
+   "w": "I've",
+   "start": 394.16,
+   "end": 394.29,
+   "spk": "B"
+  },
+  {
+   "w": "never",
+   "start": 394.29,
+   "end": 394.52,
+   "spk": "B"
+  },
+  {
+   "w": "bought",
+   "start": 394.52,
+   "end": 394.74,
+   "spk": "B"
+  },
+  {
+   "w": "a",
+   "start": 394.74,
+   "end": 394.77,
+   "spk": "B"
+  },
+  {
+   "w": "remote",
+   "start": 394.77,
+   "end": 395.06,
+   "spk": "B"
+  },
+  {
+   "w": "control",
+   "start": 395.06,
+   "end": 395.53,
+   "spk": "B"
+  },
+  {
+   "w": "so",
+   "start": 395.53,
+   "end": 395.7,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 395.7,
+   "end": 395.91,
+   "spk": "B"
+  },
+  {
+   "w": "don't",
+   "start": 395.91,
+   "end": 396.52,
+   "spk": "B"
+  },
+  {
+   "w": "No",
+   "start": 396.23,
+   "end": 396.58,
+   "spk": "D"
+  },
+  {
+   "w": "know",
+   "start": 396.52,
+   "end": 396.66,
+   "spk": "B"
+  },
+  {
+   "w": "how",
+   "start": 396.66,
+   "end": 397.31,
+   "spk": "B"
+  },
+  {
+   "w": "how",
+   "start": 397.31,
+   "end": 397.53,
+   "spk": "B"
+  },
+  {
+   "w": "good",
+   "start": 397.53,
+   "end": 397.69,
+   "spk": "B"
+  },
+  {
+   "w": "a",
+   "start": 397.69,
+   "end": 397.72,
+   "spk": "B"
+  },
+  {
+   "w": "remote",
+   "start": 397.72,
+   "end": 397.99,
+   "spk": "B"
+  },
+  {
+   "w": "Yeah",
+   "start": 397.98,
+   "end": 399.19,
+   "spk": "D"
+  },
+  {
+   "w": "control",
+   "start": 397.99,
+   "end": 398.3,
+   "spk": "B"
+  },
+  {
+   "w": "that",
+   "start": 398.3,
+   "end": 398.47,
+   "spk": "B"
+  },
+  {
+   "w": "would",
+   "start": 398.47,
+   "end": 398.56,
+   "spk": "B"
+  },
+  {
+   "w": "get",
+   "start": 398.56,
+   "end": 398.79,
+   "spk": "B"
+  },
+  {
+   "w": "you",
+   "start": 398.79,
+   "end": 399.52,
+   "spk": "B"
+  },
+  {
+   "w": "yeah",
+   "start": 399.19,
+   "end": 402.01,
+   "spk": "D"
+  },
+  {
+   "w": "Um",
+   "start": 399.52,
+   "end": 400.41,
+   "spk": "B"
+  },
+  {
+   "w": "But",
+   "start": 402.02,
+   "end": 402.11,
+   "spk": "B"
+  },
+  {
+   "w": "yeah",
+   "start": 402.11,
+   "end": 402.24,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 402.24,
+   "end": 402.3,
+   "spk": "B"
+  },
+  {
+   "w": "suppose",
+   "start": 402.3,
+   "end": 402.54,
+   "spk": "B"
+  },
+  {
+   "w": "it",
+   "start": 402.54,
+   "end": 402.61,
+   "spk": "B"
+  },
+  {
+   "w": "has",
+   "start": 402.61,
+   "end": 402.8,
+   "spk": "B"
+  },
+  {
+   "w": "to",
+   "start": 402.8,
+   "end": 402.94,
+   "spk": "B"
+  },
+  {
+   "w": "look",
+   "start": 402.94,
+   "end": 403.38,
+   "spk": "B"
+  },
+  {
+   "w": "kind",
+   "start": 403.38,
+   "end": 403.71,
+   "spk": "B"
+  },
+  {
+   "w": "of",
+   "start": 403.71,
+   "end": 403.83,
+   "spk": "B"
+  },
+  {
+   "w": "cool",
+   "start": 403.83,
+   "end": 404.11,
+   "spk": "B"
+  },
+  {
+   "w": "Mm-hmm",
+   "start": 404.03,
+   "end": 404.41,
+   "spk": "D"
+  },
+  {
+   "w": "and",
+   "start": 404.11,
+   "end": 404.49,
+   "spk": "B"
+  },
+  {
+   "w": "gimmicky",
+   "start": 404.49,
+   "end": 405.01,
+   "spk": "B"
+  },
+  {
+   "w": "Um",
+   "start": 407.1,
+   "end": 408.6,
+   "spk": "B"
+  },
+  {
+   "w": "right",
+   "start": 408.6,
+   "end": 409.75,
+   "spk": "B"
+  },
+  {
+   "w": "okay",
+   "start": 409.75,
+   "end": 410.07,
+   "spk": "B"
+  },
+  {
+   "w": "Let",
+   "start": 411.43,
+   "end": 411.54,
+   "spk": "B"
+  },
+  {
+   "w": "me",
+   "start": 411.54,
+   "end": 411.66,
+   "spk": "B"
+  },
+  {
+   "w": "just",
+   "start": 411.66,
+   "end": 411.88,
+   "spk": "B"
+  },
+  {
+   "w": "scoot",
+   "start": 411.88,
+   "end": 412.13,
+   "spk": "B"
+  },
+  {
+   "w": "on",
+   "start": 412.13,
+   "end": 412.33,
+   "spk": "B"
+  },
+  {
+   "w": "ahead",
+   "start": 412.33,
+   "end": 412.65,
+   "spk": "B"
+  },
+  {
+   "w": "here",
+   "start": 412.65,
+   "end": 413.81,
+   "spk": "B"
+  },
+  {
+   "w": "Okay",
+   "start": 413.81,
+   "end": 414.96,
+   "spk": "B"
+  },
+  {
+   "w": "Um",
+   "start": 414.96,
+   "end": 415.26,
+   "spk": "B"
+  },
+  {
+   "w": "well",
+   "start": 415.26,
+   "end": 415.73,
+   "spk": "B"
+  },
+  {
+   "w": "d",
+   "start": 415.73,
+   "end": 416.04,
+   "spk": "B"
+  },
+  {
+   "w": "Does",
+   "start": 416.04,
+   "end": 416.18,
+   "spk": "B"
+  },
+  {
+   "w": "anybody",
+   "start": 416.18,
+   "end": 416.51,
+   "spk": "B"
+  },
+  {
+   "w": "have",
+   "start": 416.51,
+   "end": 416.64,
+   "spk": "B"
+  },
+  {
+   "w": "anything",
+   "start": 416.64,
+   "end": 416.95,
+   "spk": "B"
+  },
+  {
+   "w": "to",
+   "start": 416.95,
+   "end": 417.04,
+   "spk": "B"
+  },
+  {
+   "w": "add",
+   "start": 417.04,
+   "end": 417.33,
+   "spk": "B"
+  },
+  {
+   "w": "to",
+   "start": 417.33,
+   "end": 418.46,
+   "spk": "B"
+  },
+  {
+   "w": "uh",
+   "start": 418.46,
+   "end": 419.86,
+   "spk": "B"
+  },
+  {
+   "w": "to",
+   "start": 419.86,
+   "end": 420.01,
+   "spk": "B"
+  },
+  {
+   "w": "the",
+   "start": 420.01,
+   "end": 420.11,
+   "spk": "B"
+  },
+  {
+   "w": "finance",
+   "start": 420.11,
+   "end": 420.6,
+   "spk": "B"
+  },
+  {
+   "w": "issue",
+   "start": 420.6,
+   "end": 421.04,
+   "spk": "B"
+  },
+  {
+   "w": "at",
+   "start": 421.04,
+   "end": 421.23,
+   "spk": "B"
+  },
+  {
+   "w": "all",
+   "start": 421.23,
+   "end": 421.44,
+   "spk": "B"
+  },
+  {
+   "w": "Do",
+   "start": 422.77,
+   "end": 422.89,
+   "spk": "D"
+  },
+  {
+   "w": "Thin",
+   "start": 422.81,
+   "end": 423.0,
+   "spk": "B"
+  },
+  {
+   "w": "we",
+   "start": 422.89,
+   "end": 423.06,
+   "spk": "D"
+  },
+  {
+   "w": "have",
+   "start": 423.06,
+   "end": 423.24,
+   "spk": "D"
+  },
+  {
+   "w": "any",
+   "start": 423.24,
+   "end": 423.42,
+   "spk": "D"
+  },
+  {
+   "w": "other",
+   "start": 423.42,
+   "end": 423.61,
+   "spk": "D"
+  },
+  {
+   "w": "background",
+   "start": 423.61,
+   "end": 424.02,
+   "spk": "D"
+  },
+  {
+   "w": "information",
+   "start": 424.02,
+   "end": 424.61,
+   "spk": "D"
+  },
+  {
+   "w": "on",
+   "start": 424.61,
+   "end": 424.91,
+   "spk": "D"
+  },
+  {
+   "w": "like",
+   "start": 424.91,
+   "end": 425.51,
+   "spk": "D"
+  },
+  {
+   "w": "how",
+   "start": 425.51,
+   "end": 425.66,
+   "spk": "D"
+  },
+  {
+   "w": "that",
+   "start": 425.66,
+   "end": 425.89,
+   "spk": "D"
+  },
+  {
+   "w": "compares",
+   "start": 425.89,
+   "end": 426.43,
+   "spk": "D"
+  },
+  {
+   "w": "to",
+   "start": 426.43,
+   "end": 426.53,
+   "spk": "D"
+  },
+  {
+   "w": "other",
+   "start": 426.53,
+   "end": 427.01,
+   "spk": "D"
+  },
+  {
+   "w": "No",
+   "start": 427.65,
+   "end": 427.91,
+   "spk": "B"
+  },
+  {
+   "w": "actually",
+   "start": 427.91,
+   "end": 428.32,
+   "spk": "B"
+  },
+  {
+   "w": "That",
+   "start": 428.32,
+   "end": 428.54,
+   "spk": "B"
+  },
+  {
+   "w": "other",
+   "start": 428.35,
+   "end": 428.78,
+   "spk": "D"
+  },
+  {
+   "w": "would",
+   "start": 428.54,
+   "end": 428.75,
+   "spk": "B"
+  },
+  {
+   "w": "be",
+   "start": 428.75,
+   "end": 428.88,
+   "spk": "B"
+  },
+  {
+   "w": "useful",
+   "start": 428.88,
+   "end": 429.3,
+   "spk": "B"
+  },
+  {
+   "w": "though",
+   "start": 429.3,
+   "end": 429.45,
+   "spk": "B"
+  },
+  {
+   "w": "wouldn't",
+   "start": 429.45,
+   "end": 429.7,
+   "spk": "B"
+  },
+  {
+   "w": "it",
+   "start": 429.7,
+   "end": 429.81,
+   "spk": "B"
+  },
+  {
+   "w": "if",
+   "start": 429.81,
+   "end": 429.96,
+   "spk": "B"
+  },
+  {
+   "w": "you",
+   "start": 429.96,
+   "end": 430.05,
+   "spk": "B"
+  },
+  {
+   "w": "knew",
+   "start": 430.05,
+   "end": 430.27,
+   "spk": "B"
+  },
+  {
+   "w": "like",
+   "start": 430.27,
+   "end": 430.97,
+   "spk": "B"
+  },
+  {
+   "w": "Yeah",
+   "start": 430.73,
+   "end": 431.07,
+   "spk": "D"
+  },
+  {
+   "w": "what",
+   "start": 430.97,
+   "end": 431.2,
+   "spk": "B"
+  },
+  {
+   "w": "your",
+   "start": 431.2,
+   "end": 431.31,
+   "spk": "B"
+  },
+  {
+   "w": "money",
+   "start": 431.31,
+   "end": 431.54,
+   "spk": "B"
+  },
+  {
+   "w": "would",
+   "start": 431.54,
+   "end": 431.65,
+   "spk": "B"
+  },
+  {
+   "w": "get",
+   "start": 431.65,
+   "end": 431.87,
+   "spk": "B"
+  },
+  {
+   "w": "you",
+   "start": 431.87,
+   "end": 432.62,
+   "spk": "B"
+  },
+  {
+   "w": "Hmm",
+   "start": 432.32,
+   "end": 432.54,
+   "spk": "A"
+  },
+  {
+   "w": "now",
+   "start": 432.62,
+   "end": 432.87,
+   "spk": "B"
+  },
+  {
+   "w": "Mm-hmm",
+   "start": 434.73,
+   "end": 435.08,
+   "spk": "D"
+  },
+  {
+   "w": "Mm-hmm",
+   "start": 435.11,
+   "end": 435.7,
+   "spk": "B"
+  },
+  {
+   "w": "Yeah",
+   "start": 453.67,
+   "end": 454.22,
+   "spk": "D"
+  },
+  {
+   "w": "interesting",
+   "start": 454.22,
+   "end": 454.72,
+   "spk": "D"
+  },
+  {
+   "w": "thing",
+   "start": 454.72,
+   "end": 454.94,
+   "spk": "D"
+  },
+  {
+   "w": "about",
+   "start": 454.94,
+   "end": 455.44,
+   "spk": "D"
+  },
+  {
+   "w": "discussing",
+   "start": 455.44,
+   "end": 456.13,
+   "spk": "D"
+  },
+  {
+   "w": "um",
+   "start": 456.13,
+   "end": 457.19,
+   "spk": "D"
+  },
+  {
+   "w": "production",
+   "start": 457.19,
+   "end": 457.59,
+   "spk": "D"
+  },
+  {
+   "w": "of",
+   "start": 457.59,
+   "end": 457.68,
+   "spk": "D"
+  },
+  {
+   "w": "a",
+   "start": 457.68,
+   "end": 457.77,
+   "spk": "D"
+  },
+  {
+   "w": "remote",
+   "start": 457.77,
+   "end": 457.96,
+   "spk": "D"
+  },
+  {
+   "w": "control",
+   "start": 457.96,
+   "end": 458.37,
+   "spk": "D"
+  },
+  {
+   "w": "for",
+   "start": 458.37,
+   "end": 458.53,
+   "spk": "D"
+  },
+  {
+   "w": "me",
+   "start": 458.53,
+   "end": 458.7,
+   "spk": "D"
+  },
+  {
+   "w": "is",
+   "start": 458.7,
+   "end": 458.87,
+   "spk": "D"
+  },
+  {
+   "w": "that",
+   "start": 458.87,
+   "end": 459.42,
+   "spk": "D"
+  },
+  {
+   "w": "l",
+   "start": 459.42,
+   "end": 459.58,
+   "spk": "D"
+  },
+  {
+   "w": "as",
+   "start": 459.58,
+   "end": 459.77,
+   "spk": "D"
+  },
+  {
+   "w": "you",
+   "start": 459.77,
+   "end": 459.86,
+   "spk": "D"
+  },
+  {
+   "w": "point",
+   "start": 459.86,
+   "end": 460.18,
+   "spk": "D"
+  },
+  {
+   "w": "out",
+   "start": 460.18,
+   "end": 460.59,
+   "spk": "D"
+  },
+  {
+   "w": "I",
+   "start": 460.59,
+   "end": 460.7,
+   "spk": "D"
+  },
+  {
+   "w": "just",
+   "start": 460.7,
+   "end": 460.9,
+   "spk": "D"
+  },
+  {
+   "w": "don't",
+   "start": 460.9,
+   "end": 461.07,
+   "spk": "D"
+  },
+  {
+   "w": "think",
+   "start": 461.07,
+   "end": 461.21,
+   "spk": "D"
+  },
+  {
+   "w": "of",
+   "start": 461.21,
+   "end": 461.27,
+   "spk": "D"
+  },
+  {
+   "w": "remote",
+   "start": 461.27,
+   "end": 461.49,
+   "spk": "D"
+  },
+  {
+   "w": "controls",
+   "start": 461.49,
+   "end": 461.93,
+   "spk": "D"
+  },
+  {
+   "w": "as",
+   "start": 461.93,
+   "end": 462.13,
+   "spk": "D"
+  },
+  {
+   "w": "somethin",
+   "start": 462.13,
+   "end": 462.55,
+   "spk": "D"
+  },
+  {
+   "w": "something",
+   "start": 462.55,
+   "end": 462.89,
+   "spk": "D"
+  },
+  {
+   "w": "people",
+   "start": 462.89,
+   "end": 463.81,
+   "spk": "D"
+  },
+  {
+   "w": "consciously",
+   "start": 463.81,
+   "end": 465.01,
+   "spk": "D"
+  },
+  {
+   "w": "assess",
+   "start": 465.01,
+   "end": 465.96,
+   "spk": "D"
+  },
+  {
+   "w": "in",
+   "start": 465.96,
+   "end": 466.1,
+   "spk": "D"
+  },
+  {
+   "w": "their",
+   "start": 466.1,
+   "end": 466.24,
+   "spk": "D"
+  },
+  {
+   "w": "purchasing",
+   "start": 466.24,
+   "end": 466.74,
+   "spk": "D"
+  },
+  {
+   "w": "habits",
+   "start": 466.74,
+   "end": 467.74,
+   "spk": "D"
+  },
+  {
+   "w": "Yeah",
+   "start": 467.69,
+   "end": 468.01,
+   "spk": "B"
+  },
+  {
+   "w": "It's",
+   "start": 467.74,
+   "end": 468.0,
+   "spk": "D"
+  },
+  {
+   "w": "just",
+   "start": 468.0,
+   "end": 468.52,
+   "spk": "D"
+  },
+  {
+   "w": "yeah",
+   "start": 468.01,
+   "end": 468.25,
+   "spk": "B"
+  },
+  {
+   "w": "like",
+   "start": 468.52,
+   "end": 470.01,
+   "spk": "D"
+  },
+  {
+   "w": "getting",
+   "start": 470.01,
+   "end": 470.3,
+   "spk": "D"
+  },
+  {
+   "w": "shoelaces",
+   "start": 470.3,
+   "end": 470.89,
+   "spk": "D"
+  },
+  {
+   "w": "with",
+   "start": 470.89,
+   "end": 471.03,
+   "spk": "D"
+  },
+  {
+   "w": "shoes",
+   "start": 471.03,
+   "end": 471.74,
+   "spk": "D"
+  },
+  {
+   "w": "or",
+   "start": 471.74,
+   "end": 471.83,
+   "spk": "D"
+  },
+  {
+   "w": "something",
+   "start": 471.83,
+   "end": 472.49,
+   "spk": "D"
+  },
+  {
+   "w": "Oh",
+   "start": 472.01,
+   "end": 472.14,
+   "spk": "B"
+  },
+  {
+   "w": "It",
+   "start": 472.49,
+   "end": 472.59,
+   "spk": "D"
+  },
+  {
+   "w": "just",
+   "start": 472.59,
+   "end": 472.82,
+   "spk": "D"
+  },
+  {
+   "w": "Five",
+   "start": 472.8,
+   "end": 473.06,
+   "spk": "B"
+  },
+  {
+   "w": "comes",
+   "start": 472.82,
+   "end": 473.1,
+   "spk": "D"
+  },
+  {
+   "w": "minutes",
+   "start": 473.06,
+   "end": 473.33,
+   "spk": "B"
+  },
+  {
+   "w": "along",
+   "start": 473.1,
+   "end": 473.41,
+   "spk": "D"
+  },
+  {
+   "w": "to",
+   "start": 473.33,
+   "end": 473.45,
+   "spk": "B"
+  },
+  {
+   "w": "end",
+   "start": 473.45,
+   "end": 473.62,
+   "spk": "B"
+  },
+  {
+   "w": "of",
+   "start": 473.62,
+   "end": 473.69,
+   "spk": "B"
+  },
+  {
+   "w": "meeting",
+   "start": 473.69,
+   "end": 474.17,
+   "spk": "B"
+  },
+  {
+   "w": "Oh",
+   "start": 474.17,
+   "end": 474.55,
+   "spk": "B"
+  },
+  {
+   "w": "okay",
+   "start": 474.55,
+   "end": 475.33,
+   "spk": "B"
+  },
+  {
+   "w": "We're",
+   "start": 475.33,
+   "end": 475.48,
+   "spk": "B"
+  },
+  {
+   "w": "a",
+   "start": 475.48,
+   "end": 475.52,
+   "spk": "B"
+  },
+  {
+   "w": "bit",
+   "start": 475.52,
+   "end": 475.67,
+   "spk": "B"
+  },
+  {
+   "w": "behind",
+   "start": 475.67,
+   "end": 476.97,
+   "spk": "B"
+  },
+  {
+   "w": "Do",
+   "start": 476.12,
+   "end": 476.35,
+   "spk": "D"
+  },
+  {
+   "w": "you",
+   "start": 476.35,
+   "end": 476.46,
+   "spk": "D"
+  },
+  {
+   "w": "know",
+   "start": 476.46,
+   "end": 476.52,
+   "spk": "D"
+  },
+  {
+   "w": "what",
+   "start": 476.52,
+   "end": 476.71,
+   "spk": "D"
+  },
+  {
+   "w": "I",
+   "start": 476.71,
+   "end": 476.76,
+   "spk": "D"
+  },
+  {
+   "w": "mean",
+   "start": 476.76,
+   "end": 477.67,
+   "spk": "D"
+  },
+  {
+   "w": "Yeah",
+   "start": 477.32,
+   "end": 477.89,
+   "spk": "C"
+  },
+  {
+   "w": "Like",
+   "start": 477.67,
+   "end": 477.81,
+   "spk": "D"
+  },
+  {
+   "w": "Yeah",
+   "start": 477.7,
+   "end": 478.02,
+   "spk": "A"
+  },
+  {
+   "w": "so",
+   "start": 477.81,
+   "end": 478.05,
+   "spk": "D"
+  },
+  {
+   "w": "sort",
+   "start": 478.05,
+   "end": 478.26,
+   "spk": "D"
+  },
+  {
+   "w": "of",
+   "start": 478.26,
+   "end": 478.33,
+   "spk": "D"
+  },
+  {
+   "w": "like",
+   "start": 478.33,
+   "end": 478.45,
+   "spk": "D"
+  },
+  {
+   "w": "how",
+   "start": 478.45,
+   "end": 478.63,
+   "spk": "D"
+  },
+  {
+   "w": "do",
+   "start": 478.63,
+   "end": 478.74,
+   "spk": "D"
+  },
+  {
+   "w": "you",
+   "start": 478.74,
+   "end": 479.25,
+   "spk": "D"
+  },
+  {
+   "w": "I",
+   "start": 479.25,
+   "end": 479.38,
+   "spk": "D"
+  },
+  {
+   "w": "I",
+   "start": 479.38,
+   "end": 479.55,
+   "spk": "D"
+  },
+  {
+   "w": "mean",
+   "start": 479.55,
+   "end": 479.8,
+   "spk": "D"
+  },
+  {
+   "w": "one",
+   "start": 479.8,
+   "end": 480.03,
+   "spk": "D"
+  },
+  {
+   "w": "one",
+   "start": 480.03,
+   "end": 480.24,
+   "spk": "D"
+  },
+  {
+   "w": "way",
+   "start": 480.24,
+   "end": 480.34,
+   "spk": "D"
+  },
+  {
+   "w": "of",
+   "start": 480.34,
+   "end": 480.41,
+   "spk": "D"
+  },
+  {
+   "w": "looking",
+   "start": 480.41,
+   "end": 480.58,
+   "spk": "D"
+  },
+  {
+   "w": "at",
+   "start": 480.58,
+   "end": 480.64,
+   "spk": "D"
+  },
+  {
+   "w": "it",
+   "start": 480.64,
+   "end": 480.7,
+   "spk": "D"
+  },
+  {
+   "w": "would",
+   "start": 480.7,
+   "end": 480.79,
+   "spk": "D"
+  },
+  {
+   "w": "be",
+   "start": 480.79,
+   "end": 480.91,
+   "spk": "D"
+  },
+  {
+   "w": "well",
+   "start": 480.91,
+   "end": 481.64,
+   "spk": "D"
+  },
+  {
+   "w": "the",
+   "start": 481.64,
+   "end": 481.72,
+   "spk": "D"
+  },
+  {
+   "w": "people",
+   "start": 481.72,
+   "end": 482.02,
+   "spk": "D"
+  },
+  {
+   "w": "producing",
+   "start": 482.02,
+   "end": 483.4,
+   "spk": "D"
+  },
+  {
+   "w": "television",
+   "start": 483.4,
+   "end": 483.84,
+   "spk": "D"
+  },
+  {
+   "w": "sets",
+   "start": 483.84,
+   "end": 484.1,
+   "spk": "D"
+  },
+  {
+   "w": "maybe",
+   "start": 484.1,
+   "end": 484.32,
+   "spk": "D"
+  },
+  {
+   "w": "they",
+   "start": 484.32,
+   "end": 484.44,
+   "spk": "D"
+  },
+  {
+   "w": "have",
+   "start": 484.44,
+   "end": 484.63,
+   "spk": "D"
+  },
+  {
+   "w": "to",
+   "start": 484.63,
+   "end": 484.71,
+   "spk": "D"
+  },
+  {
+   "w": "buy",
+   "start": 484.71,
+   "end": 485.45,
+   "spk": "D"
+  },
+  {
+   "w": "remote",
+   "start": 485.45,
+   "end": 485.67,
+   "spk": "D"
+  },
+  {
+   "w": "controls",
+   "start": 485.67,
+   "end": 486.49,
+   "spk": "D"
+  },
+  {
+   "w": "Or",
+   "start": 486.49,
+   "end": 486.56,
+   "spk": "D"
+  },
+  {
+   "w": "another",
+   "start": 486.56,
+   "end": 486.83,
+   "spk": "D"
+  },
+  {
+   "w": "way",
+   "start": 486.83,
+   "end": 487.01,
+   "spk": "D"
+  },
+  {
+   "w": "is",
+   "start": 487.01,
+   "end": 487.1,
+   "spk": "D"
+  },
+  {
+   "w": "maybe",
+   "start": 487.1,
+   "end": 487.35,
+   "spk": "D"
+  },
+  {
+   "w": "people",
+   "start": 487.35,
+   "end": 487.61,
+   "spk": "D"
+  },
+  {
+   "w": "who",
+   "start": 487.61,
+   "end": 487.71,
+   "spk": "D"
+  },
+  {
+   "w": "have",
+   "start": 487.71,
+   "end": 487.92,
+   "spk": "D"
+  },
+  {
+   "w": "T_V_",
+   "start": 487.92,
+   "end": 488.17,
+   "spk": "D"
+  },
+  {
+   "w": "sets",
+   "start": 488.17,
+   "end": 488.57,
+   "spk": "D"
+  },
+  {
+   "w": "are",
+   "start": 488.57,
+   "end": 488.67,
+   "spk": "D"
+  },
+  {
+   "w": "really",
+   "start": 488.67,
+   "end": 488.86,
+   "spk": "D"
+  },
+  {
+   "w": "fed",
+   "start": 488.86,
+   "end": 489.09,
+   "spk": "D"
+  },
+  {
+   "w": "up",
+   "start": 489.09,
+   "end": 489.26,
+   "spk": "D"
+  },
+  {
+   "w": "with",
+   "start": 489.26,
+   "end": 489.44,
+   "spk": "D"
+  },
+  {
+   "w": "their",
+   "start": 489.44,
+   "end": 490.01,
+   "spk": "D"
+  },
+  {
+   "w": "remote",
+   "start": 490.01,
+   "end": 490.27,
+   "spk": "D"
+  },
+  {
+   "w": "control",
+   "start": 490.27,
+   "end": 491.17,
+   "spk": "D"
+  },
+  {
+   "w": "and",
+   "start": 491.17,
+   "end": 491.34,
+   "spk": "D"
+  },
+  {
+   "w": "they",
+   "start": 491.34,
+   "end": 491.46,
+   "spk": "D"
+  },
+  {
+   "w": "really",
+   "start": 491.46,
+   "end": 491.71,
+   "spk": "D"
+  },
+  {
+   "w": "want",
+   "start": 491.71,
+   "end": 492.6,
+   "spk": "D"
+  },
+  {
+   "w": "I",
+   "start": 492.52,
+   "end": 492.62,
+   "spk": "C"
+  },
+  {
+   "w": "a",
+   "start": 492.6,
+   "end": 492.69,
+   "spk": "D"
+  },
+  {
+   "w": "know",
+   "start": 492.62,
+   "end": 492.73,
+   "spk": "C"
+  },
+  {
+   "w": "better",
+   "start": 492.69,
+   "end": 492.94,
+   "spk": "D"
+  },
+  {
+   "w": "um",
+   "start": 492.73,
+   "end": 493.22,
+   "spk": "C"
+  },
+  {
+   "w": "one",
+   "start": 492.94,
+   "end": 493.16,
+   "spk": "D"
+  },
+  {
+   "w": "or",
+   "start": 493.16,
+   "end": 493.24,
+   "spk": "D"
+  },
+  {
+   "w": "something",
+   "start": 493.24,
+   "end": 493.63,
+   "spk": "D"
+  },
+  {
+   "w": "My",
+   "start": 494.52,
+   "end": 494.58,
+   "spk": "C"
+  },
+  {
+   "w": "But",
+   "start": 494.53,
+   "end": 494.97,
+   "spk": "D"
+  },
+  {
+   "w": "parents",
+   "start": 494.58,
+   "end": 494.91,
+   "spk": "C"
+  },
+  {
+   "w": "went",
+   "start": 494.91,
+   "end": 495.04,
+   "spk": "C"
+  },
+  {
+   "w": "out",
+   "start": 495.04,
+   "end": 495.1,
+   "spk": "C"
+  },
+  {
+   "w": "and",
+   "start": 495.1,
+   "end": 495.21,
+   "spk": "C"
+  },
+  {
+   "w": "bought",
+   "start": 495.21,
+   "end": 495.39,
+   "spk": "C"
+  },
+  {
+   "w": "um",
+   "start": 495.39,
+   "end": 495.49,
+   "spk": "C"
+  },
+  {
+   "w": "remote",
+   "start": 495.49,
+   "end": 495.79,
+   "spk": "C"
+  },
+  {
+   "w": "controls",
+   "start": 495.79,
+   "end": 496.22,
+   "spk": "C"
+  },
+  {
+   "w": "because",
+   "start": 496.22,
+   "end": 496.72,
+   "spk": "C"
+  },
+  {
+   "w": "um",
+   "start": 496.72,
+   "end": 496.9,
+   "spk": "C"
+  },
+  {
+   "w": "they",
+   "start": 496.9,
+   "end": 496.97,
+   "spk": "C"
+  },
+  {
+   "w": "got",
+   "start": 496.97,
+   "end": 497.08,
+   "spk": "C"
+  },
+  {
+   "w": "fed",
+   "start": 497.08,
+   "end": 497.23,
+   "spk": "C"
+  },
+  {
+   "w": "up",
+   "start": 497.23,
+   "end": 497.39,
+   "spk": "C"
+  },
+  {
+   "w": "of",
+   "start": 497.39,
+   "end": 497.53,
+   "spk": "C"
+  },
+  {
+   "w": "having",
+   "start": 497.53,
+   "end": 498.38,
+   "spk": "C"
+  },
+  {
+   "w": "four",
+   "start": 498.38,
+   "end": 498.61,
+   "spk": "C"
+  },
+  {
+   "w": "or",
+   "start": 498.61,
+   "end": 498.67,
+   "spk": "C"
+  },
+  {
+   "w": "five",
+   "start": 498.67,
+   "end": 498.86,
+   "spk": "C"
+  },
+  {
+   "w": "different",
+   "start": 498.86,
+   "end": 499.07,
+   "spk": "C"
+  },
+  {
+   "w": "remote",
+   "start": 499.07,
+   "end": 499.27,
+   "spk": "C"
+  },
+  {
+   "w": "controls",
+   "start": 499.27,
+   "end": 499.52,
+   "spk": "C"
+  },
+  {
+   "w": "for",
+   "start": 499.52,
+   "end": 499.65,
+   "spk": "C"
+  },
+  {
+   "w": "each",
+   "start": 499.65,
+   "end": 499.81,
+   "spk": "C"
+  },
+  {
+   "w": "things",
+   "start": 499.81,
+   "end": 500.11,
+   "spk": "C"
+  },
+  {
+   "w": "Right",
+   "start": 499.88,
+   "end": 500.71,
+   "spk": "D"
+  },
+  {
+   "w": "the",
+   "start": 500.11,
+   "end": 500.18,
+   "spk": "C"
+  },
+  {
+   "w": "house",
+   "start": 500.18,
+   "end": 501.38,
+   "spk": "C"
+  },
+  {
+   "w": "Right",
+   "start": 500.71,
+   "end": 501.75,
+   "spk": "D"
+  },
+  {
+   "w": "So",
+   "start": 501.38,
+   "end": 501.53,
+   "spk": "C"
+  },
+  {
+   "w": "um",
+   "start": 501.53,
+   "end": 501.79,
+   "spk": "C"
+  },
+  {
+   "w": "Okay",
+   "start": 501.75,
+   "end": 502.04,
+   "spk": "D"
+  },
+  {
+   "w": "for",
+   "start": 501.79,
+   "end": 501.92,
+   "spk": "C"
+  },
+  {
+   "w": "them",
+   "start": 501.92,
+   "end": 502.1,
+   "spk": "C"
+  },
+  {
+   "w": "so",
+   "start": 502.04,
+   "end": 502.2,
+   "spk": "D"
+  },
+  {
+   "w": "it",
+   "start": 502.1,
+   "end": 502.16,
+   "spk": "C"
+  },
+  {
+   "w": "was",
+   "start": 502.16,
+   "end": 502.28,
+   "spk": "C"
+  },
+  {
+   "w": "just",
+   "start": 502.28,
+   "end": 503.14,
+   "spk": "C"
+  },
+  {
+   "w": "how",
+   "start": 503.14,
+   "end": 503.27,
+   "spk": "C"
+  },
+  {
+   "w": "many",
+   "start": 503.27,
+   "end": 503.47,
+   "spk": "C"
+  },
+  {
+   "w": "devices",
+   "start": 503.47,
+   "end": 503.94,
+   "spk": "C"
+  },
+  {
+   "w": "control",
+   "start": 503.94,
+   "end": 504.33,
+   "spk": "C"
+  },
+  {
+   "w": "Right",
+   "start": 504.47,
+   "end": 504.72,
+   "spk": "D"
+  },
+  {
+   "w": "so",
+   "start": 504.72,
+   "end": 504.86,
+   "spk": "D"
+  },
+  {
+   "w": "in",
+   "start": 504.86,
+   "end": 504.97,
+   "spk": "D"
+  },
+  {
+   "w": "function",
+   "start": 504.97,
+   "end": 505.39,
+   "spk": "D"
+  },
+  {
+   "w": "one",
+   "start": 505.39,
+   "end": 505.49,
+   "spk": "D"
+  },
+  {
+   "w": "of",
+   "start": 505.49,
+   "end": 505.55,
+   "spk": "D"
+  },
+  {
+   "w": "the",
+   "start": 505.55,
+   "end": 505.61,
+   "spk": "D"
+  },
+  {
+   "w": "priorities",
+   "start": 505.61,
+   "end": 506.01,
+   "spk": "D"
+  },
+  {
+   "w": "might",
+   "start": 506.01,
+   "end": 506.2,
+   "spk": "D"
+  },
+  {
+   "w": "be",
+   "start": 506.2,
+   "end": 507.03,
+   "spk": "D"
+  },
+  {
+   "w": "Yeah",
+   "start": 506.46,
+   "end": 506.98,
+   "spk": "B"
+  },
+  {
+   "w": "to",
+   "start": 507.03,
+   "end": 508.54,
+   "spk": "D"
+  },
+  {
+   "w": "combine",
+   "start": 508.54,
+   "end": 508.9,
+   "spk": "D"
+  },
+  {
+   "w": "as",
+   "start": 508.9,
+   "end": 509.0,
+   "spk": "D"
+  },
+  {
+   "w": "many",
+   "start": 509.0,
+   "end": 509.98,
+   "spk": "D"
+  },
+  {
+   "w": "uses",
+   "start": 509.98,
+   "end": 510.39,
+   "spk": "D"
+  },
+  {
+   "w": "Right",
+   "start": 511.51,
+   "end": 511.75,
+   "spk": "B"
+  },
+  {
+   "w": "so",
+   "start": 511.75,
+   "end": 511.98,
+   "spk": "B"
+  },
+  {
+   "w": "do",
+   "start": 511.98,
+   "end": 512.05,
+   "spk": "B"
+  },
+  {
+   "w": "you",
+   "start": 512.05,
+   "end": 512.11,
+   "spk": "B"
+  },
+  {
+   "w": "think",
+   "start": 512.11,
+   "end": 512.27,
+   "spk": "B"
+  },
+  {
+   "w": "that",
+   "start": 512.27,
+   "end": 512.42,
+   "spk": "B"
+  },
+  {
+   "w": "should",
+   "start": 512.42,
+   "end": 512.56,
+   "spk": "B"
+  },
+  {
+   "w": "be",
+   "start": 512.56,
+   "end": 512.67,
+   "spk": "B"
+  },
+  {
+   "w": "like",
+   "start": 512.67,
+   "end": 512.82,
+   "spk": "B"
+  },
+  {
+   "w": "a",
+   "start": 512.82,
+   "end": 512.89,
+   "spk": "B"
+  },
+  {
+   "w": "main",
+   "start": 512.89,
+   "end": 513.19,
+   "spk": "B"
+  },
+  {
+   "w": "design",
+   "start": 513.19,
+   "end": 513.56,
+   "spk": "B"
+  },
+  {
+   "w": "aim",
+   "start": 513.56,
+   "end": 513.78,
+   "spk": "B"
+  },
+  {
+   "w": "of",
+   "start": 513.78,
+   "end": 513.89,
+   "spk": "B"
+  },
+  {
+   "w": "our",
+   "start": 513.89,
+   "end": 513.97,
+   "spk": "B"
+  },
+  {
+   "w": "remote",
+   "start": 513.97,
+   "end": 514.18,
+   "spk": "B"
+  },
+  {
+   "w": "control",
+   "start": 514.18,
+   "end": 514.62,
+   "spk": "B"
+  },
+  {
+   "w": "d",
+   "start": 514.62,
+   "end": 514.75,
+   "spk": "B"
+  },
+  {
+   "w": "you",
+   "start": 514.75,
+   "end": 514.86,
+   "spk": "B"
+  },
+  {
+   "w": "know",
+   "start": 514.86,
+   "end": 515.56,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 514.98,
+   "end": 515.05,
+   "spk": "D"
+  },
+  {
+   "w": "think",
+   "start": 515.05,
+   "end": 515.25,
+   "spk": "D"
+  },
+  {
+   "w": "so",
+   "start": 515.25,
+   "end": 515.81,
+   "spk": "D"
+  },
+  {
+   "w": "do",
+   "start": 515.56,
+   "end": 515.65,
+   "spk": "B"
+  },
+  {
+   "w": "your",
+   "start": 515.65,
+   "end": 515.94,
+   "spk": "B"
+  },
+  {
+   "w": "Yeah",
+   "start": 515.81,
+   "end": 516.77,
+   "spk": "D"
+  },
+  {
+   "w": "your",
+   "start": 515.94,
+   "end": 516.12,
+   "spk": "B"
+  },
+  {
+   "w": "satellite",
+   "start": 516.12,
+   "end": 516.7,
+   "spk": "B"
+  },
+  {
+   "w": "and",
+   "start": 516.7,
+   "end": 516.84,
+   "spk": "B"
+  },
+  {
+   "w": "yeah",
+   "start": 516.77,
+   "end": 517.04,
+   "spk": "D"
+  },
+  {
+   "w": "your",
+   "start": 516.84,
+   "end": 517.66,
+   "spk": "B"
+  },
+  {
+   "w": "regular",
+   "start": 517.66,
+   "end": 518.06,
+   "spk": "B"
+  },
+  {
+   "w": "telly",
+   "start": 518.06,
+   "end": 518.45,
+   "spk": "B"
+  },
+  {
+   "w": "and",
+   "start": 518.45,
+   "end": 518.58,
+   "spk": "B"
+  },
+  {
+   "w": "Yeah",
+   "start": 518.45,
+   "end": 518.67,
+   "spk": "D"
+  },
+  {
+   "w": "your",
+   "start": 518.58,
+   "end": 518.7,
+   "spk": "B"
+  },
+  {
+   "w": "V_C_R_",
+   "start": 518.7,
+   "end": 519.12,
+   "spk": "B"
+  },
+  {
+   "w": "and",
+   "start": 519.12,
+   "end": 519.21,
+   "spk": "B"
+  },
+  {
+   "w": "everything",
+   "start": 519.21,
+   "end": 520.83,
+   "spk": "B"
+  },
+  {
+   "w": "Well",
+   "start": 519.79,
+   "end": 519.99,
+   "spk": "D"
+  },
+  {
+   "w": "like",
+   "start": 519.99,
+   "end": 520.28,
+   "spk": "D"
+  },
+  {
+   "w": "um",
+   "start": 520.28,
+   "end": 521.05,
+   "spk": "D"
+  },
+  {
+   "w": "maybe",
+   "start": 521.05,
+   "end": 521.26,
+   "spk": "D"
+  },
+  {
+   "w": "what",
+   "start": 521.26,
+   "end": 521.42,
+   "spk": "D"
+  },
+  {
+   "w": "we",
+   "start": 521.42,
+   "end": 521.52,
+   "spk": "D"
+  },
+  {
+   "w": "could",
+   "start": 521.52,
+   "end": 521.77,
+   "spk": "D"
+  },
+  {
+   "w": "use",
+   "start": 521.77,
+   "end": 522.02,
+   "spk": "D"
+  },
+  {
+   "w": "is",
+   "start": 522.02,
+   "end": 522.15,
+   "spk": "D"
+  },
+  {
+   "w": "a",
+   "start": 522.15,
+   "end": 522.34,
+   "spk": "D"
+  },
+  {
+   "w": "sort",
+   "start": 522.34,
+   "end": 522.52,
+   "spk": "D"
+  },
+  {
+   "w": "of",
+   "start": 522.52,
+   "end": 522.61,
+   "spk": "D"
+  },
+  {
+   "w": "like",
+   "start": 522.61,
+   "end": 522.78,
+   "spk": "D"
+  },
+  {
+   "w": "a",
+   "start": 522.78,
+   "end": 523.06,
+   "spk": "D"
+  },
+  {
+   "w": "example",
+   "start": 523.06,
+   "end": 523.52,
+   "spk": "D"
+  },
+  {
+   "w": "of",
+   "start": 523.52,
+   "end": 523.62,
+   "spk": "D"
+  },
+  {
+   "w": "a",
+   "start": 523.62,
+   "end": 523.68,
+   "spk": "D"
+  },
+  {
+   "w": "successful",
+   "start": 523.68,
+   "end": 524.9,
+   "spk": "D"
+  },
+  {
+   "w": "other",
+   "start": 524.9,
+   "end": 525.11,
+   "spk": "D"
+  },
+  {
+   "w": "piece",
+   "start": 525.11,
+   "end": 525.33,
+   "spk": "D"
+  },
+  {
+   "w": "technology",
+   "start": 525.33,
+   "end": 525.89,
+   "spk": "D"
+  },
+  {
+   "w": "is",
+   "start": 525.89,
+   "end": 526.52,
+   "spk": "D"
+  },
+  {
+   "w": "palm",
+   "start": 526.52,
+   "end": 527.07,
+   "spk": "D"
+  },
+  {
+   "w": "palm",
+   "start": 527.07,
+   "end": 527.28,
+   "spk": "D"
+  },
+  {
+   "w": "pilots",
+   "start": 527.28,
+   "end": 528.28,
+   "spk": "D"
+  },
+  {
+   "w": "They're",
+   "start": 528.28,
+   "end": 528.42,
+   "spk": "D"
+  },
+  {
+   "w": "gone",
+   "start": 528.42,
+   "end": 528.72,
+   "spk": "D"
+  },
+  {
+   "w": "from",
+   "start": 528.72,
+   "end": 528.94,
+   "spk": "D"
+  },
+  {
+   "w": "being",
+   "start": 528.94,
+   "end": 529.27,
+   "spk": "D"
+  },
+  {
+   "w": "just",
+   "start": 529.27,
+   "end": 529.53,
+   "spk": "D"
+  },
+  {
+   "w": "like",
+   "start": 529.53,
+   "end": 529.64,
+   "spk": "D"
+  },
+  {
+   "w": "little",
+   "start": 529.64,
+   "end": 529.83,
+   "spk": "D"
+  },
+  {
+   "w": "sort",
+   "start": 529.83,
+   "end": 530.0,
+   "spk": "D"
+  },
+  {
+   "w": "of",
+   "start": 530.0,
+   "end": 530.06,
+   "spk": "D"
+  },
+  {
+   "w": "scribble",
+   "start": 530.06,
+   "end": 530.37,
+   "spk": "D"
+  },
+  {
+   "w": "boards",
+   "start": 530.37,
+   "end": 530.76,
+   "spk": "D"
+  },
+  {
+   "w": "to",
+   "start": 530.76,
+   "end": 531.36,
+   "spk": "D"
+  },
+  {
+   "w": "cameras",
+   "start": 531.36,
+   "end": 532.16,
+   "spk": "D"
+  },
+  {
+   "w": "M_P_",
+   "start": 532.16,
+   "end": 532.42,
+   "spk": "D"
+  },
+  {
+   "w": "three",
+   "start": 532.42,
+   "end": 532.57,
+   "spk": "D"
+  },
+  {
+   "w": "players",
+   "start": 532.57,
+   "end": 533.28,
+   "spk": "D"
+  },
+  {
+   "w": "Mm-hmm",
+   "start": 532.76,
+   "end": 533.2,
+   "spk": "B"
+  },
+  {
+   "w": "telephones",
+   "start": 533.28,
+   "end": 534.09,
+   "spk": "D"
+  },
+  {
+   "w": "everything",
+   "start": 535.22,
+   "end": 535.54,
+   "spk": "D"
+  },
+  {
+   "w": "agenda",
+   "start": 535.54,
+   "end": 536.31,
+   "spk": "D"
+  },
+  {
+   "w": "So",
+   "start": 536.31,
+   "end": 536.63,
+   "spk": "D"
+  },
+  {
+   "w": "like",
+   "start": 536.63,
+   "end": 536.78,
+   "spk": "D"
+  },
+  {
+   "w": "I",
+   "start": 536.78,
+   "end": 536.82,
+   "spk": "D"
+  },
+  {
+   "w": "wonder",
+   "start": 536.82,
+   "end": 537.13,
+   "spk": "D"
+  },
+  {
+   "w": "if",
+   "start": 537.13,
+   "end": 537.63,
+   "spk": "D"
+  },
+  {
+   "w": "we",
+   "start": 537.63,
+   "end": 537.81,
+   "spk": "D"
+  },
+  {
+   "w": "might",
+   "start": 537.81,
+   "end": 538.01,
+   "spk": "D"
+  },
+  {
+   "w": "add",
+   "start": 538.01,
+   "end": 538.18,
+   "spk": "D"
+  },
+  {
+   "w": "something",
+   "start": 538.18,
+   "end": 538.45,
+   "spk": "D"
+  },
+  {
+   "w": "new",
+   "start": 538.45,
+   "end": 538.6,
+   "spk": "D"
+  },
+  {
+   "w": "to",
+   "start": 538.6,
+   "end": 538.72,
+   "spk": "D"
+  },
+  {
+   "w": "the",
+   "start": 538.72,
+   "end": 539.37,
+   "spk": "D"
+  },
+  {
+   "w": "to",
+   "start": 539.37,
+   "end": 539.52,
+   "spk": "D"
+  },
+  {
+   "w": "the",
+   "start": 539.52,
+   "end": 539.75,
+   "spk": "D"
+  },
+  {
+   "w": "remote",
+   "start": 539.75,
+   "end": 539.99,
+   "spk": "D"
+  },
+  {
+   "w": "control",
+   "start": 539.99,
+   "end": 540.31,
+   "spk": "D"
+  },
+  {
+   "w": "Yeah",
+   "start": 540.25,
+   "end": 540.69,
+   "spk": "B"
+  },
+  {
+   "w": "market",
+   "start": 540.31,
+   "end": 540.68,
+   "spk": "D"
+  },
+  {
+   "w": "such",
+   "start": 540.68,
+   "end": 540.91,
+   "spk": "D"
+  },
+  {
+   "w": "as",
+   "start": 540.91,
+   "end": 541.32,
+   "spk": "D"
+  },
+  {
+   "w": "the",
+   "start": 541.32,
+   "end": 541.49,
+   "spk": "D"
+  },
+  {
+   "w": "lighting",
+   "start": 541.49,
+   "end": 541.78,
+   "spk": "D"
+  },
+  {
+   "w": "in",
+   "start": 541.78,
+   "end": 541.85,
+   "spk": "D"
+  },
+  {
+   "w": "your",
+   "start": 541.85,
+   "end": 541.99,
+   "spk": "D"
+  },
+  {
+   "w": "house",
+   "start": 541.99,
+   "end": 542.44,
+   "spk": "D"
+  },
+  {
+   "w": "or",
+   "start": 542.44,
+   "end": 543.36,
+   "spk": "D"
+  },
+  {
+   "w": "um",
+   "start": 543.36,
+   "end": 544.06,
+   "spk": "D"
+  },
+  {
+   "w": "Or",
+   "start": 543.99,
+   "end": 544.13,
+   "spk": "B"
+  },
+  {
+   "w": "even",
+   "start": 544.13,
+   "end": 544.39,
+   "spk": "B"
+  },
+  {
+   "w": "like",
+   "start": 544.39,
+   "end": 544.66,
+   "spk": "B"
+  },
+  {
+   "w": "you",
+   "start": 544.66,
+   "end": 544.8,
+   "spk": "B"
+  },
+  {
+   "w": "know",
+   "start": 544.8,
+   "end": 544.9,
+   "spk": "B"
+  },
+  {
+   "w": "notes",
+   "start": 544.9,
+   "end": 545.12,
+   "spk": "B"
+  },
+  {
+   "w": "about",
+   "start": 545.12,
+   "end": 546.24,
+   "spk": "B"
+  },
+  {
+   "w": "um",
+   "start": 546.24,
+   "end": 546.68,
+   "spk": "B"
+  },
+  {
+   "w": "what",
+   "start": 546.68,
+   "end": 546.84,
+   "spk": "B"
+  },
+  {
+   "w": "you",
+   "start": 546.84,
+   "end": 546.96,
+   "spk": "B"
+  },
+  {
+   "w": "wanna",
+   "start": 546.96,
+   "end": 547.15,
+   "spk": "B"
+  },
+  {
+   "w": "watch",
+   "start": 547.15,
+   "end": 547.62,
+   "spk": "B"
+  },
+  {
+   "w": "Like",
+   "start": 547.62,
+   "end": 547.8,
+   "spk": "B"
+  },
+  {
+   "w": "you",
+   "start": 547.8,
+   "end": 547.9,
+   "spk": "B"
+  },
+  {
+   "w": "might",
+   "start": 547.9,
+   "end": 548.1,
+   "spk": "B"
+  },
+  {
+   "w": "put",
+   "start": 548.1,
+   "end": 548.26,
+   "spk": "B"
+  },
+  {
+   "w": "in",
+   "start": 548.26,
+   "end": 548.39,
+   "spk": "B"
+  },
+  {
+   "w": "there",
+   "start": 548.39,
+   "end": 548.76,
+   "spk": "B"
+  },
+  {
+   "w": "oh",
+   "start": 548.76,
+   "end": 548.91,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 548.91,
+   "end": 548.99,
+   "spk": "B"
+  },
+  {
+   "w": "want",
+   "start": 548.99,
+   "end": 549.17,
+   "spk": "B"
+  },
+  {
+   "w": "Yeah",
+   "start": 549.08,
+   "end": 549.78,
+   "spk": "D"
+  },
+  {
+   "w": "to",
+   "start": 549.17,
+   "end": 549.25,
+   "spk": "B"
+  },
+  {
+   "w": "watch",
+   "start": 549.25,
+   "end": 549.43,
+   "spk": "B"
+  },
+  {
+   "w": "such",
+   "start": 549.43,
+   "end": 549.63,
+   "spk": "B"
+  },
+  {
+   "w": "and",
+   "start": 549.63,
+   "end": 549.73,
+   "spk": "B"
+  },
+  {
+   "w": "such",
+   "start": 549.73,
+   "end": 549.93,
+   "spk": "B"
+  },
+  {
+   "w": "yeah",
+   "start": 549.78,
+   "end": 551.06,
+   "spk": "D"
+  },
+  {
+   "w": "and",
+   "start": 549.93,
+   "end": 550.06,
+   "spk": "B"
+  },
+  {
+   "w": "look",
+   "start": 550.06,
+   "end": 550.22,
+   "spk": "B"
+  },
+  {
+   "w": "a",
+   "start": 550.22,
+   "end": 550.33,
+   "spk": "B"
+  },
+  {
+   "w": "Oh",
+   "start": 550.33,
+   "end": 550.4,
+   "spk": "B"
+  },
+  {
+   "w": "that's",
+   "start": 550.4,
+   "end": 550.62,
+   "spk": "B"
+  },
+  {
+   "w": "a",
+   "start": 550.62,
+   "end": 550.7,
+   "spk": "B"
+  },
+  {
+   "w": "good",
+   "start": 550.7,
+   "end": 550.84,
+   "spk": "B"
+  },
+  {
+   "w": "idea",
+   "start": 550.84,
+   "end": 551.55,
+   "spk": "B"
+  },
+  {
+   "w": "An",
+   "start": 551.06,
+   "end": 551.42,
+   "spk": "D"
+  },
+  {
+   "w": "So",
+   "start": 551.55,
+   "end": 551.78,
+   "spk": "B"
+  },
+  {
+   "w": "extra",
+   "start": 551.78,
+   "end": 552.1,
+   "spk": "B"
+  },
+  {
+   "w": "functionalities",
+   "start": 552.1,
+   "end": 553.03,
+   "spk": "B"
+  },
+  {
+   "w": "Yeah",
+   "start": 552.79,
+   "end": 553.54,
+   "spk": "D"
+  },
+  {
+   "w": "Like",
+   "start": 553.54,
+   "end": 553.77,
+   "spk": "D"
+  },
+  {
+   "w": "p",
+   "start": 553.77,
+   "end": 554.05,
+   "spk": "D"
+  },
+  {
+   "w": "personally",
+   "start": 554.05,
+   "end": 554.47,
+   "spk": "D"
+  },
+  {
+   "w": "for",
+   "start": 554.47,
+   "end": 554.58,
+   "spk": "D"
+  },
+  {
+   "w": "me",
+   "start": 554.58,
+   "end": 554.85,
+   "spk": "D"
+  },
+  {
+   "w": "at",
+   "start": 554.85,
+   "end": 554.99,
+   "spk": "D"
+  },
+  {
+   "w": "home",
+   "start": 554.99,
+   "end": 555.36,
+   "spk": "D"
+  },
+  {
+   "w": "I've",
+   "start": 555.36,
+   "end": 555.83,
+   "spk": "D"
+  },
+  {
+   "w": "I've",
+   "start": 555.83,
+   "end": 556.07,
+   "spk": "D"
+  },
+  {
+   "w": "combined",
+   "start": 556.07,
+   "end": 556.66,
+   "spk": "D"
+  },
+  {
+   "w": "the",
+   "start": 556.66,
+   "end": 557.0,
+   "spk": "D"
+  },
+  {
+   "w": "um",
+   "start": 557.0,
+   "end": 557.31,
+   "spk": "D"
+  },
+  {
+   "w": "the",
+   "start": 557.31,
+   "end": 557.44,
+   "spk": "D"
+  },
+  {
+   "w": "audio",
+   "start": 557.44,
+   "end": 557.92,
+   "spk": "D"
+  },
+  {
+   "w": "video",
+   "start": 557.92,
+   "end": 558.22,
+   "spk": "D"
+  },
+  {
+   "w": "of",
+   "start": 558.22,
+   "end": 558.3,
+   "spk": "D"
+  },
+  {
+   "w": "my",
+   "start": 558.3,
+   "end": 558.6,
+   "spk": "D"
+  },
+  {
+   "w": "television",
+   "start": 558.6,
+   "end": 559.59,
+   "spk": "D"
+  },
+  {
+   "w": "set",
+   "start": 559.59,
+   "end": 559.89,
+   "spk": "D"
+  },
+  {
+   "w": "and",
+   "start": 559.89,
+   "end": 559.99,
+   "spk": "D"
+  },
+  {
+   "w": "my",
+   "start": 559.99,
+   "end": 560.38,
+   "spk": "D"
+  },
+  {
+   "w": "D_V_D_",
+   "start": 560.38,
+   "end": 560.77,
+   "spk": "D"
+  },
+  {
+   "w": "player",
+   "start": 560.77,
+   "end": 561.21,
+   "spk": "D"
+  },
+  {
+   "w": "and",
+   "start": 561.21,
+   "end": 561.3,
+   "spk": "D"
+  },
+  {
+   "w": "my",
+   "start": 561.3,
+   "end": 561.37,
+   "spk": "D"
+  },
+  {
+   "w": "C_D_",
+   "start": 561.37,
+   "end": 561.71,
+   "spk": "D"
+  },
+  {
+   "w": "player",
+   "start": 561.71,
+   "end": 562.9,
+   "spk": "D"
+  },
+  {
+   "w": "So",
+   "start": 562.9,
+   "end": 563.08,
+   "spk": "D"
+  },
+  {
+   "w": "they",
+   "start": 563.08,
+   "end": 563.2,
+   "spk": "D"
+  },
+  {
+   "w": "w",
+   "start": 563.2,
+   "end": 563.28,
+   "spk": "D"
+  },
+  {
+   "w": "all",
+   "start": 563.28,
+   "end": 563.45,
+   "spk": "D"
+  },
+  {
+   "w": "work",
+   "start": 563.45,
+   "end": 563.64,
+   "spk": "D"
+  },
+  {
+   "w": "actually",
+   "start": 563.64,
+   "end": 563.96,
+   "spk": "D"
+  },
+  {
+   "w": "function",
+   "start": 563.96,
+   "end": 564.28,
+   "spk": "D"
+  },
+  {
+   "w": "together",
+   "start": 564.28,
+   "end": 564.62,
+   "spk": "D"
+  },
+  {
+   "w": "but",
+   "start": 564.62,
+   "end": 564.73,
+   "spk": "D"
+  },
+  {
+   "w": "I",
+   "start": 564.73,
+   "end": 564.76,
+   "spk": "D"
+  },
+  {
+   "w": "have",
+   "start": 564.76,
+   "end": 564.86,
+   "spk": "D"
+  },
+  {
+   "w": "different",
+   "start": 564.86,
+   "end": 565.11,
+   "spk": "D"
+  },
+  {
+   "w": "remote",
+   "start": 565.11,
+   "end": 565.36,
+   "spk": "D"
+  },
+  {
+   "w": "controls",
+   "start": 565.36,
+   "end": 565.81,
+   "spk": "D"
+  },
+  {
+   "w": "for",
+   "start": 565.81,
+   "end": 565.92,
+   "spk": "D"
+  },
+  {
+   "w": "each",
+   "start": 565.92,
+   "end": 566.04,
+   "spk": "D"
+  },
+  {
+   "w": "of",
+   "start": 566.04,
+   "end": 566.1,
+   "spk": "D"
+  },
+  {
+   "w": "them",
+   "start": 566.1,
+   "end": 566.91,
+   "spk": "D"
+  },
+  {
+   "w": "Mm-hmm",
+   "start": 566.59,
+   "end": 567.24,
+   "spk": "B"
+  },
+  {
+   "w": "So",
+   "start": 566.91,
+   "end": 567.03,
+   "spk": "D"
+  },
+  {
+   "w": "it's",
+   "start": 567.03,
+   "end": 567.4,
+   "spk": "D"
+  },
+  {
+   "w": "sort",
+   "start": 567.4,
+   "end": 567.61,
+   "spk": "D"
+  },
+  {
+   "w": "of",
+   "start": 567.61,
+   "end": 567.67,
+   "spk": "D"
+  },
+  {
+   "w": "ironic",
+   "start": 567.67,
+   "end": 568.09,
+   "spk": "D"
+  },
+  {
+   "w": "that",
+   "start": 568.09,
+   "end": 568.42,
+   "spk": "D"
+  },
+  {
+   "w": "that",
+   "start": 568.42,
+   "end": 568.85,
+   "spk": "D"
+  },
+  {
+   "w": "then",
+   "start": 568.85,
+   "end": 569.08,
+   "spk": "D"
+  },
+  {
+   "w": "they're",
+   "start": 569.08,
+   "end": 569.65,
+   "spk": "D"
+  },
+  {
+   "w": "in",
+   "start": 569.65,
+   "end": 569.77,
+   "spk": "D"
+  },
+  {
+   "w": "there",
+   "start": 569.77,
+   "end": 570.27,
+   "spk": "D"
+  },
+  {
+   "w": "um",
+   "start": 572.03,
+   "end": 572.56,
+   "spk": "D"
+  },
+  {
+   "w": "you",
+   "start": 574.02,
+   "end": 574.14,
+   "spk": "D"
+  },
+  {
+   "w": "know",
+   "start": 574.14,
+   "end": 574.3,
+   "spk": "D"
+  },
+  {
+   "w": "the",
+   "start": 574.3,
+   "end": 574.43,
+   "spk": "D"
+  },
+  {
+   "w": "sound",
+   "start": 574.43,
+   "end": 574.73,
+   "spk": "D"
+  },
+  {
+   "w": "and",
+   "start": 574.73,
+   "end": 574.84,
+   "spk": "D"
+  },
+  {
+   "w": "everything",
+   "start": 574.84,
+   "end": 575.14,
+   "spk": "D"
+  },
+  {
+   "w": "it's",
+   "start": 575.14,
+   "end": 575.26,
+   "spk": "D"
+  },
+  {
+   "w": "just",
+   "start": 575.26,
+   "end": 575.45,
+   "spk": "D"
+  },
+  {
+   "w": "one",
+   "start": 575.45,
+   "end": 575.71,
+   "spk": "D"
+  },
+  {
+   "w": "system",
+   "start": 575.71,
+   "end": 576.45,
+   "spk": "D"
+  },
+  {
+   "w": "But",
+   "start": 576.45,
+   "end": 576.65,
+   "spk": "D"
+  },
+  {
+   "w": "each",
+   "start": 576.65,
+   "end": 576.83,
+   "spk": "D"
+  },
+  {
+   "w": "one's",
+   "start": 576.83,
+   "end": 577.11,
+   "spk": "D"
+  },
+  {
+   "w": "Hmm",
+   "start": 576.88,
+   "end": 577.46,
+   "spk": "B"
+  },
+  {
+   "w": "got",
+   "start": 577.11,
+   "end": 577.27,
+   "spk": "D"
+  },
+  {
+   "w": "its",
+   "start": 577.27,
+   "end": 577.4,
+   "spk": "D"
+  },
+  {
+   "w": "own",
+   "start": 577.4,
+   "end": 577.53,
+   "spk": "D"
+  },
+  {
+   "w": "little",
+   "start": 577.53,
+   "end": 577.77,
+   "spk": "D"
+  },
+  {
+   "w": "part",
+   "start": 578.95,
+   "end": 579.22,
+   "spk": "D"
+  },
+  {
+   "w": "Um",
+   "start": 583.05,
+   "end": 584.57,
+   "spk": "B"
+  },
+  {
+   "w": "okay",
+   "start": 584.57,
+   "end": 585.66,
+   "spk": "B"
+  },
+  {
+   "w": "uh",
+   "start": 585.66,
+   "end": 586.03,
+   "spk": "B"
+  },
+  {
+   "w": "I'd",
+   "start": 586.03,
+   "end": 586.34,
+   "spk": "B"
+  },
+  {
+   "w": "wel",
+   "start": 586.34,
+   "end": 586.62,
+   "spk": "B"
+  },
+  {
+   "w": "we're",
+   "start": 586.62,
+   "end": 586.72,
+   "spk": "B"
+  },
+  {
+   "w": "gonna",
+   "start": 586.72,
+   "end": 586.89,
+   "spk": "B"
+  },
+  {
+   "w": "have",
+   "start": 586.89,
+   "end": 587.03,
+   "spk": "B"
+  },
+  {
+   "w": "to",
+   "start": 587.03,
+   "end": 587.15,
+   "spk": "B"
+  },
+  {
+   "w": "wrap",
+   "start": 587.15,
+   "end": 587.39,
+   "spk": "B"
+  },
+  {
+   "w": "up",
+   "start": 587.39,
+   "end": 587.56,
+   "spk": "B"
+  },
+  {
+   "w": "pretty",
+   "start": 587.56,
+   "end": 587.79,
+   "spk": "B"
+  },
+  {
+   "w": "quickly",
+   "start": 587.79,
+   "end": 588.24,
+   "spk": "B"
+  },
+  {
+   "w": "in",
+   "start": 588.24,
+   "end": 588.34,
+   "spk": "B"
+  },
+  {
+   "w": "the",
+   "start": 588.34,
+   "end": 588.43,
+   "spk": "B"
+  },
+  {
+   "w": "next",
+   "start": 588.43,
+   "end": 588.65,
+   "spk": "B"
+  },
+  {
+   "w": "couple",
+   "start": 588.65,
+   "end": 588.91,
+   "spk": "B"
+  },
+  {
+   "w": "of",
+   "start": 588.91,
+   "end": 589.0,
+   "spk": "B"
+  },
+  {
+   "w": "minutes",
+   "start": 589.0,
+   "end": 589.88,
+   "spk": "B"
+  },
+  {
+   "w": "Um",
+   "start": 589.88,
+   "end": 590.15,
+   "spk": "B"
+  },
+  {
+   "w": "I'll",
+   "start": 590.15,
+   "end": 590.24,
+   "spk": "B"
+  },
+  {
+   "w": "just",
+   "start": 590.24,
+   "end": 590.45,
+   "spk": "B"
+  },
+  {
+   "w": "check",
+   "start": 590.45,
+   "end": 590.67,
+   "spk": "B"
+  },
+  {
+   "w": "we've",
+   "start": 590.67,
+   "end": 590.8,
+   "spk": "B"
+  },
+  {
+   "w": "nothing",
+   "start": 590.8,
+   "end": 591.08,
+   "spk": "B"
+  },
+  {
+   "w": "else",
+   "start": 591.08,
+   "end": 591.96,
+   "spk": "B"
+  },
+  {
+   "w": "Okay",
+   "start": 591.96,
+   "end": 592.58,
+   "spk": "B"
+  },
+  {
+   "w": "Um",
+   "start": 592.58,
+   "end": 593.75,
+   "spk": "B"
+  },
+  {
+   "w": "so",
+   "start": 593.75,
+   "end": 593.98,
+   "spk": "B"
+  },
+  {
+   "w": "anything",
+   "start": 593.98,
+   "end": 594.34,
+   "spk": "B"
+  },
+  {
+   "w": "else",
+   "start": 594.34,
+   "end": 594.54,
+   "spk": "B"
+  },
+  {
+   "w": "anybody",
+   "start": 594.54,
+   "end": 594.84,
+   "spk": "B"
+  },
+  {
+   "w": "wants",
+   "start": 594.84,
+   "end": 595.05,
+   "spk": "B"
+  },
+  {
+   "w": "to",
+   "start": 595.05,
+   "end": 595.14,
+   "spk": "B"
+  },
+  {
+   "w": "add",
+   "start": 595.14,
+   "end": 595.56,
+   "spk": "B"
+  },
+  {
+   "w": "about",
+   "start": 595.56,
+   "end": 595.92,
+   "spk": "B"
+  },
+  {
+   "w": "what",
+   "start": 595.92,
+   "end": 596.16,
+   "spk": "B"
+  },
+  {
+   "w": "they",
+   "start": 596.16,
+   "end": 596.28,
+   "spk": "B"
+  },
+  {
+   "w": "don't",
+   "start": 596.28,
+   "end": 596.53,
+   "spk": "B"
+  },
+  {
+   "w": "like",
+   "start": 596.53,
+   "end": 596.73,
+   "spk": "B"
+  },
+  {
+   "w": "about",
+   "start": 596.73,
+   "end": 596.98,
+   "spk": "B"
+  },
+  {
+   "w": "remote",
+   "start": 596.98,
+   "end": 597.17,
+   "spk": "B"
+  },
+  {
+   "w": "controls",
+   "start": 597.17,
+   "end": 597.6,
+   "spk": "B"
+  },
+  {
+   "w": "they've",
+   "start": 597.6,
+   "end": 597.79,
+   "spk": "B"
+  },
+  {
+   "w": "used",
+   "start": 597.79,
+   "end": 598.27,
+   "spk": "B"
+  },
+  {
+   "w": "what",
+   "start": 598.27,
+   "end": 598.38,
+   "spk": "B"
+  },
+  {
+   "w": "they",
+   "start": 598.38,
+   "end": 599.13,
+   "spk": "B"
+  },
+  {
+   "w": "would",
+   "start": 599.13,
+   "end": 599.28,
+   "spk": "B"
+  },
+  {
+   "w": "really",
+   "start": 599.28,
+   "end": 599.55,
+   "spk": "B"
+  },
+  {
+   "w": "like",
+   "start": 599.55,
+   "end": 599.8,
+   "spk": "B"
+  },
+  {
+   "w": "to",
+   "start": 599.8,
+   "end": 599.93,
+   "spk": "B"
+  },
+  {
+   "w": "be",
+   "start": 599.93,
+   "end": 600.83,
+   "spk": "B"
+  },
+  {
+   "w": "part",
+   "start": 600.83,
+   "end": 601.07,
+   "spk": "B"
+  },
+  {
+   "w": "of",
+   "start": 601.07,
+   "end": 601.22,
+   "spk": "B"
+  },
+  {
+   "w": "this",
+   "start": 601.22,
+   "end": 601.42,
+   "spk": "B"
+  },
+  {
+   "w": "new",
+   "start": 601.42,
+   "end": 601.63,
+   "spk": "B"
+  },
+  {
+   "w": "one",
+   "start": 601.63,
+   "end": 602.11,
+   "spk": "B"
+  },
+  {
+   "w": "at",
+   "start": 602.11,
+   "end": 602.32,
+   "spk": "B"
+  },
+  {
+   "w": "all",
+   "start": 602.32,
+   "end": 602.62,
+   "spk": "B"
+  },
+  {
+   "w": "And",
+   "start": 603.08,
+   "end": 603.28,
+   "spk": "A"
+  },
+  {
+   "w": "you",
+   "start": 603.28,
+   "end": 603.41,
+   "spk": "A"
+  },
+  {
+   "w": "keep",
+   "start": 603.41,
+   "end": 603.52,
+   "spk": "A"
+  },
+  {
+   "w": "losing",
+   "start": 603.52,
+   "end": 603.8,
+   "spk": "A"
+  },
+  {
+   "w": "them",
+   "start": 603.8,
+   "end": 603.98,
+   "spk": "A"
+  },
+  {
+   "w": "You",
+   "start": 604.6,
+   "end": 604.73,
+   "spk": "B"
+  },
+  {
+   "w": "keep",
+   "start": 604.73,
+   "end": 604.95,
+   "spk": "B"
+  },
+  {
+   "w": "Mm",
+   "start": 604.75,
+   "end": 605.26,
+   "spk": "D"
+  },
+  {
+   "w": "losing",
+   "start": 604.95,
+   "end": 605.3,
+   "spk": "B"
+  },
+  {
+   "w": "them",
+   "start": 605.3,
+   "end": 605.58,
+   "spk": "B"
+  },
+  {
+   "w": "Okay",
+   "start": 605.58,
+   "end": 606.08,
+   "spk": "B"
+  },
+  {
+   "w": "Finding",
+   "start": 606.45,
+   "end": 606.76,
+   "spk": "A"
+  },
+  {
+   "w": "them",
+   "start": 606.76,
+   "end": 606.98,
+   "spk": "A"
+  },
+  {
+   "w": "is",
+   "start": 606.98,
+   "end": 607.29,
+   "spk": "A"
+  },
+  {
+   "w": "really",
+   "start": 607.29,
+   "end": 607.57,
+   "spk": "A"
+  },
+  {
+   "w": "Mm",
+   "start": 607.47,
+   "end": 608.84,
+   "spk": "D"
+  },
+  {
+   "w": "a",
+   "start": 607.57,
+   "end": 607.74,
+   "spk": "A"
+  },
+  {
+   "w": "pain",
+   "start": 607.74,
+   "end": 608.12,
+   "spk": "A"
+  },
+  {
+   "w": "you",
+   "start": 608.12,
+   "end": 608.29,
+   "spk": "A"
+  },
+  {
+   "w": "know",
+   "start": 608.29,
+   "end": 608.59,
+   "spk": "A"
+  },
+  {
+   "w": "I",
+   "start": 608.59,
+   "end": 609.23,
+   "spk": "A"
+  },
+  {
+   "w": "Mm",
+   "start": 608.84,
+   "end": 609.26,
+   "spk": "D"
+  },
+  {
+   "w": "mean",
+   "start": 609.23,
+   "end": 609.48,
+   "spk": "A"
+  },
+  {
+   "w": "it's",
+   "start": 609.48,
+   "end": 609.62,
+   "spk": "A"
+  },
+  {
+   "w": "usually",
+   "start": 609.62,
+   "end": 609.88,
+   "spk": "A"
+  },
+  {
+   "w": "quite",
+   "start": 609.88,
+   "end": 610.07,
+   "spk": "A"
+  },
+  {
+   "w": "small",
+   "start": 610.07,
+   "end": 610.62,
+   "spk": "A"
+  },
+  {
+   "w": "or",
+   "start": 610.62,
+   "end": 610.86,
+   "spk": "A"
+  },
+  {
+   "w": "when",
+   "start": 610.86,
+   "end": 611.0,
+   "spk": "A"
+  },
+  {
+   "w": "you",
+   "start": 611.0,
+   "end": 611.09,
+   "spk": "A"
+  },
+  {
+   "w": "want",
+   "start": 611.09,
+   "end": 611.33,
+   "spk": "A"
+  },
+  {
+   "w": "Mm-hmm",
+   "start": 611.1,
+   "end": 611.79,
+   "spk": "D"
+  },
+  {
+   "w": "it",
+   "start": 611.33,
+   "end": 611.46,
+   "spk": "A"
+  },
+  {
+   "w": "right",
+   "start": 611.46,
+   "end": 611.66,
+   "spk": "A"
+  },
+  {
+   "w": "it",
+   "start": 611.66,
+   "end": 611.76,
+   "spk": "A"
+  },
+  {
+   "w": "slipped",
+   "start": 611.76,
+   "end": 612.03,
+   "spk": "A"
+  },
+  {
+   "w": "Mm-hmm",
+   "start": 611.79,
+   "end": 612.1,
+   "spk": "D"
+  },
+  {
+   "w": "behind",
+   "start": 612.03,
+   "end": 612.26,
+   "spk": "A"
+  },
+  {
+   "w": "the",
+   "start": 612.26,
+   "end": 612.35,
+   "spk": "A"
+  },
+  {
+   "w": "couch",
+   "start": 612.35,
+   "end": 612.9,
+   "spk": "A"
+  },
+  {
+   "w": "or",
+   "start": 612.9,
+   "end": 613.09,
+   "spk": "A"
+  },
+  {
+   "w": "it's",
+   "start": 613.09,
+   "end": 613.4,
+   "spk": "A"
+  },
+  {
+   "w": "Yeah",
+   "start": 613.17,
+   "end": 614.71,
+   "spk": "B"
+  },
+  {
+   "w": "Yeah",
+   "start": 613.22,
+   "end": 613.58,
+   "spk": "D"
+  },
+  {
+   "w": "kicked",
+   "start": 613.4,
+   "end": 613.6,
+   "spk": "A"
+  },
+  {
+   "w": "under",
+   "start": 613.6,
+   "end": 613.86,
+   "spk": "A"
+  },
+  {
+   "w": "the",
+   "start": 613.86,
+   "end": 613.99,
+   "spk": "A"
+  },
+  {
+   "w": "table",
+   "start": 613.99,
+   "end": 614.44,
+   "spk": "A"
+  },
+  {
+   "w": "W",
+   "start": 614.71,
+   "end": 615.17,
+   "spk": "B"
+  },
+  {
+   "w": "Yeah",
+   "start": 614.77,
+   "end": 615.13,
+   "spk": "D"
+  },
+  {
+   "w": "You",
+   "start": 615.17,
+   "end": 615.27,
+   "spk": "B"
+  },
+  {
+   "w": "get",
+   "start": 615.27,
+   "end": 615.45,
+   "spk": "B"
+  },
+  {
+   "w": "You",
+   "start": 615.45,
+   "end": 615.63,
+   "spk": "A"
+  },
+  {
+   "w": "those",
+   "start": 615.45,
+   "end": 615.65,
+   "spk": "B"
+  },
+  {
+   "w": "know",
+   "start": 615.63,
+   "end": 616.11,
+   "spk": "A"
+  },
+  {
+   "w": "ones",
+   "start": 615.65,
+   "end": 615.89,
+   "spk": "B"
+  },
+  {
+   "w": "where",
+   "start": 615.89,
+   "end": 616.0,
+   "spk": "B"
+  },
+  {
+   "w": "you",
+   "start": 616.0,
+   "end": 616.12,
+   "spk": "B"
+  },
+  {
+   "w": "can",
+   "start": 616.12,
+   "end": 616.63,
+   "spk": "B"
+  },
+  {
+   "w": "That's",
+   "start": 616.12,
+   "end": 616.35,
+   "spk": "D"
+  },
+  {
+   "w": "just",
+   "start": 616.35,
+   "end": 616.48,
+   "spk": "D"
+  },
+  {
+   "w": "really",
+   "start": 616.48,
+   "end": 616.71,
+   "spk": "D"
+  },
+  {
+   "w": "if",
+   "start": 616.63,
+   "end": 616.8,
+   "spk": "B"
+  },
+  {
+   "w": "good",
+   "start": 616.71,
+   "end": 616.83,
+   "spk": "D"
+  },
+  {
+   "w": "you",
+   "start": 616.8,
+   "end": 616.9,
+   "spk": "B"
+  },
+  {
+   "w": "id",
+   "start": 616.83,
+   "end": 616.97,
+   "spk": "D"
+  },
+  {
+   "w": "like",
+   "start": 616.9,
+   "end": 617.09,
+   "spk": "B"
+  },
+  {
+   "w": "whistle",
+   "start": 617.09,
+   "end": 617.52,
+   "spk": "B"
+  },
+  {
+   "w": "or",
+   "start": 617.52,
+   "end": 617.6,
+   "spk": "B"
+  },
+  {
+   "w": "make",
+   "start": 617.6,
+   "end": 617.75,
+   "spk": "B"
+  },
+  {
+   "w": "a",
+   "start": 617.75,
+   "end": 617.79,
+   "spk": "B"
+  },
+  {
+   "w": "really",
+   "start": 617.79,
+   "end": 617.98,
+   "spk": "B"
+  },
+  {
+   "w": "high",
+   "start": 617.98,
+   "end": 618.17,
+   "spk": "B"
+  },
+  {
+   "w": "pitched",
+   "start": 618.17,
+   "end": 618.51,
+   "spk": "B"
+  },
+  {
+   "w": "noise",
+   "start": 618.51,
+   "end": 618.86,
+   "spk": "B"
+  },
+  {
+   "w": "they",
+   "start": 618.86,
+   "end": 618.97,
+   "spk": "B"
+  },
+  {
+   "w": "beep",
+   "start": 618.97,
+   "end": 620.04,
+   "spk": "B"
+  },
+  {
+   "w": "Yep",
+   "start": 619.28,
+   "end": 619.69,
+   "spk": "D"
+  },
+  {
+   "w": "There",
+   "start": 620.04,
+   "end": 620.5,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 620.5,
+   "end": 620.61,
+   "spk": "B"
+  },
+  {
+   "w": "mean",
+   "start": 620.61,
+   "end": 620.78,
+   "spk": "B"
+  },
+  {
+   "w": "is",
+   "start": 620.78,
+   "end": 620.86,
+   "spk": "B"
+  },
+  {
+   "w": "that",
+   "start": 620.86,
+   "end": 621.03,
+   "spk": "B"
+  },
+  {
+   "w": "something",
+   "start": 621.03,
+   "end": 621.25,
+   "spk": "B"
+  },
+  {
+   "w": "we'd",
+   "start": 621.25,
+   "end": 621.41,
+   "spk": "B"
+  },
+  {
+   "w": "want",
+   "start": 621.41,
+   "end": 621.58,
+   "spk": "B"
+  },
+  {
+   "w": "to",
+   "start": 621.58,
+   "end": 621.66,
+   "spk": "B"
+  },
+  {
+   "w": "include",
+   "start": 621.66,
+   "end": 622.09,
+   "spk": "B"
+  },
+  {
+   "w": "do",
+   "start": 622.09,
+   "end": 622.15,
+   "spk": "B"
+  },
+  {
+   "w": "you",
+   "start": 622.15,
+   "end": 622.21,
+   "spk": "B"
+  },
+  {
+   "w": "think",
+   "start": 622.21,
+   "end": 622.53,
+   "spk": "B"
+  },
+  {
+   "w": "Uh",
+   "start": 624.35,
+   "end": 625.74,
+   "spk": "D"
+  },
+  {
+   "w": "Dunno",
+   "start": 625.37,
+   "end": 626.64,
+   "spk": "B"
+  },
+  {
+   "w": "sure",
+   "start": 625.74,
+   "end": 627.64,
+   "spk": "D"
+  },
+  {
+   "w": "Okay",
+   "start": 626.64,
+   "end": 626.99,
+   "spk": "B"
+  },
+  {
+   "w": "maybe",
+   "start": 626.99,
+   "end": 627.4,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 627.64,
+   "end": 627.71,
+   "spk": "D"
+  },
+  {
+   "w": "remember",
+   "start": 627.71,
+   "end": 628.06,
+   "spk": "D"
+  },
+  {
+   "w": "when",
+   "start": 628.06,
+   "end": 628.38,
+   "spk": "D"
+  },
+  {
+   "w": "the",
+   "start": 628.38,
+   "end": 628.51,
+   "spk": "D"
+  },
+  {
+   "w": "first",
+   "start": 628.51,
+   "end": 628.92,
+   "spk": "D"
+  },
+  {
+   "w": "remote",
+   "start": 628.92,
+   "end": 629.18,
+   "spk": "D"
+  },
+  {
+   "w": "control",
+   "start": 629.18,
+   "end": 629.54,
+   "spk": "D"
+  },
+  {
+   "w": "my",
+   "start": 629.54,
+   "end": 630.14,
+   "spk": "D"
+  },
+  {
+   "w": "my",
+   "start": 630.14,
+   "end": 630.43,
+   "spk": "D"
+  },
+  {
+   "w": "family",
+   "start": 630.43,
+   "end": 630.75,
+   "spk": "D"
+  },
+  {
+   "w": "had",
+   "start": 630.75,
+   "end": 630.91,
+   "spk": "D"
+  },
+  {
+   "w": "was",
+   "start": 630.91,
+   "end": 631.07,
+   "spk": "D"
+  },
+  {
+   "w": "on",
+   "start": 631.07,
+   "end": 631.21,
+   "spk": "D"
+  },
+  {
+   "w": "a",
+   "start": 631.21,
+   "end": 631.29,
+   "spk": "D"
+  },
+  {
+   "w": "cable",
+   "start": 631.29,
+   "end": 632.01,
+   "spk": "D"
+  },
+  {
+   "w": "Actually",
+   "start": 632.01,
+   "end": 632.3,
+   "spk": "D"
+  },
+  {
+   "w": "had",
+   "start": 632.3,
+   "end": 632.41,
+   "spk": "D"
+  },
+  {
+   "w": "a",
+   "start": 632.41,
+   "end": 632.44,
+   "spk": "D"
+  },
+  {
+   "w": "cable",
+   "start": 632.44,
+   "end": 632.65,
+   "spk": "D"
+  },
+  {
+   "w": "between",
+   "start": 632.65,
+   "end": 632.92,
+   "spk": "D"
+  },
+  {
+   "w": "it",
+   "start": 632.92,
+   "end": 632.98,
+   "spk": "D"
+  },
+  {
+   "w": "and",
+   "start": 632.98,
+   "end": 633.07,
+   "spk": "D"
+  },
+  {
+   "w": "the",
+   "start": 633.07,
+   "end": 633.14,
+   "spk": "D"
+  },
+  {
+   "w": "T_V_",
+   "start": 633.14,
+   "end": 633.48,
+   "spk": "D"
+  },
+  {
+   "w": "and",
+   "start": 633.48,
+   "end": 633.63,
+   "spk": "D"
+  },
+  {
+   "w": "big",
+   "start": 633.63,
+   "end": 633.8,
+   "spk": "D"
+  },
+  {
+   "w": "like",
+   "start": 633.8,
+   "end": 634.36,
+   "spk": "D"
+  },
+  {
+   "w": "buttons",
+   "start": 634.36,
+   "end": 634.69,
+   "spk": "D"
+  },
+  {
+   "w": "that",
+   "start": 634.69,
+   "end": 634.81,
+   "spk": "D"
+  },
+  {
+   "w": "sort",
+   "start": 634.81,
+   "end": 634.98,
+   "spk": "D"
+  },
+  {
+   "w": "of",
+   "start": 634.98,
+   "end": 635.08,
+   "spk": "D"
+  },
+  {
+   "w": "like",
+   "start": 635.08,
+   "end": 635.64,
+   "spk": "D"
+  },
+  {
+   "w": "like",
+   "start": 635.64,
+   "end": 635.86,
+   "spk": "D"
+  },
+  {
+   "w": "on",
+   "start": 635.86,
+   "end": 636.03,
+   "spk": "D"
+  },
+  {
+   "w": "a",
+   "start": 636.03,
+   "end": 636.11,
+   "spk": "D"
+  },
+  {
+   "w": "blender",
+   "start": 636.11,
+   "end": 636.48,
+   "spk": "D"
+  },
+  {
+   "w": "or",
+   "start": 636.48,
+   "end": 636.57,
+   "spk": "D"
+  },
+  {
+   "w": "something",
+   "start": 636.57,
+   "end": 637.36,
+   "spk": "D"
+  },
+  {
+   "w": "My",
+   "start": 637.0,
+   "end": 637.12,
+   "spk": "B"
+  },
+  {
+   "w": "goodness",
+   "start": 637.12,
+   "end": 637.62,
+   "spk": "B"
+  },
+  {
+   "w": "And",
+   "start": 637.36,
+   "end": 637.77,
+   "spk": "D"
+  },
+  {
+   "w": "um",
+   "start": 637.77,
+   "end": 638.19,
+   "spk": "D"
+  },
+  {
+   "w": "you",
+   "start": 638.19,
+   "end": 638.34,
+   "spk": "D"
+  },
+  {
+   "w": "know",
+   "start": 638.34,
+   "end": 638.4,
+   "spk": "D"
+  },
+  {
+   "w": "when",
+   "start": 638.4,
+   "end": 638.52,
+   "spk": "D"
+  },
+  {
+   "w": "I",
+   "start": 638.52,
+   "end": 638.56,
+   "spk": "D"
+  },
+  {
+   "w": "think",
+   "start": 638.56,
+   "end": 638.75,
+   "spk": "D"
+  },
+  {
+   "w": "about",
+   "start": 638.75,
+   "end": 638.93,
+   "spk": "D"
+  },
+  {
+   "w": "what",
+   "start": 638.93,
+   "end": 639.08,
+   "spk": "D"
+  },
+  {
+   "w": "they",
+   "start": 639.08,
+   "end": 639.21,
+   "spk": "D"
+  },
+  {
+   "w": "are",
+   "start": 639.21,
+   "end": 639.38,
+   "spk": "D"
+  },
+  {
+   "w": "now",
+   "start": 639.38,
+   "end": 640.21,
+   "spk": "D"
+  },
+  {
+   "w": "it's",
+   "start": 640.21,
+   "end": 640.32,
+   "spk": "D"
+  },
+  {
+   "w": "better",
+   "start": 640.32,
+   "end": 640.72,
+   "spk": "D"
+  },
+  {
+   "w": "but",
+   "start": 640.72,
+   "end": 640.86,
+   "spk": "D"
+  },
+  {
+   "w": "actually",
+   "start": 640.86,
+   "end": 641.34,
+   "spk": "D"
+  },
+  {
+   "w": "it's",
+   "start": 641.34,
+   "end": 641.48,
+   "spk": "D"
+  },
+  {
+   "w": "still",
+   "start": 641.48,
+   "end": 641.74,
+   "spk": "D"
+  },
+  {
+   "w": "kind",
+   "start": 641.74,
+   "end": 642.05,
+   "spk": "D"
+  },
+  {
+   "w": "of",
+   "start": 642.05,
+   "end": 642.95,
+   "spk": "D"
+  },
+  {
+   "w": "I",
+   "start": 642.95,
+   "end": 643.08,
+   "spk": "D"
+  },
+  {
+   "w": "dunno",
+   "start": 643.08,
+   "end": 643.4,
+   "spk": "D"
+  },
+  {
+   "w": "like",
+   "start": 643.4,
+   "end": 644.22,
+   "spk": "D"
+  },
+  {
+   "w": "a",
+   "start": 644.22,
+   "end": 644.34,
+   "spk": "D"
+  },
+  {
+   "w": "massive",
+   "start": 644.34,
+   "end": 644.84,
+   "spk": "D"
+  },
+  {
+   "w": "junky",
+   "start": 644.84,
+   "end": 645.22,
+   "spk": "D"
+  },
+  {
+   "w": "thing",
+   "start": 645.22,
+   "end": 645.44,
+   "spk": "D"
+  },
+  {
+   "w": "on",
+   "start": 645.44,
+   "end": 645.57,
+   "spk": "D"
+  },
+  {
+   "w": "the",
+   "start": 645.57,
+   "end": 645.64,
+   "spk": "D"
+  },
+  {
+   "w": "table",
+   "start": 645.64,
+   "end": 646.4,
+   "spk": "D"
+  },
+  {
+   "w": "Still",
+   "start": 646.26,
+   "end": 646.56,
+   "spk": "B"
+  },
+  {
+   "w": "Maybe",
+   "start": 646.4,
+   "end": 646.61,
+   "spk": "D"
+  },
+  {
+   "w": "feels",
+   "start": 646.56,
+   "end": 646.8,
+   "spk": "B"
+  },
+  {
+   "w": "we",
+   "start": 646.61,
+   "end": 646.78,
+   "spk": "D"
+  },
+  {
+   "w": "could",
+   "start": 646.78,
+   "end": 646.94,
+   "spk": "D"
+  },
+  {
+   "w": "quite",
+   "start": 646.8,
+   "end": 647.01,
+   "spk": "B"
+  },
+  {
+   "w": "think",
+   "start": 646.94,
+   "end": 647.24,
+   "spk": "D"
+  },
+  {
+   "w": "primitive",
+   "start": 647.01,
+   "end": 648.04,
+   "spk": "B"
+  },
+  {
+   "w": "about",
+   "start": 647.24,
+   "end": 647.57,
+   "spk": "D"
+  },
+  {
+   "w": "how",
+   "start": 647.57,
+   "end": 648.61,
+   "spk": "D"
+  },
+  {
+   "w": "could",
+   "start": 648.61,
+   "end": 648.75,
+   "spk": "D"
+  },
+  {
+   "w": "be",
+   "start": 648.75,
+   "end": 648.92,
+   "spk": "D"
+  },
+  {
+   "w": "more",
+   "start": 648.92,
+   "end": 649.6,
+   "spk": "D"
+  },
+  {
+   "w": "you",
+   "start": 649.6,
+   "end": 649.75,
+   "spk": "D"
+  },
+  {
+   "w": "know",
+   "start": 649.75,
+   "end": 650.41,
+   "spk": "D"
+  },
+  {
+   "w": "streamlined",
+   "start": 650.41,
+   "end": 651.49,
+   "spk": "D"
+  },
+  {
+   "w": "Maybe",
+   "start": 651.41,
+   "end": 651.58,
+   "spk": "B"
+  },
+  {
+   "w": "S",
+   "start": 651.49,
+   "end": 652.63,
+   "spk": "D"
+  },
+  {
+   "w": "like",
+   "start": 651.58,
+   "end": 651.73,
+   "spk": "B"
+  },
+  {
+   "w": "a",
+   "start": 651.73,
+   "end": 651.76,
+   "spk": "B"
+  },
+  {
+   "w": "touch",
+   "start": 651.76,
+   "end": 652.01,
+   "spk": "B"
+  },
+  {
+   "w": "screen",
+   "start": 652.01,
+   "end": 652.3,
+   "spk": "B"
+  },
+  {
+   "w": "or",
+   "start": 652.3,
+   "end": 652.36,
+   "spk": "B"
+  },
+  {
+   "w": "something",
+   "start": 652.36,
+   "end": 652.78,
+   "spk": "B"
+  },
+  {
+   "w": "Something",
+   "start": 653.06,
+   "end": 653.41,
+   "spk": "D"
+  },
+  {
+   "w": "like",
+   "start": 653.41,
+   "end": 653.58,
+   "spk": "D"
+  },
+  {
+   "w": "that",
+   "start": 653.58,
+   "end": 653.81,
+   "spk": "D"
+  },
+  {
+   "w": "yeah",
+   "start": 653.81,
+   "end": 654.2,
+   "spk": "D"
+  },
+  {
+   "w": "Okay",
+   "start": 654.09,
+   "end": 654.42,
+   "spk": "B"
+  },
+  {
+   "w": "Or",
+   "start": 654.2,
+   "end": 654.34,
+   "spk": "D"
+  },
+  {
+   "w": "whatever",
+   "start": 654.34,
+   "end": 654.63,
+   "spk": "D"
+  },
+  {
+   "w": "would",
+   "start": 654.63,
+   "end": 654.73,
+   "spk": "D"
+  },
+  {
+   "w": "be",
+   "start": 654.73,
+   "end": 655.1,
+   "spk": "D"
+  },
+  {
+   "w": "technologically",
+   "start": 655.1,
+   "end": 655.79,
+   "spk": "D"
+  },
+  {
+   "w": "reasonable",
+   "start": 655.79,
+   "end": 656.35,
+   "spk": "D"
+  },
+  {
+   "w": "Uh-huh",
+   "start": 656.36,
+   "end": 656.89,
+   "spk": "B"
+  },
+  {
+   "w": "okay",
+   "start": 656.89,
+   "end": 657.42,
+   "spk": "B"
+  },
+  {
+   "w": "Well",
+   "start": 657.42,
+   "end": 657.57,
+   "spk": "B"
+  },
+  {
+   "w": "'Cause",
+   "start": 657.54,
+   "end": 657.64,
+   "spk": "D"
+  },
+  {
+   "w": "I",
+   "start": 657.57,
+   "end": 657.61,
+   "spk": "B"
+  },
+  {
+   "w": "guess",
+   "start": 657.61,
+   "end": 657.81,
+   "spk": "B"
+  },
+  {
+   "w": "it",
+   "start": 657.64,
+   "end": 657.73,
+   "spk": "D"
+  },
+  {
+   "w": "could",
+   "start": 657.73,
+   "end": 657.91,
+   "spk": "D"
+  },
+  {
+   "w": "that's",
+   "start": 657.81,
+   "end": 658.0,
+   "spk": "B"
+  },
+  {
+   "w": "b",
+   "start": 657.91,
+   "end": 658.07,
+   "spk": "D"
+  },
+  {
+   "w": "up",
+   "start": 658.0,
+   "end": 658.12,
+   "spk": "B"
+  },
+  {
+   "w": "it",
+   "start": 658.07,
+   "end": 658.16,
+   "spk": "D"
+  },
+  {
+   "w": "to",
+   "start": 658.12,
+   "end": 658.25,
+   "spk": "B"
+  },
+  {
+   "w": "could",
+   "start": 658.16,
+   "end": 658.46,
+   "spk": "D"
+  },
+  {
+   "w": "our",
+   "start": 658.25,
+   "end": 658.35,
+   "spk": "B"
+  },
+  {
+   "w": "industrial",
+   "start": 658.35,
+   "end": 658.83,
+   "spk": "B"
+  },
+  {
+   "w": "it",
+   "start": 658.46,
+   "end": 658.6,
+   "spk": "D"
+  },
+  {
+   "w": "could",
+   "start": 658.6,
+   "end": 658.8,
+   "spk": "D"
+  },
+  {
+   "w": "be",
+   "start": 658.8,
+   "end": 658.9,
+   "spk": "D"
+  },
+  {
+   "w": "designer",
+   "start": 658.83,
+   "end": 659.3,
+   "spk": "B"
+  },
+  {
+   "w": "that",
+   "start": 658.9,
+   "end": 659.04,
+   "spk": "D"
+  },
+  {
+   "w": "f",
+   "start": 659.04,
+   "end": 659.24,
+   "spk": "D"
+  },
+  {
+   "w": "it",
+   "start": 659.24,
+   "end": 659.35,
+   "spk": "D"
+  },
+  {
+   "w": "could",
+   "start": 659.35,
+   "end": 659.5,
+   "spk": "D"
+  },
+  {
+   "w": "be",
+   "start": 659.5,
+   "end": 659.58,
+   "spk": "D"
+  },
+  {
+   "w": "that",
+   "start": 659.58,
+   "end": 659.71,
+   "spk": "D"
+  },
+  {
+   "w": "functionally",
+   "start": 659.71,
+   "end": 660.25,
+   "spk": "D"
+  },
+  {
+   "w": "that",
+   "start": 660.25,
+   "end": 660.42,
+   "spk": "D"
+  },
+  {
+   "w": "doesn't",
+   "start": 660.42,
+   "end": 660.63,
+   "spk": "D"
+  },
+  {
+   "w": "make",
+   "start": 660.63,
+   "end": 660.82,
+   "spk": "D"
+  },
+  {
+   "w": "it",
+   "start": 660.82,
+   "end": 660.91,
+   "spk": "D"
+  },
+  {
+   "w": "any",
+   "start": 660.91,
+   "end": 661.07,
+   "spk": "D"
+  },
+  {
+   "w": "better",
+   "start": 661.07,
+   "end": 661.34,
+   "spk": "D"
+  },
+  {
+   "w": "but",
+   "start": 661.34,
+   "end": 661.51,
+   "spk": "D"
+  },
+  {
+   "w": "that",
+   "start": 661.51,
+   "end": 661.68,
+   "spk": "D"
+  },
+  {
+   "w": "just",
+   "start": 661.68,
+   "end": 661.93,
+   "spk": "D"
+  },
+  {
+   "w": "the",
+   "start": 661.93,
+   "end": 662.04,
+   "spk": "D"
+  },
+  {
+   "w": "appeal",
+   "start": 662.04,
+   "end": 662.49,
+   "spk": "D"
+  },
+  {
+   "w": "It",
+   "start": 662.22,
+   "end": 662.36,
+   "spk": "B"
+  },
+  {
+   "w": "looks",
+   "start": 662.36,
+   "end": 662.56,
+   "spk": "B"
+  },
+  {
+   "w": "of",
+   "start": 662.49,
+   "end": 662.95,
+   "spk": "D"
+  },
+  {
+   "w": "better",
+   "start": 662.56,
+   "end": 663.35,
+   "spk": "B"
+  },
+  {
+   "w": "of",
+   "start": 662.95,
+   "end": 663.12,
+   "spk": "D"
+  },
+  {
+   "w": "not",
+   "start": 663.12,
+   "end": 663.35,
+   "spk": "D"
+  },
+  {
+   "w": "having",
+   "start": 663.35,
+   "end": 663.91,
+   "spk": "D"
+  },
+  {
+   "w": "You",
+   "start": 663.91,
+   "end": 664.03,
+   "spk": "D"
+  },
+  {
+   "w": "know",
+   "start": 664.03,
+   "end": 664.15,
+   "spk": "D"
+  },
+  {
+   "w": "these",
+   "start": 664.15,
+   "end": 664.36,
+   "spk": "D"
+  },
+  {
+   "w": "days",
+   "start": 664.36,
+   "end": 664.54,
+   "spk": "D"
+  },
+  {
+   "w": "there's",
+   "start": 664.54,
+   "end": 664.66,
+   "spk": "D"
+  },
+  {
+   "w": "a",
+   "start": 664.66,
+   "end": 664.73,
+   "spk": "D"
+  },
+  {
+   "w": "r",
+   "start": 664.73,
+   "end": 665.51,
+   "spk": "D"
+  },
+  {
+   "w": "pe",
+   "start": 665.51,
+   "end": 665.72,
+   "spk": "D"
+  },
+  {
+   "w": "things",
+   "start": 665.72,
+   "end": 665.91,
+   "spk": "D"
+  },
+  {
+   "w": "in",
+   "start": 665.91,
+   "end": 665.97,
+   "spk": "D"
+  },
+  {
+   "w": "people's",
+   "start": 665.97,
+   "end": 666.26,
+   "spk": "D"
+  },
+  {
+   "w": "homes",
+   "start": 666.26,
+   "end": 666.54,
+   "spk": "D"
+  },
+  {
+   "w": "are",
+   "start": 666.54,
+   "end": 666.61,
+   "spk": "D"
+  },
+  {
+   "w": "becoming",
+   "start": 666.61,
+   "end": 666.98,
+   "spk": "D"
+  },
+  {
+   "w": "more",
+   "start": 666.98,
+   "end": 667.17,
+   "spk": "D"
+  },
+  {
+   "w": "and",
+   "start": 667.17,
+   "end": 667.26,
+   "spk": "D"
+  },
+  {
+   "w": "more",
+   "start": 667.26,
+   "end": 667.51,
+   "spk": "D"
+  },
+  {
+   "w": "like",
+   "start": 667.51,
+   "end": 668.15,
+   "spk": "D"
+  },
+  {
+   "w": "chic",
+   "start": 668.15,
+   "end": 668.83,
+   "spk": "D"
+  },
+  {
+   "w": "you",
+   "start": 668.83,
+   "end": 668.94,
+   "spk": "D"
+  },
+  {
+   "w": "know",
+   "start": 668.94,
+   "end": 669.56,
+   "spk": "D"
+  },
+  {
+   "w": "Yeah",
+   "start": 669.0,
+   "end": 669.47,
+   "spk": "B"
+  },
+  {
+   "w": "Um",
+   "start": 669.56,
+   "end": 670.23,
+   "spk": "D"
+  },
+  {
+   "w": "nicer",
+   "start": 670.23,
+   "end": 670.63,
+   "spk": "D"
+  },
+  {
+   "w": "materials",
+   "start": 670.63,
+   "end": 671.36,
+   "spk": "D"
+  },
+  {
+   "w": "and",
+   "start": 671.36,
+   "end": 672.48,
+   "spk": "D"
+  },
+  {
+   "w": "Okay",
+   "start": 671.85,
+   "end": 672.39,
+   "spk": "B"
+  },
+  {
+   "w": "might",
+   "start": 672.48,
+   "end": 672.7,
+   "spk": "D"
+  },
+  {
+   "w": "be",
+   "start": 672.7,
+   "end": 672.96,
+   "spk": "D"
+  },
+  {
+   "w": "Okay",
+   "start": 675.24,
+   "end": 675.63,
+   "spk": "B"
+  },
+  {
+   "w": "be",
+   "start": 675.57,
+   "end": 675.68,
+   "spk": "D"
+  },
+  {
+   "w": "worth",
+   "start": 675.68,
+   "end": 675.9,
+   "spk": "D"
+  },
+  {
+   "w": "exploring",
+   "start": 675.9,
+   "end": 676.53,
+   "spk": "D"
+  },
+  {
+   "w": "anyway",
+   "start": 676.53,
+   "end": 676.83,
+   "spk": "D"
+  },
+  {
+   "w": "Uh",
+   "start": 676.66,
+   "end": 676.73,
+   "spk": "C"
+  },
+  {
+   "w": "Right",
+   "start": 677.17,
+   "end": 677.52,
+   "spk": "B"
+  },
+  {
+   "w": "well",
+   "start": 677.52,
+   "end": 677.84,
+   "spk": "B"
+  },
+  {
+   "w": "um",
+   "start": 677.84,
+   "end": 678.62,
+   "spk": "B"
+  },
+  {
+   "w": "so",
+   "start": 678.62,
+   "end": 678.84,
+   "spk": "B"
+  },
+  {
+   "w": "just",
+   "start": 678.84,
+   "end": 679.02,
+   "spk": "B"
+  },
+  {
+   "w": "to",
+   "start": 679.02,
+   "end": 679.13,
+   "spk": "B"
+  },
+  {
+   "w": "wrap",
+   "start": 679.13,
+   "end": 679.41,
+   "spk": "B"
+  },
+  {
+   "w": "up",
+   "start": 679.41,
+   "end": 679.73,
+   "spk": "B"
+  },
+  {
+   "w": "the",
+   "start": 679.73,
+   "end": 679.81,
+   "spk": "B"
+  },
+  {
+   "w": "next",
+   "start": 679.81,
+   "end": 680.12,
+   "spk": "B"
+  },
+  {
+   "w": "meeting's",
+   "start": 680.12,
+   "end": 680.47,
+   "spk": "B"
+  },
+  {
+   "w": "gonna",
+   "start": 680.47,
+   "end": 680.68,
+   "spk": "B"
+  },
+  {
+   "w": "be",
+   "start": 680.68,
+   "end": 680.8,
+   "spk": "B"
+  },
+  {
+   "w": "in",
+   "start": 680.8,
+   "end": 680.99,
+   "spk": "B"
+  },
+  {
+   "w": "thirty",
+   "start": 680.99,
+   "end": 681.3,
+   "spk": "B"
+  },
+  {
+   "w": "minutes",
+   "start": 681.3,
+   "end": 681.67,
+   "spk": "B"
+  },
+  {
+   "w": "So",
+   "start": 681.67,
+   "end": 681.87,
+   "spk": "B"
+  },
+  {
+   "w": "that's",
+   "start": 681.87,
+   "end": 682.1,
+   "spk": "B"
+  },
+  {
+   "w": "about",
+   "start": 682.1,
+   "end": 682.54,
+   "spk": "B"
+  },
+  {
+   "w": "um",
+   "start": 682.54,
+   "end": 683.38,
+   "spk": "B"
+  },
+  {
+   "w": "about",
+   "start": 683.38,
+   "end": 683.65,
+   "spk": "B"
+  },
+  {
+   "w": "ten",
+   "start": 683.65,
+   "end": 683.88,
+   "spk": "B"
+  },
+  {
+   "w": "to",
+   "start": 683.88,
+   "end": 683.99,
+   "spk": "B"
+  },
+  {
+   "w": "twelve",
+   "start": 683.99,
+   "end": 684.34,
+   "spk": "B"
+  },
+  {
+   "w": "by",
+   "start": 684.34,
+   "end": 684.5,
+   "spk": "B"
+  },
+  {
+   "w": "my",
+   "start": 684.5,
+   "end": 684.69,
+   "spk": "B"
+  },
+  {
+   "w": "watch",
+   "start": 684.69,
+   "end": 685.49,
+   "spk": "B"
+  },
+  {
+   "w": "Um",
+   "start": 685.49,
+   "end": 686.11,
+   "spk": "B"
+  },
+  {
+   "w": "so",
+   "start": 686.11,
+   "end": 687.18,
+   "spk": "B"
+  },
+  {
+   "w": "inbetween",
+   "start": 687.18,
+   "end": 687.69,
+   "spk": "B"
+  },
+  {
+   "w": "now",
+   "start": 687.69,
+   "end": 687.85,
+   "spk": "B"
+  },
+  {
+   "w": "and",
+   "start": 687.85,
+   "end": 688.03,
+   "spk": "B"
+  },
+  {
+   "w": "then",
+   "start": 688.03,
+   "end": 688.85,
+   "spk": "B"
+  },
+  {
+   "w": "um",
+   "start": 688.85,
+   "end": 690.14,
+   "spk": "B"
+  },
+  {
+   "w": "as",
+   "start": 690.14,
+   "end": 690.34,
+   "spk": "B"
+  },
+  {
+   "w": "the",
+   "start": 690.34,
+   "end": 690.41,
+   "spk": "B"
+  },
+  {
+   "w": "industrial",
+   "start": 690.41,
+   "end": 690.98,
+   "spk": "B"
+  },
+  {
+   "w": "designer",
+   "start": 690.98,
+   "end": 691.56,
+   "spk": "B"
+  },
+  {
+   "w": "you're",
+   "start": 691.56,
+   "end": 691.74,
+   "spk": "B"
+  },
+  {
+   "w": "gonna",
+   "start": 691.74,
+   "end": 691.9,
+   "spk": "B"
+  },
+  {
+   "w": "be",
+   "start": 691.9,
+   "end": 692.01,
+   "spk": "B"
+  },
+  {
+   "w": "working",
+   "start": 692.01,
+   "end": 692.38,
+   "spk": "B"
+  },
+  {
+   "w": "on",
+   "start": 692.38,
+   "end": 693.26,
+   "spk": "B"
+  },
+  {
+   "w": "you",
+   "start": 693.26,
+   "end": 693.39,
+   "spk": "B"
+  },
+  {
+   "w": "know",
+   "start": 693.39,
+   "end": 693.5,
+   "spk": "B"
+  },
+  {
+   "w": "the",
+   "start": 693.5,
+   "end": 693.57,
+   "spk": "B"
+  },
+  {
+   "w": "actual",
+   "start": 693.57,
+   "end": 693.84,
+   "spk": "B"
+  },
+  {
+   "w": "working",
+   "start": 693.84,
+   "end": 694.14,
+   "spk": "B"
+  },
+  {
+   "w": "Yep",
+   "start": 693.88,
+   "end": 694.02,
+   "spk": "A"
+  },
+  {
+   "w": "design",
+   "start": 694.14,
+   "end": 694.53,
+   "spk": "B"
+  },
+  {
+   "w": "of",
+   "start": 694.53,
+   "end": 694.62,
+   "spk": "B"
+  },
+  {
+   "w": "it",
+   "start": 694.62,
+   "end": 694.81,
+   "spk": "B"
+  },
+  {
+   "w": "so",
+   "start": 694.81,
+   "end": 694.97,
+   "spk": "B"
+  },
+  {
+   "w": "y",
+   "start": 694.97,
+   "end": 695.16,
+   "spk": "B"
+  },
+  {
+   "w": "you",
+   "start": 695.16,
+   "end": 695.28,
+   "spk": "B"
+  },
+  {
+   "w": "know",
+   "start": 695.28,
+   "end": 695.36,
+   "spk": "B"
+  },
+  {
+   "w": "what",
+   "start": 695.36,
+   "end": 695.46,
+   "spk": "B"
+  },
+  {
+   "w": "you're",
+   "start": 695.46,
+   "end": 695.58,
+   "spk": "B"
+  },
+  {
+   "w": "doing",
+   "start": 695.58,
+   "end": 695.88,
+   "spk": "B"
+  },
+  {
+   "w": "there",
+   "start": 695.88,
+   "end": 696.69,
+   "spk": "B"
+  },
+  {
+   "w": "Um",
+   "start": 696.69,
+   "end": 697.8,
+   "spk": "B"
+  },
+  {
+   "w": "for",
+   "start": 697.8,
+   "end": 698.23,
+   "spk": "B"
+  },
+  {
+   "w": "user",
+   "start": 698.23,
+   "end": 698.59,
+   "spk": "B"
+  },
+  {
+   "w": "interface",
+   "start": 698.59,
+   "end": 699.8,
+   "spk": "B"
+  },
+  {
+   "w": "technical",
+   "start": 699.8,
+   "end": 700.29,
+   "spk": "B"
+  },
+  {
+   "w": "functions",
+   "start": 700.29,
+   "end": 700.99,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 700.99,
+   "end": 701.07,
+   "spk": "B"
+  },
+  {
+   "w": "guess",
+   "start": 701.07,
+   "end": 701.39,
+   "spk": "B"
+  },
+  {
+   "w": "that's",
+   "start": 701.39,
+   "end": 701.67,
+   "spk": "B"
+  },
+  {
+   "w": "you",
+   "start": 701.67,
+   "end": 701.76,
+   "spk": "B"
+  },
+  {
+   "w": "know",
+   "start": 701.76,
+   "end": 701.92,
+   "spk": "B"
+  },
+  {
+   "w": "like",
+   "start": 701.92,
+   "end": 702.13,
+   "spk": "B"
+  },
+  {
+   "w": "what",
+   "start": 702.13,
+   "end": 702.23,
+   "spk": "B"
+  },
+  {
+   "w": "we've",
+   "start": 702.23,
+   "end": 702.34,
+   "spk": "B"
+  },
+  {
+   "w": "been",
+   "start": 702.34,
+   "end": 702.47,
+   "spk": "B"
+  },
+  {
+   "w": "talking",
+   "start": 702.47,
+   "end": 702.79,
+   "spk": "B"
+  },
+  {
+   "w": "about",
+   "start": 702.79,
+   "end": 703.16,
+   "spk": "B"
+  },
+  {
+   "w": "what",
+   "start": 703.16,
+   "end": 703.3,
+   "spk": "B"
+  },
+  {
+   "w": "it'll",
+   "start": 703.3,
+   "end": 703.51,
+   "spk": "B"
+  },
+  {
+   "w": "actually",
+   "start": 703.51,
+   "end": 703.9,
+   "spk": "B"
+  },
+  {
+   "w": "do",
+   "start": 703.9,
+   "end": 704.08,
+   "spk": "B"
+  },
+  {
+   "w": "Um",
+   "start": 704.08,
+   "end": 704.86,
+   "spk": "B"
+  },
+  {
+   "w": "and",
+   "start": 704.86,
+   "end": 705.65,
+   "spk": "B"
+  },
+  {
+   "w": "uh",
+   "start": 705.65,
+   "end": 707.5,
+   "spk": "B"
+  },
+  {
+   "w": "marketing",
+   "start": 707.5,
+   "end": 708.09,
+   "spk": "B"
+  },
+  {
+   "w": "executive",
+   "start": 708.09,
+   "end": 708.75,
+   "spk": "B"
+  },
+  {
+   "w": "you'll",
+   "start": 710.02,
+   "end": 710.23,
+   "spk": "B"
+  },
+  {
+   "w": "be",
+   "start": 710.23,
+   "end": 710.76,
+   "spk": "B"
+  },
+  {
+   "w": "just",
+   "start": 710.76,
+   "end": 711.3,
+   "spk": "B"
+  },
+  {
+   "w": "thinking",
+   "start": 711.3,
+   "end": 711.63,
+   "spk": "B"
+  },
+  {
+   "w": "about",
+   "start": 711.63,
+   "end": 711.92,
+   "spk": "B"
+  },
+  {
+   "w": "what",
+   "start": 711.92,
+   "end": 712.06,
+   "spk": "B"
+  },
+  {
+   "w": "it",
+   "start": 712.06,
+   "end": 712.19,
+   "spk": "B"
+  },
+  {
+   "w": "actually",
+   "start": 712.19,
+   "end": 712.6,
+   "spk": "B"
+  },
+  {
+   "w": "what",
+   "start": 712.6,
+   "end": 712.81,
+   "spk": "B"
+  },
+  {
+   "w": "you",
+   "start": 712.81,
+   "end": 712.92,
+   "spk": "B"
+  },
+  {
+   "w": "know",
+   "start": 712.92,
+   "end": 713.02,
+   "spk": "B"
+  },
+  {
+   "w": "what",
+   "start": 713.02,
+   "end": 713.19,
+   "spk": "B"
+  },
+  {
+   "w": "requirements",
+   "start": 713.19,
+   "end": 713.77,
+   "spk": "B"
+  },
+  {
+   "w": "it",
+   "start": 713.77,
+   "end": 713.89,
+   "spk": "B"
+  },
+  {
+   "w": "has",
+   "start": 713.89,
+   "end": 714.11,
+   "spk": "B"
+  },
+  {
+   "w": "to",
+   "start": 714.11,
+   "end": 714.78,
+   "spk": "B"
+  },
+  {
+   "w": "has",
+   "start": 714.78,
+   "end": 715.03,
+   "spk": "B"
+  },
+  {
+   "w": "to",
+   "start": 715.03,
+   "end": 715.17,
+   "spk": "B"
+  },
+  {
+   "w": "fulfil",
+   "start": 715.17,
+   "end": 716.48,
+   "spk": "B"
+  },
+  {
+   "w": "and",
+   "start": 716.48,
+   "end": 716.67,
+   "spk": "B"
+  },
+  {
+   "w": "you'll",
+   "start": 716.67,
+   "end": 716.79,
+   "spk": "B"
+  },
+  {
+   "w": "all",
+   "start": 716.79,
+   "end": 716.96,
+   "spk": "B"
+  },
+  {
+   "w": "get",
+   "start": 716.96,
+   "end": 717.12,
+   "spk": "B"
+  },
+  {
+   "w": "instructions",
+   "start": 717.12,
+   "end": 717.76,
+   "spk": "B"
+  },
+  {
+   "w": "emailed",
+   "start": 717.76,
+   "end": 718.14,
+   "spk": "B"
+  },
+  {
+   "w": "to",
+   "start": 718.14,
+   "end": 718.29,
+   "spk": "B"
+  },
+  {
+   "w": "you",
+   "start": 718.29,
+   "end": 718.72,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 718.72,
+   "end": 718.79,
+   "spk": "B"
+  },
+  {
+   "w": "guess",
+   "start": 718.79,
+   "end": 719.31,
+   "spk": "B"
+  },
+  {
+   "w": "Okay",
+   "start": 719.67,
+   "end": 720.01,
+   "spk": "D"
+  },
+  {
+   "w": "Um",
+   "start": 721.55,
+   "end": 722.56,
+   "spk": "B"
+  },
+  {
+   "w": "Yeah",
+   "start": 728.05,
+   "end": 728.25,
+   "spk": "B"
+  },
+  {
+   "w": "so",
+   "start": 728.25,
+   "end": 728.39,
+   "spk": "B"
+  },
+  {
+   "w": "it's",
+   "start": 728.39,
+   "end": 728.54,
+   "spk": "B"
+  },
+  {
+   "w": "th",
+   "start": 728.54,
+   "end": 728.61,
+   "spk": "B"
+  },
+  {
+   "w": "the",
+   "start": 728.61,
+   "end": 728.78,
+   "spk": "B"
+  },
+  {
+   "w": "functional",
+   "start": 728.78,
+   "end": 729.31,
+   "spk": "B"
+  },
+  {
+   "w": "design",
+   "start": 729.31,
+   "end": 729.69,
+   "spk": "B"
+  },
+  {
+   "w": "stage",
+   "start": 729.69,
+   "end": 730.07,
+   "spk": "B"
+  },
+  {
+   "w": "is",
+   "start": 730.07,
+   "end": 730.2,
+   "spk": "B"
+  },
+  {
+   "w": "next",
+   "start": 730.2,
+   "end": 730.93,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 730.93,
+   "end": 731.04,
+   "spk": "B"
+  },
+  {
+   "w": "guess",
+   "start": 731.04,
+   "end": 731.66,
+   "spk": "B"
+  },
+  {
+   "w": "And",
+   "start": 734.47,
+   "end": 734.89,
+   "spk": "B"
+  },
+  {
+   "w": "uh",
+   "start": 734.89,
+   "end": 735.27,
+   "spk": "B"
+  },
+  {
+   "w": "and",
+   "start": 736.47,
+   "end": 736.61,
+   "spk": "B"
+  },
+  {
+   "w": "that's",
+   "start": 736.61,
+   "end": 736.85,
+   "spk": "B"
+  },
+  {
+   "w": "the",
+   "start": 736.85,
+   "end": 736.94,
+   "spk": "B"
+  },
+  {
+   "w": "end",
+   "start": 736.94,
+   "end": 737.12,
+   "spk": "B"
+  },
+  {
+   "w": "of",
+   "start": 737.12,
+   "end": 737.19,
+   "spk": "B"
+  },
+  {
+   "w": "the",
+   "start": 737.19,
+   "end": 737.28,
+   "spk": "B"
+  },
+  {
+   "w": "meeting",
+   "start": 737.28,
+   "end": 737.69,
+   "spk": "B"
+  },
+  {
+   "w": "So",
+   "start": 739.12,
+   "end": 739.54,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 739.54,
+   "end": 739.6,
+   "spk": "B"
+  },
+  {
+   "w": "got",
+   "start": 739.6,
+   "end": 739.82,
+   "spk": "B"
+  },
+  {
+   "w": "Um",
+   "start": 739.8,
+   "end": 740.97,
+   "spk": "D"
+  },
+  {
+   "w": "that",
+   "start": 739.82,
+   "end": 739.97,
+   "spk": "B"
+  },
+  {
+   "w": "little",
+   "start": 739.97,
+   "end": 740.22,
+   "spk": "B"
+  },
+  {
+   "w": "message",
+   "start": 740.22,
+   "end": 740.67,
+   "spk": "B"
+  },
+  {
+   "w": "a",
+   "start": 740.67,
+   "end": 740.7,
+   "spk": "B"
+  },
+  {
+   "w": "lot",
+   "start": 740.7,
+   "end": 741.02,
+   "spk": "B"
+  },
+  {
+   "w": "sooner",
+   "start": 741.02,
+   "end": 741.43,
+   "spk": "B"
+  },
+  {
+   "w": "than",
+   "start": 741.43,
+   "end": 741.55,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 741.55,
+   "end": 741.63,
+   "spk": "B"
+  },
+  {
+   "w": "thought",
+   "start": 741.63,
+   "end": 741.84,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 741.84,
+   "end": 741.97,
+   "spk": "B"
+  },
+  {
+   "w": "would",
+   "start": 741.97,
+   "end": 742.28,
+   "spk": "B"
+  },
+  {
+   "w": "so",
+   "start": 742.28,
+   "end": 742.57,
+   "spk": "B"
+  },
+  {
+   "w": "Before",
+   "start": 747.17,
+   "end": 747.45,
+   "spk": "D"
+  },
+  {
+   "w": "we",
+   "start": 747.45,
+   "end": 747.55,
+   "spk": "D"
+  },
+  {
+   "w": "wrap",
+   "start": 747.55,
+   "end": 747.8,
+   "spk": "D"
+  },
+  {
+   "w": "up",
+   "start": 747.8,
+   "end": 747.92,
+   "spk": "D"
+  },
+  {
+   "w": "just",
+   "start": 747.92,
+   "end": 748.13,
+   "spk": "D"
+  },
+  {
+   "w": "to",
+   "start": 748.13,
+   "end": 748.21,
+   "spk": "D"
+  },
+  {
+   "w": "make",
+   "start": 748.21,
+   "end": 748.35,
+   "spk": "D"
+  },
+  {
+   "w": "sure",
+   "start": 748.35,
+   "end": 748.51,
+   "spk": "D"
+  },
+  {
+   "w": "we're",
+   "start": 748.51,
+   "end": 748.61,
+   "spk": "D"
+  },
+  {
+   "w": "all",
+   "start": 748.61,
+   "end": 748.71,
+   "spk": "D"
+  },
+  {
+   "w": "on",
+   "start": 748.71,
+   "end": 748.79,
+   "spk": "D"
+  },
+  {
+   "w": "the",
+   "start": 748.79,
+   "end": 748.89,
+   "spk": "D"
+  },
+  {
+   "w": "same",
+   "start": 748.89,
+   "end": 749.14,
+   "spk": "D"
+  },
+  {
+   "w": "page",
+   "start": 749.14,
+   "end": 749.45,
+   "spk": "D"
+  },
+  {
+   "w": "here",
+   "start": 749.45,
+   "end": 750.09,
+   "spk": "D"
+  },
+  {
+   "w": "Mm-hmm",
+   "start": 749.54,
+   "end": 750.04,
+   "spk": "B"
+  },
+  {
+   "w": "um",
+   "start": 750.09,
+   "end": 751.44,
+   "spk": "D"
+  },
+  {
+   "w": "do",
+   "start": 751.44,
+   "end": 751.56,
+   "spk": "D"
+  },
+  {
+   "w": "we",
+   "start": 751.56,
+   "end": 752.89,
+   "spk": "D"
+  },
+  {
+   "w": "We",
+   "start": 752.89,
+   "end": 753.03,
+   "spk": "D"
+  },
+  {
+   "w": "were",
+   "start": 753.03,
+   "end": 753.15,
+   "spk": "D"
+  },
+  {
+   "w": "given",
+   "start": 753.15,
+   "end": 753.55,
+   "spk": "D"
+  },
+  {
+   "w": "sort",
+   "start": 753.55,
+   "end": 753.73,
+   "spk": "D"
+  },
+  {
+   "w": "of",
+   "start": 753.73,
+   "end": 753.79,
+   "spk": "D"
+  },
+  {
+   "w": "an",
+   "start": 753.79,
+   "end": 753.87,
+   "spk": "D"
+  },
+  {
+   "w": "example",
+   "start": 753.87,
+   "end": 754.3,
+   "spk": "D"
+  },
+  {
+   "w": "of",
+   "start": 754.3,
+   "end": 754.46,
+   "spk": "D"
+  },
+  {
+   "w": "a",
+   "start": 754.46,
+   "end": 754.92,
+   "spk": "D"
+  },
+  {
+   "w": "coffee",
+   "start": 754.92,
+   "end": 755.8,
+   "spk": "D"
+  },
+  {
+   "w": "machine",
+   "start": 755.8,
+   "end": 756.19,
+   "spk": "D"
+  },
+  {
+   "w": "or",
+   "start": 756.19,
+   "end": 756.26,
+   "spk": "D"
+  },
+  {
+   "w": "something",
+   "start": 756.26,
+   "end": 756.51,
+   "spk": "D"
+  },
+  {
+   "w": "Uh-huh",
+   "start": 756.3,
+   "end": 756.6,
+   "spk": "B"
+  },
+  {
+   "w": "right",
+   "start": 756.51,
+   "end": 757.14,
+   "spk": "D"
+  },
+  {
+   "w": "yeah",
+   "start": 756.6,
+   "end": 757.68,
+   "spk": "B"
+  },
+  {
+   "w": "Mm-hmm",
+   "start": 756.93,
+   "end": 757.09,
+   "spk": "A"
+  },
+  {
+   "w": "Well",
+   "start": 757.14,
+   "end": 757.41,
+   "spk": "D"
+  },
+  {
+   "w": "um",
+   "start": 758.61,
+   "end": 759.15,
+   "spk": "D"
+  },
+  {
+   "w": "are",
+   "start": 760.99,
+   "end": 761.1,
+   "spk": "D"
+  },
+  {
+   "w": "we",
+   "start": 761.1,
+   "end": 761.28,
+   "spk": "D"
+  },
+  {
+   "w": "at",
+   "start": 761.28,
+   "end": 761.4,
+   "spk": "D"
+  },
+  {
+   "w": "ma",
+   "start": 761.4,
+   "end": 761.59,
+   "spk": "D"
+  },
+  {
+   "w": "right",
+   "start": 761.59,
+   "end": 761.76,
+   "spk": "D"
+  },
+  {
+   "w": "now",
+   "start": 761.76,
+   "end": 761.87,
+   "spk": "D"
+  },
+  {
+   "w": "on",
+   "start": 761.87,
+   "end": 761.98,
+   "spk": "D"
+  },
+  {
+   "w": "the",
+   "start": 761.98,
+   "end": 762.06,
+   "spk": "D"
+  },
+  {
+   "w": "assumption",
+   "start": 762.06,
+   "end": 762.57,
+   "spk": "D"
+  },
+  {
+   "w": "that",
+   "start": 762.57,
+   "end": 762.73,
+   "spk": "D"
+  },
+  {
+   "w": "our",
+   "start": 762.73,
+   "end": 762.81,
+   "spk": "D"
+  },
+  {
+   "w": "television",
+   "start": 762.81,
+   "end": 763.32,
+   "spk": "D"
+  },
+  {
+   "w": "remote",
+   "start": 763.32,
+   "end": 763.66,
+   "spk": "D"
+  },
+  {
+   "w": "control",
+   "start": 763.66,
+   "end": 764.42,
+   "spk": "D"
+  },
+  {
+   "w": "may",
+   "start": 764.42,
+   "end": 764.75,
+   "spk": "D"
+  },
+  {
+   "w": "have",
+   "start": 764.75,
+   "end": 765.07,
+   "spk": "D"
+  },
+  {
+   "w": "features",
+   "start": 765.07,
+   "end": 765.54,
+   "spk": "D"
+  },
+  {
+   "w": "which",
+   "start": 765.54,
+   "end": 765.74,
+   "spk": "D"
+  },
+  {
+   "w": "go",
+   "start": 765.74,
+   "end": 765.91,
+   "spk": "D"
+  },
+  {
+   "w": "beyond",
+   "start": 765.91,
+   "end": 766.21,
+   "spk": "D"
+  },
+  {
+   "w": "the",
+   "start": 766.21,
+   "end": 766.27,
+   "spk": "D"
+  },
+  {
+   "w": "television",
+   "start": 766.27,
+   "end": 767.54,
+   "spk": "D"
+  },
+  {
+   "w": "Or",
+   "start": 767.54,
+   "end": 768.12,
+   "spk": "D"
+  },
+  {
+   "w": "are",
+   "start": 768.12,
+   "end": 768.25,
+   "spk": "D"
+  },
+  {
+   "w": "we",
+   "start": 768.25,
+   "end": 768.6,
+   "spk": "D"
+  },
+  {
+   "w": "keeping",
+   "start": 768.6,
+   "end": 768.9,
+   "spk": "D"
+  },
+  {
+   "w": "Th",
+   "start": 768.76,
+   "end": 768.8,
+   "spk": "B"
+  },
+  {
+   "w": "sort",
+   "start": 768.9,
+   "end": 769.09,
+   "spk": "D"
+  },
+  {
+   "w": "of",
+   "start": 769.09,
+   "end": 769.18,
+   "spk": "D"
+  },
+  {
+   "w": "like",
+   "start": 769.18,
+   "end": 769.38,
+   "spk": "D"
+  },
+  {
+   "w": "a",
+   "start": 769.38,
+   "end": 770.07,
+   "spk": "D"
+  },
+  {
+   "w": "a",
+   "start": 770.07,
+   "end": 770.19,
+   "spk": "D"
+  },
+  {
+   "w": "design",
+   "start": 770.19,
+   "end": 770.73,
+   "spk": "D"
+  },
+  {
+   "w": "commitment",
+   "start": 770.73,
+   "end": 771.26,
+   "spk": "D"
+  },
+  {
+   "w": "to",
+   "start": 771.26,
+   "end": 772.3,
+   "spk": "D"
+  },
+  {
+   "w": "television",
+   "start": 772.3,
+   "end": 772.75,
+   "spk": "D"
+  },
+  {
+   "w": "features",
+   "start": 772.75,
+   "end": 773.79,
+   "spk": "D"
+  },
+  {
+   "w": "Okay",
+   "start": 773.56,
+   "end": 773.97,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 773.79,
+   "end": 774.1,
+   "spk": "D"
+  },
+  {
+   "w": "well",
+   "start": 773.97,
+   "end": 774.39,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 774.1,
+   "end": 774.21,
+   "spk": "D"
+  },
+  {
+   "w": "don't",
+   "start": 774.21,
+   "end": 774.38,
+   "spk": "D"
+  },
+  {
+   "w": "know",
+   "start": 774.38,
+   "end": 774.44,
+   "spk": "D"
+  },
+  {
+   "w": "just",
+   "start": 774.39,
+   "end": 774.64,
+   "spk": "B"
+  },
+  {
+   "w": "very",
+   "start": 774.64,
+   "end": 774.82,
+   "spk": "B"
+  },
+  {
+   "w": "quickly",
+   "start": 774.82,
+   "end": 775.12,
+   "spk": "B"
+  },
+  {
+   "w": "'cause",
+   "start": 775.12,
+   "end": 775.27,
+   "spk": "B"
+  },
+  {
+   "w": "this",
+   "start": 775.27,
+   "end": 775.49,
+   "spk": "B"
+  },
+  {
+   "w": "we're",
+   "start": 775.49,
+   "end": 775.63,
+   "spk": "B"
+  },
+  {
+   "w": "supposed",
+   "start": 775.63,
+   "end": 775.88,
+   "spk": "B"
+  },
+  {
+   "w": "to",
+   "start": 775.88,
+   "end": 775.96,
+   "spk": "B"
+  },
+  {
+   "w": "finish",
+   "start": 775.96,
+   "end": 776.48,
+   "spk": "B"
+  },
+  {
+   "w": "now",
+   "start": 776.48,
+   "end": 776.64,
+   "spk": "B"
+  },
+  {
+   "w": "Yep",
+   "start": 776.56,
+   "end": 777.45,
+   "spk": "D"
+  },
+  {
+   "w": "Um",
+   "start": 776.64,
+   "end": 776.7,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 776.7,
+   "end": 777.27,
+   "spk": "B"
+  },
+  {
+   "w": "guess",
+   "start": 777.27,
+   "end": 778.24,
+   "spk": "B"
+  },
+  {
+   "w": "Yeah",
+   "start": 777.45,
+   "end": 777.78,
+   "spk": "D"
+  },
+  {
+   "w": "sure",
+   "start": 777.78,
+   "end": 778.06,
+   "spk": "D"
+  },
+  {
+   "w": "that's",
+   "start": 778.24,
+   "end": 778.48,
+   "spk": "B"
+  },
+  {
+   "w": "up",
+   "start": 778.48,
+   "end": 778.64,
+   "spk": "B"
+  },
+  {
+   "w": "to",
+   "start": 778.64,
+   "end": 778.79,
+   "spk": "B"
+  },
+  {
+   "w": "us",
+   "start": 778.79,
+   "end": 779.1,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 779.1,
+   "end": 779.15,
+   "spk": "B"
+  },
+  {
+   "w": "mean",
+   "start": 779.15,
+   "end": 779.41,
+   "spk": "B"
+  },
+  {
+   "w": "you",
+   "start": 779.41,
+   "end": 779.6,
+   "spk": "B"
+  },
+  {
+   "w": "probably",
+   "start": 779.6,
+   "end": 779.94,
+   "spk": "B"
+  },
+  {
+   "w": "want",
+   "start": 779.94,
+   "end": 780.13,
+   "spk": "B"
+  },
+  {
+   "w": "some",
+   "start": 780.13,
+   "end": 780.29,
+   "spk": "B"
+  },
+  {
+   "w": "kind",
+   "start": 780.29,
+   "end": 780.51,
+   "spk": "B"
+  },
+  {
+   "w": "of",
+   "start": 780.51,
+   "end": 780.61,
+   "spk": "B"
+  },
+  {
+   "w": "unique",
+   "start": 780.61,
+   "end": 780.95,
+   "spk": "B"
+  },
+  {
+   "w": "selling",
+   "start": 780.95,
+   "end": 781.36,
+   "spk": "B"
+  },
+  {
+   "w": "point",
+   "start": 781.36,
+   "end": 781.66,
+   "spk": "B"
+  },
+  {
+   "w": "of",
+   "start": 781.66,
+   "end": 781.79,
+   "spk": "B"
+  },
+  {
+   "w": "it",
+   "start": 781.79,
+   "end": 782.39,
+   "spk": "B"
+  },
+  {
+   "w": "Okay",
+   "start": 781.99,
+   "end": 782.38,
+   "spk": "D"
+  },
+  {
+   "w": "so",
+   "start": 782.39,
+   "end": 782.95,
+   "spk": "B"
+  },
+  {
+   "w": "um",
+   "start": 782.95,
+   "end": 784.47,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 784.36,
+   "end": 784.49,
+   "spk": "A"
+  },
+  {
+   "w": "you",
+   "start": 784.47,
+   "end": 784.57,
+   "spk": "B"
+  },
+  {
+   "w": "think",
+   "start": 784.49,
+   "end": 784.64,
+   "spk": "A"
+  },
+  {
+   "w": "know",
+   "start": 784.57,
+   "end": 784.8,
+   "spk": "B"
+  },
+  {
+   "w": "one",
+   "start": 784.64,
+   "end": 784.83,
+   "spk": "A"
+  },
+  {
+   "w": "factor",
+   "start": 784.83,
+   "end": 785.33,
+   "spk": "A"
+  },
+  {
+   "w": "would",
+   "start": 785.33,
+   "end": 785.6,
+   "spk": "A"
+  },
+  {
+   "w": "be",
+   "start": 785.6,
+   "end": 786.05,
+   "spk": "A"
+  },
+  {
+   "w": "production",
+   "start": 786.05,
+   "end": 786.46,
+   "spk": "A"
+  },
+  {
+   "w": "cost",
+   "start": 786.46,
+   "end": 786.91,
+   "spk": "A"
+  },
+  {
+   "w": "Okay",
+   "start": 786.96,
+   "end": 787.56,
+   "spk": "D"
+  },
+  {
+   "w": "yeah",
+   "start": 787.56,
+   "end": 787.76,
+   "spk": "D"
+  },
+  {
+   "w": "Because",
+   "start": 787.57,
+   "end": 787.86,
+   "spk": "A"
+  },
+  {
+   "w": "Yeah",
+   "start": 787.59,
+   "end": 788.2,
+   "spk": "B"
+  },
+  {
+   "w": "there's",
+   "start": 787.86,
+   "end": 788.05,
+   "spk": "A"
+  },
+  {
+   "w": "a",
+   "start": 788.05,
+   "end": 788.14,
+   "spk": "A"
+  },
+  {
+   "w": "cap",
+   "start": 788.14,
+   "end": 788.45,
+   "spk": "A"
+  },
+  {
+   "w": "there",
+   "start": 788.45,
+   "end": 788.74,
+   "spk": "A"
+  },
+  {
+   "w": "so",
+   "start": 788.74,
+   "end": 789.19,
+   "spk": "A"
+  },
+  {
+   "w": "um",
+   "start": 789.19,
+   "end": 790.69,
+   "spk": "A"
+  },
+  {
+   "w": "Okay",
+   "start": 789.89,
+   "end": 790.23,
+   "spk": "D"
+  },
+  {
+   "w": "depends",
+   "start": 790.69,
+   "end": 791.1,
+   "spk": "A"
+  },
+  {
+   "w": "on",
+   "start": 791.1,
+   "end": 791.24,
+   "spk": "A"
+  },
+  {
+   "w": "how",
+   "start": 791.24,
+   "end": 791.35,
+   "spk": "A"
+  },
+  {
+   "w": "much",
+   "start": 791.35,
+   "end": 791.62,
+   "spk": "A"
+  },
+  {
+   "w": "you",
+   "start": 791.62,
+   "end": 791.72,
+   "spk": "A"
+  },
+  {
+   "w": "can",
+   "start": 791.72,
+   "end": 791.9,
+   "spk": "A"
+  },
+  {
+   "w": "cram",
+   "start": 791.9,
+   "end": 792.15,
+   "spk": "A"
+  },
+  {
+   "w": "into",
+   "start": 792.15,
+   "end": 792.47,
+   "spk": "A"
+  },
+  {
+   "w": "that",
+   "start": 792.47,
+   "end": 792.76,
+   "spk": "A"
+  },
+  {
+   "w": "price",
+   "start": 792.76,
+   "end": 794.65,
+   "spk": "A"
+  },
+  {
+   "w": "Mm-hmm",
+   "start": 793.82,
+   "end": 794.41,
+   "spk": "B"
+  },
+  {
+   "w": "Okay",
+   "start": 793.83,
+   "end": 794.13,
+   "spk": "D"
+  },
+  {
+   "w": "Um",
+   "start": 794.65,
+   "end": 794.9,
+   "spk": "A"
+  },
+  {
+   "w": "Yeah",
+   "start": 795.78,
+   "end": 796.16,
+   "spk": "B"
+  },
+  {
+   "w": "I",
+   "start": 796.03,
+   "end": 796.14,
+   "spk": "A"
+  },
+  {
+   "w": "think",
+   "start": 796.14,
+   "end": 796.45,
+   "spk": "A"
+  },
+  {
+   "w": "that",
+   "start": 796.45,
+   "end": 796.64,
+   "spk": "A"
+  },
+  {
+   "w": "that's",
+   "start": 796.64,
+   "end": 797.21,
+   "spk": "A"
+  },
+  {
+   "w": "the",
+   "start": 797.21,
+   "end": 797.32,
+   "spk": "A"
+  },
+  {
+   "w": "main",
+   "start": 797.32,
+   "end": 798.02,
+   "spk": "A"
+  },
+  {
+   "w": "factor",
+   "start": 798.02,
+   "end": 798.43,
+   "spk": "A"
+  },
+  {
+   "w": "Okay",
+   "start": 798.51,
+   "end": 799.43,
+   "spk": "B"
+  },
+  {
+   "w": "Okay",
+   "start": 798.52,
+   "end": 798.85,
+   "spk": "D"
+  },
+  {
+   "w": "Right",
+   "start": 799.43,
+   "end": 799.86,
+   "spk": "B"
+  },
+  {
+   "w": "okay",
+   "start": 799.86,
+   "end": 800.28,
+   "spk": "B"
+  },
+  {
+   "w": "we'll",
+   "start": 800.28,
+   "end": 800.37,
+   "spk": "B"
+  },
+  {
+   "w": "that's",
+   "start": 800.37,
+   "end": 800.79,
+   "spk": "B"
+  },
+  {
+   "w": "that's",
+   "start": 800.79,
+   "end": 801.01,
+   "spk": "B"
+  },
+  {
+   "w": "the",
+   "start": 801.01,
+   "end": 801.07,
+   "spk": "B"
+  },
+  {
+   "w": "end",
+   "start": 801.07,
+   "end": 801.26,
+   "spk": "B"
+  },
+  {
+   "w": "of",
+   "start": 801.26,
+   "end": 801.32,
+   "spk": "B"
+  },
+  {
+   "w": "the",
+   "start": 801.32,
+   "end": 801.4,
+   "spk": "B"
+  },
+  {
+   "w": "meeting",
+   "start": 801.4,
+   "end": 801.67,
+   "spk": "B"
+  },
+  {
+   "w": "then",
+   "start": 801.67,
+   "end": 802.48,
+   "spk": "B"
+  },
+  {
+   "w": "Alright",
+   "start": 802.4,
+   "end": 802.86,
+   "spk": "D"
+  },
+  {
+   "w": "Um",
+   "start": 802.48,
+   "end": 803.2,
+   "spk": "B"
+  },
+  {
+   "w": "So",
+   "start": 804.58,
+   "end": 805.01,
+   "spk": "B"
+  },
+  {
+   "w": "uh",
+   "start": 805.01,
+   "end": 805.58,
+   "spk": "B"
+  },
+  {
+   "w": "thank",
+   "start": 806.58,
+   "end": 806.77,
+   "spk": "B"
+  },
+  {
+   "w": "you",
+   "start": 806.77,
+   "end": 806.88,
+   "spk": "B"
+  },
+  {
+   "w": "all",
+   "start": 806.88,
+   "end": 806.95,
+   "spk": "B"
+  },
+  {
+   "w": "for",
+   "start": 806.95,
+   "end": 807.09,
+   "spk": "B"
+  },
+  {
+   "w": "coming",
+   "start": 807.09,
+   "end": 809.39,
+   "spk": "B"
+  },
+  {
+   "w": "Cool",
+   "start": 809.23,
+   "end": 809.45,
+   "spk": "A"
+  }
+ ],
+ "decision_annotations": [
+  {
+   "start": 165.51,
+   "end": 231.81,
+   "text": "Okay uh we now need to discuss the project finance Um so according to the brief um we're gonna be selling this remote control for twenty five Euro um and we're aiming to make fifty million Euro Um so we're gonna be selling this on an international scale And uh we don't 'Kay want it to cost any more than uh twelve fifty Euros so fifty percent of the selling price Um can we just go over that again Sure Uh so bas at twel Alright yeah Okay So cost like production cost is All together twelve fifty but selling price is is that wholesale or retail Like on the shelf Um I dunno I imagine That's a good ",
+   "in_window": true
+  },
+  {
+   "start": 231.83,
+   "end": 324.87,
+   "text": "But I I don't know I mean do you think the fact that it's going to be sold internationally will have a bearing on how we design it at all Yes Think it will Mm-hmm Um Mm-hmm Hmm Well right away I'm wondering if there's um th th uh like with D_V_D_ players if there are zones Oh yeah Um regions and f stuff yeah frequencies or something Yeah um Okay as well as uh characters um different uh keypad styles and s symbols Hmm Yeah Well for Um a remote control do you think that will be I suppose I don't it's know depends on how complicated our remote control is Yeah It does make sense from maybe the des",
+   "in_window": true
+  },
+  {
+   "start": 370.31,
+   "end": 410.07,
+   "text": "so I'm wondering right away is selling twenty five Euros is that sort of the thi is this gonna to be like the premium product kinda Yeah thing or yeah Like how much does you know a remote control cost Uh-huh Well twenty five Euro I mean that's um that's about like eighteen pounds or something isn't it Mm-hmm Or no is it as much as that Sixteen Yep seventeen eighteen pounds Yeah I'd say so yeah Um I dunno I've never bought a remote control so I don't No know how how good a remote Yeah control that would get you yeah Um But yeah I suppose it has to look kind of cool Mm-hmm and gimmicky Um right ",
+   "in_window": true
+  }
+ ],
+ "summary": {
+  "abstract": [
+   "The project manager introduced the upcoming project to the team members and then the team members participated in an exercise in which they drew their favorite animal and discussed what they liked about the animal.",
+   "The project manager talked about the project finances and selling prices.",
+   "The team then discussed various features to consider in making the remote."
+  ],
+  "actions": [
+   "The industrial designer will work on the working design of the remote.",
+   "The user interface designer will work on the technical functions of the remote.",
+   "The marketing executive will work on what requirements the remote has to fulfill"
+  ],
+  "decisions": [
+   "The remote will sell for 25 Euro.",
+   "The remote will be sold on an international scale.",
+   "The production costs cannot exceed 12.50 Euro."
+  ],
+  "problems": [
+   "Whether the remote will be used exclusively for televisions."
+  ]
+ }
+}

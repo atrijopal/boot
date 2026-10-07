@@ -3,53 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Meeting AI</title>
+<title>Meeting Record</title>
+<link rel="preload" href="/static/fonts/IBMPlexSans-Regular.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="stylesheet" href="/static/app.css">
 </head>
 <body>
-<header class="top">
-  <div>
-    <h1>Meeting AI</h1>
-    <p class="sub">Recording &rarr; transcript &rarr; refined transcript &rarr; minutes. Every model step is shown, then the final report.</p>
-  </div>
-  <label class="open-job">Open an earlier result
-    <select id="jobs"><option value="">&mdash;</option></select>
-  </label>
-</header>
-
-<main>
-  <section class="card" id="upload">
-    <div class="row">
-      <input type="file" id="file" accept=".wav,.mp3,.m4a,.mp4,.flac,.ogg,.opus,.webm,.aac,audio/*">
-      <label>Speech-to-text <select id="provider"></select></label>
-      <button id="go" class="primary">Process</button>
-    </div>
-    <div id="status" class="muted" aria-live="polite"></div>
-    <div id="error"></div>
-  </section>
-
-  <section id="phases" hidden>
-    <article class="phase" id="p1">
-      <header><span class="step">1</span><h2>Transcript and extracted facts</h2><span class="grow"></span><span id="p1-chip"></span></header>
-      <div id="p1-body"></div>
-    </article>
-
-    <article class="phase" id="p2">
-      <header><span class="step">2</span><h2>Refined transcript and speakers</h2><span class="grow"></span><span id="p2-chip"></span>
-        <button id="p2-go" class="primary">Refine transcript</button></header>
-      <div id="p2-status" class="muted"></div>
-      <div id="p2-body"></div>
-    </article>
-
-    <article class="phase" id="p3">
-      <header><span class="step">3</span><h2>Minutes</h2><span class="grow"></span><span id="p3-chip"></span>
-        <button id="p3-go" class="primary">Generate minutes</button></header>
-      <div id="p3-progress"></div>
-      <div id="p3-body"></div>
-    </article>
-  </section>
-</main>
-
+<script src="/static/js/core.js"></script>
+<script src="/static/js/home.js"></script>
+<script src="/static/js/workspace.js"></script>
+<script src="/static/js/speakers.js"></script>
+<script src="/static/js/transcript.js"></script>
+<script src="/static/js/refinement.js"></script>
+<script src="/static/js/report.js"></script>
+<script src="/static/js/pipeline.js"></script>
 <script src="/static/app.js"></script>
 </body>
 </html>

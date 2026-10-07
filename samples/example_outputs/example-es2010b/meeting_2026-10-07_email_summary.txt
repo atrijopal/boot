@@ -1,0 +1,27 @@
+Subject: Meeting summary (5:00 meeting)
+
+Hello,
+
+Here is a short summary of the meeting.
+
+The meeting reviewed remote‑control product features, component choices, power options, and internal design.
+
+SUMMARY
+- The team discussed defining the remote's functionality by the devices it controls, such as DVD players or TiVo, to broaden consumer appeal.
+- Research was cited indicating consumers are willing to pay more for speech‑recognition capability, positioning it as a high‑class feature.
+- A beeping feature was proposed to help users locate a lost remote, mirroring rival products.
+- It was noted that a smart chip is required for multifunctionality, or an additional chip would be needed for extra functions.
+- The smart chip was described as a programmed component that can perform a fair range of functions.
+- Cost concerns about an additional chip were dismissed, with the belief bulk purchasing from a newer supplier would keep production costs within budget.
+- Batteries were selected as the power source because they are readily available and standard for remotes, with the number depending on size.
+- Typical remotes use two AA or four AAA batteries, sometimes three, as a reference point for the design.
+- A large on/off button was recommended to accommodate an older target demographic.
+- The internal schematic includes a switch between the power source and the rest of the device, and an infrared bulb for communication with various devices.
+- Adding a second infrared bulb was suggested to indicate functionality without requiring users to stare at the primary bulb when the battery is low.
+
+ACTION ITEMS
+- Obtain a power source. | owner: unspecified | deadline: unspecified
+- Obtain an additional chip. | owner: unspecified | deadline: unspecified
+- Make the remote glow in the dark. | owner: unspecified | deadline: unspecified
+
+Best regards

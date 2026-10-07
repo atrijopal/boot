@@ -1,0 +1,82 @@
+REFINED TRANSCRIPT
+File: ami_ES2010b_600s-900s.flac (example)
+Date: 2026-10-07
+Duration: 5:00
+Speakers: Speaker 1, Speaker 2, Speaker 3
+The raw transcript after terminology, name and acronym corrections (0 applied; listed at the end). The raw transcript is kept unchanged in its own file.
+------------------------------------------------------------
+[0:01] Speaker 1: The functionality of the product really needs to be considered
+[0:04] Speaker 1: as to, like, what type of buttons do we really need on it,
+[0:08] Speaker 1: and
+[0:09] Speaker 1: it needs to be open to a wide range of consumers. So
+[0:13] Speaker 1: even though we need a small number of buttons, we also need to take in...
+[0:16] Speaker 1: Like, are most people going to be using it for a DVD player or TiVo?
+[0:21] Speaker 1: What what exactly are we using it for?
+[0:24] Speaker 1: As well as the age range. So we need a hip, but not a corny marketing scheme for promoting
+[0:31] Speaker 1: our product.
+[0:32] Speaker 1: And, also, we found... Our team found that speech recognition
+[0:36] Speaker 1: is... It's like an up and coming thing. They really
+[0:39] Speaker 1: consumers are really interested in it. And since our findings found that people are willing to pay more money for a remote for it to be more high class And so just consider to it. Just to clarify, by speech recognition, you mean they would say channel five and the thing would I guess so. Yeah. Mhmm.
+[0:56] Speaker 2: Okay.
+[0:57] Speaker 1: I had to just say where are you? The thing beats, you know? Yeah. I guess we can interpret it like Lovely. We can just try out different types of speech recognition
+[1:05] Speaker 1: within our... Didn't they...
+[1:08] Speaker 1: Didn't our rival companies manufacture a remote that you would press the button on TV and it would... The remote would beep so that if you ever lost remote
+[1:16] Speaker 2: phone used to do. Oh,
+[1:18] Speaker 1: yeah. That's true. We could definitely include that if we wanted to. Yeah. If it's within our price.
+[1:24] Speaker 1: Okay.
+[1:25] Speaker 1: Are we ready for our last presentation, Amber? Yeah. I'm just trying to move it. Okay.
+[1:38] Speaker 3: Okay. I think it should be there. Working design.
+[1:44] Speaker 3: Okay.
+[1:47] Speaker 3: I didn't get a chance to complete this one, because some of the tools that I was given were frustrating.
+[1:53] Speaker 3: Oh, that's fine. Okay.
+[1:55] Speaker 3: So
+[1:57] Speaker 3: method
+[1:58] Speaker 3: method of our design. I think I just started listing some of the things that we actually need to put into this. We need a power source. We're gonna need a smart chip if we're gonna make it multifunctional.
+[2:10] Speaker 3: Extra functions,
+[2:11] Speaker 3: we'll probably need an additional chip. Either that or the smart chip will have to be
+[2:16] Speaker 3: extremely smart. What
+[2:19] Speaker 3: exactly is a smart chip? Usually, a smart chip is just a chip that's been programmed and designed so that it can complete
+[2:27] Speaker 3: a fair range of functions.
+[2:29] Speaker 2: Well, how much extra would the additional chip be? Is that gonna push us over our production costs? I wouldn't think so because we could probably get it from, like, bulk from a
+[2:40] Speaker 3: newer company. Mhmm. And they tend to sell their chips pretty cheap. Okay.
+[2:45] Speaker 3: Ready? Yep.
+[2:47] Speaker 3: Nothing here. That's okay.
+[2:50] Speaker 3: Power source. I figured batteries...
+[2:52] Speaker 3: Because they're easily
+[2:55] Speaker 3: available.
+[2:56] Speaker 3: Typically, a remote has either two double a's or four triple a's, sometimes three.
+[3:01] Speaker 3: Really kinda depends on the size of the actual remote itself.
+[3:06] Speaker 3: A large on off button.
+[3:08] Speaker 3: Demographically,
+[3:10] Speaker 3: we're moving towards
+[3:11] Speaker 3: older
+[3:12] Speaker 3: generation of people, so a large on off button would probably be good.
+[3:17] Speaker 3: Selection button for various entertainment devices. So you want something that'll permit you to select
+[3:22] Speaker 3: the DVD player or the
+[3:24] Speaker 3: TV or the stereo system.
+[3:28] Speaker 3: Smart chip that perverts... That permits... Sorry.
+[3:31] Speaker 3: Universal application.
+[3:33] Speaker 3: Again,
+[3:35] Speaker 3: something that'll allow us to skip over between devices.
+[3:38] Speaker 3: That's kinda it.
+[3:42] Speaker 3: This is my
+[3:44] Speaker 3: fifty second design.
+[3:48] Speaker 3: Power source
+[3:49] Speaker 3: over here. We're gonna have a switch, obviously, between the power source and the rest of it. You're gonna need the switch.
+[3:56] Speaker 3: Extra bulb could just be
+[3:58] Speaker 3: for
+[3:59] Speaker 3: flashiness.
+[4:02] Speaker 3: Subcomponent,
+[4:03] Speaker 3: which would be, like, a way of diverting the power to different parts of the the device,
+[4:09] Speaker 3: the chip, and of course, the infrared bulb, so it can communicate with the various devices that it needs to talk to. So what exactly are we looking at? This is like the front of the... This is just like a rough schematic.
+[4:20] Speaker 3: So this is the internal workings.
+[4:22] Speaker 2: So the red would be the front of the remote though. Right? Yeah. That's gonna be what's communicating with the TV. But the other bulb, I think, is good just to indicate I'm doing something sort of like yeah.
+[4:33] Speaker 3: You don't have to stare at that infrared because, you know, when the battery starts dying on your remote currently,
+[4:38] Speaker 3: you have to actually stare at that bulb and go, okay. When I push this button, is it working? Okay. Probably be lighting up the keys. Right? Yeah. Yeah.
+[4:47] Speaker 3: So you can The bugs. Put it in the dark. Yeah.
+[4:50] Speaker 1: That's good. We should make it glow in the dark. Yeah. Definitely. K. Next. Ready?
+[4:55] Speaker 1: Yeah. That's it. K. Any... Okay. K.
+
+------------------------------------------------------------
+CORRECTIONS APPLIED
+None were needed.

@@ -2,31 +2,31 @@ import numpy as np
 import pytest
 import soundfile as sf
 
+import app.core.llm as llm
 from app.config.settings import settings
+from app.utils.errors import PipelineError
 
 
 @pytest.fixture(autouse=True)
-def tmp_outputs(tmp_path, monkeypatch):
+def isolated(tmp_path, monkeypatch):
     monkeypatch.setattr(settings, "outputs_dir", str(tmp_path / "outputs"))
     monkeypatch.setattr(settings, "cache_enabled", False)
+    monkeypatch.setattr(settings, "extraction_lenses", 1)  # the focused readers have their own tests; the others count calls with one combined reader
+    monkeypatch.setattr(settings, "verify_edits_enabled", False)  # the second check of fixes has its own tests
+    monkeypatch.setattr(settings, "fallback_model", "")  # a developer's own .env must not change what the tests see
+    monkeypatch.setattr(settings, "names_enabled", False)  # the who-is-who call has its own tests; the others count calls without it
     monkeypatch.setattr(settings, "groq_api_key", "test-key")
     monkeypatch.setattr(settings, "deepgram_api_key", "test-key")
-    monkeypatch.setattr(settings, "candidate_detector", "off")  # no real LLM calls in tests
-    monkeypatch.setattr(settings, "refine_use_second_asr", False)
-    import app.minutes.llm as _mllm
-    from app.utils.errors import PipelineError as _PE
 
-    def _no_network(*a, **k):
-        raise _PE("API_ERROR", "LLM calls are disabled in tests unless a test installs a fake")
+    def no_network(*a, **k):
+        raise PipelineError("API_ERROR", "model calls are disabled in tests unless a test installs a fake")
 
-    monkeypatch.setattr(_mllm, "_call_model", _no_network)
-    import app.refinement.speakers as _spk
-    monkeypatch.setattr(_spk, "chat_json", lambda *a, **k: {"speakers": []})  # never call a real LLM from tests
+    monkeypatch.setattr(llm, "_call_model", no_network)
 
 
 @pytest.fixture
-def speech_like_wav(tmp_path):
-    """Noise bursts with pauses: has signal, not real speech (ASR is mocked in tests)."""
+def wav(tmp_path):
+    """A file with signal (noise bursts and pauses). The ASR is faked in tests, so the audio content does not matter."""
     sr, rng = 16000, np.random.default_rng(0)
     parts = []
     for _ in range(6):

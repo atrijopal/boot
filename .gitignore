@@ -1,15 +1,15 @@
-# secrets: never commit
 .env
 keys
 keys.txt
 *.key
-
-# environments / caches
 .venv/
+.venv_dir
 __pycache__/
 *.pyc
 .pytest_cache/
-
-# generated at run time
 outputs/
-.venv_dir
+*.log
+
+# local demo backups and generated files
+samples/saved_runs/
+*.log
