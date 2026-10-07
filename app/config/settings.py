@@ -76,7 +76,7 @@ class Settings(BaseSettings):
 
     # Storage
     outputs_dir: str = str(ROOT / "outputs")
-    cache_enabled: bool = True
+    cache_enabled: bool = False  # off: every run transcribes and calls the models fresh; set CACHE_ENABLED=true to reuse saved answers
 
 
 settings = Settings()
