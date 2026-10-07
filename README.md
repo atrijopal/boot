@@ -13,7 +13,7 @@ Transcript · terminology corrections · minutes · decisions · action items, e
 ![Team](https://img.shields.io/badge/team-Linear%20Regression-7F0F0F?style=flat-square)
 
 **Team Linear Regression** · Akansha Das · Atrijo Pal · Anuj Sharma
-Inter IIT Bootcamp · ML Problem Statement, Phase 2
+Inter IIT Bootcamp · ML Problem Statement
 
 [Technical report (PDF)](docs/report/main.pdf) · [Quick start](#quick-start) · [How it works](#how-it-works) · [Models](#models-and-fallbacks)
 
@@ -74,7 +74,7 @@ flowchart LR
     R -. needs_review .-> P2[/PAUSED/]
     P1 -- approve / retry --> E
     P2 -- approve / retry --> E
-    T -. failure .-> F[/FAILED, retry this stage/]
+    T -. failure .-> F[/FAILED: retry this stage/]
     D -. failure .-> F
     F -- retry --> E
 ```
